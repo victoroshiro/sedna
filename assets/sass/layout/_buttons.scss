@@ -1,0 +1,38 @@
+.button {
+    background: none;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 17px;
+    padding: 6px 19px;
+    font-family: $helvetica-neue;
+    font-size: 15px;
+
+    &:hover{
+        background-color: #fff;
+        color: $color-default-font;
+    }
+
+    &.green{
+        background-color: $color-default-green !important;
+        border-color: $color-default-green !important;
+        font-size: 17px !important;
+        border-radius: 23px;
+        padding: 6px 30px;
+
+        &:hover{
+            background-color: #fff !important;
+            color: $color-default-green !important;
+        }
+    }
+    
+    &.white{
+        border-color: $color-default-green !important;
+        background-color: #fff !important;
+        color: $color-default-green;
+
+        &:hover{
+            background-color: $color-default-green !important;
+            color: #fff !important;
+        }
+    }
+}

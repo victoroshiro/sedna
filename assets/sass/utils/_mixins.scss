@@ -1,0 +1,48 @@
+//creating the breakpoints
+@mixin breakpoint($point) {
+	@if $point == lg-bear {
+		@media (max-width: 1200px) { @content; }
+	}
+	@else if $point == md-bear {
+		@media (max-width: 992px) { @content; }
+	}
+	@else if $point == sm-bear {
+		@media (max-width: 768px)  { @content; }
+	}
+	@else if $point == xsm-bear {
+		@media (max-width: 480px)  { @content; }
+	}
+	@else if $point == fucking-small-baby-bear {
+		@media (max-width: 320px)  { @content; }
+	}
+}
+
+//making a little grid
+@mixin rowMachine($numPerRow, $margin) {
+	width: ((100% - (($numPerRow - 1) * $margin)) / $numPerRow);
+	&:nth-child(n) {
+		margin-bottom: $margin;
+		margin-right: $margin;
+	}
+	&:nth-child(#{$numPerRow}n) {
+		margin-right: 0;
+		margin-bottom: 0;
+	}
+}
+
+
+//buttons
+@mixin main-button ($border-color, $hover-color, $text-color, $hover-text-color){
+	padding: 5px 10px;
+	color: $text-color;
+	border: 2px solid $border-color;
+	background: none;
+	text-transform: uppercase;
+	transition: all 0.3s;
+
+	&:hover {
+		text-decoration: none;
+		background: $hover-color;
+		color: $hover-text-color;
+	}
+}

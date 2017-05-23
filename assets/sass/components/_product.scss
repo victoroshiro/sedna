@@ -1,0 +1,70 @@
+.product {
+    margin: 80px 0;
+
+    .product-border {
+        @extend .clearfix;
+        border: 3px solid lighten($color-black, 20%);
+    }
+
+    .product-title {
+        transform: translateY(-97%);
+
+        h2 {
+            margin: 0;
+            font-size: 23px;
+            font-weight: 700;
+            line-height: 1;
+        }
+    }
+
+    .product-image {
+        float: left;
+        margin: 0 20px 0 20px;
+        transform: translateY(-60px);
+    }
+
+    h3 {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-family: Helvetica Neue, Arial;
+        font-size: 16px;
+    }
+
+    .description {
+        padding-right: 20px;
+        margin-top: -27px;
+    }
+
+    .icons{
+        display: inline-block;
+
+        h3{
+            width: 134px;
+            height: 20px;
+            float: left;
+            margin-right: 10px;
+        }
+        .icon {
+            width: 35px;
+            height: 35px;
+            display: inline-block;
+            background-repeat: no-repeat;
+            background-position: center center;
+
+            &.icon--beef {
+                background-image: url("../images/icons/beef.png");
+            }
+
+            &.icon--chicken {
+                background-image: url("../images/icons/chicken.png");
+            }
+        }
+    }
+
+
+    .buttons {
+        margin-top: 20px;
+        float: right;
+        text-align: right;
+    }
+}

@@ -1,0 +1,18 @@
+.social {
+    float: left;
+    a {
+        display: inline-block;
+        width: 42px;
+        height: 40px;
+        margin-right: 10px;
+        font-size: 22px;
+        border: 2px solid $color-grey;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 1.7;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

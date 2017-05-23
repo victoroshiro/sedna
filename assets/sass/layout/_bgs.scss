@@ -1,0 +1,22 @@
+.bg-photo {
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+    &.recipes {
+        background-image: url("../images/bgs/food.jpg");
+    }
+
+    &.contact {
+        background-image: url("../images/bgs/food2.jpg");
+    }
+}
+
+.bg-white {
+    background-image: url("../images/bgs/white-pattern.jpg");
+}
+
+.bg-recipes {
+    background-color: #944a4b;
+    background-image: url("../images/bgs/recipes-pattern.png");
+}

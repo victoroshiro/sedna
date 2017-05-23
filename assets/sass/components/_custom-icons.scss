@@ -1,0 +1,15 @@
+.custom-icon {
+    width: 30px;
+    height: 22px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 4px;
+
+    &.icon--email {
+        background: url("../images/custom-icons/email.png") center center no-repeat;
+    }
+
+    &.icon--tel {
+        background: url("../images/custom-icons/phone.png") center center no-repeat;
+    }
+}

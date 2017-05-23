@@ -1,0 +1,3 @@
+# robotstxt.org/
+User-agent: *
+Sitemap: http://fitoterapia.com.br/sitemap.xml

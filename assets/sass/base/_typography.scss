@@ -1,0 +1,178 @@
+@font-face {
+    font-family: 'cabanaregular';
+    src: url('../fonts/cabana-regular-webfont.woff2') format('woff2'),
+         url('../fonts/cabana-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import 'https://fonts.googleapis.com/css?family=Roboto+Mono';
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4
+{
+    font-family: 'sylfaen';
+}
+
+h1,
+.h1
+{
+    margin: 0;
+    font-size: 100px;
+    line-height: 1;
+    font-weight: 100;
+}
+
+h2,
+.h2
+{
+    text-transform: uppercase;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 22px;
+}
+
+h3,
+.h3
+{
+    font-size: 70px;
+}
+
+h4,
+.h4
+{
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 22px;
+}
+
+h1.alternative, .h1.alternative,
+h2.alternative, .h2.alternative,
+h3.alternative, .h3.alternative,
+h4.alternative, .h4.alternative
+{
+    padding: 20px;
+    text-transform: uppercase;
+    line-height: 1.2;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 32px;
+    background: $color-black;
+    color: $color-white;
+}
+
+.title {
+    margin: 30px 0;
+    color: $color-white;
+
+    &.title--inverse {
+        color: $color-black;
+    }
+
+    small {
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+}
+
+h3.simple-title {
+    font-family: $roboto-mono;
+    font-size: 16px;
+    margin: 0;
+}
+
+.alt-title {
+    position: relative;
+    margin: 30px 0 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 30px;
+    color: $color-orange;
+
+    &:before {
+        content: " ";
+        display: block;
+        position: absolute;
+        bottom: -30px;
+        width: 100%;
+        height: 5px;
+        background: $color-orange;
+        // border-bottom: 5px solid $color-orange;
+    }
+
+    &:after {
+        content: " ";
+        display: block;
+        position: absolute;
+        top: 100%;
+        width: 250px;
+        height: 30px;
+        background: $color-orange;
+        // border-bottom: 5px solid $color-orange;
+    }
+}
+
+.ribbon-title {
+
+    position: relative;
+    padding: 10px 30px 10px 10px !important;
+    float: left;
+    font-family: $roboto-mono !important;
+    font-size: 14px !important;
+    color: $color-white !important;
+    text-transform: uppercase !important;
+    font-weight: bold !important;
+    background: $color-orange;
+
+    &:before {
+        content: " ";
+        display: block;
+        width: 10px;
+        height: 100%;
+        position: absolute;
+        left: -10px;
+        top: -2px;
+        transform: skewY(20deg);
+        background: darken($color-orange, 5%);
+    }
+
+    &:after {
+        content: " ";
+        position: absolute;
+        width: 20px;
+        height: 100%;
+        left: -30px;
+        top: -4px;
+        background: $color-orange;
+    }
+
+    &.with-icon {
+        padding-right: 80px;
+    }
+
+    .icon {
+        position: absolute;
+        right: 10px;
+        top: -10px;
+    }
+
+
+    a {
+        color: inherit;
+    }
+
+}
+
+a {
+    &:hover {
+        color: inherit;
+        text-decoration: none;
+        transition: all 0.3s;
+    }
+}
+.title.text-center.receitas-produto{
+    h1{
+        color: #000;
+        font-size: 85px;        
+    }
+}
