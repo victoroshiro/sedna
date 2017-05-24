@@ -17,7 +17,7 @@
 |
 */
 //<!--build:config application/config/config.php -->
-$config['base_url'] = 'http://'.$_SERVER['HTTP_HOST'] . '/femcare/app/';
+$config['base_url'] = 'http://'.$_SERVER['HTTP_HOST'] . '/cimitarra/';
 // <!--endbuild-->
 
 /*

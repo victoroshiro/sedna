@@ -1,249 +1,542 @@
-<?php  
-	if($banners){
-?>
-	<section class="home-slider text-center">
-		<div class="slick-slider">
-			<?php  
-				foreach ($banners as $item) {
-			?>	
-				<a href="<?php echo (strstr($item->link,'http')) ? $item->link : site_url($item->link); ?>" <?php echo 'target="'.$item->target_blank.'"'; ?>>
-					<div>
-						<img src="<?php echo site_url('userfiles/banners/'.$item->imagem); ?>" alt="<?php echo $item->titulo; ?>"/>
-					</div>
-				</a>
-			<?php  
-				}
-			?>
-		</div>
-		<div class="slick-nav">
-			<div class="slick-arrow prev"><i class="fa fa-angle-left"></i></div>
-			<div class="slick-arrow next"><i class="fa fa-angle-right"></i></div>
-		</div>
-	</section>
-<?php  
-	}
-?>
-<section id="conheca">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-10 col-md-offset-1 bg-white">
-				<div class="col-md-10 col-md-offset-1 text-center">
-					<img src="assets/images/home/florzinha.png"/>
-					<h2>Conheça a FemCare</h2>
-					<p>Clínica especializada na saúde da mulher. Proporcionamos um atendimento eficiente através de profissionais experientes, oferecendo toda estrutura que a paciente merece.</p>
-					<p>Os cuidados com a saúde da mulher devem ser constantes e específicos. É muito importante realizar acompanhamento médico, principalmente ginecológico, anualmente. Realizar exames preventivos é a melhor forma de detectar precocemente possíveis doenças relacionadas à saúde da mulher e evitar futuros problemas.</p>
-					<p class="button-saiba-mais"><a href="<?php echo site_url('quem-somos'); ?>" class="main-button button green">Saiba Mais</a></p>
-				</div>
-				<img src="assets/images/home/flor-quadro-dir.png" class="flor-quadro dir"/>
-				<img src="assets/images/home/flor-quadro-esq.png" class="flor-quadro esq"/>
+<!-- Main -->
+	<main class="main" role="main">
+
+		<?php if (!empty($banners)): ?>
+			<div id="lightSliderMainBanner" class="hero">
+				<?php foreach ($banners as $key => $item): ?>
+					<article>
+						<!-- <img src="<?php // echo site_url('userfiles/banners/'.$item->imagem); ?>" alt=""> -->
+						<!-- <img src="http://www.placehold.it/1500x700" class="main-content"> -->
+						<div class="video-wrapper">
+							<iframe
+								autoplay="true"
+								class=""
+								
+								src="https://www.youtube.com/embed/8zHdLF3-coA?ecver=1&autoplay=1&showinfo=0&controls=0"
+								frameborder="0"
+								allowfullscreen>
+							</iframe>
+						</div>
+						<div class="text-wrapper">
+							<h1 class="wow fadeInDown"><?php echo $item->titulo; ?></h1>
+							<a class="anchor button white medium wow fadeInUp" href="<?php echo (strstr($item->link,'http')) ? $item->link : site_url($item->link); ?>" <?php echo 'target="'.$item->target_blank.'"'; ?>>
+								<?php echo $item->resumo; ?>
+							</a>
+						</div>
+					</article>
+				<?php endforeach ?>	
 			</div>
-		</div>
-	</div>
-</section>
-<section id="imprensa">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<img src="assets/images/home/florzinha.png">
-				<h2>Sala de Imprensa</h2>
-				<div class="col-md-12">
-					<ul class="itens-imprensa">
-						<li>
-							<a href="<?php echo site_url('imprensa/televisao'); ?>">
-								<div class="teste">
-									<div class="icone-imprensa">
-										<i class="fa fa-television"></i>
+		<?php endif ?>
+		
+		<!-- Tab navigation -->
+			<nav class="tabs four" role="navigation">
+				<ul class="wrap">
+					<li><a href="contact.html" title="Tell us what you need. We will do the rest.">
+						<img src="assets/images/ico1.png" alt="" /> Tell us what you need. <br />We will do the rest.
+					</a></li>
+					<li><a href="charters.html" title="Check our Early Season Mediterranean Deals.">
+						<img src="assets/images/ico2.png" alt="" /> Check our Early Season Mediterranean Deals.
+					</a></li>
+					<li><a href="services.html" title="New to Sailing? We‘ve got you covered.">
+						<img src="assets/images/ico3.png" alt="" /> New to Sailing?<br />We‘ve got you covered.
+					</a></li>
+					<li><a href="#lightSliderPosts" class="anchor" title="Win a Sailing Holiday in Mediterranean!">
+						<img src="assets/images/ico4.png" alt="" /> Win a Sailing Holiday in Mediterranean!
+					</a></li>
+				</ul>
+			</nav>
+			<!-- //Tab navigation -->
+		
+		<!-- Call to action -->
+		<section class="cta gold">
+			<div class="wrap center">
+				<h2>Already convinced?</h2>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorperut commodo consequat. </p>
+				<a href="http://themeforest.net/user/themeenergy/portfolio" title="Buy this now" class="button white medium">Buy this now</a>
+			</div>
+		</section>
+		<!-- //Call to action -->
+		
+		<!-- Deals -->
+		<section class="content boxed grid2 noarrow">
+			<ul id="lightSliderDeals">
+				<li>
+					<!-- Item -->
+					<article class="full-width hentry">
+						<figure class="one-half heightfix"><a href="yacht-single.html"><img src="assets/uploads/img.jpg" alt="deal" /></a></figure>
+						<div class="one-half heightfix">
+							<header>Our Exclusive Deals</header>
+							<div class="text">
+								<h3><a href="yacht-single.html">Elan 1923 Impression</a></h3>
+								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam aliquip ex ea commodoerat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper.</p>
+								
+								<div class="details">
+									<div>
+										<span class="icojam_location_1"></span>
+										<p>Base: Marina Kaštela</p>
 									</div>
-									<p>Televisão</p>
-								</div>							
-							</a>
-						</li>
-						<li>
-							<a href="<?php echo site_url('imprensa/radio'); ?>">
-								<div class="icone-imprensa">
-									<i class="fa fa-volume-up"></i>
+									<div>
+										<span class="icojam_friends"></span>
+										<p>Berths: 10 (8+2)</p>
+									</div>
+									<div class="price">$ 5300,00</div>
+									<div><a href="yacht-single.html" title="Book now" class="button gold full medium solid">Book now</a> </div>
 								</div>
-								<p>Rádio</p>
-							</a>
-						</li>
-						<li>
-							<a href="<?php echo site_url('imprensa/jornais-e-revistas'); ?>">
-								<div class="icone-imprensa">
-									<i class="fa fa-newspaper-o"></i>
+							</div>
+						</div>
+					</article>
+					<!-- //Item -->
+				</li>
+				<li>
+					<!-- Item -->
+					<article class="full-width hentry">
+						<figure class="one-half heightfix"><a href="yacht-single.html"><img src="assets/uploads/img.jpg" alt="deal" /></a></figure>
+						<div class="one-half heightfix">
+							<header>Our Exclusive Deals</header>
+							<div class="text">
+								<h3><a href="yacht-single.html">Elan 1923 Impression</a></h3>
+								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam aliquip ex ea commodoerat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper.</p>
+								
+								<div class="details">
+									<div>
+										<span class="icojam_location_1"></span>
+										<p>Base: Marina Kaštela</p>
+									</div>
+									<div>
+										<span class="icojam_friends"></span>
+										<p>Berths: 10 (8+2)</p>
+									</div>
+									<div class="price">$ 5300,00</div>
+									<div><a href="yacht-single.html" title="Book now" class="button gold full medium solid">Book now</a> </div>
 								</div>
-								<p>Jornais e Revistas</p>
-							</a>
-						</li>
-						<li>
-							<a href="<?php echo site_url('imprensa/internet'); ?>">
-								<div class="icone-imprensa">
-									<i class="fa fa-globe"></i>
+							</div>
+						</div>
+					</article>
+					<!-- //Item -->
+				</li>
+				<li>
+					<!-- Item -->
+					<article class="full-width hentry">
+						<figure class="one-half heightfix"><a href="yacht-single.html"><img src="assets/uploads/img.jpg" alt="deal" /></a></figure>
+						<div class="one-half heightfix">
+							<header>Our Exclusive Deals</header>
+							<div class="text">
+								<h3><a href="yacht-single.html">Elan 1923 Impression</a></h3>
+								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam aliquip ex ea commodoerat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper.</p>
+								
+								<div class="details">
+									<div>
+										<span class="icojam_location_1"></span>
+										<p>Base: Marina Kaštela</p>
+									</div>
+									<div>
+										<span class="icojam_friends"></span>
+										<p>Berths: 10 (8+2)</p>
+									</div>
+									<div class="price">$ 5300,00</div>
+									<div><a href="yacht-single.html" title="Book now" class="button gold full medium solid">Book now</a> </div>
 								</div>
-								<p>Internet</p>
-							</a>
-						</li>
-						<li>
-							<a href="<?php echo site_url('imprensa/release'); ?>">
-								<div class="icone-imprensa">
-									<i class="fa fa-file-text-o"></i>
-								</div>
-								<p>Release</p>
-							</a>
-						</li>
-						<li>
-							<a href="<?php echo site_url('imprensa/videos'); ?>">
-								<div class="icone-imprensa">
-									<i class="fa fa-play-circle-o"></i>
-								</div>
-								<p>Vídeos</p>
-							</a>
-						</li>
-					</ul>
+							</div>
+						</div>
+					</article>
+					<!-- //Item -->
+				</li>
+			</ul>
+		</section>
+		<!-- //Deals -->
+		
+		<!-- Testimonials -->
+		<section class="testimonials">
+			<div class="wrap center">
+				<h6>WOW – This is the Best Theme I have ever seen.</h6>
+				<p>“Excellent - you found the right boat in the right place at the right time,<br /> and managed to change the dates for our convenience - brilliant!” </p>
+				<p>- Johnatan Davidson</p>
+			</div>
+		</section>
+		<!-- //Testimonials -->
+		
+		<!-- App -->
+		<section class="white app">
+			<div class="wrap center">
+				<h2>Download our mobile booking app</h2>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorperut commodo consequat. </p>
+				<ol class="custom triplets">
+					<li class="wow fadeIn"><strong>Find a yacht</strong><br />Lorem ipsum dolor sit consectetuer adipiscing elit, sed diam nonummy nibh amet .</li>
+					<li class="wow fadeIn" data-wow-delay=".2s"><strong>Make a booking</strong><br />Lorem ipsum dolor sit consectetuer adipiscing elit, sed diam nonummy nibh amet .</li>
+					<li class="wow fadeIn" data-wow-delay=".4s"><strong>Brag to your friends</strong><br />Lorem ipsum dolor sit consectetuer adipiscing elit, sed diam nonummy nibh amet .</li>
+				</ol>
+			</div>
+		</section>
+		<!-- //App -->
+		
+		<!-- Photo -->
+		<section class="photo">
+			<div class="wrap center">
+				<h2>Find out more about our sailing destinations, marinas and suggested itineraries</h2>
+				<p>Wild, exotic and remote; cosmopolitan and cutting-edge; untouched and tranquil, <br />discover our incredible sailing destinations. <br />See the world. Differently.</p>
+				<a href="destinations.html" title="Find out more" class="button white medium">Find out more</a>
+			</div>
+		</section>
+		<!-- //Photo -->
+		
+		<!-- Services -->
+		<section class="white icons">
+			<div class="wrap">
+				<div class="row">
+					<!-- Item -->
+					<div class="one-fourth wow fadeIn">
+						<a href="#" class="circle large border">
+							<span class="icojam_compas_2"></span>
+						</a>
+						<h4><a href="#">Our sailing destinations</a></h4>
+						<p>Lorem ipsum dolor sit amet, sectetuer adipiscing elit, sed diam nonumy nib.</p>
+					</div>
+					<!-- //Item -->
 					
+					<!-- Item -->
+					<div class="one-fourth wow fadeIn" data-wow-delay=".2s">
+						<a href="#" class="circle large border">
+							<span class="icojam_map_3"></span>
+						</a>
+						<h4><a href="#">Where to sail guide</a></h4>
+						<p>Lorem ipsum dolor sit amet, sectetuer adipiscing elit, sed diam nonumy nib.</p>
+					</div>
+					<!-- //Item -->
+					
+					<!-- Item -->
+					<div class="one-fourth wow fadeIn" data-wow-delay=".4s">
+						<a href="#" class="circle large border">
+							<span class="icojam_tags_1"></span>
+						</a>
+						<h4><a href="#">Our yachts and pricing</a></h4>
+						<p>Lorem ipsum dolor sit amet, sectetuer adipiscing elit, sed diam nonumy nib.</p>
+					</div>
+					<!-- //Item -->
+					
+					<!-- Item -->
+					<div class="one-fourth wow fadeIn" data-wow-delay=".6s">
+						<a href="#" class="circle large border">
+							<span class="icojam_pupil_boy"></span>
+						</a>
+						<h4><a href="#">New to sailing?</a></h4>
+						<p>Lorem ipsum dolor sit amet, sectetuer adipiscing elit, sed diam nonumy nib.</p>
+					</div>
+					<!-- //Item -->
+					
+					<!-- Item -->
+					<div class="one-fourth wow fadeIn">
+						<a href="#" class="circle large border">
+							<span class="icojam_anchor"></span>
+						</a>
+						<h4><a href="#">Sail with a skipper</a></h4>
+						<p>Lorem ipsum dolor sit amet, sectetuer adipiscing elit, sed diam nonumy nib.</p>
+					</div>
+					<!-- //Item -->
+					
+					<!-- Item -->
+					<div class="one-fourth wow fadeIn" data-wow-delay=".2s">
+						<a href="#" class="circle large border">
+							<span class="icojam_certificate"></span>
+						</a>
+						<h4><a href="#">Skipper training</a></h4>
+						<p>Lorem ipsum dolor sit amet, sectetuer adipiscing elit, sed diam nonumy nib.</p>
+					</div>
+					<!-- //Item -->
+					
+					<!-- Item -->
+					<div class="one-fourth wow fadeIn" data-wow-delay=".4s">
+						<a href="#" class="circle large border">
+							<span class="icojam_holliday"></span>
+						</a>
+						<h4><a href="#">Beach club</a></h4>
+						<p>Lorem ipsum dolor sit amet, sectetuer adipiscing elit, sed diam nonumy nib.</p>
+					</div>
+					<!-- //Item -->
+					
+					<!-- Item -->
+					<div class="one-fourth wow fadeIn" data-wow-delay=".6s">
+						<a href="#" class="circle large border">
+							<span class="icojam_airdrop"></span>
+						</a>
+						<h4><a href="#">Flotilla sailing</a></h4>
+						<p>Lorem ipsum dolor sit amet, sectetuer adipiscing elit, sed diam nonumy nib.</p>
+					</div>
+					<!-- //Item -->
 				</div>
 			</div>
-		</div>
-	</div>
-</section>
-<section id="doutora-destaque">
-	<div class="col-md-6 conteudo doutora">
-		<div class="photo">
-			<img src="assets/images/home/flavia-imprensa.png">
-		</div>
-		<div class="text">
-			<h3>Dra. Flávia Fairbanks</h3>
-			<p>Dra. Flávia Fairbanks-Formada pela Faculdade de Medicina da USP em 1998;-Residência Médica em Ginecologia e Obstetrícia no Hospital das Clínicas da FMUSP de 1999</p>
-			<a href="<?php echo site_url('dra-fairbanks'); ?>" class="main-button button">Saiba Mais</a>
-		</div>
-	</div>
-	<div class="col-md-6 conteudo destaque">
-		<div class="text">
-			<h3>Mitos e Verdades</h3>
-			<p>Confira os principais mitos e verdades sobre a saúde feminina.</p>
-			<a href="<?php echo site_url('mitos-verdades') ?>" class="main-button button">Saiba Mais</a>
-		</div>
-	</div>
-</section>
-
-
-<section id="noticias">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12 titulo">
-				<img src="assets/images/home/florzinha.png"/>
-				<h2>Notícias</h2>
+		</section>
+		<!-- //Services -->
+		
+		
+		<!-- Call to action -->
+		<section class="cta grey">
+			<div class="wrap">
+				<a href="http://themeforest.net/user/themeenergy/portfolio" title="I am convinced" class="button white medium right">I am convinced</a>
+				<h3>Another call to action section, just in case you have something to add.</h3>
 			</div>
-			<div class="col-md-12">
-				<?php
-					if($all_news){
-						foreach ($all_news as $key => $item) {
-							if($key == 0){
-				?>
-								<div class="col-md-4 noticia em-pe">
-									<a href="<?php echo site_url('noticias/detalhe/'.$item->slug); ?>">
-										<div class="bloco">
-											<img src="<?php echo site_url('userfiles/noticias/'.$item->imagem); ?>">
-											<div class="texto">
-												<h4><?php echo $item->titulo; ?></h4>
-												<p><?php echo $item->resumo; ?></p>
-												<span><?php echo $item->data_noticia_f ?></span>
-											</div>
-										</div>										
-									</a>
+		</section>
+		<!-- //Call to action -->
+		
+		<!-- Blog posts -->
+		<section class="content boxed grid2">
+			<ul id="lightSliderPosts">
+				<li>
+					<!-- Item -->
+					<article class="full-width hentry">
+						<figure class="one-half heightfix"><a href="blog-single.html"><img src="assets/uploads/img.jpg" alt="post" /></a></figure>
+						<div class="one-half heightfix">
+							<div class="text">
+								<h3><a href="blog-single.html">Win an All Inclusive Sailing Holiday in Mediterranean!</a></h3>
+								<div class="meta">
+									<span>By <a href="#">admin</a></span>  
+									<span>May 23rd, 2016</span>   
+									<span><a href="blog-single.html#comments">2 Comments</a></span>  
 								</div>
-				<?php
-							}else if ($key == 1){
-				?>
-								<div class="col-md-8 noticia">
-									<a href="<?php echo site_url('noticias/detalhe/'.$item->slug); ?>">
-										<div class="bloco">
-											<img src="<?php echo site_url('userfiles/noticias/'.$item->imagem); ?>">
-											<div class="texto">
-												<h4><?php echo $item->titulo; ?></h4>
-												<p><?php echo $item->resumo; ?></p>
-												<span><?php echo $item->data_noticia_f ?></span>
-											</div>
-										</div>
-									</a>
+								<p>This year’s Taiwan International Boat Show was a huge success. Taken place from May 8 to 11, the event was attended by more than 70,000 visitors.</p>
+								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in </p>
+								<a href="blog-single.html" class="button small gold" title="Read more">Read more</a>
+							</div>
+						</div>
+					</article>
+					<!-- //Item -->
+				</li>
+				<li>
+					<!-- Item -->
+					<article class="full-width hentry">
+						<figure class="one-half heightfix"><a href="blog-single.html"><img src="assets/uploads/img.jpg" alt="post" /></a></figure>
+						<div class="one-half heightfix">
+							<div class="text">
+								<h3><a href="blog-single.html">Luxury Heart of Gold joins<br />our charter fleet</a></h3>
+								<div class="meta">
+									<span>By <a href="#">admin</a></span>  
+									<span>May 23rd, 2016</span>   
+									<span><a href="blog-single.html#comments">2 Comments</a></span>  
 								</div>
-				<?php
-							}else if ($key  == 2){
-				?>
-								<div class="col-md-8 noticia invertida">
-									<a href="<?php echo site_url('noticias/detalhe/'.$item->slug); ?>">
-										<div class="bloco">
-											<img src="<?php echo site_url('userfiles/noticias/'.$item->imagem); ?>">
-											<div class="texto">
-												<h4><?php echo $item->titulo; ?></h4>
-												<p><?php echo $item->resumo; ?></p>
-												<span><?php echo $item->data_noticia_f ?></span>
-											</div>
-										</div>
-									</a>
+								<p>This year’s Taiwan International Boat Show was a huge success. Taken place from May 8 to 11, the event was attended by more than 70,000 visitors.</p>
+								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in </p>
+								<a href="blog-single.html" class="button small gold" title="Read more">Read more</a>
+							</div>
+						</div>
+					</article>
+					<!-- //Item -->
+				</li>
+				
+				<li>
+					<!-- Item -->
+					<article class="full-width hentry">
+						<figure class="one-half heightfix"><a href="blog-single.html"><img src="assets/uploads/img.jpg" alt="post" /></a></figure>
+						<div class="one-half heightfix">
+							<div class="text">
+								<h3><a href="blog-single.html">Awarded Outstanding Sailing School and Outstanding Instructor Award</a></h3>
+								<div class="meta">
+									<span>By <a href="#">admin</a></span>  
+									<span>May 23rd, 2016</span>   
+									<span><a href="blog-single.html#comments">2 Comments</a></span>  
 								</div>
-				<?php
-							}
-						}
-					}
-				?>
+								<p>This year’s Taiwan International Boat Show was a huge success. Taken place from May 8 to 11, the event was attended by more than 70,000 visitors.</p>
+								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in </p>
+								<a href="blog-single.html" class="button small gold" title="Read more">Read more</a>
+							</div>
+						</div>
+					</article>
+					<!-- //Item -->
+				</li>
+			</ul>
+		</section>
+		<!-- //Blog posts -->
+		
+		<!-- Call to action -->
+		<section class="cta gold">
+			<div class="wrap center">
+				<h2>I am sold. This is outstanding.</h2>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorperut commodo consequat. </p>
+				<a href="http://themeforest.net/user/themeenergy/portfolio" title="Buy this now" class="button white medium">Buy this now</a>
 			</div>
+		</section>
+		<!-- //Call to action -->
+		
+		<!-- Yachts -->
+		<div class="results">
+			<!-- Item -->
+			<figure class="one-fourth item">
+				<img src="assets/uploads/img.jpg" alt="" />
+				<figcaption>
+					<dl>
+						<dt>Elan 1923 Impression</dt>
+						<dd><span class="icojam_doublebed"></span> 10 berths</dd>
+						<dd><span class="icojam_toilet_paper"></span> 2 toilets</dd>
+					</dl>
+					<div class="price">Price from  <strong>50.000$</strong></div>
+					<a href="yacht-single.html" title="Book now" class="button small gold">Book now</a>
+				</figcaption>
+			</figure>
+			<!-- //Item -->
+			
+			<!-- Item -->
+			<figure class="one-fourth item">
+				<img src="assets/uploads/img.jpg" alt="" />
+				<figcaption>
+					<dl>
+						<dt>Elan 1923 Impression</dt>
+						<dd><span class="icojam_doublebed"></span> 10 berths</dd>
+						<dd><span class="icojam_toilet_paper"></span> 2 toilets</dd>
+					</dl>
+					<div class="price">Price from  <strong>50.000$</strong></div>
+					<a href="yacht-single.html" title="Book now" class="button small gold">Book now</a>
+				</figcaption>
+			</figure>
+			<!-- //Item -->
+			
+			<!-- Item -->
+			<figure class="one-fourth item">
+				<img src="assets/uploads/img.jpg" alt="" />
+				<figcaption>
+					<dl>
+						<dt>Elan 1923 Impression</dt>
+						<dd><span class="icojam_doublebed"></span> 10 berths</dd>
+						<dd><span class="icojam_toilet_paper"></span> 2 toilets</dd>
+					</dl>
+					<div class="price">Price from  <strong>50.000$</strong></div>
+					<a href="yacht-single.html" title="Book now" class="button small gold">Book now</a>
+				</figcaption>
+			</figure>
+			<!-- //Item -->
+			
+			<!-- Item -->
+			<figure class="one-fourth item">
+				<img src="assets/uploads/img.jpg" alt="" />
+				<figcaption>
+					<dl>
+						<dt>Elan 1923 Impression</dt>
+						<dd><span class="icojam_doublebed"></span> 10 berths</dd>
+						<dd><span class="icojam_toilet_paper"></span> 2 toilets</dd>
+					</dl>
+					<div class="price">Price from  <strong>50.000$</strong></div>
+					<a href="yacht-single.html" title="Book now" class="button small gold">Book now</a>
+				</figcaption>
+			</figure>
+			<!-- //Item -->
+			
+			<!-- Item -->
+			<figure class="one-fourth item">
+				<img src="assets/uploads/img.jpg" alt="" />
+				<figcaption>
+					<dl>
+						<dt>Elan 1923 Impression</dt>
+						<dd><span class="icojam_doublebed"></span> 10 berths</dd>
+						<dd><span class="icojam_toilet_paper"></span> 2 toilets</dd>
+					</dl>
+					<div class="price">Price from  <strong>50.000$</strong></div>
+					<a href="yacht-single.html" title="Book now" class="button small gold">Book now</a>
+				</figcaption>
+			</figure>
+			<!-- //Item -->
+			
+			<!-- Item -->
+			<figure class="one-fourth item">
+				<img src="assets/uploads/img.jpg" alt="" />
+				<figcaption>
+					<dl>
+						<dt>Elan 1923 Impression</dt>
+						<dd><span class="icojam_doublebed"></span> 10 berths</dd>
+						<dd><span class="icojam_toilet_paper"></span> 2 toilets</dd>
+					</dl>
+					<div class="price">Price from  <strong>50.000$</strong></div>
+					<a href="yacht-single.html" title="Book now" class="button small gold">Book now</a>
+				</figcaption>
+			</figure>
+			<!-- //Item -->
+			
+			<!-- Item -->
+			<figure class="one-fourth item">
+				<img src="assets/uploads/img.jpg" alt="" />
+				<figcaption>
+					<dl>
+						<dt>Elan 1923 Impression</dt>
+						<dd><span class="icojam_doublebed"></span> 10 berths</dd>
+						<dd><span class="icojam_toilet_paper"></span> 2 toilets</dd>
+					</dl>
+					<div class="price">Price from  <strong>50.000$</strong></div>
+					<a href="yacht-single.html" title="Book now" class="button small gold">Book now</a>
+				</figcaption>
+			</figure>
+			<!-- //Item -->
+			
+			<!-- Item -->
+			<figure class="one-fourth item">
+				<img src="assets/uploads/img.jpg" alt="" />
+				<figcaption>
+					<dl>
+						<dt>Elan 1923 Impression</dt>
+						<dd><span class="icojam_doublebed"></span> 10 berths</dd>
+						<dd><span class="icojam_toilet_paper"></span> 2 toilets</dd>
+					</dl>
+					<div class="price">Price from  <strong>50.000$</strong></div>
+					<a href="yacht-single.html" title="Book now" class="button small gold">Book now</a>
+				</figcaption>
+			</figure>
+			<!-- //Item -->
+			
+			<!-- Item -->
+			<figure class="one-fourth item">
+				<img src="assets/uploads/img.jpg" alt="" />
+				<figcaption>
+					<dl>
+						<dt>Elan 1923 Impression</dt>
+						<dd><span class="icojam_doublebed"></span> 10 berths</dd>
+						<dd><span class="icojam_toilet_paper"></span> 2 toilets</dd>
+					</dl>
+					<div class="price">Price from  <strong>50.000$</strong></div>
+					<a href="yacht-single.html" title="Book now" class="button small gold">Book now</a>
+				</figcaption>
+			</figure>
+			<!-- //Item -->
+			
+			<!-- Item -->
+			<figure class="one-fourth item">
+				<img src="assets/uploads/img.jpg" alt="" />
+				<figcaption>
+					<dl>
+						<dt>Elan 1923 Impression</dt>
+						<dd><span class="icojam_doublebed"></span> 10 berths</dd>
+						<dd><span class="icojam_toilet_paper"></span> 2 toilets</dd>
+					</dl>
+					<div class="price">Price from  <strong>50.000$</strong></div>
+					<a href="yacht-single.html" title="Book now" class="button small gold">Book now</a>
+				</figcaption>
+			</figure>
+			<!-- //Item -->
+			
+			<!-- Item -->
+			<figure class="one-fourth item">
+				<img src="assets/uploads/img.jpg" alt="" />
+				<figcaption>
+					<dl>
+						<dt>Elan 1923 Impression</dt>
+						<dd><span class="icojam_doublebed"></span> 10 berths</dd>
+						<dd><span class="icojam_toilet_paper"></span> 2 toilets</dd>
+					</dl>
+					<div class="price">Price from  <strong>50.000$</strong></div>
+					<a href="yacht-single.html" title="Book now" class="button small gold">Book now</a>
+				</figcaption>
+			</figure>
+			<!-- //Item -->
+			
+			<!-- Item -->
+			<figure class="one-fourth item">
+				<img src="assets/uploads/img.jpg" alt="" />
+				<figcaption>
+					<dl>
+						<dt>Elan 1923 Impression</dt>
+						<dd><span class="icojam_doublebed"></span> 10 berths</dd>
+						<dd><span class="icojam_toilet_paper"></span> 2 toilets</dd>
+					</dl>
+					<div class="price">Price from  <strong>50.000$</strong></div>
+					<a href="yacht-single.html" title="Book now" class="button small gold">Book now</a>
+				</figcaption>
+			</figure>
+			<!-- //Item -->
 		</div>
-		<div class="row button-more">
-			<a href="<?php echo site_url('noticias'); ?>" class="main-button button green">Mais Notícias</a>
-		</div>
-	</div>
-</section>
-<section id="fale-mapa">
-	<div class="col-md-6 conteudo fale">
-		<div class="text">
-			<h3>Newsletter</h3>
-			<form action="<?php echo site_url('contato/newsletter'); ?>" method="POST">
-				<input type="text" name="email" id="email" placeholder="E-mail" />
-				<input type="submit" name="submit" id="form-contato-newsletter" class="main-button button" value="Enviar"/>
-			</form>
-			<div class="msg"></div>
-		</div>
-	</div>
-	<div class="col-md-6 conteudo mapa map" id="map"></div>
-</section>
-<script src="http://maps.google.com/maps/api/js?key=AIzaSyAFEqzwGpSdxi5mDvpqh5lda6K8Xedq4DI&sensor=false"></script>
-<script type="text/javascript">
-	(function($) {
-	    "use strict";
-	    var locations = [
-	        ['<div class="infobox"><h4 class="title">FemCare</h4><p><span>Rua Mário Amaral, 319 | Paraíso - São Paulo-SP</span><br>(11) 3885-3937 / (11) 3885-4194</p></div></div></div>', -23.5731996, -46.6507991, 2]
-	    ];
-
-	    var map = new google.maps.Map(document.getElementById('map'), {
-	        zoom: 15,
-	        scrollwheel: false,
-	        navigationControl: true,
-	        mapTypeControl: false,
-	        scaleControl: false,
-	        draggable: true,
-	        center: new google.maps.LatLng(-23.5731996, -46.6507991),
-	        mapTypeId: google.maps.MapTypeId.ROADMAP
-	    });
-
-	    var infowindow = new google.maps.InfoWindow();
-
-	    var marker, i;
-
-	    for (i = 0; i < locations.length; i++) {  
-
-	        marker = new google.maps.Marker({ 
-	            position: new google.maps.LatLng(locations[i][1], locations[i][2]), 
-	            map: map ,
-	            icon: 'assets/images/icons/marker-green.png'
-	        });
-
-
-	        google.maps.event.addListener(marker, 'click', (function(marker, i) {
-	            return function() {
-	                infowindow.setContent(locations[i][0]);
-	                infowindow.open(map, marker);
-	            }
-	        })(marker, i));
-	    }
-	})(jQuery);
-</script>
+		<!-- //Yachts -->
+	</main>
+	<!-- //Main -->

@@ -1,220 +1,369 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<?php if (!empty($title) && $title != ''): ?>
-			<title><?php echo $title ?></title>
-		<?php else: ?>
-			<title>FemCare</title>
-		<?php endif ?>
-		
-		<meta name="viewport" content="width=device-width">
+<html lang="en">
+   <head>
+    <meta charset="utf-8">
+    <base href="<?php echo site_url(); ?>">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Sailor - Yacht Charter Booking HTML Template" />
+    
+    <?php if (!empty($description) && $description != ''): ?>
+        <meta name="description" content="<?= $description ?>">
+    <?php else: ?>
+        <meta name="description" content="Sailor - Yacht Charter Booking HTML Template" /> 
+    <?php endif ?>
+    
+    <meta name="author" content="themeenergy.com">
+    
+    <?php if (!empty($title)): ?>
+        <title><?php echo $title ?></title>
+    <?php else: ?>
+        <title>Sailor - Home</title>
+    <?php endif ?>
+    
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/fonts.css" />
+    <link rel="stylesheet" href="assets/css/lightSlider.min.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
 
-		<?php if (!empty($description) && $description != ''): ?>
-			<meta name="description" content="<?= $description ?>">
-		<?php else: ?>
-			<meta name="description" content="FemCare - Clínica especializada na saúde da mulher. Tels.: (11) 3885-3937/(11) 3885-4194">
-		<?php endif ?>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700|Raleway:400,500,600,700&amp;subset=latin,greek,cyrillic,vietnamese' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="assets/images/favicon.ico" />
 
-		<meta name="keywords" content="saúde, mulher, ginecologia, endometriose, menstruação, miomas, sexualidade, libido, orgasmo, lubrificação, anorgasmia, obstetrícia, gestação, pré-natal, maternidade, parto, atendimento, feminina.">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- box-navy: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
 
-		<base href="<?php echo site_url(); ?>">
+  <body <?php echo $active == 'home' ? 'class="home"' : ''; ?>>
+        
+    <!-- Preloader -->
+    <div class="preloader">
+        <div>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <!-- //Preloader -->
+    
+    <!-- Header -->
+    <header class="header" role="banner">
+      <div class="wrap">
+          <!-- Logo -->
+          <a href="index.html" title="Sailor" class="logo"><span class="icojam_anchor"></span> Sailor</a>
+          <!-- //Logo -->
+          
+          <!-- Primary menu -->
+          <nav class="main-nav" role="navigation">
+              <ul class="jetmenu" id="jetmenu">
+                  <li><a href="javascript:void(0)" title="Book now" class="search-trigger">Book now</a></li>
+                  <li><a href="charters.html" title="Yacht Charter">Yacht Charter</a>
+                      <div class="megamenu full-width">
+                          <div class="wrap">
+                              <div class="row">
+                                  <div class="col one-fourth">
+                                      <a href="charters.html" title="Motor yachts">
+                                          <img src="assets/uploads/img.jpg" alt="" />
+                                          <span>Motor yachts</span>
+                                      </a>
+                                  </div>
+                                  
+                                  <div class="col one-fourth">
+                                      <a href="charters.html" title="Sailing yachts">
+                                          <img src="assets/uploads/img.jpg" alt="" />
+                                          <span>Sailing yachts</span>
+                                      </a>
+                                  </div>
+                                  
+                                  <div class="col one-fourth">
+                                      <a href="destinations.html" title="Destinations">
+                                          <img src="assets/uploads/img.jpg" alt="" />
+                                          <span>Destinations</span>
+                                      </a>
+                                  </div>
+                                  
+                                  <div class="col one-fourth">
+                                      <a href="sales.html" title="achts for sale">
+                                          <img src="assets/uploads/img.jpg" alt="" />
+                                          <span>Yachts for sale</span>
+                                      </a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </li>
+                  <li><a href="destinations.html" title="Sailing routes">Sailing routes</a>
+                      <ul class="dropdown">
+                          <li><a href="destinations.html" title="All destinations">All destinations</a></li>
+                          <li><a href="destinations-single.html" title="Destination single">Destination single</a></li>
+                          <li><a href="destinations-micro.html" title="Destination micro">Destination micro</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="services.html" title="Services">Services</a></li>
+                  <li><a href="blog.html" title="News">News</a>
+                      <ul class="dropdown">
+                          <li><a href="blog.html" title="Blog">Blog</a></li>
+                          <li><a href="blog2.html" title="Blog 2">Blog 2</a></li>
+                          <li><a href="blog3.html" title="Blog 3">Blog 3</a></li>
+                          <li><a href="blog-single.html" title="Single post">Single post</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="contact.html" title="Contact">Contact</a></li>
+                  <li><a href="#" title="">Pages</a>
+                      <div class="megamenu full-width">
+                          <div class="wrap">
+                              <div class="row">
+                                  <div class="col one-fourth">
+                                      <p>Static templates</p>
+                                      <ul>
+                                          <li><a href="page-left-sidebar.html" title="Page with left sidebar">Page with left sidebar</a></li>
+                                          <li><a href="page-right-sidebar.html" title="Page with right sidebar">Page with right sidebar</a></li>
+                                          <li><a href="page-both-sidebars.html" title="Page with both sidebars">Page with both sidebars</a></li>
+                                          <li><a href="page-no-sidebar.html" title="Page with no sidebars">Page with no sidebars</a></li>
+                                      </ul>
+                                  </div>
+                                  <div class="col one-fourth">
+                                      <p>Special pages</p>
+                                      <ul>
+                                          <li><a href="404.html" title="Error 404">Error 404</a></li>
+                                          <li><a href="login.html" title="Login">Login</a></li>
+                                          <li><a href="register.html" title="Register">Register</a></li>
+                                          <li><a href="account.html" title="My account">My account</a></li>
+                                      </ul>
+                                  </div>
+                                  <div class="col one-fourth">
+                                      <p>Corporate pages</p>
+                                      <ul>
+                                          <li><a href="crew.html" title="Crew">Crew</a></li>
+                                          <li><a href="services.html" title="Services">Services</a></li>
+                                          <li><a href="contact.html" title="Contact">Contact</a></li>
+                                          <li><a href="faq.html" title="Faq">Faq</a></li>
+                                      </ul>
+                                  </div>
+                                  <div class="col one-fourth">
+                                      <p>Special pages</p>
+                                      <ul>
+                                          <li><a href="charters.html" title="Charter yachts">Charter yachts</a></li>
+                                          <li><a href="yacht-single.html" title="Yacht info + booking">Yacht info + booking</a></li>
+                                          <li><a href="sales.html" title="Yachts for sale">Yachts for sale</a></li>
+                                          <li><a href="yacht-sale-single.html" title="Yacht sale info">Yacht for sale info</a></li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </li>
+                  <li><a href="http://themeforest.net/item/sailor-yacht-charter-booking-html-template/10868502?ref=themeenergy" title="Purchase">Purchase</a></li>
+              </ul>
+              
+              <!-- Search -->
+              <form class="advanced-search" action="charters.html">
+                  <div class="wrap">
+                      <div>
+                          <select>
+                              <option selected>Select location</option>
+                              <option>Caribbean</option>
+                              <option>Mediterranean</option>
+                              <option>Indian Ocean</option>
+                              <option>South Pacific</option>
+                              <option>South East Asia</option>
+                              <option>South America</option>
+                              <option>North America</option>
+                              <option>Northern Europe</option>
+                          </select>
+                      </div>
+                      <div>
+                          <input type="text" id="startDate" />
+                      </div>
+                      <div>
+                          <select>
+                              <option selected>Duration</option>
+                              <option>1 week</option>
+                              <option>2 weeks</option>
+                              <option>3 weeks</option>
+                              <option>4 weeks</option>
+                          </select>
+                      </div>
+                      <div>
+                          <select>
+                              <option selected>Cabins</option>
+                              <option>3 or less</option>
+                              <option>4 - 6</option>
+                              <option>6 or more</option>
+                          </select>
+                      </div>
+                      <div>
+                          <select>
+                              <option selected>Yacht type</option>
+                              <option>Motor yacht</option>
+                              <option>Sailing yacht</option>
+                          </select>
+                      </div>
+                      <div><input type="submit" id="as-submit" class="button gold full" value="Search yachts" /></div>
+                      <a href="javascript:void(0)" class="search-hide" title="Hide this box">Hide this box</a>
+                  </div>
+              </form>
+              <!-- //Search -->
+          </nav>
+          <!-- //Primary menu -->
+      </div>
+    </header>
+    <!-- //Header -->
 
-		<link rel="icon" type="image/png" href="assets/images/favicon.png">
-		
-		<!--build:css(app/) assets/css/main.min.css-->
-		<link rel="stylesheet" href="assets/css/main.css">
-		<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
-		<!--endbuild-->
-		<!--build:js(app/) assets/js/vendor/modernizr-2.6.2.min.js-->
-		<script src="assets/js/vendor/modernizr-2.6.2.min.js"></script>
+        <?= $partial ?>
 
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-		<script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-		<!--endbuild-->
-	</head>
+    <!-- Bottom Sidebar -->
+    <aside class="sidebar bottom white" role="complementary">
+        <!-- Wrapper -->
+        <div class="wrap">
+          <div class="row">
+            <h2>Have questions? Get in touch. </h2>
+            <!-- OneFourth -->
+            <div class="one-fourth">
+              <h5>Mediterranean base</h5>
+              <p><span class="circle small"><i class="fa fa-phone fa-fw"></i></span> + 385 91 555 555</p>
+              <p><span class="circle small"><i class="fa fa-envelope fa-fw"></i></span> <a href="mailto:mediterranean@office.com">mediterranean@office.com</a></p>
+            </div>
+            <!-- //OneFourth -->
+            
+            <!-- OneFourth -->
+            <div class="one-fourth">
+              <h5>South Pacific base</h5>
+              <p><span class="circle small"><i class="fa fa-phone"></i></span> + 021 1 555 555</p>
+              <p><span class="circle small"><i class="fa fa-envelope"></i></span> <a href="mailto:southpacific@office.com">southpacific@office.com</a></p>
+            </div>
+            <!-- //OneFourth -->
+            
+            <!-- OneFourth -->
+            <div class="one-fourth">
+              <h5>Caribbean base</h5>
+              <p><span class="circle small"><i class="fa fa-phone"></i></span> + 33 44 555 555</p>
+              <p><span class="circle small"><i class="fa fa-envelope"></i></span> <a href="mailto:caribbean@office.com">caribbean@office.com</a></p>
+            </div>
+            <!-- //OneFourth -->
+            
+            <!-- OneFourth -->
+            <div class="one-fourth">
+              <h5>USA base</h5>
+              <p><span class="circle small"><i class="fa fa-phone"></i></span> + 1 555 555 555</p>
+              <p><span class="circle small"><i class="fa fa-envelope"></i></span> <a href="mailto:unitedstates@office.com">unitedstates@office.com</a></p>
+            </div>
+            <!-- //OneFourth -->
+          </div>
+        </div>
+        <!-- //Wrapper -->
+    </aside>
+    <!-- //Bottom Sidebar -->
+      
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <!-- Wrapper -->
+        <div class="wrap">
+          <div class="row">
+            <!-- OneFourth -->
+            <div class="one-fourth">
+              <h6>About us</h6>
+              <p>Sailor theme ltd.<br />1211 Pensilvania Ave, Sacramento, CA</p>
+              <p> 1-555-555-555<br /><a href="mailto:sailor@sailortheme.com">sailor@sailortheme.com</a></p>
+            </div>
+            <!-- //OneFourth -->
+            
+            <!-- OneFourth -->
+            <div class="one-fourth">
+              <h6>Why book with us?</h6>
+              <ul class="check">
+                <li><a href="#">Secure booking</a></li>
+                <li><a href="#">Best price guarantee</a></li>
+                <li><a href="#">Passionate service</a></li>
+                <li><a href="#">Exclusive knowledge</a></li>
+                <li><a href="#">Benefits for partners</a></li>
+              </ul>
+            </div>
+            <!-- //OneFourth -->
+            
+            <!-- OneFourth -->
+            <div class="one-fourth">
+              <h6>Need help?</h6>
+              <ul>
+                <li><a href="#">Faq</a></li>
+                <li><a href="#">How do I make a reservation?</a></li>
+                <li><a href="#">Payment options</a></li>
+                <li><a href="#">Privacy policy</a></li>
+                <li><a href="#">Terms and conditions</a></li>
+              </ul>
+            </div>
+            <!-- //OneFourth -->
+            
+            <!-- OneFourth -->
+            <div class="one-fourth">
+              <h6>Follow us</h6>
+              <p>Lorem ipsum dolor sit amet, sectetuer adipiscing elit, sed diam nonummy  dolore magna aliquam erat volutpat. </p>
+              <a href="#" title="Facebook" class="circle"><i class="fa fa-facebook fa-fw"></i></a>
+              <a href="#" title="Google Plus" class="circle"><i class="fa fa-google-plus fa-fw"></i></a>
+              <a href="#" title="Twitter" class="circle"><i class="fa fa-twitter fa-fw"></i></a>
+              <a href="#" title="Youtube" class="circle"><i class="fa fa-youtube-play fa-fw"></i></a>
+              <a href="#" title="Linkedin" class="circle"><i class="fa fa-linkedin fa-fw"></i></a>
+              <a href="#" title="Pinterest" class="circle"><i class="fa fa-pinterest-p fa-fw"></i></a>
+            </div>
+            <!-- //OneFourth -->
+          </div>
+        </div>
+        <!-- //Wrapper -->
+        
+        <div class="copy">
+          <!-- Wrapper -->
+          <div class="wrap">
+            <p>Copyright 2016 Sailor, all rights reserved.</p>
+            <p>By <a href="http://www.themeenergy.com" title="www.themeenergy.com">themeenergy</a></p>
+          </div>
+          <!-- //Wrapper -->
+        </div>
+    </footer>
+    <!-- //Footer -->
 
-	<body>
-		<!--[if lt IE 8]>
-			<p class="chromeframe">Seu navegador é <strong>antigo</strong>. Por favor <a href="http://browsehappy.com/">atualize seu navegador</a> ou <a href="http://www.google.com/chromeframe/?redirect=true">ative o Google Chrome Frame</a> para visualizar o conteúdo corretamente.</p>
-		<![endif]-->
+    <!-- jQuery -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery-ui.min.js"></script>
+    <script src="assets/js/jetmenu.js"></script>
+    <script src="assets/js/jquery.uniform.min.js"></script>
+    <script src="assets/js/jquery.lightSlider.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script>
+       $(document).ready(function() {
+        $("#lightSliderPosts").lightSlider({
+          item:1,
+          keyPress:true,
+          gallery:false,
+          pager:false,
+          prevHtml: 'PREVIOUS',
+          nextHtml: 'NEXT'
+        });
+        
+        $("#lightSliderDeals").lightSlider({
+          item:1,
+          keyPress:true,
+          gallery:false,
+          pager:false,
+          prevHtml: 'PREVIOUS',
+          nextHtml: 'NEXT'
+        });
 
-		<header id="top">
-			<div class="menu grey">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-10 address">
-							<p>Rua Mário Amaral, 319 | Paraíso | São Paulo-SP | Tel/fax: (11) 3885-3937 / (11) 3885-4194</p>
-						</div>
-						<div class="col-md-2">
-							<div class="social-media-menu">
-								<a href="https://www.facebook.com/clinicafemcare/?fref=ts" target="_blank"><i class="fa fa-facebook-official"></i></a>
-								<a href="https://www.youtube.com/user/drafairbanks" target="_blank"><i class="fa fa-youtube-play"></i></a>
-								<a href="https://www.instagram.com/clinica_femcare/"><i class="fa fa-instagram"></i></a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="menu">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12">
-							<nav>
-								<div class="menu-logo">
-									<a href="<?php echo site_url('home'); ?>"><img src="assets/images/menu/logo.png"/></a>
-								</div>
-									
-								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav" aria-expanded="false">
-									<span class="text">Menu</span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-								</button>
-								
-								<div class="collapse navbar-collapse" id="main-nav">
-									<button type="button" class="navbar-toggle navbar-intern collapsed" data-toggle="collapse" data-target="#main-nav" aria-expanded="false">
-										<span class="text"><span class="fa fa-close"></span></span>
-									</button>
-
-									<ul>
-										<li><a href="<?php echo site_url('home'); ?>">Home</a></li>
-										<li><a href="<?php echo site_url('quem-somos'); ?>">A Clínica</a></li>
-										<li class="dropdown">
-											<a href="#" data-toggle="dropdown" data-toggle="dropdown">Ginecologia<span><i class="fa fa-chevron-down"></i></span></a>
-											<ul class="dropdown-menu" aria-labelledby="ginecologia">
-												<?php
-													if($menu_gineco){
-														foreach ($menu_gineco as $item) {
-												?>
-															<li><a href="<?php echo site_url('ginecologia/'.$item->slug); ?>"><?php echo $item->titulo; ?></a></li>
-												<?php
-														}
-													}
-												?>		
-											</ul>
-										</li>
-										<li class="dropdown">
-											<a href="#" data-toggle="dropdown" data-toggle="dropdown">Sexualidade<span><i class="fa fa-chevron-down"></i></span></a>
-											<ul class="dropdown-menu" aria-labelledby="sexualidade">
-												<?php
-													if($menu_sex){
-														foreach ($menu_sex as $item) {
-												?>
-															<li><a href="<?php echo site_url('sexualidade/'.$item->slug); ?>"><?php echo $item->titulo; ?></a></li>
-												<?php
-														}
-													}
-												?>		
-											</ul>
-										</li>
-										<li class="dropdown">
-											<a href="#" data-toggle="dropdown" data-toggle="dropdown">Obstetrícia<span><i class="fa fa-chevron-down"></i></span></a>
-											<ul class="dropdown-menu" aria-labelledby="obstetricia">
-												<?php
-													if($menu_obs){
-														foreach ($menu_obs as $item) {
-												?>
-															<li><a href="<?php echo site_url('obstetricia/'.$item->slug); ?>"><?php echo $item->titulo; ?></a></li>
-												<?php
-														}
-													}
-												?>		
-											</ul>
-										</li>
-										<li><a href="<?php echo site_url('mitos-verdades'); ?>">Mitos e Verdades</a></li>
-										<li class="dropdown">
-											<a href="#" data-toggle="dropdown" data-toggle="dropdown">Sala de Imprensa<span><i class="fa fa-chevron-down"></i></span></a>
-											<ul class="dropdown-menu" aria-labelledby="imprensa">
-												<?php
-													if($menu_imp){
-														foreach ($menu_imp as $item) {
-												?>
-															<li><a href="<?php echo site_url('imprensa/'.$item->slug); ?>"><?php echo $item->titulo; ?></a></li>
-												<?php
-														}
-													}
-												?>		
-											</ul>
-										</li>
-										<li><a href="<?php echo site_url('contato'); ?>">Contato</a></li>
-									</ul>
-								</div>									
-
-							</nav>
-						</div>
-					</div>
-				</div>
-			</div>
-		</header>
-
-		<?= $partial ?>
-
-		<div class="clearfix"></div>
-
-		<footer>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-4 sobre">
-						<img src="assets/images/menu/logo.png"/>
-						<div class="text">
-							<p>Clínica especializada na saúde da mulher.</p>
-							<p>Proporcionamos um atendimento eficiente através de profissionais experientes, oferecendo toda estrutura que a paciente merece.</p>
-						</div>
-						<a href="<?php echo site_url('quem-somos'); ?>" class="main-button button white">Saiba Mais</a>
-					</div>
-					<div class="col-md-3">
-						<h4>Onde Estamos</h4>
-						<p>Rua Mário Amaral, 319  Paraíso - São Paulo-SP</p>
-						<p>Telefone: (11) 3885-3937 / (11) 3885-4194</p>
-						<p>Email: contato@flaviafairbanks.com.br</p>
-					</div>
-					<div class="col-md-3">
-						<h4>Links</h4>
-						<ul>
-							<li><a href="<?php echo site_url('home') ?>">Home</a></li>
-							<li><a href="<?php echo site_url('quem-somos') ?>">A Clínica</a></li>
-							<li><a href="<?php echo site_url('ginecologia'); ?>">Ginecologia</a></li>
-							<li><a href="<?php echo site_url('sexualidade') ?>">Sexualidade</a></li>
-							<li><a href="<?php echo site_url('obstetricia') ?>">Obstetrícia</a></li>
-							<li><a href="<?php echo site_url('contato'); ?>">Contato</a></li>
-						</ul>
-					</div>
-					<div class="col-md-2">
-						<h4>Siga - Nos</h4>
-						<ul class="social-media-footer">
-							<li><a href="https://www.facebook.com/clinicafemcare/?fref=ts" target="_blank"><i class="fa fa-facebook-official"></i></a></li>
-							<li><a href="https://www.youtube.com/user/drafairbanks" target="_blank"><i class="fa fa-youtube-play"></i></a></li>
-							<li><a href="https://www.instagram.com/clinica_femcare/" target="_blank"><i class="fa fa-instagram"></i></a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</footer>
-		<a href="#top" class="to-top" id="to-top"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
-
-		<!--build:js(app/) assets/js/scripts.min.js-->
-		<script src="assets/js/plugins.js"></script>
-		<script src="assets/js/main.js"></script>
-		<script src="assets/js/vendor/facebook_stuff.js"></script>
-		<script src="assets/js/vendor/jquery.dotdotdot.min.js"></script>
-		<script src="assets/js/vendor/jquery.mCustomScrollbar.concat.min.js"></script>
-		<script src="assets/js/vendor/TimelineMax.min.js"></script>
-		<script src="assets/js/vendor/TweenMax.min.js"></script>
-		<script src="assets/js/vendor/jquery.superscrollorama.js"></script>
-		<!--endbuild-->
-		<!-- Latest compiled and minified JavaScript -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-		
-		<script>
-			var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-			(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-			g.src='//www.google-analytics.com/ga.js';
-			s.parentNode.insertBefore(g,s)}(document,'script'));
-		</script>	
-	</body>
+        
+        $(document).ready(function() {
+          $("#lightSliderMainBanner").lightSlider({
+            item: 1,
+            loop: true,
+            pager: false
+          });
+        });
+        
+        new WOW().init();
+      });
+    </script>
+  </body>
 </html>
