@@ -19,8 +19,8 @@ class Home extends CI_Controller {
         $this->load->helper('text');
 
         $this->data['active'] = 'home';
-        $this->data['title'] = 'Clínica Femcare – A saúde da mulher em primeiro lugar.';
-        $this->data['description'] = 'Clínica Femcare – A saúde da mulher em primeiro lugar.';
+        $this->data['title'] = 'Cimitarra';
+        $this->data['description'] = 'Cimitarra';
         
         $this->data['menu_gineco'] = $this->Ginecologia_m->get_ginecologias();
         $this->data['menu_sex'] = $this->Sexualidade_m->get_sexualidades();
