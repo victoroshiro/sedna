@@ -3,11 +3,8 @@
 
 		<?php if (!empty($banners)): ?>
 			<div id="lightSliderMainBanner" class="hero">
-				<?php foreach ($banners as $key => $item): ?>
-					<article>
-						<!-- <img src="<?php // echo site_url('userfiles/banners/'.$item->imagem); ?>" alt=""> -->
-						<!-- <img src="http://www.placehold.it/1500x700" class="main-content"> -->
-						<!-- <div class="video-wrapper">
+					<article>				
+						<div class="video-wrapper">
 							<iframe
 								autoplay="true"
 								class=""
@@ -17,10 +14,14 @@
 								allowfullscreen>
 							</iframe>
 						</div>
+					</article>
+				<?php foreach ($banners as $key => $item): ?>
+					<article>
+						<img src="<?php site_url('userfiles/banners/'.$item->imagem); ?>" alt="">
 						<div class="text-wrapper">
-							<h1 class="wow fadeInDown"><?php //echo $item->titulo; ?></h1>
-							<a class="anchor button white medium wow fadeInUp" href="<?php //echo (strstr($item->link,'http')) ? $item->link : site_url($item->link); ?>" <?php //echo 'target="'.$item->target_blank.'"'; ?>>
-								<?php //echo $item->resumo; ?>
+							<h1 class="wow fadeInDown"><?php echo $item->titulo; ?></h1>
+							<a class="anchor button white medium wow fadeInUp" href="<?php echo (strstr($item->link,'http')) ? $item->link : site_url($item->link); ?>" <?php echo 'target="'.$item->target_blank.'"'; ?>>
+								<?php echo $item->resumo; ?>
 							</a>
 						</div> -->
 					</article>
