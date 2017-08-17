@@ -247,7 +247,7 @@
         
         $(document).ready(function() {
           $("#lightSliderMainBanner").slick({
-            // item: 1,
+            adaptiveHeight: true
             // loop: true,
             // pager: false
           });

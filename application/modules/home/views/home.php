@@ -5,13 +5,35 @@
 			<div id="lightSliderMainBanner" class="hero">
 					<article>				
 						<div class="video-wrapper">
-							<iframe
-								autoplay="true"
-								class=""
-								src="https://www.youtube.com/embed/8zHdLF3-coA?ecver=1&autoplay=1&showinfo=0&controls=0"
-								frameborder="0"
-								allowfullscreen>
-							</iframe>
+							<div id="fullscreen-video"></div>
+							<script async src="https://www.youtube.com/iframe_api"></script>
+							<script>
+							 function onYouTubeIframeAPIReady() {
+							  var player;
+							  player = new YT.Player('fullscreen-video', {
+							    videoId: '8zHdLF3-coA', // YouTube Video ID
+							    width: '100%',          // Player width (in px)
+							    height: 650,            // Player height (in px)
+							    playerVars: {
+							      autoplay: 1,       // Auto-play the video on load
+							      controls: 0,       // Show pause/play buttons in player
+							      showinfo: 0,       // Hide the video title
+							      modestbranding: 1, // Hide the Youtube Logo
+							      loop: 1,           // Run the video in a loop
+							      fs: 0,             // Hide the full screen button
+							      cc_load_policy: 0, // Hide closed captions
+							      iv_load_policy: 3, // Hide the Video Annotations
+							      autohide: 0,       // Hide video controls when playing
+							      rel: 0			 // Hide suggested videos at end
+							    },
+							    events: {
+							      onReady: function() {
+							        player.mute()
+							      }
+							    }
+							  });
+							 }
+							</script>
 							<div class="text-wrapper">
 								<h1 class="wow fadeInDown">Título lorem ipsum</h1>
 								<a class="anchor button white medium wow fadeInUp" href="http//:google.com">
