@@ -8,11 +8,16 @@
 							<iframe
 								autoplay="true"
 								class=""
-								
 								src="https://www.youtube.com/embed/8zHdLF3-coA?ecver=1&autoplay=1&showinfo=0&controls=0"
 								frameborder="0"
 								allowfullscreen>
 							</iframe>
+							<div class="text-wrapper">
+								<h1 class="wow fadeInDown">Título lorem ipsum</h1>
+								<a class="anchor button white medium wow fadeInUp" href="http//:google.com">
+									Saiba Mais 
+								</a>
+							</div>
 						</div>
 					</article>
 				<?php foreach ($banners as $key => $item): ?>
@@ -23,7 +28,7 @@
 							<a class="anchor button white medium wow fadeInUp" href="<?php echo (strstr($item->link,'http')) ? $item->link : site_url($item->link); ?>" <?php echo 'target="'.$item->target_blank.'"'; ?>>
 								<?php echo $item->resumo; ?>
 							</a>
-						</div> -->
+						</div>
 					</article>
 				<?php endforeach ?>	
 			</div>
@@ -129,7 +134,7 @@
 					<dl>
 						<dt>Elan 1923 Impression</dt>
 					</dl>
-					<div class="price">Price from  <strong>50.000$</strong></div>
+					<div class="price">R$ <strong>50000</strong></div>
 					<a href="yacht-single.html" title="Saiba Mais" class="button small gold">Saiba Mais</a>
 				</figcaption>
 			</figure>
@@ -142,7 +147,7 @@
 					<dl>
 						<dt>Elan 1923 Impression</dt>
 					</dl>
-					<div class="price">Price from  <strong>50.000$</strong></div>
+					<div class="price">R$ <strong>50000</strong></div>
 					<a href="yacht-single.html" title="Saiba Mais" class="button small gold">Saiba Mais</a>
 				</figcaption>
 			</figure>
@@ -155,7 +160,7 @@
 					<dl>
 						<dt>Elan 1923 Impression</dt>
 					</dl>
-					<div class="price">Price from  <strong>50.000$</strong></div>
+					<div class="price">R$ <strong>50000</strong></div>
 					<a href="yacht-single.html" title="Saiba Mais" class="button small gold">Saiba Mais</a>
 				</figcaption>
 			</figure>
@@ -168,7 +173,7 @@
 					<dl>
 						<dt>Elan 1923 Impression</dt>
 					</dl>
-					<div class="price">Price from  <strong>50.000$</strong></div>
+					<div class="price">R$ <strong>50000</strong></div>
 					<a href="yacht-single.html" title="Saiba Mais" class="button small gold">Saiba Mais</a>
 				</figcaption>
 			</figure>
@@ -177,8 +182,8 @@
 		<!-- //Yachts -->
 
 		<div class="wrap center">
-			<div class="full-width text-center">
-				<a href="" class="button white medium">Ver mais seminovos</a>
+			<div class="full-width text-center margin-top-md">
+				<a href="" class="button grey medium">Ver mais seminovos</a>
 			</div>
 		</div>
 

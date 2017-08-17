@@ -6,18 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="Sailor - Yacht Charter Booking HTML Template" />
     
-    <?php if (!empty($description) && $description != ''): ?>
+    <?php if (!empty($description)): ?>
         <meta name="description" content="<?= $description ?>">
     <?php else: ?>
         <meta name="description" content="Sailor - Yacht Charter Booking HTML Template" /> 
     <?php endif ?>
     
-    <meta name="author" content="themeenergy.com">
-    
     <?php if (!empty($title)): ?>
         <title><?php echo $title ?></title>
     <?php else: ?>
-        <title>Sailor - Home</title>
+        <title>Cimitarra Yachts - Home</title>
     <?php endif ?>
     
     <link rel="stylesheet" href="assets/css/style.css" />
@@ -195,11 +193,8 @@
               <h6>Follow us</h6>
               <p>Lorem ipsum dolor sit amet, sectetuer adipiscing elit, sed diam nonummy  dolore magna aliquam erat volutpat. </p>
               <a href="#" title="Facebook" class="circle"><i class="fa fa-facebook fa-fw"></i></a>
-              <a href="#" title="Google Plus" class="circle"><i class="fa fa-google-plus fa-fw"></i></a>
-              <a href="#" title="Twitter" class="circle"><i class="fa fa-twitter fa-fw"></i></a>
               <a href="#" title="Youtube" class="circle"><i class="fa fa-youtube-play fa-fw"></i></a>
-              <a href="#" title="Linkedin" class="circle"><i class="fa fa-linkedin fa-fw"></i></a>
-              <a href="#" title="Pinterest" class="circle"><i class="fa fa-pinterest-p fa-fw"></i></a>
+              <a href="#" title="Linkedin" class="circle"><i class="fa fa-instagram fa-fw"></i></a>
             </div>
             <!-- //OneFourth -->
           </div>
@@ -225,6 +220,10 @@
     <script src="assets/js/jquery.lightSlider.min.js"></script>
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/scripts.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+      
     <script>
        $(document).ready(function() {
         $("#lightSliderPosts").lightSlider({
@@ -247,10 +246,10 @@
 
         
         $(document).ready(function() {
-          $("#lightSliderMainBanner").lightSlider({
-            item: 1,
-            loop: true,
-            pager: false
+          $("#lightSliderMainBanner").slick({
+            // item: 1,
+            // loop: true,
+            // pager: false
           });
         });
         
