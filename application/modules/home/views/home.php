@@ -1,60 +1,75 @@
+	<script async src="https://www.youtube.com/iframe_api"></script>
 <!-- Main -->
 	<main class="main" role="main">
 
 		<?php if (!empty($banners)): ?>
 			<div id="lightSliderMainBanner" class="hero">
-					<article>				
-						<div class="video-wrapper">
-							<div id="fullscreen-video"></div>
-							<script async src="https://www.youtube.com/iframe_api"></script>
-							<script>
-							 function onYouTubeIframeAPIReady() {
-							  var player;
-							  player = new YT.Player('fullscreen-video', {
-							    videoId: '8zHdLF3-coA', // YouTube Video ID
-							    width: '100%',          // Player width (in px)
-							    height: 650,            // Player height (in px)
-							    playerVars: {
-							      autoplay: 1,       // Auto-play the video on load
-							      controls: 0,       // Show pause/play buttons in player
-							      showinfo: 0,       // Hide the video title
-							      modestbranding: 1, // Hide the Youtube Logo
-							      loop: 1,           // Run the video in a loop
-							      fs: 0,             // Hide the full screen button
-							      cc_load_policy: 0, // Hide closed captions
-							      iv_load_policy: 3, // Hide the Video Annotations
-							      autohide: 0,       // Hide video controls when playing
-							      rel: 0			 // Hide suggested videos at end
-							    },
-							    events: {
-							      onReady: function() {
-							        player.mute()
-							      }
-							    }
-							  });
-							 }
-							</script>
+				<?php foreach ($banners as $key => $item): ?>
+					<?php if ($item->video_banner == 1): ?>
+						<article>
+							<div class="video-wrapper">
+								<div id="fullscreen-video-<?php echo $item->video_id ?>"></div>
+								<div class="text-wrapper">
+									<h1 class="wow fadeInDown"><?php echo $item->titulo; ?></h1>
+									<a class="anchor button white medium wow fadeInUp" href="<?php echo (strstr($item->link,'http')) ? $item->link : site_url($item->link); ?>" <?php echo 'target="'.$item->target_blank.'"'; ?>>
+										<?php echo $item->resumo; ?>
+									</a>
+								</div>
+							</div>
+						</article>
+					<?php else: ?>
+						<article>
+							<img src="<?php echo site_url('userfiles/banners/'.$item->imagem); ?>" alt="">
 							<div class="text-wrapper">
-								<h1 class="wow fadeInDown">Título lorem ipsum</h1>
-								<a class="anchor button white medium wow fadeInUp" href="http//:google.com">
-									Saiba Mais 
+								<h1 class="wow fadeInDown"><?php echo $item->titulo; ?></h1>
+								<a class="anchor button white medium wow fadeInUp" href="<?php echo (strstr($item->link,'http')) ? $item->link : site_url($item->link); ?>" <?php echo 'target="'.$item->target_blank.'"'; ?>>
+									<?php echo $item->resumo; ?>
 								</a>
 							</div>
-						</div>
-					</article>
-				<?php foreach ($banners as $key => $item): ?>
-					<article>
-						<img src="<?php site_url('userfiles/banners/'.$item->imagem); ?>" alt="">
-						<div class="text-wrapper">
-							<h1 class="wow fadeInDown"><?php echo $item->titulo; ?></h1>
-							<a class="anchor button white medium wow fadeInUp" href="<?php echo (strstr($item->link,'http')) ? $item->link : site_url($item->link); ?>" <?php echo 'target="'.$item->target_blank.'"'; ?>>
-								<?php echo $item->resumo; ?>
-							</a>
-						</div>
-					</article>
+						</article>
+					<?php endif ?>
 				<?php endforeach ?>	
 			</div>
 		<?php endif ?>
+
+		<script>
+			function onYouTubeIframeAPIReady() {
+
+			<?php foreach ($banners as $key => $banner): ?>
+				<?php if ($banner->video_banner == 1): ?>
+					var player<?php echo $banner->video_id ?>;
+				<?php endif ?>
+			<?php endforeach ?>
+		  
+			  
+			<?php foreach ($banners as $key => $banner): ?>
+				<?php if ($banner->video_banner == 1): ?>
+				  	player<?php echo $banner->video_id ?> = new YT.Player('fullscreen-video-<?php echo $banner->video_id ?>', {
+				    videoId: '<?php echo $banner->video_id ?>', // YouTube Video ID
+				    width: '100%',          // Player width (in px)
+				    height: 650,            // Player height (in px)
+				    playerVars: {
+				      autoplay: 1,       // Auto-play the video on load
+				      controls: 0,       // Show pause/play buttons in player
+				      showinfo: 0,       // Hide the video title
+				      modestbranding: 1, // Hide the Youtube Logo
+				      loop: 1,           // Run the video in a loop
+				      fs: 0,             // Hide the full screen button
+				      cc_load_policy: 0, // Hide closed captions
+				      iv_load_policy: 3, // Hide the Video Annotations
+				      autohide: 0,       // Hide video controls when playing
+				      rel: 0			 // Hide suggested videos at end
+				    },
+				    events: {
+				      onReady: function() {
+				        player<?php echo $banner->video_id ?>.mute()
+				      }
+				    }
+				  });
+			  <?php endif ?>
+			  <?php endforeach ?>
+			 }
+		</script>
 		
 		<!-- Tab navigation -->
 			<nav class="tabs four" role="navigation">

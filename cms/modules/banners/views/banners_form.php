@@ -24,6 +24,33 @@
     </div>
 </div>
 
+<div class="form-group">
+    <label for="video_banner">Banner de vídeo: </label><br>
+    <div class="btn-group" data-toggle="buttons">
+        <label id="video_banner" class="btn btn-primary <?= @$banner->video_banner == '1' ? 'active' : ''?>">
+            <input
+                type="radio"
+                name="video_banner"
+                id="video_banner_1"
+                autocomplete="off"
+                value="1"
+                >
+                Sim
+        </label>
+        <label id="video_banner_label_0" class="btn btn-primary  <?= @$banner->video_banner == '0' ? 'active' : '';  if (empty($banner)) { echo "active"; } ?>">
+            <input
+                type="radio"
+                name="video_banner"
+                id="video_banner_0"
+                autocomplete="off"
+                value="0"
+                <?php if (empty($banner)) { echo "checked='checked'"; } ?>
+                >
+                Não
+        </label>
+    </div>
+</div>
+
 
 <div class="form-group">
     <label for="titulo">Título: </label>
@@ -42,6 +69,11 @@
     <input type="text" name="link" id="link" class="form-control" value="<?php echo @$banner->link; ?>" />
     <span class="validate_error"></span>
     <span class="validate_success"></span>
+</div>
+
+<div class="form-group">
+    <label for="video_id">Link do Vídeo: </label>
+    <input type="text" name="video_id" id="video_id" class="form-control" <?php echo !empty($banner->video_id) ? 'value="http://www.youtube.com/watch?v=' . $banner->video_id . '"' : '' ?>">
 </div>
 
 <div class="form-group">

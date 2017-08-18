@@ -59,6 +59,11 @@
                                         <a href="<?php echo base_url('banners/editar/'.$banner->id); ?>">
                                             <img src="<?php echo site_url('../userfiles/banners/'.$banner->imagem); ?>" width="200px" />
                                         </a>
+                                        <?php endif ?>
+                                        <?php if ($banner->video_banner == 1): ?>
+                                            <a href="<?php echo base_url('banners/editar/'.$banner->id); ?>">
+                                                <img src="https://img.youtube.com/vi/<?php echo $banner->video_id ?>/0.jpg" width="200px" />
+                                            </a>
                                         <?php endif; ?>
                                     </td>
                                     <td align="center"><?php echo $banner->titulo; ?></td>

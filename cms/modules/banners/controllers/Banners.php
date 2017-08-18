@@ -44,6 +44,8 @@ class Banners extends CI_Controller {
                 $data['imagem'] = $imagem;
             }
         }
+        
+        $data['video_id'] = get_youtube_id($data['video_id']);
 
         $this->db->insert('banners', $data);
         $this->session->set_flashdata('messages', 'Banner inserida com sucesso.');
@@ -85,6 +87,8 @@ class Banners extends CI_Controller {
                 $data['imagem'] = $img_nome;
             }
         }
+
+        $data['video_id'] = get_youtube_id($data['video_id']);
 
         if ($this->banners_m->atualizar($data, $dataWhere)) {
             $this->session->set_flashdata('messages', 'Banner atualizado com sucesso.');
