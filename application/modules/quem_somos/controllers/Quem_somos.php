@@ -22,7 +22,7 @@ class Quem_somos extends CI_Controller {
 
         $this->data["quem_somos"] = $this->Quem_somos_m->get_quem_somos();
 
-        $this->data['title'] = 'Clínica especializada na saúde da mulher - Clínica Femcare';
+        $this->data['title'] = 'Clínica especializada na saúde da mulher - Clínica Cimitarra';
 
         $this->data['description'] = 'Dra. Flávia Fairbanks – Ginecologia – Sexualidade – Obstetrícia – Endometriose. A saúde da mulher em primeiro lugar.';
 

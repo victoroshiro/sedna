@@ -16,7 +16,7 @@ class Contato extends CI_Controller {
 
     public function index($slug = false)
     {
-        $this->data['title'] = 'Clínica Femcare – A saúde da mulher em primeiro lugar.';
+        $this->data['title'] = 'Clínica Cimitarra – A saúde da mulher em primeiro lugar.';
         $this->data['description'] = 'Clínica especializada na saúde da mulher. Proporcionamos um atendimento eficiente com profissionais experientes e especializados.';
 
         $this->data['menu_gineco'] = $this->Ginecologia_m->get_ginecologias();
@@ -109,8 +109,8 @@ class Contato extends CI_Controller {
 
         $this->email->initialize($config);
 
-        $this->email->from('contato@femcare.com.br', 'Contato');
-        $this->email->to('contato@femcare.com.br');
+        $this->email->from('contato@cimitarra.com.br', 'Contato');
+        $this->email->to('contato@cimitarra.com.br');
         
         $this->email->subject('Contato - '.$dados['name']);
         $this->email->message($mensagem);
@@ -122,7 +122,7 @@ class Contato extends CI_Controller {
 
         $this->email->clear(TRUE);
 
-        $this->email->from('contato@femcare.com.br', 'FemCare');
+        $this->email->from('contato@cimitarra.com.br', 'FemCare');
         $this->email->to($dados['email']);
         $this->email->subject('Recebemos sua mensagem');
 
@@ -134,7 +134,7 @@ class Contato extends CI_Controller {
         $mensagem_cliente .= '<br>';
         $mensagem_cliente .= 'Tel.: 55 11 3885-3937 | 55 11 3885-4194';    
         $mensagem_cliente .= '<br>';
-        $mensagem_cliente .= '<a href="http://femcare.com.br/">femcare.com.br/</a>';
+        $mensagem_cliente .= '<a href="http://cimitarra.com.br/">cimitarra.com.br/</a>';
         $mensagem_cliente .= '</p>';
         $mensagem_cliente .= '<img src="' . site_url('assets/images/menu/logo.png') . '" alt="FemCare">';
 

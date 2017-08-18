@@ -9,7 +9,7 @@
 		<div class="row">
 			<div class="col-md-12">
 				<img src="assets/images/home/florzinha.png" class="little-flower"/>
-				<h3 class="titulo-principal">Fale com a Femcare</h3>
+				<h3 class="titulo-principal">Fale com a Cimitarra</h3>
 				
 				<div class="col-md-10 col-md-offset-1 form-contato">
 					<form action="<?php echo site_url('contato/send'); ?>" method="POST">
@@ -68,7 +68,7 @@
 					<div class="title">Email</div>
 					<div class="text">
 						<i class="fa fa-envelope"></i>
-						<p>contato@femcare.com.br</p>
+						<p>contato@cimitarra.com.br</p>
 					</div>
 				</div>
 			</div>			

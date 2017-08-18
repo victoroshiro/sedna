@@ -39,7 +39,7 @@
 				<section class="widget-alt recent-posts">
 					<!-- <div class="widget-icon"></div> -->
 					<div id="fb-root"></div>				
-					<div class="fb-like-box" data-href="https://www.facebook.com/clinicafemcare/?fref=ts" data-height="300" data-width="300" data-colorscheme="light" data-show-faces="false" data-header="false" data-stream="true" data-show-border="true"></div>
+					<div class="fb-like-box" data-href="https://www.facebook.com/clinicacimitarra/?fref=ts" data-height="300" data-width="300" data-colorscheme="light" data-show-faces="false" data-header="false" data-stream="true" data-show-border="true"></div>
 				</section>
 			</div>
 			

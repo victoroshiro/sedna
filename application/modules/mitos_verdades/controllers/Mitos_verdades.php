@@ -19,7 +19,7 @@ class Mitos_verdades extends CI_Controller {
         $this->data['menu_sex'] = $this->Sexualidade_m->get_sexualidades();
         $this->data['menu_obs'] = $this->Obstetricia_m->get_obstetricias();
         $this->data['menu_imp'] = $this->Imprensa_m->get_imprensas();
-        $this->data['title'] = 'Clínica Femcare - Mitos e verdades sobre a saúde da mulher.';
+        $this->data['title'] = 'Clínica Cimitarra - Mitos e verdades sobre a saúde da mulher.';
         $this->data['description'] = 'Clínica especializada na saúde da mulher - Dra. Flávia Fairbanks - Confira os principais mitos e verdades sobre a saúde feminina.';
 
         //pagination
