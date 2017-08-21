@@ -202,7 +202,7 @@ table td:first-child 	{background:#eee;color:#444;}
 
 /* 08 LAYOUT */
 .wrap 		{margin:0 auto;width:1170px;text-align:left;position:relative;max-width:94%;display:inline-block;}
-.main 		{margin-top:80px;min-height:500px;float:left;width:100%;}
+.main 		{margin-top:132px;min-height:500px;float:left;width:100%;}
 .row		{margin:0 -15px;padding:0 !important;}
 
 .full-width 	 	{float:left;width:100%;padding:0 15px 30px;max-width:100%;}
@@ -360,7 +360,7 @@ section.icons		{padding-bottom:10px;}
 /* 14 CONTENT */
 .content		{float:left;width:100%;}
 
-.intro 			{background:url(../images/gold-bg.png) 0 0 repeat;float:left;width:100%;color:#fff;padding:31px 0 5px;}
+.intro 			{background:#404041;float:left;width:100%;color:#fff;padding:31px 0 5px;}
 .intro.dark		{background-image:url(../images/dark-bg.png);}
 .intro .wrap 	{text-align:center;max-width:65%;}
 .intro p 		{font-size:17px;font-weight:500;padding:0 0 35px;}

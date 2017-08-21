@@ -1,140 +1,64 @@
-<section class="main-template">
-	<div class="main-template__bg-image">
-		<h3>Contato</h3>
-		<img src="<?php echo site_url('assets/images/banners/banner_in.png'); ?>" alt="Contato"/>
-	</div>
-</section>
-<section class="content-page contato">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<img src="assets/images/home/florzinha.png" class="little-flower"/>
-				<h3 class="titulo-principal">Fale com a Cimitarra</h3>
-				
-				<div class="col-md-10 col-md-offset-1 form-contato">
-					<form action="<?php echo site_url('contato/send'); ?>" method="POST">
-						<div class="form-group col-md-6">
-							<input type="text" name="name" placeholder="Nome*" class="form-control"/>
-						</div>
-						<div class="form-group col-md-6">
-							<input type="text" name="phone" placeholder="Telefone" class="form-control"/>
-						</div>
-						<div class="form-group col-md-6">
-							<input type="email" name="email" placeholder="E-mail*" class="form-control"/>
-						</div>
-						<div class="form-group col-md-6">
-							<input type="text" name="subject" placeholder="Assunto" class="form-control"/>
-						</div>
-						<div class="form-group col-md-12">
-							<textarea name="message" placeholder="Mensagem*" class="form-control" row="50"></textarea>
-						</div>
-						<div class="col-md-6 solreq">
-							<div class="squaredOne">
-								<input type="radio" id="opt_in" name="opt_in" />
-								<label for="opt_in"></label>
+<main class="main" role="main">
+<!-- Content -->
+	<!-- Intro -->
+	<header class="intro">
+		<div class="wrap">
+			<h1>Contact us</h1>
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea.</p>
+		</div>
+	</header>
+	<!-- //Intro -->
+	<div class="content boxed grid2">
+		<!-- Item -->
+		<article class="full-width hentry">
+			<div class="one-half">
+				<div class="text">
+					<h4>Contact us</h4>
+					<p>
+						+55 (11) 26283065
+					</p>
+					<p>
+						contato@cimitarra.com.br
+					</p>
+					<p>
+						Av. dos Bandeirantes
+						<br>
+						Planalto Paulista - São Paulo/SP
+					</p>
+					
+					<form method="post" action="contact_form_message.php" name="contactform" id="contactform">
+						<fieldset>
+							<div id="message"></div>
+							<div class="full-width">
+								<label for="name">Name and surname</label>
+								<input type="text" id="name"/>
 							</div>
-							<div class="label-checkbox">Desejo receber os informativos da FemCare</div>
-						</div>
-						<div class="form-group col-md-12 send-button">
-							<input type="submit" class="main-button button green" id="form-contato-submit" value="Enviar"/>
-						</div>
-					</form>					
+							
+							<div class="full-width">
+								<label for="email">E-mail address</label>
+								<input type="email" id="email"/>
+							</div>
+							
+							<div class="full-width">
+								<label for="phone">Phone number</label>
+								<input type="number" id="phone"/>
+							</div>
+							
+							<div class="full-width">
+								<label for="comments">Your message</label>
+								<textarea id="comments"></textarea>
+							</div>
+							
+							<div class="full-width">
+								<input type="submit" value="Enviar Mensagem" class="button gold large" id="submit" />
+							</div>
+						</fieldset>
+					</form>
 				</div>
 			</div>
-		</div>
+			<div class="one-half"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.8695132292!2d-121.4429125!3d38.56154050000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C+CA%2C+USA!5e0!3m2!1sen!2shr!4v1426758068135" width="1000" height="800" frameborder="0" style="border:0"></iframe></div>
+		</article>
+		<!-- //Item -->
 	</div>
-</section>
-<section class="content-page contato mapa">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-10 endereco">
-				<div class="col-md-3">
-					<div class="title">Endereço</div>
-					<div class="text">
-						<i class="fa fa-map-marker"></i>
-						<p>Rua Mário Amaral, 319</p>
-						<p>Paraíso | São Paulo-SP</p>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="title">Telefone</div>
-					<div class="text">
-						<i class="fa fa-phone"></i>
-						<p>(11) 3885-3937</p>
-						<p>(11) 3885-4194</p>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="title">Email</div>
-					<div class="text">
-						<i class="fa fa-envelope"></i>
-						<p>contato@cimitarra.com.br</p>
-					</div>
-				</div>
-			</div>			
-		</div>
-	</div>
-	<div class="col-md-12 map-wrapper">
-		<div class="map" id="map"></div>
-	</div>
-</section>
-<section class="content-page contato newsletter">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-6 disclaimer">
-				<h3>Newsletter</h3>
-				<p>Cadastre seu email e receba nossos informativos</p>
-			</div>
-			<div class="col-md-6 form-newsletter">
-				<form action="<?php echo site_url('contato/newsletter'); ?>" method="POST">
-					<input type="text" name="email" id="email" placeholder="E-mail" />
-					<input type="submit" name="submit" id="form-contato-newsletter" class="main-button button" value="Enviar"/>
-				</form>
-				<div class="msg"></div>
-			</div>
-		</div>
-	</div>
-</section>
-	
-</section>
-<script src="http://maps.google.com/maps/api/js?key=AIzaSyAFEqzwGpSdxi5mDvpqh5lda6K8Xedq4DI&sensor=false"></script>
-<script type="text/javascript">
-	(function($) {
-	    "use strict";
-	    var locations = [
-	        ['<div class="infobox"><h4 class="title">FemCare</h4><p><span>Rua Mário Amaral, 319 | Paraíso - São Paulo-SP</span><br>(11) 3885-3937 / (11) 3885-4194</p></div></div></div>', -23.5731996, -46.6507991, 2]
-	    ];
-
-	    var map = new google.maps.Map(document.getElementById('map'), {
-	        zoom: 15,
-	        scrollwheel: false,
-	        navigationControl: true,
-	        mapTypeControl: false,
-	        scaleControl: false,
-	        draggable: true,
-	        center: new google.maps.LatLng(-23.5731996, -46.6507991),
-	        mapTypeId: google.maps.MapTypeId.ROADMAP
-	    });
-
-	    var infowindow = new google.maps.InfoWindow();
-
-	    var marker, i;
-
-	    for (i = 0; i < locations.length; i++) {  
-
-	        marker = new google.maps.Marker({ 
-	            position: new google.maps.LatLng(locations[i][1], locations[i][2]), 
-	            map: map ,
-	            icon: 'assets/images/icons/marker-green.png'
-	        });
-
-
-	        google.maps.event.addListener(marker, 'click', (function(marker, i) {
-	            return function() {
-	                infowindow.setContent(locations[i][0]);
-	                infowindow.open(map, marker);
-	            }
-	        })(marker, i));
-	    }
-	})(jQuery);
-</script>
+	<!-- //Content-->
+</main>
