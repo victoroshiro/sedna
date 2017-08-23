@@ -148,6 +148,77 @@
     <!-- //Header -->
 
         <?= $partial ?>
+
+    <!-- Bottom Sidebar -->
+    <aside class="sidebar bottom navy" role="complementary">
+      <!-- Wrapper -->
+      <div class="wrap">
+        <div class="row">
+          <h2>Entre em contato conosco</h2>
+          <!-- OneFourth -->
+          <div class="one-fourth">
+            <h5>Loja</h5>
+            <p><span class="circle small"><i class="fa fa-phone fa-fw"></i></span> +55 (11) 2628.3065</p>
+            <p><span class="circle small"><i class="fa fa-envelope fa-fw"></i></span> <a href="mailto:contato@cimitarra.com.br">contato@cimitarra.com.br</a></p>
+            <p>
+              <span class="circle small"><i class="fa fa-map-marker fa-fw"></i></span>
+              Av. dos Bandeirantes, 4063
+              <br>
+              Planalto Paulista - São Paulo/SP
+            </p>
+          </div>
+          <!-- //OneFourth -->
+
+          <div class="one-fourth">
+            <h5>Showroom</h5>
+            <p><span class="circle small"><i class="fa fa-phone fa-fw"></i></span> +55 (11) 2628.3065 - +55 (11) 99617.6035</p>
+            <p><span class="circle small"><i class="fa fa-envelope fa-fw"></i></span> <a href="mailto:contato@cimitarra.com.br">contato@cimitarra.com.br</a></p>
+            <p>
+              <span class="circle small"><i class="fa fa-map-marker fa-fw"></i></span>
+              Av. dos Bandeirantes, 4063
+              <br>
+              Planalto Paulista - São Paulo/SP
+            </p>
+          </div>
+          <!-- //OneFourth -->
+          
+          
+          <!-- OneFourth -->
+          <div class="one-fourth">
+            <h5>Loja</h5>
+            <p><span class="circle small"><i class="fa fa-phone fa-fw"></i></span> +55 (11) 2628.3065</p>
+            <p><span class="circle small"><i class="fa fa-envelope fa-fw"></i></span> <a href="mailto:contato@cimitarra.com.br">contato@cimitarra.com.br</a></p>
+            <p>
+              <span class="circle small"><i class="fa fa-map-marker fa-fw"></i></span>
+              Av. dos Bandeirantes, 4063
+              <br>
+              Planalto Paulista - São Paulo/SP
+            </p>
+          </div>
+          <!-- //OneFourth -->          
+          
+          <!-- OneFourth -->
+          <div class="one-fourth">
+            <h5>USA base</h5>
+            <p><span class="circle small"><i class="fa fa-phone"></i></span> + 1 555 555 555</p>
+            <p><span class="circle small"><i class="fa fa-envelope"></i></span> <a href="mailto:unitedstates@office.com">unitedstates@office.com</a></p>
+          </div>
+          <!-- //OneFourth -->
+        </div>
+      </div>
+      <!-- //Wrapper -->
+    </aside>
+    <!-- //Bottom Sidebar -->
+    
+    <!-- Photo -->
+    <section class="photo">
+      <div class="wrap center">
+        <h2>Find out more about our sailing destinations, marinas and suggested itineraries</h2>
+        <p>Wild, exotic and remote; cosmopolitan and cutting-edge; untouched and tranquil, <br />discover our incredible sailing destinations. <br />See the world. Differently.</p>
+        <a href="#" title="Find out more" class="button white medium">Find out more</a>
+      </div>
+    </section>
+    <!-- //Photo -->
     
     <!-- Footer -->
     <footer class="footer" role="contentinfo">
