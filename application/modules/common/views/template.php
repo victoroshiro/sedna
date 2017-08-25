@@ -185,7 +185,7 @@
           
           <!-- OneFourth -->
           <div class="one-fourth">
-            <h5>Loja</h5>
+            <h5>Assistência Técnica</h5>
             <p><span class="circle small"><i class="fa fa-phone fa-fw"></i></span> +55 (11) 2628.3065</p>
             <p><span class="circle small"><i class="fa fa-envelope fa-fw"></i></span> <a href="mailto:contato@cimitarra.com.br">contato@cimitarra.com.br</a></p>
             <p>
@@ -195,15 +195,21 @@
               Planalto Paulista - São Paulo/SP
             </p>
           </div>
-          <!-- //OneFourth -->          
-          
+          <!-- //OneFourth -->
+
           <!-- OneFourth -->
           <div class="one-fourth">
-            <h5>USA base</h5>
-            <p><span class="circle small"><i class="fa fa-phone"></i></span> + 1 555 555 555</p>
-            <p><span class="circle small"><i class="fa fa-envelope"></i></span> <a href="mailto:unitedstates@office.com">unitedstates@office.com</a></p>
+            <h5>Marina Astúrias</h5>
+            <p><span class="circle small"><i class="fa fa-phone fa-fw"></i></span> +55 (11) 2628.3065</p>
+            <p><span class="circle small"><i class="fa fa-envelope fa-fw"></i></span> <a href="mailto:contato@cimitarra.com.br">contato@cimitarra.com.br</a></p>
+            <p>
+              <span class="circle small"><i class="fa fa-map-marker fa-fw"></i></span>
+              Av. dos Bandeirantes, 4063
+              <br>
+              Planalto Paulista - São Paulo/SP
+            </p>
           </div>
-          <!-- //OneFourth -->
+          <!-- //OneFourth -->        
         </div>
       </div>
       <!-- //Wrapper -->
@@ -227,45 +233,44 @@
           <div class="row">
             <!-- OneFourth -->
             <div class="one-fourth">
-              <h6>About us</h6>
-              <p>Sailor theme ltd.<br />1211 Pensilvania Ave, Sacramento, CA</p>
-              <p> 1-555-555-555<br /><a href="mailto:sailor@sailortheme.com">sailor@sailortheme.com</a></p>
+              <img src="assets/images/logo-white.png" class="margin-bottom-md" alt="Cimitarra Yachts">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium vero nihil corporis!
+              </p>
             </div>
             <!-- //OneFourth -->
             
             <!-- OneFourth -->
             <div class="one-fourth">
-              <h6>Why book with us?</h6>
-              <ul class="check">
-                <li><a href="#">Secure booking</a></li>
-                <li><a href="#">Best price guarantee</a></li>
-                <li><a href="#">Passionate service</a></li>
-                <li><a href="#">Exclusive knowledge</a></li>
-                <li><a href="#">Benefits for partners</a></li>
-              </ul>
-            </div>
-            <!-- //OneFourth -->
-            
-            <!-- OneFourth -->
-            <div class="one-fourth">
-              <h6>Need help?</h6>
+              <h6>Cimitarra</h6>
               <ul>
-                <li><a href="#">Faq</a></li>
-                <li><a href="#">How do I make a reservation?</a></li>
-                <li><a href="#">Payment options</a></li>
-                <li><a href="#">Privacy policy</a></li>
-                <li><a href="#">Terms and conditions</a></li>
+                <li><a href="#">360</a></li>
+                <li><a href="#">400</a></li>
+                <li><a href="#">440</a></li>
+                <li><a href="#">460</a></li>                
               </ul>
             </div>
             <!-- //OneFourth -->
             
             <!-- OneFourth -->
             <div class="one-fourth">
-              <h6>Follow us</h6>
+              <h6>Cimitarra Yachts</h6>
+              <ul>
+                <li><a href="#">600</a></li>
+                <li><a href="#">640</a></li>
+                <li><a href="#">780</a></li>
+              </ul>
+            </div>
+            <!-- //OneFourth -->
+            
+            <!-- OneFourth -->
+            <div class="one-fourth">
+              <h6>Siga-nos</h6>
               <p>Lorem ipsum dolor sit amet, sectetuer adipiscing elit, sed diam nonummy  dolore magna aliquam erat volutpat. </p>
               <a href="#" title="Facebook" class="circle"><i class="fa fa-facebook fa-fw"></i></a>
+              <a href="#" title="Instagram" class="circle"><i class="fa fa-instagram fa-fw"></i></a>
               <a href="#" title="Youtube" class="circle"><i class="fa fa-youtube-play fa-fw"></i></a>
-              <a href="#" title="Linkedin" class="circle"><i class="fa fa-instagram fa-fw"></i></a>
+              <a href="#" title="Linkedin" class="circle"><i class="fa fa-linkedin fa-fw"></i></a>
             </div>
             <!-- //OneFourth -->
           </div>
@@ -275,8 +280,8 @@
         <div class="copy">
           <!-- Wrapper -->
           <div class="wrap">
-            <p>Copyright 2016 Sailor, all rights reserved.</p>
-            <p>By <a href="http://www.themeenergy.com" title="www.themeenergy.com">themeenergy</a></p>
+            <p>Cimitarra Yachts <?php echo gmdate("Y"); ?>. Todos os Direitos Rervados.</p>
+            <p>By <a href="http://vioti.com.br" title="vioti.com.br">Vioti</a></p>
           </div>
           <!-- //Wrapper -->
         </div>
