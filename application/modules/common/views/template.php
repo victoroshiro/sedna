@@ -34,7 +34,7 @@
     <![endif]-->
   </head>
 
-  <body <?php echo $active == 'home' ? 'class="home"' : ''; ?>>
+  <body>
         
     <!-- Preloader -->
     <div class="preloader">
