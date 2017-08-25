@@ -5,18 +5,15 @@
 		<div class="three-fourth">
 			<div class="row">
 				<!-- Item -->
-				<?php foreach ($noticias as $key => $item): ?>
+				<?php foreach ($seminovos as $key => $item): ?>
 					
 					<article class="one-half hentry">
-						<figure><a href="<?php echo site_url('noticias/detalhe/'.$item->slug); ?>"><img src="<?php echo site_url('userfiles/noticias/'.$item->imagem); ?>" alt="<?php echo $item->titulo; ?>" /></a></figure>
+						<figure><a href="<?php echo site_url('seminovos/detalhe/'.$item->slug); ?>"><img src="<?php echo site_url('userfiles/seminovos/'.$item->imagem); ?>" alt="<?php echo $item->titulo; ?>" /></a></figure>
 						<div>
 							<div class="text">
-								<h3><a href="<?php echo site_url('noticias/detalhe/'.$item->slug); ?>">Taiwan Boat Show 2014 a Resounding Successful event not to miss</a></h3>
-								<div class="meta">
-									<span>May 23rd, 2016</span>   
-								</div>
+								<h3><a href="<?php echo site_url('seminovos/detalhe/'.$item->slug); ?>"><?php echo $item->titulo; ?></a></h3>
 								<p><?php echo $item->titulo; ?></p>
-								<a href="<?php echo site_url('noticias/detalhe/'.$item->slug); ?>" class="more" title="Read more">Saiba Mais</a>
+								<a href="<?php echo site_url('seminovos/detalhe/'.$item->slug); ?>" class="more" title="Read more">Saiba Mais</a>
 							</div>
 						</div>
 					</article>

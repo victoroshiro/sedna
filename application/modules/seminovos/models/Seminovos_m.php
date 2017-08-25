@@ -1,9 +1,9 @@
 <?php if (!defined('BASEPATH')) {exit('No direct script access allowed');}
 
-class Noticias_m extends CI_Model
+class Seminovos_m extends CI_Model
 {
 
-	public function get_noticias($params = array())
+	public function get_seminovos($params = array())
 	{
 		$options = array(
 			'slug' => false,
@@ -22,16 +22,16 @@ class Noticias_m extends CI_Model
             $this->db->select('COUNT(DISTINCT id) AS count');
         else{
 			$this->db->select('*')
-					 ->select('DATE_FORMAT(data_noticia,"%d/%m/%Y") AS data_noticia_f', false);
+					 ->select('DATE_FORMAT(data_seminovo,"%d/%m/%Y") AS data_seminovo_f', false);
         }
 
-		$this->db->from('noticias')
+		$this->db->from('seminovos')
 				 ->where('habilitado', 1);
 
 		if($params['slug']){
-			$this->db->select('DATE_FORMAT(data_noticia,"%Y") AS ano_noticia', false)
-					 ->select('DATE_FORMAT(data_noticia,"%m") AS mes_noticia', false)
-					 ->select('DATE_FORMAT(data_noticia,"%d") AS dia_noticia', false)
+			$this->db->select('DATE_FORMAT(data_seminovo,"%Y") AS ano_seminovo', false)
+					 ->select('DATE_FORMAT(data_seminovo,"%m") AS mes_seminovo', false)
+					 ->select('DATE_FORMAT(data_seminovo,"%d") AS dia_seminovo', false)
 					 ->where('slug', $params['slug']);
 		}
 
@@ -50,9 +50,9 @@ class Noticias_m extends CI_Model
 		}
 
 		if($params['order_by']){
-			$this->db->order_by('data_noticia',$params['order_by']);
+			$this->db->order_by('data_seminovo',$params['order_by']);
 		}else{
-			$this->db->order_by('data_noticia','DESC');
+			$this->db->order_by('data_seminovo','DESC');
 		}
 
 		if($params['highlights']){

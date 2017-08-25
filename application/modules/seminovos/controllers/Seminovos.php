@@ -1,12 +1,12 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed');
 
-class Noticias extends CI_Controller {
+class Seminovos extends CI_Controller {
 
     public function __construct()
     {
         parent::__construct();
         $this->load->helper('text');
-        $this->load->model('Noticias_m');
+        $this->load->model('Seminovos_m');
         $this->load->model('ginecologia/Ginecologia_m');
         $this->load->model('sexualidade/Sexualidade_m');
         $this->load->model('obstetricia/Obstetricia_m');
@@ -24,14 +24,14 @@ class Noticias extends CI_Controller {
         $limit_results = 9;
         $offset_page = ($this->uri->segment(2)) ? $this->uri->segment(2) : 0;
 
-        $this->data["noticias"] = $this->Noticias_m->get_noticias(
+        $this->data["seminovos"] = $this->Seminovos_m->get_seminovos(
             array(
                 'limit' => $limit_results, 
                 'offset' => $offset_page,
             )
         );
 
-        $total_noticias = $this->Noticias_m->get_noticias(
+        $total_seminovos = $this->Seminovos_m->get_seminovos(
             array(
                 'count' => true,
             )
@@ -39,8 +39,8 @@ class Noticias extends CI_Controller {
 
         $config = array();
 
-        $config["base_url"] = base_url() . "noticias";
-        $config["total_rows"] = $total_noticias;
+        $config["base_url"] = base_url() . "seminovos";
+        $config["total_rows"] = $total_seminovos;
         $config["per_page"] = $limit_results;
         $config["uri_segment"] = 2;
         //styling pagination
@@ -66,9 +66,9 @@ class Noticias extends CI_Controller {
         $this->pagination->initialize($config);
 
         $this->data["links"] = $this->pagination->create_links();
-        $this->data["total_noticias"] = $total_noticias;
+        $this->data["total_seminovos"] = $total_seminovos;
 
-        $this->data['partial'] = $this->load->view('noticias.php', $this->data, true);
+        $this->data['partial'] = $this->load->view('seminovos.php', $this->data, true);
         $this->load->view('common/template.php', $this->data);
     }
 
@@ -81,15 +81,15 @@ class Noticias extends CI_Controller {
         $this->data['menu_obs'] = $this->Obstetricia_m->get_obstetricias();
         $this->data['menu_imp'] = $this->Imprensa_m->get_imprensas();
 
-        $this->data['noticia'] = $this->Noticias_m->get_noticias(array('slug' => $slug));
+        $this->data['seminovo'] = $this->Seminovos_m->get_seminovos(array('slug' => $slug));
 
-        $this->data['noticia'] || show_404();
+        $this->data['seminovo'] || show_404();
 
-        $this->data['description'] = $this->data["noticia"]->description;
+        $this->data['description'] = $this->data["seminovo"]->description;
 
-        $this->data['all_news'] = $this->Noticias_m->get_noticias(array('id' => $this->data['noticia']->id));
+        $this->data['all_news'] = $this->Seminovos_m->get_seminovos(array('id' => $this->data['seminovo']->id));
 
-        $this->data['partial'] = $this->load->view('noticia.php', $this->data, true);
+        $this->data['partial'] = $this->load->view('seminovo.php', $this->data, true);
         $this->load->view('common/template.php', $this->data);
     }
 }

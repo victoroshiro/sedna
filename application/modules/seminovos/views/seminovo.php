@@ -12,16 +12,16 @@
 					<div class="three-fourth hentry">
 						<!-- Post Image -->
 						<div class="entry-featured">
-							<img src="<?php echo site_url('userfiles/noticias/'.$noticia->imagem); ?>" alt="<?php echo $noticia->titulo; ?>" />
+							<img src="<?php echo site_url('userfiles/seminovos/'.$seminovo->imagem); ?>" alt="<?php echo $seminovo->titulo; ?>" />
 						</div>
 						<!-- //Post Image -->
 						
 						<!-- Post Content -->
 						<div class="entry-content">
 							<div class="box-white">
-								<h2><?php echo $noticia->titulo; ?></h2>
+								<h2><?php echo $seminovo->titulo; ?></h2>
 								<div class="wysiwyg-content">
-									<?php echo $noticia->descricao; ?>
+									<?php echo $seminovo->descricao; ?>
 								</div>
 							</div>
 						</div>
@@ -38,10 +38,9 @@
 								<?php foreach ($all_news as $key => $item): ?>
 									<ul class="latest-posts">
 										<li>
-											<a href="<?php echo site_url('noticias/detalhe/'.$item->slug); ?>">
-												<img src="<?php echo site_url('userfiles/noticias/'.$item->imagem); ?>" alt="<?php echo $item->titulo; ?>" width="90" />
+											<a href="<?php echo site_url('seminovos/detalhe/'.$item->slug); ?>">
+												<img src="<?php echo site_url('userfiles/seminovos/'.$item->imagem); ?>" alt="<?php echo $item->titulo; ?>" width="90" />
 												<h4><?php echo $item->titulo; ?></h4>
-												<span class="date"><?php echo $item->data_noticia_f; ?></span>
 											</a>
 										</li>
 									</ul>		
