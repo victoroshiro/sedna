@@ -12,7 +12,7 @@
 						<div>
 							<div class="text">
 								<h3><a href="<?php echo site_url('seminovos/detalhe/'.$item->slug); ?>"><?php echo $item->titulo; ?></a></h3>
-								<p><?php echo $item->titulo; ?></p>
+								<p><?php echo $item->resumo; ?></p>
 								<a href="<?php echo site_url('seminovos/detalhe/'.$item->slug); ?>" class="more" title="Read more">Saiba Mais</a>
 							</div>
 						</div>

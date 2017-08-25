@@ -11,11 +11,11 @@
 						<figure><a href="<?php echo site_url('noticias/detalhe/'.$item->slug); ?>"><img src="<?php echo site_url('userfiles/noticias/'.$item->imagem); ?>" alt="<?php echo $item->titulo; ?>" /></a></figure>
 						<div>
 							<div class="text">
-								<h3><a href="<?php echo site_url('noticias/detalhe/'.$item->slug); ?>">Taiwan Boat Show 2014 a Resounding Successful event not to miss</a></h3>
+								<h3><a href="<?php echo site_url('noticias/detalhe/'.$item->slug); ?>"><?php echo $item->titulo; ?></a></h3>
 								<div class="meta">
-									<span>May 23rd, 2016</span>   
+									<span><?php echo $item->data_noticia_f; ?></span>   
 								</div>
-								<p><?php echo $item->titulo; ?></p>
+								<p><?php echo $item->resumo; ?></p>
 								<a href="<?php echo site_url('noticias/detalhe/'.$item->slug); ?>" class="more" title="Read more">Saiba Mais</a>
 							</div>
 						</div>
