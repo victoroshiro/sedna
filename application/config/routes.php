@@ -81,8 +81,7 @@ $route['sexualidade/(:any)'] = "sexualidade/index/$1";
 
 $route['obstetricia/(:any)'] = "obstetricia/index/$1";
 
-$route['dra-fairbanks'] = "dra_fairbanks/index";
-$route['quem-somos'] = "quem_somos/index";
+$route['empresa'] = "quem_somos/index";
 
 //allow admin access
 $route['cms'] = 'cms';
