@@ -79,14 +79,50 @@
                   <li><a href="empresa" title="Empresa">empresa</a></li>
                   <li><a href="noticias" title="Noticias">noticias</a></li>
                   <li><a href="assitencia-tecnica" title="Assitencia técnica">assitencia técnica</a></li>
-                  <li>
+                  <li class="fix-sub">
                     <a href="embarcacoes" title="Embarcacoes">embarcações</a>
-                    <ul class="dropdown">
-                        <li><a href="blog.html" title="Blog">Blog</a></li>
-                        <li><a href="blog2.html" title="Blog 2">Blog 2</a></li>
-                        <li><a href="blog3.html" title="Blog 3">Blog 3</a></li>
-                        <li><a href="blog-single.html" title="Single post">Single post</a></li>
-                    </ul>
+                    <div class="megamenu full-width">
+                      <div class="wrap">
+                        <div class="row">
+                          <div class="col one-fourth">
+                            <p>Static templates</p>
+                            <ul>
+                              <li><a href="page-left-sidebar.html" title="Page with left sidebar">Page with left sidebar</a></li>
+                              <li><a href="page-right-sidebar.html" title="Page with right sidebar">Page with right sidebar</a></li>
+                              <li><a href="page-both-sidebars.html" title="Page with both sidebars">Page with both sidebars</a></li>
+                              <li><a href="page-no-sidebar.html" title="Page with no sidebars">Page with no sidebars</a></li>
+                            </ul>
+                          </div>
+                          <div class="col one-fourth">
+                            <p>Special pages</p>
+                            <ul>
+                              <li><a href="404.html" title="Error 404">Error 404</a></li>
+                              <li><a href="login.html" title="Login">Login</a></li>
+                              <li><a href="register.html" title="Register">Register</a></li>
+                              <li><a href="account.html" title="My account">My account</a></li>
+                            </ul>
+                          </div>
+                          <div class="col one-fourth">
+                            <p>Corporate pages</p>
+                            <ul>
+                              <li><a href="crew.html" title="Crew">Crew</a></li>
+                              <li><a href="services.html" title="Services">Services</a></li>
+                              <li><a href="contact.html" title="Contact">Contact</a></li>
+                              <li><a href="faq.html" title="Faq">Faq</a></li>
+                            </ul>
+                          </div>
+                          <div class="col one-fourth">
+                            <p>Special pages</p>
+                            <ul>
+                              <li><a href="charters.html" title="Charter yachts">Charter yachts</a></li>
+                              <li><a href="yacht-single.html" title="Yacht info + booking">Yacht info + booking</a></li>
+                              <li><a href="sales.html" title="Yachts for sale">Yachts for sale</a></li>
+                              <li><a href="yacht-sale-single.html" title="Yacht sale info">Yacht for sale info</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </li>
                   <li><a href="fidelidade-cimitarra" title="Fidelidade Cimitarra">Fidelidade Cimitarra</a></li>
                   <li><a href="seminovos" title="Seminovos">seminovos</a></li>

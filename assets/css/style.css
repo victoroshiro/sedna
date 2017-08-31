@@ -816,7 +816,7 @@ fieldset > div {padding-bottom:15px;}
 .jetmenu .indicator			{display:none;position: relative;left: -15px;top: 0;font-size: 14px;float: right;color:#C4A981;}
 .jetmenu ul li .indicator		{top: 1px;left: -10px;}
 
-.jetmenu > li > .megamenu			{position: fixed;display: none;width:100%;top: 80px;background:#fff;z-index: 99;padding:30px 0;text-align:center;-webkit-box-shadow:2px 3px 3px rgba(0,0,0,.1);-moz-box-shadow:2px 3px 3px rgba(0,0,0,.1);box-shadow:2px 3px 3px rgba(0,0,0,.1);font-weight:500;}
+.jetmenu > li > .megamenu			{position: fixed;display: none;width:100%;top: 122px;background:#fff;z-index: 99;padding:30px 0;text-align:center;-webkit-box-shadow:2px 3px 3px rgba(0,0,0,.1);-moz-box-shadow:2px 3px 3px rgba(0,0,0,.1);box-shadow:2px 3px 3px rgba(0,0,0,.1);font-weight:500;}
 .jetmenu > li > .megamenu .row > div {padding-bottom:0;}
 
 .jetmenu li > .megamenu ul		{margin:0;float: left;padding: 0;display: block;position: relative;width:100%;}
