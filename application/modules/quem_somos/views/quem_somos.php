@@ -1,6 +1,6 @@
 	<!-- Main -->
 	<main class="main" role="main">
-		<div id="lightSliderMainBanner" class="hero">
+		<div id="lightSliderMainBanner">
 			<article>
 				<img src="assets/images/empresa/main-empresa.jpg" alt="Cimitarra Yachts">
 			</article>
@@ -15,7 +15,7 @@
 		</section>
 		<!-- //Tab navigation -->
 
-		<section class="photo" style="min-height: 480px">
+		<section class="photo" style="min-height: 480px; background-image: url(assets/images/empresa/parallax1.jpg);">
 		</section>
 
 		<!-- Blog posts -->
@@ -84,28 +84,137 @@
 			</div>
 		</section>
 
+		<section class="cta light-grey">
+			<div class="wrap center">
+				<h2>História</h2>
+				<p>
+					O estaleiro Cimitarra começou sua produção em 1999, com poucos funcionários e muita determinação para crescer.  Em 2014, ao comemorar 15 anos, ja havia produzido mais de 2000 lanchas.
+					<br>
+					Conheça um pouco desta trajetória.
+				</p>
+			</div>
+		</section>
+
+		<section class="timeline">
+			<div class="timeline--step">
+				<div class="timeline--photo">
+					<img src="assets/images/empresa/timeline/1.jpg" class="img-responsive">
+				</div>
+				<div class="timeline--text timeline--text">
+					<h2>1999</h2>
+					<span>
+						Foto da fábrica Cimitarra, início de uma produção de sucesso! A Cimitarra 260 foi o modelo que consagrou a marca.
+					</span>
+				</div>
+			</div>
+
+			<div class="timeline--step timeline--step__inverse">
+				<div class="timeline--photo">
+					<img src="assets/images/empresa/timeline/2.jpg" class="img-responsive">
+				</div>
+				<div class="timeline--text timeline--text">
+					<h2>2004</h2>
+					<span>
+						A lancha Cimitarra 270 por muitos anos foi o "carro-chefe"da marca, barco de entrada para vários clientes que depois compraram lanchas ainda maiores.
+					</span>
+				</div>
+			</div>
+
+			<div class="timeline--step timeline--step">
+				<div class="timeline--photo">
+					<img src="assets/images/empresa/timeline/3.jpg" class="img-responsive">
+				</div>
+				<div class="timeline--text timeline--text">
+					<h2>2006</h2>
+					<span>
+						A Cimitarra 340 é a lancha de maior sucesso da marca e continua em produção até hoje. Na sua categoria é considerada a melhor relação custo-benefício.
+					</span>
+				</div>
+			</div>
+
+			<div class="timeline--step timeline--step timeline--step__inverse">
+				<div class="timeline--photo">
+					<img src="assets/images/empresa/timeline/4.jpg" class="img-responsive">
+				</div>
+				<div class="timeline--text timeline--text">
+					<h2>2008</h2>
+					<span>
+						A empresa começou a investir em lanchas maiores e mais luxuosas com a Cimitarra 500. Entrando em um novo patamar.
+					</span>
+				</div>
+			</div>
+
+			<div class="timeline--step timeline--step">
+				<div class="timeline--photo">
+					<img src="assets/images/empresa/timeline/5.jpg" class="img-responsive">
+				</div>
+				<div class="timeline--text timeline--text">
+					<h2>2010</h2>
+					<span>
+						Em 2010 foi implementado o moderno sistema de infusão à vácuo, um dos pioneiros no país.
+					</span>
+				</div>
+			</div>
+
+			<div class="timeline--step timeline--step timeline--step__inverse">
+				<div class="timeline--photo">
+					<img src="assets/images/empresa/timeline/6.jpg" class="img-responsive">
+				</div>
+				<div class="timeline--text timeline--text">
+					<h2>2014</h2>
+					<span>
+						Cimitarra 760 e seus idealizadores, o sonho que estava apenas no projeto começa a tornar-se realidade.
+					</span>
+				</div>
+			</div>
+
+			<div class="timeline--step timeline--step">
+				<div class="timeline--photo">
+					<img src="assets/images/empresa/timeline/7.jpg" class="img-responsive">
+				</div>
+				<div class="timeline--text timeline--text">
+					<h2>2015</h2>
+					<span>
+						É inaugurada a nova fábrica Cimitarra, que proporciona maior capacidade de produção, localização estratégica e melhor qualidade de trabalho aos colaboradores.
+					</span>
+				</div>
+			</div>
+
+			<div class="timeline--step timeline--step timeline--step__inverse">
+				<div class="timeline--photo">
+					<img src="assets/images/empresa/timeline/8.jpg" class="img-responsive">
+				</div>
+				<div class="timeline--text timeline--text">
+					<h2>2016</h2>
+					<span>
+						É inaugurada a nova fábrica Cimitarra, que proporciona maior capacidade de produção, localização estratégica e melhor qualidade de trabalho aos colaboradores.
+					</span>
+				</div>
+			</div>
+		</section>
+
 		<div class="wrap">
 			<div class="one-third">
 				<div class="news--block">
 					<h3>Missão</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam sapiente voluptatem, expedita vel obcaecati fugiat.</p>
+					<p>Proporcionar momentos de felicidade e uma experiência única aos passageiros, a bordo de uma lancha sofisticada, confortável e segura.  </p>
 				</div>
 			</div>
 			<div class="one-third">
 				<div class="news--block">
 					<h3>Visão</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo consequatur harum natus assumenda, odit iure.</p>
+					<p>Ser referência nacional e internacional  em barcos de lazer, passando uma imagem de credibilidade.</p>
 				</div>
 			</div>
 			<div class="one-third">
 				<div class="news--block">
 					<h3>Valores</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, soluta. Earum consequuntur itaque dolore sed?</p>
+					<p>Garantir a segurança dos clientes e dos nossos colaboradores, agindo sempre com responsabilidade e ética. Estes são valores primordiais de toda equipe Cimitarra.</p>
 				</div>
 			</div>
 		</div>
 
-		<section class="photo" style="min-height: 570px">
+		<section class="photo" style="min-height: 570px; background-image: url(assets/images/empresa/parallax2.jpg)">
 		</section>
 	</main>
 	<!-- //Main -->
