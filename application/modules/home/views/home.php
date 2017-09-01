@@ -158,7 +158,7 @@
 		<!-- //Photo -->
 		
 		<!-- Yachts -->
-		<div class="wrap center">
+		<div class="wrap center margin-top-lg">
 			<div class="full-width text-center">
 				<h2>Seminovos Cimitarra</h2>
 			</div>
