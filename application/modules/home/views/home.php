@@ -164,57 +164,19 @@
 			</div>
 		</div>
 		<div class="results">
-			<!-- Item -->
-			<figure class="one-fourth item">
-				<img src="assets/uploads/img.jpg" alt="" />
-				<figcaption>
-					<dl>
-						<dt>Elan 1923 Impression</dt>
-					</dl>
-					<div class="price">R$ <strong>50000</strong></div>
-					<a href="yacht-single.html" title="Saiba Mais" class="button small gold">Saiba Mais</a>
-				</figcaption>
-			</figure>
-			<!-- //Item -->
-			
-			<!-- Item -->
-			<figure class="one-fourth item">
-				<img src="assets/uploads/img.jpg" alt="" />
-				<figcaption>
-					<dl>
-						<dt>Elan 1923 Impression</dt>
-					</dl>
-					<div class="price">R$ <strong>50000</strong></div>
-					<a href="yacht-single.html" title="Saiba Mais" class="button small gold">Saiba Mais</a>
-				</figcaption>
-			</figure>
-			<!-- //Item -->
-			
-			<!-- Item -->
-			<figure class="one-fourth item">
-				<img src="assets/uploads/img.jpg" alt="" />
-				<figcaption>
-					<dl>
-						<dt>Elan 1923 Impression</dt>
-					</dl>
-					<div class="price">R$ <strong>50000</strong></div>
-					<a href="yacht-single.html" title="Saiba Mais" class="button small gold">Saiba Mais</a>
-				</figcaption>
-			</figure>
-			<!-- //Item -->
-			
-			<!-- Item -->
-			<figure class="one-fourth item">
-				<img src="assets/uploads/img.jpg" alt="" />
-				<figcaption>
-					<dl>
-						<dt>Elan 1923 Impression</dt>
-					</dl>
-					<div class="price">R$ <strong>50000</strong></div>
-					<a href="yacht-single.html" title="Saiba Mais" class="button small gold">Saiba Mais</a>
-				</figcaption>
-			</figure>
-			<!-- //Item -->
+			<?php foreach ($seminovos as $key => $item): ?>
+				<!-- Item -->
+				<figure class="one-fourth item">
+					<img src="assets/uploads/img.jpg" alt="" />
+					<figcaption>
+						<dl>
+							<dt><?php echo $item->titulo; ?></dt>
+						</dl>
+						<a href="<?php echo site_url('seminovos/detalhe/'.$item->slug); ?>" title="Saiba Mais" class="button small gold">Saiba Mais</a>
+					</figcaption>
+				</figure>
+				<!-- //Item -->
+			<?php endforeach ?>
 		</div>
 		<!-- //Yachts -->
 
@@ -231,36 +193,18 @@
 				</div>
 			</div>
 			<div class="wrap">
-				<div class="one-third">
-					<div class="news--block">
-						<a href="#"><img src="http://www.placehold.it/410x280"></a>
-						<h3>Título Lorem ipsum dolor</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam sapiente voluptatem, expedita vel obcaecati fugiat.</p>
-						<div class="text-center">
-							<a href="noticias" class="button grey small">Saiba mais</a>
+				<?php foreach ($all_news as $key => $item): ?>
+					<div class="one-third">
+						<div class="news--block">
+							<a href="<?php echo site_url('noticias/detalhe/'.$item->slug); ?>"><img src="http://www.placehold.it/410x280"></a>
+							<h3><?php echo $item->titulo; ?></h3>
+							<p><?php echo $item->resumo; ?></p>
+							<div class="text-center">
+								<a href="<?php echo site_url('noticias/detalhe/'.$item->slug); ?>" class="button grey small">Saiba mais</a>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="one-third">
-					<div class="news--block">
-						<a href="#"><img src="http://www.placehold.it/410x280"></a>
-						<h3>Título Lorem ipsum dolor</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo consequatur harum natus assumenda, odit iure.</p>
-						<div class="text-center">
-							<a href="noticias" class="button grey small">Saiba mais</a>
-						</div>
-					</div>
-				</div>
-				<div class="one-third">
-					<div class="news--block">
-						<a href="#"><img src="http://www.placehold.it/410x280"></a>
-						<h3>Título Lorem ipsum dolor</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, soluta. Earum consequuntur itaque dolore sed?</p>
-						<div class="text-center">
-							<a href="noticias" class="button grey small">Saiba mais</a>
-						</div>
-					</div>
-				</div>
+				<?php endforeach ?>
 			</div>
 		</section>
 	</main>

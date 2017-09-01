@@ -12,6 +12,7 @@ class Home extends CI_Controller {
         $this->load->model('sexualidade/Sexualidade_m');
         $this->load->model('obstetricia/Obstetricia_m');
         $this->load->model('imprensa/Imprensa_m');
+        $this->load->model('seminovos/Seminovos_m');
     }
 
     public function index()
@@ -22,10 +23,13 @@ class Home extends CI_Controller {
         $this->data['title'] = 'Cimitarra';
         $this->data['description'] = 'Cimitarra';
         
-        $this->data['menu_gineco'] = $this->Ginecologia_m->get_ginecologias();
-        $this->data['menu_sex'] = $this->Sexualidade_m->get_sexualidades();
-        $this->data['menu_obs'] = $this->Obstetricia_m->get_obstetricias();
-        $this->data['menu_imp'] = $this->Imprensa_m->get_imprensas();
+        $limit_results = 4;
+
+        $this->data["seminovos"] = $this->Seminovos_m->get_seminovos(
+            array(
+                'limit' => $limit_results
+            )
+        );
         
         $this->data['banners'] = $this->Home_m->get_banners();
         $this->data['all_news'] = $this->Noticias_m->get_noticias(array('limit' => 3));
