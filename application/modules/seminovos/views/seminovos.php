@@ -11,8 +11,8 @@
 						<figure><a href="<?php echo site_url('seminovos/detalhe/'.$item->slug); ?>"><img src="<?php echo site_url('userfiles/seminovos/'.$item->imagem); ?>" alt="<?php echo $item->titulo; ?>" /></a></figure>
 						<div>
 							<div class="text">
-								<h3><a href="<?php echo site_url('seminovos/detalhe/'.$item->slug); ?>"><?php echo $item->titulo; ?></a></h3>
-								<p><?php echo $item->resumo; ?></p>
+								<h3><a href="<?php echo site_url('seminovos/detalhe/'.$item->slug); ?>"><?php echo ellipsize($item->titulo, 58); ?></a></h3>
+								<p><?php echo ellipsize($item->resumo, 90); ?></p>
 								<a href="<?php echo site_url('seminovos/detalhe/'.$item->slug); ?>" class="more" title="Read more">Saiba Mais</a>
 							</div>
 						</div>
