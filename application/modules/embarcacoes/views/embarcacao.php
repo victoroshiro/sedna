@@ -321,25 +321,13 @@
 				<article class="tab-content" id="tab3">
 					<div class="row">
 						<!-- FullWidth -->
-						<div class="full-width">
+						<div class="one-half">
 							<h3>Deck equipment</h3>
-							<ul class="quadruplets">
-								<li>Halyard winches</li>
-								<li>Spinnaker pole</li>
-								<li>Furling Genoa</li>
-								<li>Bimini top</li>
-								<li>Winches GENOA SHEET X2</li>
-								<li>Spinnaker pole</li>
-								<li>Mail sail full batten</li>
-								<li>Anchor electric windlass</li>
-								<li>Lazy-jack</li>
-								<li>Winches MAIN SHEET X2</li>
-								<li>Winches GENOA SHEET X2</li>
-								<li>Anchor electric windlass</li>
-							</ul>
-							
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </div>
+                        <div class="one-half">
 							<h3>Safety equipment</h3>
-							<ul class="quadruplets">
+							<ul>
 								<li>Dinghy</li>
 								<li>Emergency tiller</li>
 								<li>Life raft</li>
@@ -352,38 +340,6 @@
 								<li>Winches MAIN SHEET X2</li>
 								<li>Winches GENOA SHEET X2</li>
 								<li>First aid kit</li>
-							</ul>
-							
-							<h3>Navigational equipment</h3>
-							<ul class="quadruplets">
-								<li>VHF radio</li>
-								<li>GPS</li>
-								<li>Compass</li>
-								<li>Autopilot</li>
-								<li>Eletronic sea charts</li>
-								<li>Furling Genoa</li>
-								<li>Lazy-jack</li>
-								<li>Winches MAIN SHEET X2</li>
-								<li>GPS</li>
-								<li>Compass</li>
-								<li>Autopilot</li>
-								<li>Eletronic sea charts</li>
-							</ul>
-							
-							<h3>Other equipment</h3>
-							<ul class="quadruplets">
-								<li>8 x Diving Sets </li>
-								<li>Snorkeling gear </li>
-								<li>Fishing gear</li>
-								<li>Kite boarding</li>
-								<li>Water skis</li>
-								<li>Wet suits</li>
-								<li>2 x Sea Bobs</li>
-								<li>1 x Fly Board</li>
-								<li>2 x Stand-up paddle boards</li>
-								<li>Kite boarding</li>
-								<li>Water skis</li>
-								<li>Wet suits</li>
 							</ul>
 						</div>
 						<!-- //FullWidth -->
