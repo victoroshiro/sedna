@@ -161,158 +161,80 @@
 				<article class="tab-content" id="tab2">
 					<div class="row">
 						<!-- OneHalf -->
-						<div class="one-half">
+						<div class="one-half one-half-center">
 							<table>
 								<tr>
-									<th colspan="2">General</th>
+									<th colspan="2">Especificações Técnicas</th>
 								</tr>
 								<tr>
-									<td>Base</td>
-									<td>Marina Kastela, Zadar, Croatia</td>
+                                </tr>
+                                    <td>Altura Total:</td>
+									<td>5,20 m</td>
 								</tr>
 								<tr>
-									<td>Year built</td>
-									<td>2014</td>
+									<td>Pé direito Cabine:</td>
+									<td>3,10 m</td>
 								</tr>
 								<tr>
-									<td>Length</td>
-									<td>59,3 m / 194,4 ft</td>
+									<td>Pé direito Toalete:</td>
+									<td>2,20 m</td>
 								</tr>
 								<tr>
-									<td>Berths</td>
-									<td>10 (8+2)</td>
+									<td>Comprimento Total:</td>
+									<td>23,6 m</td>
 								</tr>
 								<tr>
-									<td>Toilets</td>
-									<td>3</td>
+									<td>Boca Máxima:</td>
+									<td>4,95 m</td>
 								</tr>
 								<tr>
-									<td>Service</td>
-									<td>Bareboat</td>
+									<td>Pontal:</td>
+									<td>1,55 m</td>
 								</tr>
 								<tr>
-									<td>Beam</td>
-									<td>4,16 m</td>
+									<td>Calado Máximo:</td>
+									<td>1,05</td>
 								</tr>
 								<tr>
-									<td>Draught</td>
-									<td>1,23 m</td>
+									<td>Peso Leve:</td>
+									<td>42 t</td>
 								</tr>
 								<tr>
-									<td>Length at waterline</td>
-									<td>24,16 m</td>
+									<td>Tanque de combustível:</td>
+									<td>3000L</td>
 								</tr>
 								<tr>
-									<td>Water capacity</td>
-									<td>30,000 l</td>
+									<td>Tanque de Água:</td>
+									<td>1000L</td>
 								</tr>
 								<tr>
-									<td>Fuel capacity</td>
-									<td>50,000 l</td>
+									<td>Motorização:</td>
+									<td>IPS 1800</td>
 								</tr>
 								<tr>
-									<td>Flag</td>
-									<td>Marshall islands</td>
+									<td>Passageiros:</td>
+									<td>20+2 </td>
 								</tr>
 							</table>
 							
-							<table>
-								<tr>
-									<th colspan="2">Structure</th>
-								</tr>
-								<tr>
-									<td>Hull</td>
-									<td>Steel</td>
-								</tr>
-								<tr>
-									<td>Superstructure</td>
-									<td>Aluminium</td>
-								</tr>
-								<tr>
-									<td>GT</td>
-									<td>500 T</td>
-								</tr>
-								<tr>
-									<td>Classification</td>
-									<td>Lloyds</td>
-								</tr>
-								<tr>
-									<td>MCA Compliant</td>
-									<td>Yes</td>
-								</tr>
-							</table>
+                            <table>
+                                <tr>
+                                    <th colspan="2">Motores</th>
+                                </tr>
+                                <tr>
+									<td>PARELHA VOLVO</td>
+                                    <td>IPS 1200-D13 - 900HP (DIESEL)</td>
+                                </tr>
+                                <tr>
+									<td>PARELHA</td>
+                                    <td>VOLVO D4- EVC DPH-225HP ( Diesel)</td>
+                                </tr>
+                            </table>
 							
-							<table>
-								<tr>
-									<th colspan="2">Power</th>
-								</tr>
-								<tr>
-									<td>Engines</td>
-									<td>2 x 1577 BHP MTU 8V 4000 M70</td>
-								</tr>
-								<tr>
-									<td>Generators</td>
-									<td>2 x 150 kW Kilopak + 1 x 50 kW Kilopak</td>
-								</tr>
-								<tr>
-									<td>Fuel consumption</td>
-									<td>250 l per hour</td>
-								</tr>
-								<tr>
-									<td>Bow thruster</td>
-									<td>Yes at 150 BHP</td>
-								</tr>
-								<tr>
-									<td>Stabilizers</td>
-									<td>Zero Speed Naiad</td>
-								</tr>
-								<tr>
-									<td>Cruising speed</td>
-									<td>12 Knots</td>
-								</tr>
-								<tr>
-									<td>Top speed</td>
-									<td>14,5 Knots</td>
-								</tr>
-								<tr>
-									<td>Range</td>
-									<td>6.000 Nm (nautical miles) at 10.0 Knots</td>
-								</tr>
-								<tr>
-									<td>Range</td>
-									<td>3.500 Nm (nautical miles) at 13.0 Knots</td>
-								</tr>
-							</table>
 							
-							<table>
-								<tr>
-									<th colspan="2">Design</th>
-								</tr>
-								<tr>
-									<td>Builder/Yard</td>
-									<td>Veisen Yachts</td>
-								</tr>
-								<tr>
-									<td>Naval architect</td>
-									<td>Gama Architects</td>
-								</tr>
-								<tr>
-									<td>Exterior design</td>
-									<td>Frank Hauptman &amp; Veisen</td>
-								</tr>
-								<tr>
-									<td>Interior design</td>
-									<td>Gormit Wallace - Ausgang Interiors</td>
-								</tr>
-							</table>
 						</div>
 						<!-- //OneHalf -->
 						
-						<!-- OneHalf -->
-						<div class="one-half">
-							<div class="border"><img src="assets/images/uploads/content4.jpg" alt="Elan 1923 Impression" /></div>
-						</div>
-						<!-- //OneHalf -->
 					</div>
 				</article>
 				<!-- //Tab Content-->
