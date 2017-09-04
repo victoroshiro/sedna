@@ -133,16 +133,16 @@
 				</div>
 			</div>
 			<div class="wrap">
-				<div class="one-fourth">
+				<div class="one-third">
 					<a href="#"><img src="http://www.placehold.it/410x280"></a>
 				</div>
-				<div class="one-fourth">
+				<div class="one-third">
 					<a href="#"><img src="http://www.placehold.it/410x280"></a>
 				</div>
-				<div class="one-fourth">
+				<div class="one-third">
 					<a href="#"><img src="http://www.placehold.it/410x280"></a>
 				</div>
-				<div class="one-fourth">
+				<div class="one-third one-third-center">
 					<a href="#"><img src="http://www.placehold.it/410x280"></a>
 				</div>
 			</div>
