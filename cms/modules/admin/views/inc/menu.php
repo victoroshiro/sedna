@@ -18,20 +18,16 @@ $tipo = $this->session->userdata('tipo');
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="main-nav">
           <ul class="nav navbar-nav">
+            <li><a href="<?php echo site_url('admin'); ?>" title="Home" class="img-link"><img src="<?php echo site_url('../assets/images/logo.png'); ?>" class="img-menu"></a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Home <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="<?php echo site_url('banners'); ?>">Banners</a></li>
                 <li><a href="<?php echo site_url('quem_somos'); ?>">Quem Somos</a></li>
-                <li><a href="<?php echo site_url('dra_fairbanks'); ?>">Dra. Flavia</a></li>
               </ul>
             </li>
-            <li><a href="<?php echo site_url('ginecologia'); ?>">Ginecologia</a></li>
-            <li><a href="<?php echo site_url('imprensa'); ?>">Imprensa</a></li>
             <li><a href="<?php echo site_url('noticias'); ?>">Notícias</a></li>
-            <li><a href="<?php echo site_url('mitos_verdades'); ?>">Mitos e Verdades</a></li>
-            <li><a href="<?php echo site_url('sexualidade'); ?>">Sexualidade</a></li>
-            <li><a href="<?php echo site_url('obstetricia'); ?>">Obstetrícia</a></li>
+            <li><a href="<?php echo site_url('seminovos'); ?>">Seminovos</a></li>
             <li><a href="<?php echo site_url('landing_pages'); ?>">Landing Pages</a></li>
             <li><a href="<?php echo site_url('exportar'); ?>">Exp. Contatos</a></li>
           </ul>

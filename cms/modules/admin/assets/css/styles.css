@@ -1,3 +1,20 @@
+.nav.navbar-nav .img-link{
+  padding-left: 0px !important;
+}
+.nav.navbar-nav .img-link .img-menu{
+  width: 135px;
+  height: 25px;
+}
+.logo-login{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 25px;
+  margin-top: 15px;
+}
+.logo-login img{
+  width: 145px;
+}
+
 /* margin helpers */
 
 .margin-bottom-xs {

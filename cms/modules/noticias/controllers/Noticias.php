@@ -59,7 +59,7 @@ class Noticias extends CI_Controller {
     {
         $data = $_POST;
 
-        $img_nome = $this->_upload_foto(array('field' => 'imagem', 'width' => 600, 'height' => 335));
+        $img_nome = $this->_upload_foto(array('field' => 'imagem', 'width' => 870, 'height' => 485));
         
         if (!is_array($img_nome) && isset($img_nome)) {
             $data['imagem'] = $img_nome;
@@ -115,7 +115,7 @@ class Noticias extends CI_Controller {
         
         unset($data['id']);
 
-        $img_nome = $this->_upload_foto(array('field' => 'imagem', 'width' => 600, 'height' => 335));
+        $img_nome = $this->_upload_foto(array('field' => 'imagem', 'width' => 870, 'height' => 485));
         if (!is_array($img_nome) && isset($img_nome)) {
             $data['imagem'] = $img_nome;
         }

@@ -1,8 +1,8 @@
 <?php  if (!defined('BASEPATH')) exit('No direct script access allowed');
 
-class Sexualidade_m extends CI_Model {
+class Seminovos_m extends CI_Model {
 
-    public function get_sexualidades($params = array())
+    public function get_seminovos($params = array())
     {
         $options = array(
             'texto' => "",
@@ -21,7 +21,8 @@ class Sexualidade_m extends CI_Model {
         $params = array_merge($options, $params);
 
         $this->db->select('*')
-                 ->from('sexualidades');
+                 ->select('DATE_FORMAT(data_seminovo,"%d/%m/%Y") AS data_seminovo_f', false)
+                 ->from('seminovos');
 
         if ($params['texto'] != '') {
             $this->db->like('titulo', $params['texto']);
@@ -46,20 +47,20 @@ class Sexualidade_m extends CI_Model {
             $this->db->where('id !=', $params['ignore']);
         }
 
-        $this->db->order_by('data_criacao', 'DESC');
+        $this->db->order_by('data_seminovo', 'DESC');
 
         if($params['id']){
             $this->db->where("id", $params['id']);
         }
 
-        $sexualidades = $this->db->get();
+        $seminovos = $this->db->get();
 
         if($params['count']){
-            $toReturn = $sexualidades->num_rows();
+            $toReturn = $seminovos->num_rows();
         }else if($params['id']){
-            $toReturn = $sexualidades->row();
+            $toReturn = $seminovos->row();
         }else{
-            $toReturn = $sexualidades->result();
+            $toReturn = $seminovos->result();
         }
 
         return $toReturn;
@@ -69,13 +70,15 @@ class Sexualidade_m extends CI_Model {
     {
         $data['slug'] = slug(array(
                                 'string' => $data['titulo'],
-                                'tabela' => 'sexualidades'
+                                'tabela' => 'seminovos'
                                 )
                             );
 
+        $data['data_seminovo'] = preg_replace('/(\d{2})\/(\d{2})\/(\d{4})/', '$3-$2-$1', $data['data_seminovo']);
+
         $this->db->trans_start();
 
-        $this->db->insert('sexualidades', $data);
+        $this->db->insert('seminovos', $data);
 
         $this->db->trans_complete();
         
@@ -86,14 +89,28 @@ class Sexualidade_m extends CI_Model {
         
         $data['slug'] = slug(array(
                                 'string' => $data['titulo'],
-                                'tabela' => 'sexualidades',
+                                'tabela' => 'seminovos',
                                 'id' => $dataWhere['id']
                                 )
                             );
 
+        if(isset($data['imagem'])){
+            $link = $this->get_seminovos(array('id' => $dataWhere['id']));
+            $dir = dirname(getcwd()).'/userfiles/seminovos/';
+            
+            // Remove as imagens antigas
+            if($link){
+                if(isset($data['imagem'])){
+                    @unlink($dir.$link->imagem);
+                }
+            }            
+        }
+
+        $data['data_seminovo'] = preg_replace('/(\d{2})\/(\d{2})\/(\d{4})/', '$3-$2-$1', $data['data_seminovo']);
+
         $this->db->trans_start();
 
-        $this->db->where('id', $dataWhere['id'])->update('sexualidades', $data);
+        $this->db->where('id', $dataWhere['id'])->update('seminovos', $data);
         
         $this->db->trans_complete();
 
@@ -103,7 +120,11 @@ class Sexualidade_m extends CI_Model {
 
     public function excluir($id)
     {
-        if ($this->db->delete('sexualidades', array('id' => $id))){
+        $seminovo = $this->get_seminovos(array('id' => $id));
+        $dir = dirname(getcwd()).'/userfiles/seminovos/';
+
+        if ($this->db->delete('seminovos', array('id' => $id))){
+            @unlink($dir.$seminovo->imagem);
             return true;
         }else{
             return false;
