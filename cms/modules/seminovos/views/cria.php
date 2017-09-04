@@ -9,14 +9,13 @@
 		</div>
 		
 		<div class="container">
-			<h1>Ginecologia</h1>
+			<h1>Seminovos</h1>
 			<?php $this->load->view('admin/inc/messages') ?>
 			
-			<form method="post" action="<?php echo site_url('ginecologia/atualizar'); ?>" id="form_novidades" enctype="multipart/form-data">
-				<input type="hidden" name="id" value="<?= $gineco->id ?>">
+			<form method="post" action="<?php echo site_url('seminovos/salvar'); ?>" id="form_novidades" enctype="multipart/form-data">
 					
 				<div id="acoes" class="text-right">
-					<input class="btn btn-default" type="button" onclick="location.href = '<?php echo site_url('ginecologia'); ?>'" value="Cancelar" />
+					<input class="btn btn-default" type="button" onclick="location.href = '<?php echo site_url('seminovos'); ?>'" value="Cancelar" />
 					<input class="btn btn-success" type="submit" value="Salvar" />
 				</div>
 				
@@ -24,7 +23,7 @@
 			
 
 				<div id="acoes" class="text-right">
-					<input class="btn btn-default" type="button" onclick="location.href = '<?php echo site_url('ginecologia'); ?>'" value="Cancelar" />
+					<input class="btn btn-default" type="button" onclick="location.href = '<?php echo site_url('seminovos'); ?>'" value="Cancelar" />
 					<input class="btn btn-success" type="submit" value="Salvar" />
 				</div>
 			   

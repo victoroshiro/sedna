@@ -37,18 +37,9 @@
                         </div>
                         <div class="col-md-2">
                             <div class="thumbnail text-center">
-                                <a href="<?php echo site_url('mitos_verdades'); ?>">
-                                    <span class="font-lg glyphicon glyphicon-question-sign"></span>
-                                    <div class="caption">Mitos e Verdades
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="thumbnail text-center">
-                                <a href="<?php echo site_url('ginecologia'); ?>">
-                                    <span class="font-lg glyphicon glyphicon-certificate"></span>
-                                    <div class="caption">Ginecologia
+                                <a href="<?php echo site_url('seminovos'); ?>">
+                                    <span class="font-lg glyphicon glyphicon-list-alt"></span>
+                                    <div class="caption">Seminovos
                                     </div>
                                 </a>
                             </div>
@@ -58,42 +49,6 @@
                                 <a href="<?php echo site_url('quem_somos'); ?>">
                                     <span class="font-lg glyphicon glyphicon-user"></span>
                                     <div class="caption">Quem Somos
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="thumbnail text-center">
-                                <a href="<?php echo site_url('dra_fairbanks'); ?>">
-                                    <span class="font-lg glyphicon glyphicon-heart-empty"></span>
-                                    <div class="caption">Dra. Flavia Fairbanks
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="thumbnail text-center">
-                                <a href="<?php echo site_url('sexualidade'); ?>">
-                                    <span class="font-lg glyphicon glyphicon-bell"></span>
-                                    <div class="caption">Sexualidade
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="thumbnail text-center">
-                                <a href="<?php echo site_url('obstetricia'); ?>">
-                                    <span class="font-lg glyphicon glyphicon-book"></span>
-                                    <div class="caption">Obstetrícia
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="thumbnail text-center">
-                                <a href="<?php echo site_url('imprensa'); ?>">
-                                    <span class="font-lg glyphicon glyphicon-globe"></span>
-                                    <div class="caption">Imprensa
                                     </div>
                                 </a>
                             </div>

@@ -5,7 +5,7 @@
     <!-- End of Meta -->
 
     <!-- Page title -->
-    <title>CMS - FemCare</title>
+    <title>CMS - Cimitarra</title>
     <!-- End of Page title -->
 
     <!-- Libraries -->

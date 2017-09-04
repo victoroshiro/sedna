@@ -10,12 +10,12 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1>Obstetrícia</h1>
+                <h1>Seminovos</h1>
 
                 <?php $this->load->view('admin/inc/messages') ?>
 
                 <h2 class="h4">Pesquisar</h2>
-                <form name="busca" id="busca" action="<?php echo site_url('obstetricia'); ?>" method="post">
+                <form name="busca" id="busca" action="<?php echo site_url('seminovos'); ?>" method="post">
                     <div class="row">
                         <div class="form-group col-md-5">
                             <label for="texto">Texto:</label>
@@ -30,7 +30,7 @@
                             <a class="btn btn-default" href="javascript: void(0);" onclick="$('#busca').submit();">
                                 Buscar
                             </a>
-                            <a class="btn btn-default" href="<?php echo site_url('obstetricia/limpar'); ?>">
+                            <a class="btn btn-default" href="<?php echo site_url('seminovos/limpar'); ?>">
                                 Cancelar
                             </a>
                         </div>
@@ -40,10 +40,10 @@
                 <hr>
 
                 <div id="acoes" class="text-right">
-                    <div class="btn btn-danger" name="excluir-registros" data-module="obstetricia">
+                    <div class="btn btn-danger" name="excluir-registros" data-module="seminovos">
                         Excluir
                     </div>
-                    <a class="btn btn-default" href="<?php echo site_url('obstetricia/cria'); ?>">                                    
+                    <a class="btn btn-default" href="<?php echo site_url('seminovos/cria'); ?>">                                    
                         Incluir
                     </a>
                 </div>
@@ -54,25 +54,29 @@
                             <td>
                                 <input type="checkbox" name="selecionar_todos" onclick="selecionar_todos(this)" id="selecionar_todos" value="" />
                             </td>
+                            <td>Data</td>
                             <td>Título</td>
-                            <td>Data de Modificação</td>
+                            <td>Data de Publicação</td>
                         </tr>
                     </thead>
                     <tbody class="text-center" id="sortable">
-                        <?php if ($obstetricia_lista): ?>
-                            <?php foreach ($obstetricia_lista as $key => $obstetricia): ?>
-                                <tr id="<?php echo $obstetricia->id ?>">
+                        <?php if ($seminovos_lista): ?>
+                            <?php foreach ($seminovos_lista as $key => $seminovo): ?>
+                                <tr id="<?php echo $seminovo->id ?>">
                                     <td class="selecao text-center">
-                                        <input type="checkbox" name="" id="" value="<?php echo $obstetricia->id ?>" />
+                                        <input type="checkbox" name="" id="" value="<?php echo $seminovo->id ?>" />
                                     </td>
                                     <td align="center" >
-                                        <?php echo $obstetricia->titulo; ?>
+                                        <?php echo $seminovo->data_seminovo_f; ?>
                                     </td>
                                     <td align="center" >
-                                        <?php echo $obstetricia->data_criacao; ?>
+                                        <?php echo $seminovo->titulo; ?>
+                                    </td>
+                                    <td align="center" >
+                                        <?php echo $seminovo->data_criacao; ?>
                                     </td>
                                     <td align="center">
-                                        <a href="<?php echo site_url('obstetricia/editar/'.$obstetricia->id); ?>">Modificar</a>
+                                        <a href="<?php echo site_url('seminovos/editar/'.$seminovo->id); ?>">Modificar</a>
                                     </td>
                                 </tr>        
                             <?php endforeach ?>
@@ -85,10 +89,10 @@
                 </table>
 
                 <div id="acoes" class="text-right">
-                    <div class="btn btn-danger" name="excluir-registros" data-module="obstetricia">
+                    <div class="btn btn-danger" name="excluir-registros" data-module="seminovos">
                         Excluir
                     </div>
-                    <a class="btn btn-default" href="<?php echo site_url('obstetricia/cria'); ?>">
+                    <a class="btn btn-default" href="<?php echo site_url('seminovos/cria'); ?>">
                         Incluir
                     </a>
                 </div>
