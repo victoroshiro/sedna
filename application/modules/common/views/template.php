@@ -286,7 +286,6 @@
               <ul>
                 <li><a href="#">360</a></li>
                 <li><a href="#">400</a></li>
-                <li><a href="#">440</a></li>
                 <li><a href="#">460</a></li>                
               </ul>
             </div>
@@ -296,6 +295,7 @@
             <div class="one-fourth">
               <h6>Cimitarra Yachts</h6>
               <ul>
+                <li><a href="#">540</a></li>
                 <li><a href="#">600</a></li>
                 <li><a href="#">640</a></li>
                 <li><a href="#">780</a></li>
