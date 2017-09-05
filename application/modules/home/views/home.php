@@ -173,7 +173,7 @@
 			<?php foreach ($seminovos as $key => $item): ?>
 				<!-- Item -->
 				<figure class="one-fourth item">
-                    <img src="assets/uploads/seminovos/<?php echo $item->imagem ?>" alt="<?php echo $item->titulo; ?>" />
+                    <img src="<?php echo site_url('userfiles/seminovos/'.$item->imagem); ?>" alt="<?php echo $item->titulo; ?>" />
 					<figcaption>
 						<dl>
 							<dt><?php echo $item->titulo; ?></dt>
