@@ -79,7 +79,7 @@
 							<div class="tabs--image-wrap">
 								<img src="assets/images/ico1.png" alt="">
 							</div>
-							Tell us what you need. <br />We will do the rest.
+							Embarcações novas e seminovas.
 						</a>
 					</li>
 					<li>
@@ -87,7 +87,7 @@
 							<div class="tabs--image-wrap">
 								<img src="assets/images/ico2.png" alt="">
 							</div>
-							Check our Early Season Mediterranean Deals.
+							Um dos maiores estaleiros do país.
 						</a>
 					</li>
 					<li>
@@ -95,7 +95,7 @@
 							<div class="tabs--image-wrap">
 								<img src="assets/images/ico3.png" alt="">
 							</div>
-							New to Sailing?<br />We‘ve got you covered.
+							Barcos para quem gosta de sofisticação, conforto e segurança.
 						</a>
 					</li>
 					<li>
@@ -103,7 +103,7 @@
 							<div class="tabs--image-wrap">
 								<img src="assets/images/ico4.png" alt="">
 							</div>
-							Win a Sailing Holiday in Mediterranean!
+                            Assistência técnica com garantia e qualidade.
 						</a>
 					</li>
 				</ul>
@@ -151,8 +151,10 @@
 		<!-- Photo -->
 		<section class="photo">
 			<div class="wrap center">
-				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonmy nibh euismod tincidunt ut laoreet dolore magna aliquam aliquip ex ea commodoerat volutpat. Ut wisi enim ad minim veniam, quis nostrud.</p>
-				<a href="#" title="Find out more" class="button white medium">Sobre a Cimitarra Yachts</a>
+				<h2>Assistência Técnica</h2>
+                <p>Exclusivo serviço de assistência para embarcações. Equipe formada por profissionais
+                experientes, treinados e qualificados.</p>
+				<a href="empresa" title="Find out more" class="button white medium">Sobre a Cimitarra Yachts</a>
 			</div>
 		</section>
 		<!-- //Photo -->

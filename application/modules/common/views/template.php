@@ -255,9 +255,13 @@
     <!-- Photo -->
     <section class="photo">
       <div class="wrap center">
-        <h2>Find out more about our sailing destinations, marinas and suggested itineraries</h2>
-        <p>Wild, exotic and remote; cosmopolitan and cutting-edge; untouched and tranquil, <br />discover our incredible sailing destinations. <br />See the world. Differently.</p>
-        <a href="#" title="Find out more" class="button white medium">Find out more</a>
+        <h2>Estaleiro Cimitarra. Exporta de embarcações desde 2000, com seriedade e compromisso.</h2>
+        <p>
+            Cimitarra Yachts.
+            <br>
+            A compra inteligente.
+        </p>
+        <a href="empresa" title="Saiba Mais" class="button white medium">Saiba Mais</a>
       </div>
     </section>
     <!-- //Photo -->
@@ -271,7 +275,7 @@
             <div class="one-fourth">
               <img src="assets/images/logo-white.png" class="margin-bottom-md" alt="Cimitarra Yachts">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium vero nihil corporis!
+                Trabalhamos com as melhores embarcações. Garantindo luxo, sofisticação conforto e segurança.
               </p>
             </div>
             <!-- //OneFourth -->
@@ -302,7 +306,7 @@
             <!-- OneFourth -->
             <div class="one-fourth">
               <h6>Siga-nos</h6>
-              <p>Lorem ipsum dolor sit amet, sectetuer adipiscing elit, sed diam nonummy  dolore magna aliquam erat volutpat. </p>
+              <p>Siga nossas redes sociais e fique por dentro de tudo que acontece na Cimitarra.</p>
               <a href="#" title="Facebook" class="circle"><i class="fa fa-facebook fa-fw"></i></a>
               <a href="#" title="Instagram" class="circle"><i class="fa fa-instagram fa-fw"></i></a>
               <a href="#" title="Youtube" class="circle"><i class="fa fa-youtube-play fa-fw"></i></a>
