@@ -15,7 +15,7 @@
 		</section>
 		<!-- //Tab navigation -->
 
-		<section class="photo" style="min-height: 480px; background-image: url(assets/images/empresa/parallax1.jpg);">
+		<section class="photo" style="min-height: 480px; background-image: url(assets/images/parallax/quem-somos.jpg);">
 		</section>
 
 		<!-- Blog posts -->
