@@ -202,7 +202,7 @@
 				<?php foreach ($all_news as $key => $item): ?>
 					<div class="one-third">
 						<div class="news--block">
-                        <a href="<?php echo site_url('noticias/detalhe/'.$item->slug); ?>"><img src="assets/uploads/noticias/<?php echo $item->imagem ?>"></a>
+                        <a href="<?php echo site_url('noticias/detalhe/'.$item->slug); ?>"><img src="<?php echo site_url('userfiles/noticias/'.$item->imagem); ?>"></a>
 							<h3><?php echo $item->titulo; ?></h3>
 							<p><?php echo $item->resumo; ?></p>
 							<div class="text-center">
