@@ -15,7 +15,7 @@
 		</section>
 		<!-- //Tab navigation -->
 
-		<section class="photo" style="min-height: 480px; background-image: url(assets/images/parallax/quem-somos.jpg);">
+		<section class="photo" style="background-image: url(assets/images/parallax/quem-somos.jpg);">
 		</section>
 
 		<!-- Blog posts -->
@@ -30,8 +30,11 @@
 						<div class="one-half heightfix">
 							<div class="text">
 								<h3>Estaleiro</h3>
-								<p>This year’s Taiwan International Boat Show was a huge success. Taken place from May 8 to 11, the event was attended by more than 70,000 visitors.</p>
-								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in </p>
+                                <p>
+                                    O Estaleiro Cimitarra exporta suas lanchas desde 2000, com seriedade e compromisso com as normas de exportação , seguindo rigorosamente todos os requisitos necessários das normas internacionais de navegação.
+                                    <br>
+                                    A empresa já exportou para: Angola, Canadá, Noruega e Suécia.
+                                </p>
 							</div>
 						</div>
 					</article>
