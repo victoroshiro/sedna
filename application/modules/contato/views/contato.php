@@ -3,8 +3,8 @@
 	<!-- Intro -->
 	<header class="intro">
 		<div class="wrap">
-			<h1>Contact us</h1>
-			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea.</p>
+			<h1>Contato</h1>
+			<p>Entre em contato conosco pelo formulário abaixo, responderemos o mais rápido possível</p>
 		</div>
 	</header>
 	<!-- //Intro -->
@@ -13,7 +13,7 @@
 		<article class="full-width hentry">
 			<div class="one-half">
 				<div class="text">
-					<h4>Contact us</h4>
+					<h4>Contato</h4>
 					<p>
 						+55 (11) 26283065
 					</p>
@@ -30,22 +30,22 @@
 						<fieldset>
 							<div id="message"></div>
 							<div class="full-width">
-								<label for="name">Name and surname</label>
+								<label for="name">Nome e Sobrenome</label>
 								<input type="text" id="name"/>
 							</div>
 							
 							<div class="full-width">
-								<label for="email">E-mail address</label>
+								<label for="email">E-mail</label>
 								<input type="email" id="email"/>
 							</div>
 							
 							<div class="full-width">
-								<label for="phone">Phone number</label>
+								<label for="phone">Telefone</label>
 								<input type="number" id="phone"/>
 							</div>
 							
 							<div class="full-width">
-								<label for="comments">Your message</label>
+								<label for="comments">Sua Mensagem</label>
 								<textarea id="comments"></textarea>
 							</div>
 							
@@ -56,7 +56,7 @@
 					</form>
 				</div>
 			</div>
-			<div class="one-half"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.8695132292!2d-121.4429125!3d38.56154050000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C+CA%2C+USA!5e0!3m2!1sen!2shr!4v1426758068135" width="1000" height="800" frameborder="0" style="border:0"></iframe></div>
+			<div class="one-half"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.6306871698516!2d-46.66299648502114!3d-23.617574384655025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a6d8838cae5%3A0x53fba56ab556aaf1!2sAv.+dos+Bandeirantes%2C+4063+-+Planalto+Paulista%2C+S%C3%A3o+Paulo+-+SP!5e0!3m2!1sen!2sbr!4v1504621483125" width="1000" height="800" frameborder="0" style="border:0"></iframe></div>
 		</article>
 		<!-- //Item -->
 	</div>

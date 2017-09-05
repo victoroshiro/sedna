@@ -10,7 +10,7 @@
 		<section class="white">
 			<div class="wrap center">
 				<h2>Bem-Vindo à Cimitarra Yachts</h2>
-				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorperut commodo consequat. </p>
+				<p>Embarcações de alta qualidade e desempenho. Referência nacional e internacional em barcos!</p>
 			</div>
 		</section>
 		<!-- //Tab navigation -->
