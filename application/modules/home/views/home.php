@@ -126,13 +126,13 @@
 			</div>
 			<div class="wrap">
 				<div class="one-third">
-					<a href="#"><img src="http://www.placehold.it/410x280"></a>
+					<a href="#"><img src="assets/images/embarcacoes/home/360.jpg"></a>
 				</div>
 				<div class="one-third">
-					<a href="#"><img src="http://www.placehold.it/410x280"></a>
+					<a href="#"><img src="assets/images/embarcacoes/home/400.jpg"></a>
 				</div>
 				<div class="one-third">
-					<a href="#"><img src="http://www.placehold.it/410x280"></a>
+					<a href="#"><img src="assets/images/embarcacoes/home/460.jpg"></a>
 				</div>
 			</div>
 			<div class="wrap center">
@@ -142,16 +142,16 @@
 			</div>
 			<div class="wrap">
 				<div class="one-third">
-					<a href="#"><img src="http://www.placehold.it/410x280"></a>
+					<a href="#"><img src="assets/images/embarcacoes/home/540.jpg"></a>
 				</div>
 				<div class="one-third">
-					<a href="#"><img src="http://www.placehold.it/410x280"></a>
+					<a href="#"><img src="assets/images/embarcacoes/home/600.jpg"></a>
 				</div>
 				<div class="one-third">
-					<a href="#"><img src="http://www.placehold.it/410x280"></a>
+					<a href="#"><img src="assets/images/embarcacoes/home/640.jpg"></a>
 				</div>
 				<div class="one-third one-third-center">
-					<a href="#"><img src="http://www.placehold.it/410x280"></a>
+					<a href="#"><img src="assets/images/embarcacoes/home/780.jpg"></a>
 				</div>
 			</div>
 		</section>
