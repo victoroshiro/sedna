@@ -15,6 +15,7 @@
 				    <li role="presentation" class="active"><a href="#template" aria-controls="home" role="tab" data-toggle="tab">Template</a></li>
 		            <li role="presentation"><a href="#descricao-tab" aria-controls="descricao-tab" role="tab" data-toggle="tab">Descrição</a></li>
 		            <li role="presentation"><a href="#especificacao-tab" aria-controls="especificacao-tab" role="tab" data-toggle="tab">Especificações Técnicas</a></li>
+		            <li role="presentation"><a href="#serie-tab" aria-controls="serie-tab" role="tab" data-toggle="tab">Itens de Série</a></li>
 		            <li role="presentation"><a href="#galeria" aria-controls="galeria" role="tab" data-toggle="tab">Galeria</a></li>
 				</ul>
 				<div class="tab-content">
@@ -234,7 +235,7 @@
 							</div>
 			    		</form>
 		    		</div>
-		    		 <div role="tabpanel" class="tabs-imoveis tab-pane fade in" id="especificacao-tab">
+		    		<div role="tabpanel" class="tabs-imoveis tab-pane fade in" id="especificacao-tab">
 				    	<form method="post" action="<?php echo site_url('embarcacoes/salva_especificacoes'); ?>" id="form_novidades" enctype="multipart/form-data">
 				    		<input type="hidden" name="id_embarcacoes" value="<?= $embarcacao->id ?>">
 				    		<div id="acoes" class="text-right">
@@ -257,6 +258,34 @@
 								if($embarcacao_especificacoes){
 							?>
 						    		<input type="hidden" name="id_embarcacao_especificacoes" value="<?= $embarcacao_especificacoes->id ?>">
+							<?php  
+								}
+							?>
+			    		</form>
+		    		</div>
+		    		<div role="tabpanel" class="tabs-imoveis tab-pane fade in" id="serie-tab">
+				    	<form method="post" action="<?php echo site_url('embarcacoes/salva_serie'); ?>" id="form_novidades" enctype="multipart/form-data">
+				    		<input type="hidden" name="id_embarcacoes" value="<?= $embarcacao->id ?>">
+				    		<div id="acoes" class="text-right">
+				    			<input class="btn btn-default" type="button" onclick="location.href = '<?php echo site_url('embarcacoes'); ?>'" value="Cancelar" />
+				    			<input class="btn btn-success" type="submit" value="Salvar" />
+				    		</div>
+							<div class="col-md-12">
+								<div class="form-group">
+								    <label for="lf">Lado Esquerdo: </label><br />
+								    <textarea name="descricao_um" id="descricao-serie" cols="30" rows="10"><?php echo ($embarcacao_serie) ? $embarcacao_serie->descricao_um : ''; ?></textarea>
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="form-group">
+								    <label for="lf">Lado Direito: </label><br />
+								    <textarea name="descricao_dois" id="descricao-serie-dois" cols="30" rows="10"><?php echo ($embarcacao_serie) ? $embarcacao_serie->descricao_dois : ''; ?></textarea>
+								</div>
+							</div>
+							<?php  
+								if($embarcacao_serie){
+							?>
+						    		<input type="hidden" name="id_embarcacao_serie" value="<?= $embarcacao_serie->id ?>">
 							<?php  
 								}
 							?>
@@ -337,6 +366,8 @@
 			    
 			    CKEDITOR.replace('descricao');
 			    CKEDITOR.replace('descricao-especificacao');
+			    CKEDITOR.replace('descricao-serie');
+			    CKEDITOR.replace('descricao-serie-dois');
 			    CKEDITOR.replace('resumo');
 
 			    $('.normal').show();

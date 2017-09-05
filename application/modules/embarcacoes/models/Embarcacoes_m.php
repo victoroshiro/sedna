@@ -130,4 +130,18 @@ class Embarcacoes_m extends CI_Model
 
         return ($query->num_rows()) ? $query->row() : false;
     }
+
+    public function get_embarcacao_serie($id = false) {
+        
+        $this->db->select("*")
+                 ->from("embarcacoes_serie");
+
+        if($id){
+            $this->db->where("id_embarcacoes", $id);
+        }
+
+        $query = $this->db->get();
+
+        return ($query->num_rows()) ? $query->row() : false;
+    }
 }

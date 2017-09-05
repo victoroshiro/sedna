@@ -97,6 +97,7 @@ class Embarcacoes extends CI_Controller {
         $this->data['embarcacao'] = $this->Embarcacoes_m->get_embarcacao($id);
         $this->data['embarcacao_descricao'] = $this->Embarcacoes_m->get_embarcacao_descricao($id);
         $this->data['embarcacao_especificacoes'] = $this->Embarcacoes_m->get_embarcacao_especificacoes($id);
+        $this->data['embarcacao_serie'] = $this->Embarcacoes_m->get_embarcacao_serie($id);
         $this->data['imagens'] = $this->Embarcacoes_m->get_imagens($id);
 
         if($this->data['imagens']){
@@ -196,6 +197,19 @@ class Embarcacoes extends CI_Controller {
         $data = $this->input->post();
 
         if($this->Embarcacoes_m->salvar_especificacoes($data)){
+            $this->session->set_flashdata('messages', 'Registro cadastrado com sucesso.');
+            redirect('embarcacoes', 'location');
+        }else{
+            $this->session->set_flashdata('messages', 'Não foi possível atualizar o registro. Tente novamente.');
+            redirect('embarcacoes', 'location');
+        }
+    }
+
+    public function salva_serie() 
+    {
+        $data = $this->input->post();
+
+        if($this->Embarcacoes_m->salvar_serie($data)){
             $this->session->set_flashdata('messages', 'Registro cadastrado com sucesso.');
             redirect('embarcacoes', 'location');
         }else{

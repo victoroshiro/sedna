@@ -254,6 +254,20 @@ class Embarcacoes_m extends CI_Model {
         return ($query->num_rows()) ? $query->row() : false;
     }
 
+    public function get_embarcacao_serie($id = false) {
+        
+        $this->db->select("*")
+                 ->from("embarcacoes_serie");
+
+        if($id){
+            $this->db->where("id_embarcacoes", $id);
+        }
+
+        $query = $this->db->get();
+
+        return ($query->num_rows()) ? $query->row() : false;
+    }
+
     function upload_foto_galeria($field) {
        
         $dir = dirname(getcwd()).'/userfiles/embarcacoes/';
@@ -516,6 +530,20 @@ class Embarcacoes_m extends CI_Model {
             $this->db->update('embarcacoes_especificacoes', $data, $id);
         }else{
             $this->db->insert('embarcacoes_especificacoes', $data);
+        }
+
+        $this->db->trans_complete();
+
+        return $this->db->trans_status();
+    }
+    public function salvar_serie($data) {
+        $this->db->trans_start();
+
+        if(isset($data['id_embarcacao_serie'])){
+            unset($data['id_embarcacao_serie']);
+            $this->db->update('embarcacoes_serie', $data, $id);
+        }else{
+            $this->db->insert('embarcacoes_serie', $data);
         }
 
         $this->db->trans_complete();

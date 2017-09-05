@@ -128,83 +128,112 @@
 			<!-- Tab navigation -->
 			<nav class="tabs alternative six" role="navigation" id="tab-navigation">
 				<ul class="wrap">
-					<li><a href="#tab1" title="Description">
-						<span class="icojam_info_3"></span> Descrição
-					</a></li>
-					<li><a href="#tab2" title="Specifications">
-						<span class="icojam_document"></span> SOBRE a <?php echo $embarcacao->titulo; ?>
-					</a></li>
-					<li><a href="#tab3" title="Equipment">
-						<span class="icojam_anchor"></span> ITENS DE SERIE
-					</a></li>
+					<?php  
+						if($embarcacao_descricao){
+					?>
+							<li>
+								<a href="#tab1" title="Description">
+									<span class="icojam_info_3"></span> Descrição
+								</a>
+							</li>
+					<?php  
+						}
+						if($embarcacao_especificacoes){
+					?>
+							<li>
+								<a href="#tab2" title="Specifications">
+									<span class="icojam_document"></span> SOBRE a <?php echo $embarcacao->titulo; ?>
+								</a>
+							</li>
+					<?php  
+						}
+						if($embarcacao_serie){
+					?>
+							<li>
+								<a href="#tab3" title="Equipment">
+									<span class="icojam_anchor"></span> ITENS DE SERIE
+								</a>
+							</li>
+					<?php  
+						}
+					?>
 				</ul>
 			</nav>
 			<!-- //Tab navigation -->
 			
 			<!-- Wrapper -->
 			<div class="wrap">
-				<!-- Tab Content-->
-				<article class="tab-content" id="tab1">
-					<div class="row">
-						<!-- OneHalf -->
-						<div class="one-half">
-							<h2><?php echo $embarcacao_descricao->titulo; ?></h2>
-							<?php echo $embarcacao_descricao->descricao; ?>
-						</div>
-						<!-- //OneHalf -->
-						
-						<!-- OneHalf -->
-						<div class="one-half">
-							<img src="<?php echo site_url('userfiles/embarcacoes/'.$embarcacao_descricao->imagem); ?>" alt="<?php echo $embarcacao_descricao->titulo; ?>" />
-						</div>
-						<!-- //OneHalf -->
-					</div>
-
-				</article>
-				<!-- //Tab Content-->
+				<?php  
+					if($embarcacao_descricao){
+				?>
+						<!-- Tab Content-->
+						<article class="tab-content" id="tab1">
+							<div class="row">
+								<!-- OneHalf -->
+								<div class="one-half">
+									<h2><?php echo $embarcacao_descricao->titulo; ?></h2>
+									<?php echo $embarcacao_descricao->descricao; ?>
+								</div>
+								<!-- //OneHalf -->
+								
+								<!-- OneHalf -->
+								<div class="one-half">
+									<img src="<?php echo site_url('userfiles/embarcacoes/'.$embarcacao_descricao->imagem); ?>" alt="<?php echo $embarcacao_descricao->titulo; ?>" />
+								</div>
+								<!-- //OneHalf -->
+							</div>
+						</article>
+						<!-- //Tab Content-->
+				<?php  
+					}
+					if($embarcacao_especificacoes){
+				?>
+						<!-- Tab Content-->
+						<article class="tab-content" id="tab2">
+							<div class="row">
+								<!-- OneHalf -->
+								<div class="one-half one-half-center">
+									<h2><?php echo $embarcacao->titulo; ?></h2>
+									<?php echo $embarcacao_especificacoes->descricao; ?>
+								</div>
+								<!-- //OneHalf -->						
+							</div>
+						</article>
+						<!-- //Tab Content-->
+				<?php  
+					}
+					if($embarcacao_serie){
+				?>
 				
-				<!-- Tab Content-->
-				<article class="tab-content" id="tab2">
-					<div class="row">
-						<!-- OneHalf -->
-						<div class="one-half one-half-center">
-							<h2><?php echo $embarcacao->titulo; ?></h2>
-							<?php echo $embarcacao_especificacoes->descricao; ?>
-						</div>
-						<!-- //OneHalf -->						
-					</div>
-				</article>
-				<!-- //Tab Content-->
-				
-				<!-- Tab Content-->
-				<article class="tab-content" id="tab3">
-					<div class="row">
-						<!-- FullWidth -->
-						<div class="one-half">
-							<h3>Deck equipment</h3>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </div>
-                        <div class="one-half">
-							<h3>Safety equipment</h3>
-							<ul>
-								<li>Dinghy</li>
-								<li>Emergency tiller</li>
-								<li>Life raft</li>
-								<li>Floating Light</li>
-								<li>Life jackets</li>
-								<li>Spinnaker pole</li>
-								<li>Torch</li>
-								<li>Box of flaress</li>
-								<li>Safety harnesses</li>
-								<li>Winches MAIN SHEET X2</li>
-								<li>Winches GENOA SHEET X2</li>
-								<li>First aid kit</li>
-							</ul>
-						</div>
-						<!-- //FullWidth -->
-					</div>
-				</article>
-				<!-- //Tab Content-->
+						<!-- Tab Content-->
+						<article class="tab-content" id="tab3">
+							<div class="row">
+								<!-- FullWidth -->
+								<?php  
+									if($embarcacao_serie){
+										if(!is_null($embarcacao_serie->descricao_um) && $embarcacao_serie->descricao_um != ''){
+								?>
+											<div class="one-half">
+												<?php echo $embarcacao_serie->descricao_um; ?>
+					                        </div>
+		                        <?php  
+		                        		}
+										if(!is_null($embarcacao_serie->descricao_dois) && $embarcacao_serie->descricao_dois != ''){
+		                        ?>
+					                        <div class="one-half">
+												<?php echo $embarcacao_serie->descricao_dois; ?>
+											</div>
+								<?php
+										}
+									}
+								?>
+								<!-- //FullWidth -->
+							</div>
+						</article>
+						<!-- //Tab Content-->
+				<?php  
+					}
+				?>
 			</div>
 			<!-- //Wrapper -->
 		</div>
@@ -226,9 +255,9 @@
 				<div class="clearfix">
 					<div class="text">
 						<h4>Fale com a Cimitarra Yachts:</h4>
-						<p>
+						<!-- <p>
 							Please complete the information below and we will respond to your inquiry as soon as possible. Your information will not be used for any other purposes. All fields are required.
-						</p>
+						</p> -->
 						
 						<form method="post" action="contact_form_message.php" name="contactform" id="contactform">
 							<fieldset>
@@ -264,7 +293,7 @@
 								
 								<div class="full-width">
 									<div class="padding-h-md">
-										<label for="comments">Your message</label>
+										<label for="comments">Mensagem</label>
 										<textarea id="comments"></textarea>
 									</div>
 								</div>
