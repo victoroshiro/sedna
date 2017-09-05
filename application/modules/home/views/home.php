@@ -173,7 +173,7 @@
 			<?php foreach ($seminovos as $key => $item): ?>
 				<!-- Item -->
 				<figure class="one-fourth item">
-					<img src="assets/uploads/img.jpg" alt="" />
+                    <img src="assets/uploads/seminovos/<?php echo $item->imagem ?>" alt="<?php echo $item->titulo; ?>" />
 					<figcaption>
 						<dl>
 							<dt><?php echo $item->titulo; ?></dt>
@@ -202,7 +202,7 @@
 				<?php foreach ($all_news as $key => $item): ?>
 					<div class="one-third">
 						<div class="news--block">
-							<a href="<?php echo site_url('noticias/detalhe/'.$item->slug); ?>"><img src="http://www.placehold.it/410x280"></a>
+                        <a href="<?php echo site_url('noticias/detalhe/'.$item->slug); ?>"><img src="assets/uploads/noticias/<?php echo $item->imagem ?>"></a>
 							<h3><?php echo $item->titulo; ?></h3>
 							<p><?php echo $item->resumo; ?></p>
 							<div class="text-center">
