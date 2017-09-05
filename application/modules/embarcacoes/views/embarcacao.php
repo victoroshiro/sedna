@@ -209,6 +209,7 @@
 						</div>
 						<!-- //OneHalf -->
 					</div>
+
 				</article>
 				<!-- //Tab Content-->
 				
@@ -328,6 +329,11 @@
 		</div>
 		<!-- //Content-->
 		
+        <!-- Photo -->
+        <section class="photo" style="background-image: url('assets/images/ship.jpg'); height: 415px;">
+        </section>
+        <!-- //Photo -->
+
 		<div class="wrap">
 			<div class="full-width">
 				
