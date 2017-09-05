@@ -157,12 +157,12 @@
 		</section>
 		
 		<!-- Photo -->
-            <section class="photo" style="background-image: url('assets/images/parallax/home.jpg');">
+            <section class="photo bg-white" style="background-image: url('assets/images/parallax/home.jpg');">
 			<div class="wrap center">
 				<h2>Assistência Técnica</h2>
                 <p>Exclusivo serviço de assistência para embarcações. Equipe formada por profissionais
                 experientes, treinados e qualificados.</p>
-				<a href="empresa" title="Find out more" class="button white medium">Sobre a Cimitarra Yachts</a>
+				<a href="empresa" title="Find out more" class="button grey medium">Sobre a Cimitarra Yachts</a>
 			</div>
 		</section>
 		<!-- //Photo -->

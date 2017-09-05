@@ -344,6 +344,11 @@ section.white h2		{padding-bottom:38px;}
 .photo h2			{color:#fff;padding:0 0 40px !important;}
 .photo p 			{font-size:18px;font-weight:600;padding:0 0 50px;}
 
+.photo.bg-white				{overflow:hidden;position:static !important;padding:70px 0 80px;color:#515e64;background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(../images/ship.jpg) 50% 50% no-repeat;background-size:cover; background-attachment: fixed;-webkit-background-size: cover !important;}
+.photo.bg-white .wrap.center 	{position:relative;z-index:2;max-width:50%;}
+.photo.bg-white h2			{color:#515e64;padding:0 0 40px !important;}
+.photo.bg-white p 			{font-size:18px;font-weight:600;padding:0 0 50px;}
+
 section.icons		{padding-bottom:10px;}
 .icons .row > div 	{text-align:center;}
 .icons h4			{font-size:17px;padding:15px 0 9px;color:#515E64;}
