@@ -1,4 +1,4 @@
-$(document).ready(function(){
+/*$(document).ready(function(){
     $('.save-edit-link').click(function(event){
         event.preventDefault();
 
@@ -17,7 +17,7 @@ $(document).ready(function(){
             }
         });
     });
-});
+});*/
 
 function excluirRegistros(controller, funcao){
     var ids = '';

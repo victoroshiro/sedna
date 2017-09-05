@@ -78,7 +78,7 @@
               <ul class="jetmenu" id="jetmenu">
                   <li><a href="empresa" title="Empresa">empresa</a></li>
                   <li><a href="noticias" title="Noticias">noticias</a></li>
-                  <li><a href="assistencia-tecnica" title="Assitencia técnica">assitencia técnica</a></li>
+                  <li><a href="assistencia-tecnica" title="Assistencia técnica">assistencia técnica</a></li>
                   <li class="fix-sub">
                     <a href="embarcacoes" title="Embarcacoes">embarcações</a>
                     <div class="megamenu full-width">

@@ -2,14 +2,20 @@
 	<main class="main" role="main">
 		<div id="lightSliderMainBanner">
 			<article>
-				<img src="assets/images/embarcacoes/main.jpg" alt="Cimitarra Yachts">
+				<img src="<?php echo site_url('userfiles/embarcacoes/'.$embarcacao->imagem3) ?>" alt="Cimitarra Yachts">
 			</article>
 		</div>
 		<header class="intro">
 			<div class="wrap">
-				Video    Galeria de fotos    Especificacos     Vista Superior     MENSAGEM
-				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam aliquip ex ea commodoerat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper.  Ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy consectetuer adipiscing elit, sed diam nonummy nibh.</p>
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/SevBMJSeYK0?rel=0" frameborder="0" allowfullscreen></iframe>
+				Video    Galeria de fotos    Especificações     Vista Superior     MENSAGEM
+				<?php echo $embarcacao->resumo; ?>
+				<?php  
+					if(!is_null($embarcacao->link) && $embarcacao->link != ''){
+				?>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/<?php echo $embarcacao->link; ?>?rel=0" frameborder="0" allowfullscreen></iframe>
+				<?php  
+					}
+				?>
 			</div>
 		</header>
 
@@ -20,19 +26,57 @@
 			<!-- Tab navigation -->
 			<nav class="tabs alternative tabs__no-margin-bottom six" role="navigation" id="tab-navigation-2">
 				<ul class="wrap">
-					<li><a href="#tab-interior" title="Description">
-						Interior
-					</a></li>
-					<li><a href="#tab-exterior" title="Specifications">
-						 Exterior
-					</a></li>
+					<?php  
+						if($imagens_interior){
+					?>
+							<li>
+								<a href="#tab-interior" title="Description">
+									Interior
+								</a>
+							</li>
+					<?php  
+						}
+						if($imagens_exterior){
+
+					?>
+							<li>
+								<a href="#tab-exterior" title="Specifications">
+								 Exterior
+								</a>
+							</li>
+					<?php  
+						}
+					?>
 				</ul>
 			</nav>
 			<!-- //Tab navigation -->
 
 			<article class="tab-content" id="tab-interior">
 				<div class="gallery" id="gallery">
-					<!-- Item -->
+					<?php  
+						if($imagens_interior){
+							foreach ($imagens_interior as $imagem) {
+								$file_parts = explode('.', $imagem->imagem);
+                                $thumb_name = $file_parts[0].'_thumb.'.$file_parts[1];
+					?>
+								<!-- Item -->
+								<figure class="one-fourth" data-src="<?php echo site_url('userfiles/embarcacoes/'.$imagem->imagem); ?>">
+									<!-- <img src="http://www.placehold.it/600x400" alt="" /> -->
+									<img src="<?php echo site_url('userfiles/embarcacoes/'.$thumb_name); ?>" alt="" />
+									<figcaption>
+										<span class="icojam_zoom_in"></span>
+										<!-- <div>
+											<h5>DECK</h5>
+											<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
+										</div> -->
+									</figcaption>	
+								</figure>
+								<!-- //Item -->
+					<?php  
+							}
+						}
+					?><!-- 
+					Item
 					<figure class="one-fourth" data-src="http://www.placehold.it/800x600">
 						<img src="http://www.placehold.it/600x400" alt="" />
 						<figcaption>
@@ -43,8 +87,8 @@
 							</div>
 						</figcaption>	
 					</figure>
-					<!-- //Item -->
-					<!-- Item -->
+					//Item
+					Item
 					<figure class="one-fourth" data-src="http://www.placehold.it/800x600">
 						<img src="http://www.placehold.it/600x400" alt="" />
 						<figcaption>
@@ -55,25 +99,36 @@
 							</div>
 						</figcaption>	
 					</figure>
-					<!-- //Item -->
-					<!-- Item -->
-					<figure class="one-fourth" data-src="http://www.placehold.it/800x600">
-						<img src="http://www.placehold.it/600x400" alt="" />
-						<figcaption>
-							<span class="icojam_zoom_in"></span>
-							<div>
-								<h5>DECK</h5>
-								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
-							</div>
-						</figcaption>	
-					</figure>
-					<!-- //Item -->
+					//Item -->
 				</div>				
 			</article>
 
 			<article class="tab-content" id="tab-exterior">
 				<div class="gallery" id="gallery-2">
-					<!-- Item -->
+					<?php  
+						if($imagens_exterior){
+							foreach ($imagens_exterior as $imagem) {
+								$file_parts = explode('.', $imagem->imagem);
+                                $thumb_name = $file_parts[0].'_thumb.'.$file_parts[1];
+					?>
+								<!-- Item -->
+								<figure class="one-fourth" data-src="<?php echo site_url('userfiles/embarcacoes/'.$imagem->imagem); ?>">
+									<!-- <img src="http://www.placehold.it/600x400" alt="" /> -->
+									<img src="<?php echo site_url('userfiles/embarcacoes/'.$thumb_name); ?>" alt="" />
+									<figcaption>
+										<span class="icojam_zoom_in"></span>
+										<!-- <div>
+											<h5>DECK</h5>
+											<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
+										</div> -->
+									</figcaption>	
+								</figure>
+								<!-- //Item -->
+					<?php  
+							}
+						}
+					?><!-- 
+					Item
 					<figure class="one-fourth" data-src="http://www.placehold.it/800x600">
 						<img src="http://www.placehold.it/600x400" alt="" />
 						<figcaption>
@@ -84,8 +139,8 @@
 							</div>
 						</figcaption>	
 					</figure>
-					<!-- //Item -->
-					<!-- Item -->
+					//Item
+					Item
 					<figure class="one-fourth" data-src="http://www.placehold.it/800x600">
 						<img src="http://www.placehold.it/600x400" alt="" />
 						<figcaption>
@@ -96,8 +151,8 @@
 							</div>
 						</figcaption>	
 					</figure>
-					<!-- //Item -->
-					<!-- Item -->
+					//Item
+					Item
 					<figure class="one-fourth" data-src="http://www.placehold.it/800x600">
 						<img src="http://www.placehold.it/600x400" alt="" />
 						<figcaption>
@@ -108,7 +163,7 @@
 							</div>
 						</figcaption>	
 					</figure>
-					<!-- //Item -->
+					//Item -->
 				</div>				
 			</article>
 		</div>
@@ -119,7 +174,7 @@
 			<nav class="tabs alternative six" role="navigation" id="tab-navigation">
 				<ul class="wrap">
 					<li><a href="#tab1" title="Description">
-						<span class="icojam_info_3"></span> Descrião
+						<span class="icojam_info_3"></span> Descrição
 					</a></li>
 					<li><a href="#tab2" title="Specifications">
 						<span class="icojam_document"></span> SOBRE A 780

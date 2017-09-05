@@ -7,19 +7,10 @@ class Embarcacoes extends CI_Controller {
         parent::__construct();
         $this->load->helper('text');
         $this->load->model('Embarcacoes_m');
-        $this->load->model('ginecologia/Ginecologia_m');
-        $this->load->model('sexualidade/Sexualidade_m');
-        $this->load->model('obstetricia/Obstetricia_m');
-        $this->load->model('imprensa/Imprensa_m');
     }
 
     public function index()
     {
-        $this->data['menu_gineco'] = $this->Ginecologia_m->get_ginecologias();
-        $this->data['menu_sex'] = $this->Sexualidade_m->get_sexualidades();
-        $this->data['menu_obs'] = $this->Obstetricia_m->get_obstetricias();
-        $this->data['menu_imp'] = $this->Imprensa_m->get_imprensas();
-
         //pagination
         $limit_results = 9;
         $offset_page = ($this->uri->segment(2)) ? $this->uri->segment(2) : 0;
@@ -76,14 +67,12 @@ class Embarcacoes extends CI_Controller {
     {
         $slug || show_404();
 
-        $this->data['menu_gineco'] = $this->Ginecologia_m->get_ginecologias();
-        $this->data['menu_sex'] = $this->Sexualidade_m->get_sexualidades();
-        $this->data['menu_obs'] = $this->Obstetricia_m->get_obstetricias();
-        $this->data['menu_imp'] = $this->Imprensa_m->get_imprensas();
-
         $this->data['embarcacao'] = $this->Embarcacoes_m->get_embarcacoes(array('slug' => $slug));
 
         $this->data['embarcacao'] || show_404();
+
+        $this->data['imagens_interior'] = $this->Embarcacoes_m->get_imagens($this->data['embarcacao']->id,false,'interior');
+        $this->data['imagens_exterior'] = $this->Embarcacoes_m->get_imagens($this->data['embarcacao']->id,false,'exterior');
 
         $this->data['description'] = $this->data["embarcacao"]->description;
 

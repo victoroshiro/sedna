@@ -46,6 +46,15 @@
                         </div>
                         <div class="col-md-2">
                             <div class="thumbnail text-center">
+                                <a href="<?php echo site_url('embarcacoes'); ?>">
+                                    <span class="font-lg glyphicon glyphicon-list-alt"></span>
+                                    <div class="caption">Embarcações
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="thumbnail text-center">
                                 <a href="<?php echo site_url('quem_somos'); ?>">
                                     <span class="font-lg glyphicon glyphicon-user"></span>
                                     <div class="caption">Quem Somos

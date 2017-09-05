@@ -21,18 +21,18 @@ class Embarcacoes_m extends CI_Model
 		if ($params['count'])
             $this->db->select('COUNT(DISTINCT id) AS count');
         else{
-			$this->db->select('*')
-					 ->select('DATE_FORMAT(data_embarcacao,"%d/%m/%Y") AS data_embarcacao_f', false);
+			$this->db->select('*');
+					 // ->select('DATE_FORMAT(data_embarcacao,"%d/%m/%Y") AS data_embarcacao_f', false);
         }
 
 		$this->db->from('embarcacoes')
 				 ->where('habilitado', 1);
 
 		if($params['slug']){
-			$this->db->select('DATE_FORMAT(data_embarcacao,"%Y") AS ano_embarcacao', false)
-					 ->select('DATE_FORMAT(data_embarcacao,"%m") AS mes_embarcacao', false)
-					 ->select('DATE_FORMAT(data_embarcacao,"%d") AS dia_embarcacao', false)
-					 ->where('slug', $params['slug']);
+			// $this->db->select('DATE_FORMAT(data_embarcacao,"%Y") AS ano_embarcacao', false)
+					 // ->select('DATE_FORMAT(data_embarcacao,"%m") AS mes_embarcacao', false)
+					 // ->select('DATE_FORMAT(data_embarcacao,"%d") AS dia_embarcacao', false)
+			$this->db->where('slug', $params['slug']);
 		}
 
 		if($params['contains']){
@@ -49,11 +49,11 @@ class Embarcacoes_m extends CI_Model
 			$this->db->limit($params['limit']);
 		}
 
-		if($params['order_by']){
+		/*if($params['order_by']){
 			$this->db->order_by('data_embarcacao',$params['order_by']);
 		}else{
 			$this->db->order_by('data_embarcacao','DESC');
-		}
+		}*/
 
 		if($params['highlights']){
 			$this->db->where('destaque', 1);
@@ -80,4 +80,26 @@ class Embarcacoes_m extends CI_Model
 
 		return $toReturn;
 	}
+
+	function get_imagens($id_embarcacao = false, $id_imagem = false, $tipo = false){
+        
+        $this->db->select('*')
+        		 ->from('embarcacoes_imagens');
+
+        if($id_embarcacao && $tipo){
+            $this->db->where('id_embarcacao', $id_embarcacao);
+            $this->db->where('titulo', $tipo);
+            $imagens = $this->db->get()->result();
+        }else{
+        	$this->db->where('id_embarcacao', $id_embarcacao);
+            $imagens = $this->db->get()->result();
+        }
+
+        if($id_imagem){
+            $this->db->where('id', $id_imagem);
+            $imagens = $this->db->get()->row();   
+        }
+
+        return $imagens;
+    }
 }

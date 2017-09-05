@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+	<?php $this->load->view('admin/inc/header') ?>
+
+	<body>
+		<div id="header">
+			<?php $this->load->view('admin/inc/top') ?>
+			<?php $this->load->view('admin/inc/menu') ?>
+		</div>
+		
+		<div class="container">
+			<h1>Embarcações</h1>
+			<?php $this->load->view('admin/inc/messages') ?>
+
+				<ul class="nav nav-tabs" role="tablist">
+				    <li role="presentation" class="active"><a href="#template" aria-controls="home" role="tab" data-toggle="tab">Template</a></li>
+		            <li role="presentation"><a href="#galeria" aria-controls="galeria" role="tab" data-toggle="tab">Galeria</a></li>
+				</ul>
+				<div class="tab-content">
+				    <div role="tabpanel" class="tabs-imoveis tab-pane fade in active" id="template">
+				    	<form method="post" action="<?php echo site_url('embarcacoes/atualizar'); ?>" id="form_novidades" enctype="multipart/form-data">
+				    		<input type="hidden" name="id" value="<?= $embarcacao->id ?>">
+				    		<div id="acoes" class="text-right">
+				    			<input class="btn btn-default" type="button" onclick="location.href = '<?php echo site_url('embarcacoes'); ?>'" value="Cancelar" />
+				    			<input class="btn btn-success" type="submit" value="Salvar" />
+				    		</div>
+					    	<div class="col-md-12">
+					    		<div class="form-group">
+					    			<label>Data de Criação: </label>
+					    			<br>
+					    			<p class="help-block"><?= gmdate ("d/m/Y h:ia",strtotime(@$embarcacao->data_criacao)) ?></p>
+					    		</div>
+					    	</div>
+
+					    	<div class="col-md-12">
+					    		<div class="form-group">
+					    		    <label for="link_only_label_1">Habilitado: </label><br>
+					    		    <div class="btn-group" data-toggle="buttons">
+					    		        <label id="link_only_label_1" class="btn btn-primary <?= @$embarcacao->habilitado == '1' ? 'active' : ''; if (empty($embarcacao)) { echo "active"; }?>">
+					    		            <input
+					    		                type="radio"
+					    		                name="habilitado"
+					    		                id="link_only_1"
+					    		                autocomplete="off"
+					    		                value="1"
+					    		                <?php if (empty($embarcacao)) { echo "checked='checked'"; } ?>
+					    		                >
+					    		                Sim
+					    		        </label>
+					    		        <label id="link_only_label_0" class="btn btn-primary  <?= @$embarcacao->habilitado == '0' ? 'active' : ''?>">
+					    		            <input
+					    		                type="radio"
+					    		                name="habilitado"
+					    		                id="link_only_0"
+					    		                autocomplete="off"
+					    		                value="0">
+					    		                Não
+					    		        </label>
+					    		    </div>
+					    		</div>
+					    	</div>
+					    	<div class="col-md-12">
+					    		<div class="form-group">
+					    		    <label for="link_only_label_1">Destaque: </label><br>
+					    		    <div class="btn-group" data-toggle="buttons">
+					    		        <label id="link_only_label_1" class="btn btn-primary <?= @$embarcacao->destaque == '1' ? 'active' : ''; if (empty($embarcacao)) { echo "active"; }?>">
+					    		            <input
+					    		                type="radio"
+					    		                name="destaque"
+					    		                id="link_only_1"
+					    		                autocomplete="off"
+					    		                value="1"
+					    		                <?php if (empty($embarcacao)) { echo "checked='checked'"; } ?>
+					    		                >
+					    		                Sim
+					    		        </label>
+					    		        <label id="link_only_label_0" class="btn btn-primary  <?= @$embarcacao->destaque == '0' ? 'active' : ''?>">
+					    		            <input
+					    		                type="radio"
+					    		                name="destaque"
+					    		                id="link_only_0"
+					    		                autocomplete="off"
+					    		                value="0">
+					    		                Não
+					    		        </label>
+					    		    </div>
+					    		</div>
+					    	</div>
+							<div class="col-md-12">
+								<div class="form-group">
+									<label for="marca">Marca: </label>
+									<input name="marca" id="marca" type="text" class="form-control" value="<?= $embarcacao->marca ?>">
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="form-group">
+									<label for="modelo">Modelo: </label>
+									<input name="modelo" id="modelo" type="text" class="form-control" value="<?= $embarcacao->modelo ?>">
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="form-group">
+									<label for="ano">Ano: </label>
+									<input name="ano" id="ano" type="text" class="form-control" value="<?= $embarcacao->ano ?>">
+								</div>
+							</div>
+					    	<div class="col-md-12">
+					    		<div class="form-group">
+					    			<label for="titulo">Título: </label>
+					    			<input name="titulo" id="titulo" type="text" class="form-control" value="<?= $embarcacao->titulo ?>">
+					    		</div>
+					    	</div>
+					    	<div class="col-md-12">
+					    		<div class="form-group">
+					    			<label for="valor">Valor: </label>
+					    			<input name="valor" id="valor" type="text" class="form-control money" value="<?= @doubleToMoney($embarcacao->valor) ?>">
+					    		</div>
+					    	</div>
+				    	    <div class="col-md-12">
+					    		<div class="form-group">
+					    	        <label for="lf">Tamanho (pés): </label>
+					    	        <input name="area" id="area" type="text" class="form-control" value="<?= $embarcacao->area ?>" placeholder="Tamanho em pés"/>
+					    	    </div>
+				    	    </div>
+					    	<div class="form-group">
+								<label for="lf">Resumo: </label>
+								<textarea name="resumo" id="resumo" class="form-control" rows="3"><?php echo $embarcacao->resumo ?></textarea>
+							</div>
+							 <div class="form-group">
+							    <label for="lf">Descrição da Embarcação: </label><br />
+							    <textarea name="descricao" id="descricao" cols="30" rows="10"><?php echo $embarcacao->descricao ?></textarea>
+							</div>
+
+							<div class="form-group">
+							    <label for="link">Link Vídeo: </label>
+							    <input type="text" name="link" id="link" class="form-control" <?php echo !empty($embarcacao->link) ? 'value="http://www.youtube.com/watch?v=' . $embarcacao->link . '"' : '' ?> />
+							</div>
+
+							<div class="form-group">
+								<label for="description">Description: </label>
+								<input name="description" id="description" type="text" class="form-control" placeholder="Entre 150 e 160 caracteres" maxlength="160" value="<?= @$embarcacao->description ?>">
+							</div>
+
+							<fieldset class="info-pool">
+                                <p>
+                                    <label for="lf">Foto Banner atual: </label>
+                                    <img src="<?= site_url('../userfiles/embarcacoes/'.$embarcacao->imagem3); ?>" width="200px" height="180px"/>
+                                    <span class="validate_error"></span>
+                                    <span class="validate_success"></span>
+                                </p>
+								<p>
+                                    <label for="lf">Foto Lista atual: </label>
+                                    <img src="<?= site_url('../userfiles/embarcacoes/'.$embarcacao->imagem2); ?>" width="200px" height="180px"/>
+                                    <span class="validate_error"></span>
+                                    <span class="validate_success"></span>
+                                </p>
+							</fieldset>
+							<fieldset class="info-pool">
+							    <legend>Imagem Banner Aberto(1580 x 744): </legend>
+							    <p>
+							        <input name="imagem3" id="imagem3" type="file" />
+							        <span class="validate_error"></span>
+							        <span class="validate_success"></span>
+							    </p>
+							    <legend>Imagem Lista(860 x 485): </legend>
+							    <p>
+							        <input name="imagem2" id="imagem2" type="file" />
+							        <span class="validate_error"></span>
+							        <span class="validate_success"></span>
+							    </p>
+							</fieldset>
+
+					    	<div id="acoes" class="text-right">
+					    		<input class="btn btn-default" type="button" onclick="location.href = '<?php echo site_url('embarcacoes'); ?>'" value="Cancelar" />
+					    		<input class="btn btn-success" type="submit" value="Salvar" />
+					    	</div>
+					    </form>
+				    </div>
+		            <div role="tabpanel" class="tabs-imoveis tab-pane fade in" id="galeria">
+		            	<form method="post" action="embarcacoes/galeria" id="form_galeria" enctype="multipart/form-data">
+    	                    <input type="hidden" name="id_embarcacao" value="<?= $embarcacao->id; ?>" />
+		            	    
+		            	    <div id="acoes" class="text-right margin-top-s">
+		            	        <input class="btn btn-default" type="button" onclick="location.href = 'embarcacoes'" value="Cancelar" />
+		            	        <input class="btn btn-success" type="submit" value="Salvar" />
+		            	    </div>
+
+		            	    <fieldset class="form-galeria">
+		            	    	<p class="disclaimer"><u>*Cadastre várias imagens por vez.</u></p>
+		            	        <p>
+		            	            <label for="lf" class="label-img-galeria">Imagem (800 x 600): </label>
+		            	            <input type="file" multiple name="imagem[]" />
+		            	            <span class="validate_error"></span>
+		            	            <span class="validate_success"></span>
+		            	        </p>
+		            	    </fieldset>
+		            	</form>
+		        	        
+	        	        <div class="container">
+	        	            <fieldset class="lista-galeria">
+	        	            <?php 
+	        	            	if (isset($imagens_group)){
+	        	            ?>
+		        	            	<legend>Galeria</legend>
+	        	            <?php
+	        	                	foreach ($imagens_group as $key => $imagens){
+	        	            ?>
+	    	    	                    <div class="row clearfix">
+	    	    	                        <?php 
+	    	    	                        	foreach ($imagens as $imagem){
+	    	    	                        ?>
+	    		    	                            <div class="col-md-3 text-center margin-bottom-m">
+	    		    	                            	<div class="atualiza-titulo">
+		    		    	                            	<input type="hidden" name="id_imagem" value="<?= $imagem->id; ?>" />
+		    		    	                                <img src="<?php echo site_url('../userfiles/embarcacoes/'.$imagem->imagem); ?>" class="galeria-imoveis img-responsive margin-bottom-xs" />
+		    		    	                                <p class="link-galeria-lista">
+		    		    	                                	Tipo: <!-- <input type="text" name="titulo" id="new-link" value="<?php echo $imagem->titulo; ?>"/> -->
+		    		    	                                	<select name="titulo" id="new-link">
+		    		    	                                		<option <?php echo ($imagem->titulo == 'interior') ? 'selected="selected"' : ''; ?> value="interior">Interior</option>
+		    		    	                                		<option <?php echo ($imagem->titulo == 'exterior') ? 'selected="selected"' : ''; ?> value="exterior">Exterior</option>
+		    		    	                                	</select>
+		    		    	                                </p>
+		    		    	                                <a href="#" class="btn btn-success save-edit-link"/>
+		    		    	                                    Editar tipo <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+		    		    	                                </a>
+		    		    	                                <a href="<?php echo site_url('embarcacoes/exclui_imagem_galeria/'.$imagem->id); ?>" class="btn btn-danger" />
+		    		    	                                    Deletar imagem<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+		    		    	                                </a>
+	    		    	                            	</div>
+	    		    	                            </div> 
+	    	    	                        <?php 
+	    	    	                        	}
+	    	    	                        ?>
+	    	    	                    </div>
+	        	            <?php 
+	        	            		}
+	        	            	}
+	        	            ?>
+	        	            </fieldset>
+	        	        </div>		            	
+		            </div>
+				</div>
+		</div>
+
+		<script>
+		    $('.normal').show();
+
+		    $(document).ready(function(){
+		    	CKEDITOR.replace('descricao')
+		    	CKEDITOR.replace('resumo')
+		    	$(".money").maskMoney({symbol: 'R$', showSymbol: true, thousands: '.', decimal: ',', symbolStay: true});
+
+		    	$('.save-edit-link').click(function(event){
+		    	    event.preventDefault();
+
+		    	    var button = $(this);
+
+		    	    $.ajax({
+		    	        url: $('base').attr('href')+'embarcacoes/atualiza_link',
+		    	        type: 'POST',
+		    	        data: {titulo: button.prev().find('#new-link').val(), id_imagem: button.closest('.atualiza-titulo').find('input:hidden').val()},
+		    	        dataType: 'JSON',
+		    	        success: function(response){
+		    	            alert(response.message);
+		    	        },
+		    	        error: function(response){
+		    	            alert('Ocorreu um erro no envio. Tente novamente mais tarde.');
+		    	        }
+		    	    });
+		    	});
+		    });
+		</script>
+		<?php
+		    if($this->session->flashdata('tab_gal')){
+		?>
+		        <script>
+		            $(document).ready(function(){
+		                $('a[href="#tabs-2"]').click();
+		            });
+		        </script>
+		<?php
+		    }
+		?>
+		<?php $this->load->view('admin/inc/footer') ?>
+
+	</body>
+</html>
