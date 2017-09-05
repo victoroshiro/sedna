@@ -157,7 +157,7 @@
 			
 			// SMOOTH ANCHOR SCROLLING
 			var $root = $('html, body');
-			$('.intro .button, .anchor').on('click', function(e) {
+			$('.mini-nav a').on('click', function(e) {
 				var href = $.attr(this, 'href');
 				if (typeof ($(href)) != 'undefined' && $(href).length > 0) {
 					var anchor = '';
@@ -166,7 +166,7 @@
 						anchor = href.substring(href.lastIndexOf("#"));
 					}
 					
-					var scrollToPosition = $(anchor).offset().top - 80;
+					var scrollToPosition = $(anchor).offset().top - 132;
 						
 					if (anchor.length > 0) {
 						$root.animate({

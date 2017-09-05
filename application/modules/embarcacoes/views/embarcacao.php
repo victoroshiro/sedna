@@ -8,17 +8,25 @@
 		<header class="intro">
 			<div class="wrap">
                 <nav class="mini-nav">
-                    <a href="#content-video">Video</a>   
-                    <a href="#content-galeria">Galeria de fotos</a>    
-                    <a href="#content-especificacoes">Especificações</a>
+                    <?php  
+                        if(!is_null($embarcacao->link) && $embarcacao->link != ''){
+                    ?>
+                        <a href="#content-video">Video</a>   
+                    <?php  
+                        }
+                    ?>
+                    <a href="#content-gallery">Galeria de fotos</a>    
+                    <a href="#tab-navigation">Especificações</a>
                     <a href="#content-vista">Vista Superior</a>
-                    <a href="mensagem">mensagem</a>
+                    <a href="#content-mensagem">Mensagem</a>
                 </nav>
 				<?php echo $embarcacao->resumo; ?>
 				<?php  
 					if(!is_null($embarcacao->link) && $embarcacao->link != ''){
 				?>
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/<?php echo $embarcacao->link; ?>?rel=0" frameborder="0" allowfullscreen></iframe>
+                    <div id="content-video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/<?php echo $embarcacao->link; ?>?rel=0" frameborder="0" allowfullscreen></iframe>
+                    </div>
 				<?php  
 					}
 				?>
@@ -30,6 +38,7 @@
 		<!-- Content -->
 		<div class="content">
 			<!-- Tab navigation -->
+            <div id="content-gallery"></div>
 			<nav class="tabs alternative tabs__no-margin-bottom six" role="navigation" id="tab-navigation-2">
 				<ul class="wrap">
 					<?php  
@@ -340,7 +349,7 @@
         </section>
         <!-- //Photo -->
 
-		<div class="wrap">
+		<div class="wrap" id="content-mensagem">
 			<div class="full-width">
 				
 			
