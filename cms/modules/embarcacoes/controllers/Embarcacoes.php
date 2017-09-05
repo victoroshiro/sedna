@@ -89,26 +89,14 @@ class Embarcacoes extends CI_Controller {
     }
 
     public function editar($id = false) {
+        
         if (!$id) {
             redirect('embarcacoes', 'location');
         }
-        $this->data['ckeditor_descricao'] = array
-        (
-            //id da textarea a ser substituída pelo CKEditor
-            'id' => 'descricao',
 
-            // caminho da pasta do CKEditor relativo a pasta raiz do CodeIgniter
-            'path' => 'assets/admin/ckeditor',
-
-            // configurações opcionais
-            'config' => array
-            (
-                'toolbar' => "Full",
-                'width'   => "800px",
-                'height'  => "300px",
-            )
-        );
         $this->data['embarcacao'] = $this->Embarcacoes_m->get_embarcacao($id);
+        $this->data['embarcacao_descricao'] = $this->Embarcacoes_m->get_embarcacao_descricao($id);
+        $this->data['embarcacao_especificacoes'] = $this->Embarcacoes_m->get_embarcacao_especificacoes($id);
         $this->data['imagens'] = $this->Embarcacoes_m->get_imagens($id);
 
         if($this->data['imagens']){
@@ -171,6 +159,49 @@ class Embarcacoes extends CI_Controller {
         }
 
         echo json_encode($response);
+    }
+
+    public function salva_descricao() 
+    {
+        $data = $this->input->post();
+
+        
+        $img_nome2 = $this->Embarcacoes_m->upload_foto_grande('imagem', 570, 713);
+        if (!is_array($img_nome2) && isset($img_nome2)) {
+            if (!is_array($img_nome2)) {
+
+                $data['imagem'] = $img_nome2; 
+            }
+        }
+
+        $img_nome3 = $this->Embarcacoes_m->upload_foto_grande('imagem2', 1577, 1051);
+        if (!is_array($img_nome3) && isset($img_nome3)) {
+            if (!is_array($img_nome3)) {
+
+                $data['imagem2'] = $img_nome3; 
+            }
+        }
+
+        if($this->Embarcacoes_m->salvar_descricao($data)){
+            $this->session->set_flashdata('messages', 'Registro cadastrado com sucesso.');
+            redirect('embarcacoes', 'location');
+        }else{
+            $this->session->set_flashdata('messages', 'Não foi possível atualizar o registro. Tente novamente.');
+            redirect('embarcacoes', 'location');
+        }
+    }
+
+    public function salva_especificacoes() 
+    {
+        $data = $this->input->post();
+
+        if($this->Embarcacoes_m->salvar_especificacoes($data)){
+            $this->session->set_flashdata('messages', 'Registro cadastrado com sucesso.');
+            redirect('embarcacoes', 'location');
+        }else{
+            $this->session->set_flashdata('messages', 'Não foi possível atualizar o registro. Tente novamente.');
+            redirect('embarcacoes', 'location');
+        }
     }
 
     function galeria(){

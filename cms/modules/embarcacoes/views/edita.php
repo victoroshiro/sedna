@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html>
 	<?php $this->load->view('admin/inc/header') ?>
-
 	<body>
 		<div id="header">
 			<?php $this->load->view('admin/inc/top') ?>
 			<?php $this->load->view('admin/inc/menu') ?>
 		</div>
 		
-		<div class="container">
+		<div class="container embarcacoes">
 			<h1>Embarcações</h1>
 			<?php $this->load->view('admin/inc/messages') ?>
 
 				<ul class="nav nav-tabs" role="tablist">
 				    <li role="presentation" class="active"><a href="#template" aria-controls="home" role="tab" data-toggle="tab">Template</a></li>
+		            <li role="presentation"><a href="#descricao-tab" aria-controls="descricao-tab" role="tab" data-toggle="tab">Descrição</a></li>
+		            <li role="presentation"><a href="#especificacao-tab" aria-controls="especificacao-tab" role="tab" data-toggle="tab">Especificações Técnicas</a></li>
 		            <li role="presentation"><a href="#galeria" aria-controls="galeria" role="tab" data-toggle="tab">Galeria</a></li>
 				</ul>
 				<div class="tab-content">
@@ -126,11 +127,7 @@
 								<label for="lf">Resumo: </label>
 								<textarea name="resumo" id="resumo" class="form-control" rows="3"><?php echo $embarcacao->resumo ?></textarea>
 							</div>
-							 <div class="form-group">
-							    <label for="lf">Descrição da Embarcação: </label><br />
-							    <textarea name="descricao" id="descricao" cols="30" rows="10"><?php echo $embarcacao->descricao ?></textarea>
-							</div>
-
+							
 							<div class="form-group">
 							    <label for="link">Link Vídeo: </label>
 							    <input type="text" name="link" id="link" class="form-control" <?php echo !empty($embarcacao->link) ? 'value="http://www.youtube.com/watch?v=' . $embarcacao->link . '"' : '' ?> />
@@ -176,6 +173,95 @@
 					    	</div>
 					    </form>
 				    </div>
+				    <div role="tabpanel" class="tabs-imoveis tab-pane fade in" id="descricao-tab">
+				    	<form method="post" action="<?php echo site_url('embarcacoes/salva_descricao'); ?>" id="form_novidades" enctype="multipart/form-data">
+				    		<input type="hidden" name="id_embarcacoes" value="<?= $embarcacao->id ?>">
+				    		<div id="acoes" class="text-right">
+				    			<input class="btn btn-default" type="button" onclick="location.href = '<?php echo site_url('embarcacoes'); ?>'" value="Cancelar" />
+				    			<input class="btn btn-success" type="submit" value="Salvar" />
+				    		</div>
+							<div class="col-md-12">
+								<div class="form-group">
+									<label for="titulo">Título: </label>
+									<input name="titulo" id="titulo" type="text" class="form-control" value="<?php echo ($embarcacao_descricao) ? $embarcacao_descricao->titulo : ''; ?>">
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="form-group">
+								    <label for="lf">Descrição da Embarcação: </label><br />
+								    <textarea name="descricao" id="descricao" cols="30" rows="10"><?php echo ($embarcacao_descricao) ? $embarcacao_descricao->descricao : ''; ?></textarea>
+								</div>
+							</div>
+							<?php  
+								if($embarcacao_descricao){
+							?>
+								
+						    		<input type="hidden" name="id_embarcacao_descricao" value="<?= $embarcacao_descricao->id ?>">
+									<div class="col-md-12">
+										<fieldset class="info-pool">
+			                                <p>
+			                                    <label for="lf">Imagem (direita) atual: </label>
+			                                    <img src="<?= site_url('../userfiles/embarcacoes/'.$embarcacao_descricao->imagem); ?>" width="200px" height="180px"/>
+			                                    <span class="validate_error"></span>
+			                                    <span class="validate_success"></span>
+			                                </p>
+											<p>
+			                                    <label for="lf">Foto Parallax atual: </label>
+			                                    <img src="<?= site_url('../userfiles/embarcacoes/'.$embarcacao_descricao->imagem2); ?>" width="200px" height="180px"/>
+			                                    <span class="validate_error"></span>
+			                                    <span class="validate_success"></span>
+			                                </p>
+										</fieldset>
+									</div>
+							<?php  
+								}
+							?>
+							<div class="col-md-12">
+								<fieldset class="info-pool">
+								    <legend>Imagem (direita) (1580 x 744): </legend>
+								    <p>
+								        <input name="imagem" id="imagem" type="file" />
+								        <span class="validate_error"></span>
+								        <span class="validate_success"></span>
+								    </p>
+								    <legend>Imagem Parallax(1577 x 1051): </legend>
+								    <p>
+								        <input name="imagem2" id="imagem2" type="file" />
+								        <span class="validate_error"></span>
+								        <span class="validate_success"></span>
+								    </p>
+								</fieldset>
+							</div>
+			    		</form>
+		    		</div>
+		    		 <div role="tabpanel" class="tabs-imoveis tab-pane fade in" id="especificacao-tab">
+				    	<form method="post" action="<?php echo site_url('embarcacoes/salva_especificacoes'); ?>" id="form_novidades" enctype="multipart/form-data">
+				    		<input type="hidden" name="id_embarcacoes" value="<?= $embarcacao->id ?>">
+				    		<div id="acoes" class="text-right">
+				    			<input class="btn btn-default" type="button" onclick="location.href = '<?php echo site_url('embarcacoes'); ?>'" value="Cancelar" />
+				    			<input class="btn btn-success" type="submit" value="Salvar" />
+				    		</div>
+							<div class="col-md-12">
+								<div class="form-group">
+									<label for="titulo">Título: </label>
+									<input name="titulo" id="titulo" type="text" class="form-control" value="<?php echo ($embarcacao_especificacoes) ? $embarcacao_especificacoes->titulo : ''; ?>">
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="form-group">
+								    <label for="lf">Especificações Técnicas: </label><br />
+								    <textarea name="descricao" id="descricao-especificacao" cols="30" rows="10"><?php echo ($embarcacao_especificacoes) ? $embarcacao_especificacoes->descricao : ''; ?></textarea>
+								</div>
+							</div>
+							<?php  
+								if($embarcacao_especificacoes){
+							?>
+						    		<input type="hidden" name="id_embarcacao_especificacoes" value="<?= $embarcacao_especificacoes->id ?>">
+							<?php  
+								}
+							?>
+			    		</form>
+		    		</div>
 		            <div role="tabpanel" class="tabs-imoveis tab-pane fade in" id="galeria">
 		            	<form method="post" action="embarcacoes/galeria" id="form_galeria" enctype="multipart/form-data">
     	                    <input type="hidden" name="id_embarcacao" value="<?= $embarcacao->id; ?>" />
@@ -243,11 +329,18 @@
 		</div>
 
 		<script>
-		    $('.normal').show();
+
+			
+
 
 		    $(document).ready(function(){
-		    	CKEDITOR.replace('descricao')
-		    	CKEDITOR.replace('resumo')
+			    
+			    CKEDITOR.replace('descricao');
+			    CKEDITOR.replace('descricao-especificacao');
+			    CKEDITOR.replace('resumo');
+
+			    $('.normal').show();
+		    	
 		    	$(".money").maskMoney({symbol: 'R$', showSymbol: true, thousands: '.', decimal: ',', symbolStay: true});
 
 		    	$('.save-edit-link').click(function(event){

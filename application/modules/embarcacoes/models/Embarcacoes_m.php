@@ -81,7 +81,7 @@ class Embarcacoes_m extends CI_Model
 		return $toReturn;
 	}
 
-	function get_imagens($id_embarcacao = false, $id_imagem = false, $tipo = false){
+	public function get_imagens($id_embarcacao = false, $id_imagem = false, $tipo = false){
         
         $this->db->select('*')
         		 ->from('embarcacoes_imagens');
@@ -101,5 +101,33 @@ class Embarcacoes_m extends CI_Model
         }
 
         return $imagens;
+    }
+
+    public function get_embarcacao_descricao($id = false) {
+        
+        $this->db->select("*")
+                 ->from("embarcacoes_descricao");
+
+        if($id){
+            $this->db->where("id_embarcacoes", $id);
+        }
+
+        $query = $this->db->get();
+
+        return ($query->num_rows()) ? $query->row() : false;
+    }
+
+    public function get_embarcacao_especificacoes($id = false) {
+        
+        $this->db->select("*")
+                 ->from("embarcacoes_especificacoes");
+
+        if($id){
+            $this->db->where("id_embarcacoes", $id);
+        }
+
+        $query = $this->db->get();
+
+        return ($query->num_rows()) ? $query->row() : false;
     }
 }

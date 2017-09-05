@@ -226,6 +226,34 @@ class Embarcacoes_m extends CI_Model {
         return ($query->num_rows()) ? $query->row() : false;
     }
 
+    public function get_embarcacao_descricao($id = false) {
+        
+        $this->db->select("*")
+                 ->from("embarcacoes_descricao");
+
+        if($id){
+            $this->db->where("id_embarcacoes", $id);
+        }
+
+        $query = $this->db->get();
+
+        return ($query->num_rows()) ? $query->row() : false;
+    }
+
+    public function get_embarcacao_especificacoes($id = false) {
+        
+        $this->db->select("*")
+                 ->from("embarcacoes_especificacoes");
+
+        if($id){
+            $this->db->where("id_embarcacoes", $id);
+        }
+
+        $query = $this->db->get();
+
+        return ($query->num_rows()) ? $query->row() : false;
+    }
+
     function upload_foto_galeria($field) {
        
         $dir = dirname(getcwd()).'/userfiles/embarcacoes/';
@@ -365,7 +393,7 @@ class Embarcacoes_m extends CI_Model {
         }
     }
 
-    function upload_foto_grande($field) {
+    function upload_foto_grande($field, $width = false, $height = false) {
         $dir = dirname(getcwd()).'/userfiles/embarcacoes/';
         
         $config['upload_path'] = $dir;
@@ -388,28 +416,17 @@ class Embarcacoes_m extends CI_Model {
             $config_img['image_library'] = 'GD2';
             $config_img['source_image'] = $dados['full_path'];
             $config_img['create_thumb'] = FALSE;
-            $config_img['maintain_ratio'] = FALSE;
+            $config_img['maintain_ratio'] = TRUE;
             $config_img['encrypt_name'] = TRUE;
 
-            /*$config_img['wm_type'] = 'overlay';
-            $config_img['wm_overlay_path'] = 'assets/admin/images/watermark.png';
-            $config_img['wm_vrt_alignment'] = 'top'; 
-            $config_img['wm_hor_alignment'] = 'right';
-            $config_img['wm_hor_offset'] = '10';
-            $config_img['wm_vrt_offset'] = '10';*/
-
-            $config_img['width'] = '497';
-            $config_img['height'] = '331';
+            $config_img['width'] = ($width) ? $width : '497';
+            $config_img['height'] = ($height) ? $height : '331';
 
             $this->image_lib->initialize($config_img);
 
             $config['source_image'] = $dir.'/'.$dados['file_name'];
             
-            if (!$this->image_lib->resize($config['source_image'])) {
-                echo $this->image_lib->display_errors();
-            }else{
-                $this->image_lib->watermark();
-            }
+            $this->image_lib->resize($config['source_image']);
            
             // Returns the photo name
             return $dados['file_name'];
@@ -474,6 +491,36 @@ class Embarcacoes_m extends CI_Model {
         $this->db->insert('embarcacoes', $data);
 
         return $this->db->insert_id();
+    }
+
+    public function salvar_descricao($data) {
+        $this->db->trans_start();
+
+        if(isset($data['id_embarcacao_descricao'])){
+            unset($data['id_embarcacao_descricao']);
+            $this->db->update('embarcacoes_descricao', $data, $id);
+        }else{
+            $this->db->insert('embarcacoes_descricao', $data);
+        }
+
+        $this->db->trans_complete();
+
+        return $this->db->trans_status();
+    }
+
+    public function salvar_especificacoes($data) {
+        $this->db->trans_start();
+
+        if(isset($data['id_embarcacao_especificacoes'])){
+            unset($data['id_embarcacao_especificacoes']);
+            $this->db->update('embarcacoes_especificacoes', $data, $id);
+        }else{
+            $this->db->insert('embarcacoes_especificacoes', $data);
+        }
+
+        $this->db->trans_complete();
+
+        return $this->db->trans_status();
     }
 
     public function atualizar($data, $dataWhere) {

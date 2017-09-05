@@ -45,7 +45,7 @@
 						if($imagens_interior){
 					?>
 							<li>
-								<a href="#tab-interior" title="Description">
+								<a href="#tab-interior" title="Interior">
 									Interior
 								</a>
 							</li>
@@ -55,7 +55,7 @@
 
 					?>
 							<li>
-								<a href="#tab-exterior" title="Specifications">
+								<a href="#tab-exterior" title="Exterior">
 								 Exterior
 								</a>
 							</li>
@@ -90,31 +90,7 @@
 					<?php  
 							}
 						}
-					?><!-- 
-					Item
-					<figure class="one-fourth" data-src="http://www.placehold.it/800x600">
-						<img src="http://www.placehold.it/600x400" alt="" />
-						<figcaption>
-							<span class="icojam_zoom_in"></span>
-							<div>
-								<h5>DECK</h5>
-								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
-							</div>
-						</figcaption>	
-					</figure>
-					//Item
-					Item
-					<figure class="one-fourth" data-src="http://www.placehold.it/800x600">
-						<img src="http://www.placehold.it/600x400" alt="" />
-						<figcaption>
-							<span class="icojam_zoom_in"></span>
-							<div>
-								<h5>DECK</h5>
-								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
-							</div>
-						</figcaption>	
-					</figure>
-					//Item -->
+					?>
 				</div>				
 			</article>
 
@@ -142,43 +118,7 @@
 					<?php  
 							}
 						}
-					?><!-- 
-					Item
-					<figure class="one-fourth" data-src="http://www.placehold.it/800x600">
-						<img src="http://www.placehold.it/600x400" alt="" />
-						<figcaption>
-							<span class="icojam_zoom_in"></span>
-							<div>
-								<h5>DECK Exteior</h5>
-								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
-							</div>
-						</figcaption>	
-					</figure>
-					//Item
-					Item
-					<figure class="one-fourth" data-src="http://www.placehold.it/800x600">
-						<img src="http://www.placehold.it/600x400" alt="" />
-						<figcaption>
-							<span class="icojam_zoom_in"></span>
-							<div>
-								<h5>DECK Exteior</h5>
-								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
-							</div>
-						</figcaption>	
-					</figure>
-					//Item
-					Item
-					<figure class="one-fourth" data-src="http://www.placehold.it/800x600">
-						<img src="http://www.placehold.it/600x400" alt="" />
-						<figcaption>
-							<span class="icojam_zoom_in"></span>
-							<div>
-								<h5>DECK Exteior</h5>
-								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
-							</div>
-						</figcaption>	
-					</figure>
-					//Item -->
+					?>
 				</div>				
 			</article>
 		</div>
@@ -192,7 +132,7 @@
 						<span class="icojam_info_3"></span> Descrição
 					</a></li>
 					<li><a href="#tab2" title="Specifications">
-						<span class="icojam_document"></span> SOBRE A 780
+						<span class="icojam_document"></span> SOBRE a <?php echo $embarcacao->titulo; ?>
 					</a></li>
 					<li><a href="#tab3" title="Equipment">
 						<span class="icojam_anchor"></span> ITENS DE SERIE
@@ -208,19 +148,14 @@
 					<div class="row">
 						<!-- OneHalf -->
 						<div class="one-half">
-							<h2>About Elan 1923 Impression</h2>
-							<p><strong>Mega Yacht OceanPrincess is one of the most luxurious and exclusive super yachts available for charter in Greece, Mediterranean, Red Sea…. Despite she is called A Yacht, she is a classed as per Lloyds 100 A1 Passenger Ship LMC, fully MCA compliant.</strong></p>
-							<p>OceanPrincess is built in Finland by Rauma Yard and delivered in 1990 as boutique cruise liner. The new owners converted her into mega yacht in 2004 in Greek shipyard Elefsis. The final result of the conversion is large private yacht, made only for Private cruises or corporate charters.</p>
-							<p>Powered by two Wärtsilä -8R32D with 8154 BHP Engines she reaches top speed of 17.0 Knots, while she cruise at 14.0 Knots in maximum comfort.</p>
-							<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p> 
-							<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.</p>
-							<p>She is manned by a professional Maritime Crew.</p>
+							<h2><?php echo $embarcacao_descricao->titulo; ?></h2>
+							<?php echo $embarcacao_descricao->descricao; ?>
 						</div>
 						<!-- //OneHalf -->
 						
 						<!-- OneHalf -->
 						<div class="one-half">
-							<img src="assets/images/uploads/content1.png" alt="Elan 1923 Impression" />
+							<img src="<?php echo site_url('userfiles/embarcacoes/'.$embarcacao_descricao->imagem); ?>" alt="<?php echo $embarcacao_descricao->titulo; ?>" />
 						</div>
 						<!-- //OneHalf -->
 					</div>
@@ -233,79 +168,10 @@
 					<div class="row">
 						<!-- OneHalf -->
 						<div class="one-half one-half-center">
-							<table>
-								<tr>
-									<th colspan="2">Especificações Técnicas</th>
-								</tr>
-								<tr>
-                                </tr>
-                                    <td>Altura Total:</td>
-									<td>5,20 m</td>
-								</tr>
-								<tr>
-									<td>Pé direito Cabine:</td>
-									<td>3,10 m</td>
-								</tr>
-								<tr>
-									<td>Pé direito Toalete:</td>
-									<td>2,20 m</td>
-								</tr>
-								<tr>
-									<td>Comprimento Total:</td>
-									<td>23,6 m</td>
-								</tr>
-								<tr>
-									<td>Boca Máxima:</td>
-									<td>4,95 m</td>
-								</tr>
-								<tr>
-									<td>Pontal:</td>
-									<td>1,55 m</td>
-								</tr>
-								<tr>
-									<td>Calado Máximo:</td>
-									<td>1,05</td>
-								</tr>
-								<tr>
-									<td>Peso Leve:</td>
-									<td>42 t</td>
-								</tr>
-								<tr>
-									<td>Tanque de combustível:</td>
-									<td>3000L</td>
-								</tr>
-								<tr>
-									<td>Tanque de Água:</td>
-									<td>1000L</td>
-								</tr>
-								<tr>
-									<td>Motorização:</td>
-									<td>IPS 1800</td>
-								</tr>
-								<tr>
-									<td>Passageiros:</td>
-									<td>20+2 </td>
-								</tr>
-							</table>
-							
-                            <table>
-                                <tr>
-                                    <th colspan="2">Motores</th>
-                                </tr>
-                                <tr>
-									<td>PARELHA VOLVO</td>
-                                    <td>IPS 1200-D13 - 900HP (DIESEL)</td>
-                                </tr>
-                                <tr>
-									<td>PARELHA</td>
-                                    <td>VOLVO D4- EVC DPH-225HP ( Diesel)</td>
-                                </tr>
-                            </table>
-							
-							
+							<h2><?php echo $embarcacao->titulo; ?></h2>
+							<?php echo $embarcacao_especificacoes->descricao; ?>
 						</div>
-						<!-- //OneHalf -->
-						
+						<!-- //OneHalf -->						
 					</div>
 				</article>
 				<!-- //Tab Content-->
@@ -344,15 +210,19 @@
 		</div>
 		<!-- //Content-->
 		
-        <!-- Photo -->
-        <section class="photo" style="background-image: url('assets/images/ship.jpg'); height: 415px;">
-        </section>
-        <!-- //Photo -->
+		<?php  
+			if($embarcacao_descricao && $embarcacao_descricao->imagem2 != '' && !is_null($embarcacao_descricao->imagem2)){
+		?>
+		        <!-- Photo -->
+		        <section class="photo" style="background-image: url('<?php echo site_url('userfiles/embarcacoes/'.$embarcacao_descricao->imagem2); ?>'); height: 415px;">
+		        </section>
+		        <!-- //Photo -->
+		<?php  
+			}
+		?>
 
 		<div class="wrap" id="content-mensagem">
 			<div class="full-width">
-				
-			
 				<div class="clearfix">
 					<div class="text">
 						<h4>Fale com a Cimitarra Yachts:</h4>
