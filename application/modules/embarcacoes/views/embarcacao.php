@@ -7,7 +7,13 @@
 		</div>
 		<header class="intro">
 			<div class="wrap">
-				Video    Galeria de fotos    Especificações     Vista Superior     MENSAGEM
+                <nav class="mini-nav">
+                    <a href="#content-video">Video</a>   
+                    <a href="#content-galeria">Galeria de fotos</a>    
+                    <a href="#content-especificacoes">Especificações</a>
+                    <a href="#content-vista">Vista Superior</a>
+                    <a href="mensagem">mensagem</a>
+                </nav>
 				<?php echo $embarcacao->resumo; ?>
 				<?php  
 					if(!is_null($embarcacao->link) && $embarcacao->link != ''){
