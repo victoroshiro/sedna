@@ -31,9 +31,9 @@
 							<div class="text">
 								<h3>Estaleiro</h3>
                                 <p>
-                                    O Estaleiro Cimitarra exporta suas lanchas desde 2000, com seriedade e compromisso com as normas de exportação , seguindo rigorosamente todos os requisitos necessários das normas internacionais de navegação.
+                                    O Estaleiro Cimitarra investe em lanchas maiores e mais luxuosas, alcançando um novo patamar no universo náutico.
                                     <br>
-                                    A empresa já exportou para: Angola, Canadá, Noruega e Suécia.
+                                    Todas as nossas embarcaçoes são desenvolvidas foco no aproveitamento dos espaços externos e design personalizado.                                   O Estaleiro Cimitarra exporta suas lanchas desde 2000, com seriedade e compromisso com as normas de exportação , seguindo rigorosamente todos os requisitos necessários das normas internacionais de navegação.
                                 </p>
 							</div>
 						</div>

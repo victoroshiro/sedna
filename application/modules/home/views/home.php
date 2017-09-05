@@ -11,9 +11,11 @@
 								<div id="fullscreen-video-<?php echo $item->video_id ?>"></div>
 								<div class="text-wrapper">
 									<h1 class="wow fadeInDown"><?php echo $item->titulo; ?></h1>
-									<a class="anchor button white medium wow fadeInUp" href="<?php echo (strstr($item->link,'http')) ? $item->link : site_url($item->link); ?>" <?php echo 'target="'.$item->target_blank.'"'; ?>>
-										<?php echo $item->resumo; ?>
-									</a>
+                                    <?php if (!empty($item->link)): ?> 
+                                        <a class="anchor button white medium wow fadeInUp" href="<?php echo (strstr($item->link,'http')) ? $item->link : site_url($item->link); ?>" <?php echo 'target="'.$item->target_blank.'"'; ?>>
+                                            <?php echo $item->resumo; ?>
+                                        </a>
+                                    <?php endif ?>
 								</div>
 							</div>
 						</article>
@@ -22,9 +24,11 @@
 							<img src="<?php echo site_url('userfiles/banners/'.$item->imagem); ?>" alt="">
 							<div class="text-wrapper">
 								<h1 class="wow fadeInDown"><?php echo $item->titulo; ?></h1>
-								<a class="anchor button white medium wow fadeInUp" href="<?php echo (strstr($item->link,'http')) ? $item->link : site_url($item->link); ?>" <?php echo 'target="'.$item->target_blank.'"'; ?>>
-									<?php echo $item->resumo; ?>
-								</a>
+                                <?php if (!empty($item->link)): ?> 
+                                    <a class="anchor button white medium wow fadeInUp" href="<?php echo (strstr($item->link,'http')) ? $item->link : site_url($item->link); ?>" <?php echo 'target="'.$item->target_blank.'"'; ?>>
+                                        <?php echo $item->resumo; ?>
+                                    </a>
+                                <?php endif ?>
 							</div>
 						</article>
 					<?php endif ?>
