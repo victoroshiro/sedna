@@ -363,7 +363,9 @@
         
         $(document).ready(function() {
           $("#lightSliderMainBanner").slick({
-            adaptiveHeight: true
+            adaptiveHeight: true,
+            prevArrow: $(".slick-nav .prev"),
+            nextArrow: $(".slick-nav .next")
             // loop: true,
             // pager: false
           });

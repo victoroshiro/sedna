@@ -35,7 +35,10 @@
 				<?php endforeach ?>	
 			</div>
 		<?php endif ?>
-
+            <div class="slick-nav">
+                <div class="slick-arrow prev"><i class="fa fa-angle-left"></i></div>
+                <div class="slick-arrow next"><i class="fa fa-angle-right"></i></div>
+            </div>
 		<script>
 			function onYouTubeIframeAPIReady() {
 
