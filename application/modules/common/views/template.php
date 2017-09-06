@@ -79,9 +79,57 @@
                   <li><a href="empresa" title="Empresa">empresa</a></li>
                   <li><a href="noticias" title="Noticias">noticias</a></li>
                   <li><a href="assistencia-tecnica" title="Assistencia técnica">assistencia técnica</a></li>
-                  <li>
-                    <a href="embarcacoes" title="Embarcacoes">embarcações</a>
-                  </li>
+                  <li class="fix-sub">
+                    <li><a href="#">Embarcações</a>
+                        <ul class="dropdown">
+                            <li>
+                                <a href="">
+                                    Cimitarra
+                                </a>
+                                <ul class="dropdown">
+                                    <li>
+                                        <a href="">360</a>
+                                        <ul class="dropdown">
+                                            <li>
+                                                <a href="embarcacoes/360/hard-top">Hard Top</a>
+                                            </li>
+                                            <li>
+                                                <a href="embarcacoes/360/hard-top">Open</a>
+                                            </li>
+                                            <li>
+                                                <a href="embarcacoes/360/soft-hard-top">Soft Hard Top</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="">400</a>
+                                    </li>
+                                    <li>
+                                        <a href="">460</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Cimitarra Yachts
+                                </a>
+                                <ul class="dropdown">
+                                    <li>
+                                        <a href="">540</a>
+                                    </li>
+                                    <li>
+                                        <a href="">600</a>
+                                    </li>
+                                    <li>
+                                        <a href="">640</a>
+                                    </li>
+                                    <li>
+                                        <a href="">780</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>                  
+                    </li>
                   <li><a href="fidelidade-cimitarra" title="Fidelidade Cimitarra">Fidelidade Cimitarra</a></li>
                   <li><a href="seminovos" title="Seminovos">seminovos</a></li>
                   <li><a href="contato" title="Contato">contato</a></li>
