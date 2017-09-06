@@ -23,6 +23,7 @@ if (!function_exists('slug')){
         $b = 'aaaaaaaceeeeiiiidnoooooouuuuybsaaaaaaaceeeeiiiidnoooooouuuyybyRr';
 
         $string = utf8_decode($params['string']);
+        $string = trim($params['string']);
         $string = str_replace('?', '', $string);
         $string = str_replace('&', '', $string);
         $string = str_replace('(', '', $string);
@@ -38,13 +39,13 @@ if (!function_exists('slug')){
         $string = utf8_encode($string);
 
         if($params['tabela']){
-	        
+            
             $unique = false;
-	        $count = 1;
+            $count = 1;
             $slug = $string;
-	        
+            
             while (!$unique) {
-		        $CI->db->select('COUNT(*) AS total')->from($params['tabela'])->where('slug', $slug);
+                $CI->db->select('COUNT(*) AS total')->from($params['tabela'])->where('slug', $slug);
                 
                 if ($params['id']) {
                     $CI->db->where('id !=', $params['id']);
@@ -61,6 +62,7 @@ if (!function_exists('slug')){
                 }
             }
         }
+        
         return $string; 
     }
 }
