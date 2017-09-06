@@ -98,7 +98,7 @@
                                                 if($item->subcategoria == '360'){
                                             ?>
                                                   <li>
-                                                      <a href="<?php echo site_url('embarcacoes/'.$item->slug); ?>"><?php echo $item->titulo; ?></a>
+                                                      <a href="<?php echo site_url('embarcacoes/detalhe/'.$item->slug); ?>"><?php echo $item->titulo; ?></a>
                                                   </li>
                                             <?php
                                                 }
@@ -114,7 +114,7 @@
                                                 if($item->subcategoria == '400'){
                                             ?>
                                                   <li>
-                                                      <a href="<?php echo site_url('embarcacoes/'.$item->slug); ?>"><?php echo $item->titulo; ?></a>
+                                                      <a href="<?php echo site_url('embarcacoes/detalhe/'.$item->slug); ?>"><?php echo $item->titulo; ?></a>
                                                   </li>
                                             <?php
                                                 }
@@ -130,7 +130,7 @@
                                                 if($item->subcategoria == '460'){
                                             ?>
                                                   <li>
-                                                      <a href="<?php echo site_url('embarcacoes/'.$item->slug); ?>"><?php echo $item->titulo; ?></a>
+                                                      <a href="<?php echo site_url('embarcacoes/detalhe/'.$item->slug); ?>"><?php echo $item->titulo; ?></a>
                                                   </li>
                                             <?php
                                                 }
@@ -157,7 +157,7 @@
                                                   if($item->subcategoria == '540'){
                                               ?>
                                                     <li>
-                                                        <a href="<?php echo site_url('embarcacoes/'.$item->slug); ?>"><?php echo $item->titulo; ?></a>
+                                                        <a href="<?php echo site_url('embarcacoes/detalhe/'.$item->slug); ?>"><?php echo $item->titulo; ?></a>
                                                     </li>
                                               <?php
                                                   }
@@ -173,7 +173,7 @@
                                                   if($item->subcategoria == '600'){
                                               ?>
                                                     <li>
-                                                        <a href="<?php echo site_url('embarcacoes/'.$item->slug); ?>"><?php echo $item->titulo; ?></a>
+                                                        <a href="<?php echo site_url('embarcacoes/detalhe/'.$item->slug); ?>"><?php echo $item->titulo; ?></a>
                                                     </li>
                                               <?php
                                                   }
@@ -189,7 +189,7 @@
                                                   if($item->subcategoria == '640'){
                                               ?>
                                                     <li>
-                                                        <a href="<?php echo site_url('embarcacoes/'.$item->slug); ?>"><?php echo $item->titulo; ?></a>
+                                                        <a href="<?php echo site_url('embarcacoes/detalhe/'.$item->slug); ?>"><?php echo $item->titulo; ?></a>
                                                     </li>
                                               <?php
                                                   }
@@ -205,7 +205,7 @@
                                                   if($item->subcategoria == '780'){
                                               ?>
                                                     <li>
-                                                        <a href="<?php echo site_url('embarcacoes/'.$item->slug); ?>"><?php echo $item->titulo; ?></a>
+                                                        <a href="<?php echo site_url('embarcacoes/detalhe/'.$item->slug); ?>"><?php echo $item->titulo; ?></a>
                                                     </li>
                                               <?php
                                                   }
