@@ -398,7 +398,7 @@
 
 		    	        var options = "<option value='360'>360</option>"+
 		    	                      "<option value='400'>400</option>"+  
-		    	                      "<option value='461'>461</option>";
+		    	                      "<option value='460'>460</option>";
 		    	    }
 
 		    	    if($(this).val() == 'cimitarra-yachts'){
