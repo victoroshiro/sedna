@@ -6,6 +6,7 @@ class Landing_pages extends CI_Controller {
     {
 		parent::__construct();
         $this->load->model('Landing_pages_m');
+        $this->load->model('embarcacoes/Embarcacoes_m');
 	}
 
 	public function index($slug = false)
@@ -22,6 +23,10 @@ class Landing_pages extends CI_Controller {
         $this->data['description'] = $this->data['landing_page']->description;
 
         $this->data['landing_page_links'] = $this->Landing_pages_m->get_landing_page_links($this->data['landing_page']->id);
+
+        // Menu
+        $this->data['menu_embarcacoes_cim'] = $this->Embarcacoes_m->get_embarcacoes(array('categoria' => 'cimitarra'));
+        $this->data['menu_embarcacoes_ciy'] = $this->Embarcacoes_m->get_embarcacoes(array('categoria' => 'cimitarra-yachts'));
 
         $this->data['partial'] = $this->load->view('landing_page.php', $this->data, true);
         $this->load->view('common/template.php', $this->data);

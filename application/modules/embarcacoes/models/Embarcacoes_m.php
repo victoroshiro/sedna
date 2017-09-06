@@ -13,7 +13,8 @@ class Embarcacoes_m extends CI_Model
 			'count' => false,
 			'order_by' => false,
 			'highlights' => false,
-			'id' => false
+			'id' => false,
+			'categoria' => false
 		);
 
 		$params = array_merge($options, $params);
@@ -22,17 +23,17 @@ class Embarcacoes_m extends CI_Model
             $this->db->select('COUNT(DISTINCT id) AS count');
         else{
 			$this->db->select('*');
-					 // ->select('DATE_FORMAT(data_embarcacao,"%d/%m/%Y") AS data_embarcacao_f', false);
         }
 
 		$this->db->from('embarcacoes')
 				 ->where('habilitado', 1);
 
 		if($params['slug']){
-			// $this->db->select('DATE_FORMAT(data_embarcacao,"%Y") AS ano_embarcacao', false)
-					 // ->select('DATE_FORMAT(data_embarcacao,"%m") AS mes_embarcacao', false)
-					 // ->select('DATE_FORMAT(data_embarcacao,"%d") AS dia_embarcacao', false)
 			$this->db->where('slug', $params['slug']);
+		}
+
+		if($params['categoria']){
+			$this->db->where('categoria', $params['categoria']);
 		}
 
 		if($params['contains']){
@@ -48,12 +49,6 @@ class Embarcacoes_m extends CI_Model
 		if($params['limit'] !== FALSE && $params['offset'] === FALSE){
 			$this->db->limit($params['limit']);
 		}
-
-		/*if($params['order_by']){
-			$this->db->order_by('data_embarcacao',$params['order_by']);
-		}else{
-			$this->db->order_by('data_embarcacao','DESC');
-		}*/
 
 		if($params['highlights']){
 			$this->db->where('destaque', 1);

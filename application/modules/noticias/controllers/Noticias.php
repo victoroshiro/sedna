@@ -7,19 +7,11 @@ class Noticias extends CI_Controller {
         parent::__construct();
         $this->load->helper('text');
         $this->load->model('Noticias_m');
-        $this->load->model('ginecologia/Ginecologia_m');
-        $this->load->model('sexualidade/Sexualidade_m');
-        $this->load->model('obstetricia/Obstetricia_m');
-        $this->load->model('imprensa/Imprensa_m');
+        $this->load->model('embarcacoes/Embarcacoes_m');
     }
 
     public function index()
     {
-        $this->data['menu_gineco'] = $this->Ginecologia_m->get_ginecologias();
-        $this->data['menu_sex'] = $this->Sexualidade_m->get_sexualidades();
-        $this->data['menu_obs'] = $this->Obstetricia_m->get_obstetricias();
-        $this->data['menu_imp'] = $this->Imprensa_m->get_imprensas();
-
         //pagination
         $limit_results = 9;
         $offset_page = ($this->uri->segment(2)) ? $this->uri->segment(2) : 0;
@@ -68,6 +60,10 @@ class Noticias extends CI_Controller {
         $this->data["links"] = $this->pagination->create_links();
         $this->data["total_noticias"] = $total_noticias;
 
+        // Menu
+        $this->data['menu_embarcacoes_cim'] = $this->Embarcacoes_m->get_embarcacoes(array('categoria' => 'cimitarra'));
+        $this->data['menu_embarcacoes_ciy'] = $this->Embarcacoes_m->get_embarcacoes(array('categoria' => 'cimitarra-yachts'));
+
         $this->data['partial'] = $this->load->view('noticias.php', $this->data, true);
         $this->load->view('common/template.php', $this->data);
     }
@@ -76,11 +72,6 @@ class Noticias extends CI_Controller {
     {
         $slug || show_404();
 
-        $this->data['menu_gineco'] = $this->Ginecologia_m->get_ginecologias();
-        $this->data['menu_sex'] = $this->Sexualidade_m->get_sexualidades();
-        $this->data['menu_obs'] = $this->Obstetricia_m->get_obstetricias();
-        $this->data['menu_imp'] = $this->Imprensa_m->get_imprensas();
-
         $this->data['noticia'] = $this->Noticias_m->get_noticias(array('slug' => $slug));
 
         $this->data['noticia'] || show_404();
@@ -88,6 +79,10 @@ class Noticias extends CI_Controller {
         $this->data['description'] = $this->data["noticia"]->description;
 
         $this->data['all_news'] = $this->Noticias_m->get_noticias(array('id' => $this->data['noticia']->id));
+
+        // Menu
+        $this->data['menu_embarcacoes_cim'] = $this->Embarcacoes_m->get_embarcacoes(array('categoria' => 'cimitarra'));
+        $this->data['menu_embarcacoes_ciy'] = $this->Embarcacoes_m->get_embarcacoes(array('categoria' => 'cimitarra-yachts'));
 
         $this->data['partial'] = $this->load->view('noticia.php', $this->data, true);
         $this->load->view('common/template.php', $this->data);

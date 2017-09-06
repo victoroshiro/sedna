@@ -59,6 +59,10 @@ class Embarcacoes extends CI_Controller {
         $this->data["links"] = $this->pagination->create_links();
         $this->data["total_embarcacoes"] = $total_embarcacoes;
 
+        // Menu
+        $this->data['menu_embarcacoes_cim'] = $this->Embarcacoes_m->get_embarcacoes(array('categoria' => 'cimitarra'));
+        $this->data['menu_embarcacoes_ciy'] = $this->Embarcacoes_m->get_embarcacoes(array('categoria' => 'cimitarra-yachts'));
+
         $this->data['partial'] = $this->load->view('embarcacoes.php', $this->data, true);
         $this->load->view('common/template.php', $this->data);
     }
@@ -80,6 +84,10 @@ class Embarcacoes extends CI_Controller {
         $this->data['description'] = $this->data["embarcacao"]->description;
 
         $this->data['all_news'] = $this->Embarcacoes_m->get_embarcacoes(array('id' => $this->data['embarcacao']->id));
+
+        // Menu
+        $this->data['menu_embarcacoes_cim'] = $this->Embarcacoes_m->get_embarcacoes(array('categoria' => 'cimitarra'));
+        $this->data['menu_embarcacoes_ciy'] = $this->Embarcacoes_m->get_embarcacoes(array('categoria' => 'cimitarra-yachts'));
 
         $this->data['partial'] = $this->load->view('embarcacao.php', $this->data, true);
         $this->load->view('common/template.php', $this->data);

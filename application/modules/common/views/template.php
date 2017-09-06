@@ -82,52 +82,142 @@
                   <li class="fix-sub">
                     <li><a href="#">Embarcações</a>
                         <ul class="dropdown">
-                            <li>
-                                <a href="">
-                                    Cimitarra
-                                </a>
-                                <ul class="dropdown">
-                                    <li>
-                                        <a href="">360</a>
-                                        <ul class="dropdown">
-                                            <li>
-                                                <a href="embarcacoes/360/hard-top">Hard Top</a>
-                                            </li>
-                                            <li>
-                                                <a href="embarcacoes/360/hard-top">Open</a>
-                                            </li>
-                                            <li>
-                                                <a href="embarcacoes/360/soft-hard-top">Soft Hard Top</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="">400</a>
-                                    </li>
-                                    <li>
-                                        <a href="">460</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="">
-                                    Cimitarra Yachts
-                                </a>
-                                <ul class="dropdown">
-                                    <li>
-                                        <a href="">540</a>
-                                    </li>
-                                    <li>
-                                        <a href="">600</a>
-                                    </li>
-                                    <li>
-                                        <a href="">640</a>
-                                    </li>
-                                    <li>
-                                        <a href="">780</a>
-                                    </li>
-                                </ul>
-                            </li>
+                            <?php
+                              if($menu_embarcacoes_cim){
+                            ?>
+                                <li>
+                                    <a href="">
+                                        Cimitarra
+                                    </a>
+                                    <ul class="dropdown">
+                                      <li>
+                                          <a href="">360</a>
+                                          <ul class="dropdown">
+                                            <?php  
+                                              foreach ($menu_embarcacoes_cim as $item) {
+                                                if($item->subcategoria == '360'){
+                                            ?>
+                                                  <li>
+                                                      <a href="<?php echo site_url('embarcacoes/'.$item->slug); ?>"><?php echo $item->titulo; ?></a>
+                                                  </li>
+                                            <?php
+                                                }
+                                              }
+                                            ?>
+                                          </ul>
+                                      </li>
+                                      <li>
+                                          <a href="">400</a>
+                                          <ul class="dropdown">
+                                            <?php  
+                                              foreach ($menu_embarcacoes_cim as $item) {
+                                                if($item->subcategoria == '400'){
+                                            ?>
+                                                  <li>
+                                                      <a href="<?php echo site_url('embarcacoes/'.$item->slug); ?>"><?php echo $item->titulo; ?></a>
+                                                  </li>
+                                            <?php
+                                                }
+                                              }
+                                            ?>
+                                          </ul>
+                                      </li>
+                                      <li>
+                                          <a href="">460</a>
+                                          <ul class="dropdown">
+                                            <?php  
+                                              foreach ($menu_embarcacoes_cim as $item) {
+                                                if($item->subcategoria == '460'){
+                                            ?>
+                                                  <li>
+                                                      <a href="<?php echo site_url('embarcacoes/'.$item->slug); ?>"><?php echo $item->titulo; ?></a>
+                                                  </li>
+                                            <?php
+                                                }
+                                              }
+                                            ?>
+                                          </ul>
+                                      </li>
+                                    </ul>
+                                </li>
+                            <?php
+                              }
+                              if($menu_embarcacoes_ciy){
+                            ?>
+                                <li>
+                                    <a href="">
+                                        Cimitarra Yachts
+                                    </a>
+                                    <ul class="dropdown">
+                                        <li>
+                                            <a href="">540</a>
+                                            <ul class="dropdown">
+                                              <?php  
+                                                foreach ($menu_embarcacoes_ciy as $item) {
+                                                  if($item->subcategoria == '540'){
+                                              ?>
+                                                    <li>
+                                                        <a href="<?php echo site_url('embarcacoes/'.$item->slug); ?>"><?php echo $item->titulo; ?></a>
+                                                    </li>
+                                              <?php
+                                                  }
+                                                }
+                                              ?>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="">600</a>
+                                            <ul class="dropdown">
+                                              <?php  
+                                                foreach ($menu_embarcacoes_ciy as $item) {
+                                                  if($item->subcategoria == '600'){
+                                              ?>
+                                                    <li>
+                                                        <a href="<?php echo site_url('embarcacoes/'.$item->slug); ?>"><?php echo $item->titulo; ?></a>
+                                                    </li>
+                                              <?php
+                                                  }
+                                                }
+                                              ?>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="">640</a>
+                                            <ul class="dropdown">
+                                              <?php  
+                                                foreach ($menu_embarcacoes_ciy as $item) {
+                                                  if($item->subcategoria == '640'){
+                                              ?>
+                                                    <li>
+                                                        <a href="<?php echo site_url('embarcacoes/'.$item->slug); ?>"><?php echo $item->titulo; ?></a>
+                                                    </li>
+                                              <?php
+                                                  }
+                                                }
+                                              ?>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="">780</a>
+                                            <ul class="dropdown">
+                                              <?php  
+                                                foreach ($menu_embarcacoes_ciy as $item) {
+                                                  if($item->subcategoria == '780'){
+                                              ?>
+                                                    <li>
+                                                        <a href="<?php echo site_url('embarcacoes/'.$item->slug); ?>"><?php echo $item->titulo; ?></a>
+                                                    </li>
+                                              <?php
+                                                  }
+                                                }
+                                              ?>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            <?php
+                              }
+                            ?>
                         </ul>                  
                     </li>
                   <li><a href="fidelidade-cimitarra" title="Fidelidade Cimitarra">Fidelidade Cimitarra</a></li>

@@ -8,11 +8,8 @@ class Home extends CI_Controller {
         $this->load->model('Home_m');
         $this->load->model('common/Common_m');
         $this->load->model('noticias/Noticias_m');
-        $this->load->model('ginecologia/Ginecologia_m');
-        $this->load->model('sexualidade/Sexualidade_m');
-        $this->load->model('obstetricia/Obstetricia_m');
-        $this->load->model('imprensa/Imprensa_m');
         $this->load->model('seminovos/Seminovos_m');
+        $this->load->model('embarcacoes/Embarcacoes_m');
     }
 
     public function index()
@@ -22,6 +19,10 @@ class Home extends CI_Controller {
         $this->data['active'] = 'home';
         $this->data['title'] = 'Cimitarra';
         $this->data['description'] = 'Cimitarra';
+
+        // Menu
+        $this->data['menu_embarcacoes_cim'] = $this->Embarcacoes_m->get_embarcacoes(array('categoria' => 'cimitarra'));
+        $this->data['menu_embarcacoes_ciy'] = $this->Embarcacoes_m->get_embarcacoes(array('categoria' => 'cimitarra-yachts'));
         
         $limit_results = 4;
 

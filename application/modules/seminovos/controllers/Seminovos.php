@@ -7,19 +7,11 @@ class Seminovos extends CI_Controller {
         parent::__construct();
         $this->load->helper('text');
         $this->load->model('Seminovos_m');
-        $this->load->model('ginecologia/Ginecologia_m');
-        $this->load->model('sexualidade/Sexualidade_m');
-        $this->load->model('obstetricia/Obstetricia_m');
-        $this->load->model('imprensa/Imprensa_m');
+        $this->load->model('embarcacoes/Embarcacoes_m');
     }
 
     public function index()
     {
-        $this->data['menu_gineco'] = $this->Ginecologia_m->get_ginecologias();
-        $this->data['menu_sex'] = $this->Sexualidade_m->get_sexualidades();
-        $this->data['menu_obs'] = $this->Obstetricia_m->get_obstetricias();
-        $this->data['menu_imp'] = $this->Imprensa_m->get_imprensas();
-
         //pagination
         $limit_results = 9;
         $offset_page = ($this->uri->segment(2)) ? $this->uri->segment(2) : 0;
@@ -68,6 +60,10 @@ class Seminovos extends CI_Controller {
         $this->data["links"] = $this->pagination->create_links();
         $this->data["total_seminovos"] = $total_seminovos;
 
+        // Menu
+        $this->data['menu_embarcacoes_cim'] = $this->Embarcacoes_m->get_embarcacoes(array('categoria' => 'cimitarra'));
+        $this->data['menu_embarcacoes_ciy'] = $this->Embarcacoes_m->get_embarcacoes(array('categoria' => 'cimitarra-yachts'));
+
         $this->data['partial'] = $this->load->view('seminovos.php', $this->data, true);
         $this->load->view('common/template.php', $this->data);
     }
@@ -76,11 +72,6 @@ class Seminovos extends CI_Controller {
     {
         $slug || show_404();
 
-        $this->data['menu_gineco'] = $this->Ginecologia_m->get_ginecologias();
-        $this->data['menu_sex'] = $this->Sexualidade_m->get_sexualidades();
-        $this->data['menu_obs'] = $this->Obstetricia_m->get_obstetricias();
-        $this->data['menu_imp'] = $this->Imprensa_m->get_imprensas();
-
         $this->data['seminovo'] = $this->Seminovos_m->get_seminovos(array('slug' => $slug));
 
         $this->data['seminovo'] || show_404();
@@ -88,6 +79,10 @@ class Seminovos extends CI_Controller {
         $this->data['description'] = $this->data["seminovo"]->description;
 
         $this->data['all_news'] = $this->Seminovos_m->get_seminovos(array('id' => $this->data['seminovo']->id));
+
+        // Menu
+        $this->data['menu_embarcacoes_cim'] = $this->Embarcacoes_m->get_embarcacoes(array('categoria' => 'cimitarra'));
+        $this->data['menu_embarcacoes_ciy'] = $this->Embarcacoes_m->get_embarcacoes(array('categoria' => 'cimitarra-yachts'));
 
         $this->data['partial'] = $this->load->view('seminovo.php', $this->data, true);
         $this->load->view('common/template.php', $this->data);
