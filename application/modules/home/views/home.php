@@ -1,4 +1,3 @@
-	<script async src="https://www.youtube.com/iframe_api"></script>
 <!-- Main -->
 	<main class="main" role="main">
 

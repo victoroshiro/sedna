@@ -342,10 +342,26 @@
     <script src="assets/js/jquery.lightSlider.min.js"></script>
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/scripts.js"></script>
+	<script async src="https://www.youtube.com/iframe_api"></script>
 
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
-      
+    <?php if('active' == 'home'): ?>
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+          
+
+        <script>
+        $(document).ready(function() {
+          $("#lightSliderMainBanner").slick({
+            adaptiveHeight: true,
+            prevArrow: $(".slick-nav .prev"),
+            nextArrow: $(".slick-nav .next")
+            // loop: true,
+            // pager: false
+          });
+        });
+        </script>
+    <?php endif ?>
+
     <script>
        $(document).ready(function() {
         $("#lightSliderPosts").lightSlider({
@@ -367,15 +383,6 @@
         });
 
         
-        $(document).ready(function() {
-          $("#lightSliderMainBanner").slick({
-            adaptiveHeight: true,
-            prevArrow: $(".slick-nav .prev"),
-            nextArrow: $(".slick-nav .next")
-            // loop: true,
-            // pager: false
-          });
-        });
         
         new WOW().init();
       });

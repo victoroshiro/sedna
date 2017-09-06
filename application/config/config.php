@@ -17,7 +17,7 @@
 |
 */
 //<!--build:config application/config/config.php -->
-$config['base_url'] = 'http://'.$_SERVER['HTTP_HOST'] . '/cimitarra/';
+$config['base_url'] = 'http://'.$_SERVER['HTTP_HOST'] . '/';
 // <!--endbuild-->
 
 /*
