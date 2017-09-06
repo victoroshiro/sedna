@@ -86,6 +86,24 @@
 					    	</div>
 					    	<div class="col-md-12">
 					    		<div class="form-group">
+					    			<label for="categoria">Categoria: </label>
+					    			<select name="categoria" id="categoria" class="select form-control">
+					    			    <option value="false">Selecione a Categoria</option>
+					    			    <option value="cimitarra">Cimitarra</option>
+					    			    <option value="cimitarra-yachts">Cimitarra Yachts</option>
+					    			</select>
+					    		</div>
+					    	</div>
+					    	<div class="col-md-12">
+					    		<div class="form-group">
+					    			<label for="subcategoria">Subcategoria: </label>
+					    			<select name="subcategoria" id="subcategoria" class="select form-control">
+					    			    <option value="false">Selecione a Subcategoria</option>
+					    			</select>
+					    		</div>
+					    	</div>
+					    	<div class="col-md-12">
+					    		<div class="form-group">
 					    			<label for="marca">Marca: </label>
 					    			<input name="marca" id="marca" type="text" class="form-control" value="">
 					    		</div>
@@ -165,6 +183,32 @@
 				CKEDITOR.replace('descricao')
 				CKEDITOR.replace('resumo')
 				$(".money").maskMoney({symbol: 'R$', showSymbol: true, thousands: '.', decimal: ',', symbolStay: true});
+
+				//Categorias
+				$('#categoria').on('change', function(){
+				    
+				    $('#subcategoria option').remove().append("<option value='false'>Selecione primeiro a Categoria</option>");
+				    
+				    if($(this).val() == 'cimitarra'){
+
+				        var options = "<option value='360'>360</option>"+
+				                      "<option value='400'>400</option>"+  
+				                      "<option value='461'>461</option>";
+				    }
+
+				    if($(this).val() == 'cimitarra-yachts'){
+				        
+				        var options = "<option value='540'>540</option>"+
+				                      "<option value='600'>600</option>"+
+				                      "<option value='640'>640</option>"+
+				                      "<option value='780'>780</option>";
+				    }
+
+				    $('#subcategoria').append(options);
+				});
+
+				// Código para select de subcategoria começar com algo, mas não é obrigatório.
+				$('#categoria').val('cimitarra').change();
 			});
 		</script>
 		<?php $this->load->view('admin/inc/footer') ?>

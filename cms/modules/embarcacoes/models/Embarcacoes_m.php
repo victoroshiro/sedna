@@ -9,6 +9,7 @@ class Embarcacoes_m extends CI_Model {
         $this->load->database();
         $this->load->library('image_lib');
         $this->load->helper('thumb');
+        $this->load->helper('string');
     }
 
     public function get_marcas()
@@ -494,7 +495,11 @@ class Embarcacoes_m extends CI_Model {
 
     public function salvar($data) {
 
-        $data['slug'] = $this->slug($data['titulo']).'-'.rand(0,100);
+        $data['slug'] = $data['categoria'].'/'.$data['subcategoria'].'/'.slug(array(
+                                                                                    'string' => $data['titulo'],
+                                                                                    'tabela' => 'embarcacoes'
+                                                                                    )
+                                                                                );
 
         $data['valor'] = (strstr($data['valor'],'R$')) ? moneyToDouble($data['valor']) : $data['valor'];
 
@@ -561,16 +566,11 @@ class Embarcacoes_m extends CI_Model {
         
         $data['link'] = get_youtube_id($data['link']);
 
-        if($embarcacao && (!is_null($embarcacao->slug))){
-            $slug_array = explode('-',$embarcacao->slug);
-            $number = array_pop($slug_array);
-
-            if(is_numeric($number)){
-                $data['slug'] = $this->slug($data['titulo']).'-'.$number;
-            }else{
-                $data['slug'] = $this->slug($data['titulo']).'-'.rand(0,100);
-            }
-        }
+        $data['slug'] = $data['categoria'].'/'.$data['subcategoria'].'/'.slug(array(
+                                                                                    'string' => $data['titulo'],
+                                                                                    'tabela' => 'embarcacoes'
+                                                                                    )
+                                                                                );
 
 
         $this->db->update('embarcacoes', $data, $dataWhere);
@@ -648,25 +648,5 @@ class Embarcacoes_m extends CI_Model {
         $this->db->order_by('id', 'DESC');
        
         return $this->db->get()->result();
-    }
-
-    function slug($string, $type = '-') {
-        $a = 'ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõöøùúûýýþÿŔŕ';
-        $b = 'aaaaaaaceeeeiiiidnoooooouuuuybsaaaaaaaceeeeiiiidnoooooouuuyybyRr';
-
-        $string = utf8_decode($string);
-        $string = str_replace('?', '', $string);
-        $string = str_replace('&', '', $string);
-        $string = str_replace('(', '', $string);
-        $string = str_replace(')', '', $string);
-        $string = str_replace('.', '', $string);
-        $string = str_replace(' – ', '-', $string);
-        $string = str_replace('%', 'porcento', $string);
-        $string = strtr($string, utf8_decode($a), $b);
-        $string = preg_replace('/[^a-zA-Z0-9_ %\[\]\.\(\)%&-]/s', '', $string);
-        $string = str_replace(' - ', '-', $string);
-        $string = str_replace(' ', '-', $string);
-        $string = strtolower($string);
-        return utf8_encode($string);
     }
 }
