@@ -93,8 +93,8 @@
 									<label for="categoria">Categoria: </label>
 									<select name="categoria" id="categoria" class="select form-control">
 									    <option value="false">Selecione a Categoria</option>
-									    <option value="cimitarra">Cimitarra</option>
-									    <option value="cimitarra-yachts">Cimitarra Yachts</option>
+									    <option <?php echo ($embarcacao->categoria == 'cimitarra') ? 'selected="selected"' : ''; ?> value="cimitarra">Cimitarra</option>
+									    <option <?php echo ($embarcacao->categoria == 'cimitarra-yachts') ? 'selected="selected"' : ''; ?> value="cimitarra-yachts">Cimitarra Yachts</option>
 									</select>
 								</div>
 							</div>
@@ -396,24 +396,24 @@
 		    	    
 		    	    if($(this).val() == 'cimitarra'){
 
-		    	        var options = "<option value='360'>360</option>"+
-		    	                      "<option value='400'>400</option>"+  
-		    	                      "<option value='460'>460</option>";
+		    	        var options = '<option <?php echo ($embarcacao->subcategoria == '360') ? 'selected="selected"' : ''; ?> value="360">360</option>'+
+		    	                      '<option <?php echo ($embarcacao->subcategoria == '400') ? 'selected="selected"' : ''; ?> value="400">400</option>'+  
+		    	                      '<option <?php echo ($embarcacao->subcategoria == '460') ? 'selected="selected"' : ''; ?> value="460">460</option>';
 		    	    }
 
 		    	    if($(this).val() == 'cimitarra-yachts'){
 		    	        
-		    	        var options = "<option value='540'>540</option>"+
-		    	                      "<option value='600'>600</option>"+
-		    	                      "<option value='640'>640</option>"+
-		    	                      "<option value='780'>780</option>";
+		    	        var options = '<option <?php echo ($embarcacao->subcategoria == '540') ? 'selected="selected"' : ''; ?> value="540">540</option>'+
+		    	                      '<option <?php echo ($embarcacao->subcategoria == '600') ? 'selected="selected"' : ''; ?> value="600">600</option>'+
+		    	                      '<option <?php echo ($embarcacao->subcategoria == '640') ? 'selected="selected"' : ''; ?> value="640">640</option>'+
+		    	                      '<option <?php echo ($embarcacao->subcategoria == '780') ? 'selected="selected"' : ''; ?> value="780">780</option>';
 		    	    }
 
 		    	    $('#subcategoria').append(options);
 		    	});
 
 		    	// Código para select de subcategoria começar com algo, mas não é obrigatório.
-		    	$('#categoria').val('cimitarra').change();
+		    	$('#categoria').val('<?php echo $embarcacao->categoria; ?>').change();
 
 		    	$('.save-edit-link').click(function(event){
 		    	    event.preventDefault();
