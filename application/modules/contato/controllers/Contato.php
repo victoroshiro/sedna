@@ -8,6 +8,7 @@ class Contato extends CI_Controller {
         $this->load->model('Contato_m');
         $this->load->model('noticias/Noticias_m');
         $this->load->model('common/Common_m');
+        $this->load->model('embarcacoes/Embarcacoes_m');
     }
 
     public function index($slug = false)
@@ -16,6 +17,10 @@ class Contato extends CI_Controller {
         $this->data['title'] = 'Cimitarra Yachts.';
         $this->data['description'] = 'Cimitarra Yachts';
 
+        // Menu
+        $this->data['menu_embarcacoes_cim'] = $this->Embarcacoes_m->get_embarcacoes(array('categoria' => 'cimitarra'));
+        $this->data['menu_embarcacoes_ciy'] = $this->Embarcacoes_m->get_embarcacoes(array('categoria' => 'cimitarra-yachts'));
+        
         $this->data['partial'] = $this->load->view('contato.php', $this->data, true);
         
         $this->load->view('common/template.php', $this->data);
