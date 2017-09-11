@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="assets/css/animate.css" />
 
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700|Raleway:400,500,600,700&amp;subset=latin,greek,cyrillic,vietnamese' rel='stylesheet' type='text/css'>
-    <link rel="shortcut icon" href="assets/images/favicon.ico" />
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">        
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- box-navy: Respond.js doesn't work if you view the page via file:// -->
