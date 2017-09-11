@@ -25,7 +25,7 @@
 					if(!is_null($embarcacao->link) && $embarcacao->link != ''){
 				?>
                     <div id="content-video">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/<?php echo $embarcacao->link; ?>?rel=0" frameborder="0" allowfullscreen></iframe>
+                        <iframe width="560" height="530" src="https://www.youtube.com/embed/<?php echo $embarcacao->link; ?>?rel=0" frameborder="0" allowfullscreen></iframe>
                     </div>
 				<?php  
 					}
