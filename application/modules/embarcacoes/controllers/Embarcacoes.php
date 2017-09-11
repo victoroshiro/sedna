@@ -67,9 +67,15 @@ class Embarcacoes extends CI_Controller {
         $this->load->view('common/template.php', $this->data);
     }
 
-    public function detalhe($slug = false)
+    public function detalhe($categoria = false,
+                            $subcategoria = false,
+                            $produto = false)
     {
-        $slug || show_404();
+        if(!$categoria || !$subcategoria || !$produto){
+            show_404();
+        }
+
+        $slug = $categoria.'/'.$subcategoria.'/'.$produto;
 
         $this->data['embarcacao'] = $this->Embarcacoes_m->get_embarcacoes(array('slug' => $slug));
 
