@@ -403,10 +403,9 @@
             <div class="one-fourth">
               <h6>Siga-nos</h6>
               <p>Siga nossas redes sociais e fique por dentro de tudo que acontece na Cimitarra.</p>
-              <a href="#" title="Facebook" class="circle"><i class="fa fa-facebook fa-fw"></i></a>
-              <a href="#" title="Instagram" class="circle"><i class="fa fa-instagram fa-fw"></i></a>
-              <a href="#" title="Youtube" class="circle"><i class="fa fa-youtube-play fa-fw"></i></a>
-              <a href="#" title="Linkedin" class="circle"><i class="fa fa-linkedin fa-fw"></i></a>
+              <a href="https://www.facebook.com/cimitarrayachts" target="blank" title="Facebook" class="circle"><i class="fa fa-facebook fa-fw"></i></a>
+              <a href="https://www.youtube.com/channel/UCLojQsbDSNKVfNELwI0nP3w" target="blank" title="Youtube" class="circle"><i class="fa fa-youtube-play fa-fw"></i></a>
+              <a href="https://www.instagram.com/cimitarrayachts" target="blank" title="Instagram" class="circle"><i class="fa fa-instagram fa-fw"></i></a>
             </div>
             <!-- //OneFourth -->
           </div>
