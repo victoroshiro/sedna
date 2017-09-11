@@ -78,44 +78,6 @@
 			 }
 		</script>
 		
-		<!-- Tab navigation -->
-			<nav class="tabs four" role="navigation">
-				<ul class="wrap">
-					<li>
-						<a href="contact.html" title="Tell us what you need. We will do the rest.">
-							<div class="tabs--image-wrap">
-								<img src="assets/images/ico1.png" alt="">
-							</div>
-							Embarcações novas e seminovas.
-						</a>
-					</li>
-					<li>
-						<a href="charters.html" title="Check our Early Season Mediterranean Deals.">
-							<div class="tabs--image-wrap">
-								<img src="assets/images/ico2.png" alt="">
-							</div>
-							Um dos maiores estaleiros do país.
-						</a>
-					</li>
-					<li>
-						<a href="services.html" title="New to Sailing? We‘ve got you covered.">
-							<div class="tabs--image-wrap">
-								<img src="assets/images/ico3.png" alt="">
-							</div>
-							Barcos para quem gosta de sofisticação, conforto e segurança.
-						</a>
-					</li>
-					<li>
-						<a href="#lightSliderPosts" class="anchor" title="Win a Sailing Holiday in Mediterranean!">
-							<div class="tabs--image-wrap">
-								<img src="assets/images/ico4.png" alt="">
-							</div>
-                            Assistência técnica com garantia e qualidade.
-						</a>
-					</li>
-				</ul>
-			</nav>
-		<!-- //Tab navigation -->
 
 		<section class="cta grey">
 			<div class="wrap center">
