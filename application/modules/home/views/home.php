@@ -120,9 +120,8 @@
                     <!-- Photo -->
                 <section class="photo" style="background-image: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2)), url('assets/images/parallax/home.jpg');">
                             <div class="wrap center">
-                                    <h2>Assistência Técnica</h2>
-                    <p>Exclusivo serviço de assistência para embarcações. Equipe formada por profissionais
-                    experientes, treinados e qualificados.</p>
+                                    <h2>Os melhores barcos você encontra aqui!</h2>
+                                    <p>Embarcações de alta qualidade e desempenho. Referência nacional e internacional em barcos.</p>
 				<a href="empresa" title="Find out more" class="button white medium">Sobre a Cimitarra Yachts</a>
 			</div>
 		</section>
