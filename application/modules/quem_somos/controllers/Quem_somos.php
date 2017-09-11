@@ -14,9 +14,9 @@ class Quem_somos extends CI_Controller {
     {
         $this->data["quem_somos"] = $this->Quem_somos_m->get_quem_somos();
 
-        $this->data['title'] = 'Clínica especializada na saúde da mulher - Clínica Cimitarra';
+        $this->data['title'] = 'Cimitarra Yachts';
 
-        $this->data['description'] = 'Dra. Flávia Fairbanks – Ginecologia – Sexualidade – Obstetrícia – Endometriose. A saúde da mulher em primeiro lugar.';
+        $this->data['description'] = 'Cimitarra Yachts';
 
         // Menu
         $this->data['menu_embarcacoes_cim'] = $this->Embarcacoes_m->get_embarcacoes(array('categoria' => 'cimitarra'));

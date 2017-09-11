@@ -8,17 +8,13 @@ class Contato extends CI_Controller {
         $this->load->model('Contato_m');
         $this->load->model('noticias/Noticias_m');
         $this->load->model('common/Common_m');
-        $this->load->model('ginecologia/Ginecologia_m');
-        $this->load->model('sexualidade/Sexualidade_m');
-        $this->load->model('obstetricia/Obstetricia_m');
-        $this->load->model('imprensa/Imprensa_m');
     }
 
     public function index($slug = false)
     {
         $this->data['active'] = 'Contato';
-        $this->data['title'] = 'Clínica Cimitarra – A saúde da mulher em primeiro lugar.';
-        $this->data['description'] = 'Clínica especializada na saúde da mulher. Proporcionamos um atendimento eficiente com profissionais experientes e especializados.';
+        $this->data['title'] = 'Cimitarra Yachts.';
+        $this->data['description'] = 'Cimitarra Yachts';
 
         $this->data['partial'] = $this->load->view('contato.php', $this->data, true);
         

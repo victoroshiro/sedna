@@ -9,7 +9,7 @@
     <?php if (!empty($description)): ?>
         <meta name="description" content="<?= $description ?>">
     <?php else: ?>
-        <meta name="description" content="Sailor - Yacht Charter Booking HTML Template" /> 
+        <meta name="description" content="Cimitarra Yachts" /> 
     <?php endif ?>
     
     <?php if (!empty($title)): ?>
@@ -54,9 +54,9 @@
         <div class="row top-header">
             <div class="full-width">
               <div class="social">
-                <a href="facebook" class="circle"><i class="fa fa-facebook"></i></a>
-                <a href="instagram" class="circle"><i class="fa fa-youtube-play"></i></a>
-                <a href="instagram" class="circle"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.facebook.com/cimitarrayachts" class="circle"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.youtube.com/channel/UCLojQsbDSNKVfNELwI0nP3w" class="circle"><i class="fa fa-youtube-play"></i></a>
+                <a href="https://www.instagram.com/cimitarrayachts/" class="circle"><i class="fa fa-instagram"></i></a>
               </div>
               <!--<div class="language">
                 <ul>
