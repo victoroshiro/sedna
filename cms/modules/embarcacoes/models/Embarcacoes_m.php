@@ -516,8 +516,10 @@ class Embarcacoes_m extends CI_Model {
         $this->db->trans_start();
 
         if(isset($data['id_embarcacao_descricao'])){
+            $id_embarcacoes = $data['id_embarcacoes'];
             unset($data['id_embarcacao_descricao']);
-            $this->db->update('embarcacoes_descricao', $data, $id);
+            
+            $this->db->where('id_embarcacoes', $id_embarcacoes)->update('embarcacoes_descricao', $data);
         }else{
             $this->db->insert('embarcacoes_descricao', $data);
         }
@@ -531,8 +533,10 @@ class Embarcacoes_m extends CI_Model {
         $this->db->trans_start();
 
         if(isset($data['id_embarcacao_especificacoes'])){
+            $id_embarcacoes = $data['id_embarcacoes'];
             unset($data['id_embarcacao_especificacoes']);
-            $this->db->update('embarcacoes_especificacoes', $data, $id);
+            
+            $this->db->where('id_embarcacoes', $id_embarcacoes)->update('embarcacoes_especificacoes', $data);
         }else{
             $this->db->insert('embarcacoes_especificacoes', $data);
         }
@@ -541,12 +545,16 @@ class Embarcacoes_m extends CI_Model {
 
         return $this->db->trans_status();
     }
+
     public function salvar_serie($data) {
         $this->db->trans_start();
 
         if(isset($data['id_embarcacao_serie'])){
+            $id_embarcacoes = $data['id_embarcacoes'];
+
             unset($data['id_embarcacao_serie']);
-            $this->db->update('embarcacoes_serie', $data, $id);
+            
+            $this->db->where('id_embarcacoes', $id_embarcacoes)->update('embarcacoes_serie', $data);
         }else{
             $this->db->insert('embarcacoes_serie', $data);
         }
