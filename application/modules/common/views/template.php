@@ -357,7 +357,6 @@
             <br>
             A compra inteligente.
         </p>
-        <a href="empresa" title="Saiba Mais" class="button white medium">Saiba Mais</a>
       </div>
     </section>
     <!-- //Photo -->
