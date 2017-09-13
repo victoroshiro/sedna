@@ -152,7 +152,7 @@
 
 		<div class="wrap center">
 			<div class="full-width text-center margin-top-md">
-				<a href="" class="button grey medium">Ver mais seminovos</a>
+				<a href="seminovos" class="button grey medium">Ver mais seminovos</a>
 			</div>
 		</div>
 
