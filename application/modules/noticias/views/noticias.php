@@ -15,7 +15,7 @@
 								<div class="meta">
 									<span><?php echo $item->data_noticia_f; ?></span>   
 								</div>
-								<p><?php echo $item->resumo; ?></p>
+								<p><?php echo ellipsize($item->resumo, 170); ?></p>
 								<a href="<?php echo site_url('noticias/detalhe/'.$item->slug); ?>" class="more" title="Read more">Saiba Mais</a>
 							</div>
 						</div>
