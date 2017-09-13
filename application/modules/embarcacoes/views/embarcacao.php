@@ -1,6 +1,6 @@
 	<!-- Main -->
 	<main class="main" role="main">
-		<div id="lightSliderMainBanner">
+		<div class="lightSliderMainBanner">
 			<article>
 				<img src="<?php echo site_url('userfiles/embarcacoes/'.$embarcacao->imagem3) ?>" alt="Cimitarra Yachts">
 			</article>
