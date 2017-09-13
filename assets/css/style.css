@@ -586,7 +586,7 @@ div.border img 	{margin:0 auto;}
 .details .button 			{min-width:0;width:100%;height:100%;line-height:61px;}
 
 .text 			{overflow:hidden;padding:20px 25px 15px;}
-.text h3 		{font-family:'Raleway',Arial,Helvetica,sans-serif;font-weight:500;}
+.text h3 		{font-family:'Raleway',Arial,Helvetica,sans-serif;font-weight:500;height: 73px;}
 .text h3 a 		{color:#444;font-weight:500;}
 .text h3 a:hover,
 .text h3 a:focus 	{color:#BB9C6F;}
