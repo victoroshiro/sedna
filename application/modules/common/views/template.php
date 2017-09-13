@@ -54,9 +54,9 @@
         <div class="row top-header">
             <div class="full-width">
               <div class="social">
-                <a href="https://www.facebook.com/cimitarrayachts" class="circle"><i class="fa fa-facebook"></i></a>
-                <a href="https://www.youtube.com/channel/UCLojQsbDSNKVfNELwI0nP3w" class="circle"><i class="fa fa-youtube-play"></i></a>
-                <a href="https://www.instagram.com/cimitarrayachts/" class="circle"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.facebook.com/cimitarrayachts" target="_blank" class="circle"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.youtube.com/channel/UCLojQsbDSNKVfNELwI0nP3w" target="_blank" class="circle"><i class="fa fa-youtube-play"></i></a>
+                <a href="https://www.instagram.com/cimitarrayachts/" target="_blank" class="circle"><i class="fa fa-instagram"></i></a>
               </div>
               <!--<div class="language">
                 <ul>
