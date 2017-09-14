@@ -19,7 +19,7 @@
     <?php endif ?>
     
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/fonts.css" />
+    <!-- <link rel="stylesheet" href="assets/css/fonts.css" /> -->
     <link rel="stylesheet" href="assets/css/lightSlider.min.css" />
     <link rel="stylesheet" href="assets/css/animate.css" />
 
