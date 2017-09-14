@@ -351,11 +351,14 @@
     <!-- Photo -->
     <section class="photo">
       <div class="wrap center">
-        <h2>Estaleiro Cimitarra. Exporta de embarcações desde 2000, com seriedade e compromisso.</h2>
-        <p>
+          <p>
+           Fabricamos embarcações de alta  qualidade desde 2000, com seriedade e compromisso com nossos clientes.
+          </p>
+          <h2>
             Cimitarra Yachts.
             <br>
             A compra inteligente.
+          </h2>
         </p>
       </div>
     </section>
