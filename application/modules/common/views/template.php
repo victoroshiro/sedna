@@ -22,7 +22,9 @@
     <link rel="stylesheet" href="assets/css/fonts.css" />
     <link rel="stylesheet" href="assets/css/lightSlider.min.css" />
     <link rel="stylesheet" href="assets/css/animate.css" />
-
+    <?php if ($active == 'embarcacao'): ?>
+        <link rel="stylesheet" href="assets/css/lightGallery.min.css" />
+    <?php endif ?>
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700|Raleway:400,500,600,700&amp;subset=latin,greek,cyrillic,vietnamese' rel='stylesheet' type='text/css'>
     <link rel="icon" type="image/png" href="assets/images/favicon.png">        
 
@@ -433,7 +435,10 @@
     <script src="assets/js/jquery.lightSlider.min.js"></script>
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/scripts.js"></script>
-	<script async src="https://www.youtube.com/iframe_api"></script>
+    <?php if ($active== 'embarcacao'): ?>
+        <script src="assets/js/lightGallery.min.js"></script>
+    <?php endif ?>
+    <script async src="https://www.youtube.com/iframe_api"></script>
 
     <?php if(isset($active) && $active == 'home'): ?>
         <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>

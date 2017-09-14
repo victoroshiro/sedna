@@ -80,6 +80,8 @@ class Embarcacoes extends CI_Controller {
         $this->data['embarcacao'] = $this->Embarcacoes_m->get_embarcacoes(array('slug' => $slug));
 
         $this->data['embarcacao'] || show_404();
+        
+        $this->data['active'] = 'embarcacao';
 
         $this->data['imagens_interior'] = $this->Embarcacoes_m->get_imagens($this->data['embarcacao']->id,false,'interior');
         $this->data['imagens_exterior'] = $this->Embarcacoes_m->get_imagens($this->data['embarcacao']->id,false,'exterior');
