@@ -62,7 +62,7 @@
               </div>
               <div class="language">
                 <ul>
-                  <li>Acesse nossas redes sociais</li>
+                    <li><img src="assets/images/favicon.png"> Acesse nossas redes sociais</li>
                   <!--<li><a href="en">English</a></li>-->
                   <!--<li><a href="es">Spanish</a></li>-->
                   <!--<li><a href="<?php// echo base_url() ?>">Português</a></li>-->
