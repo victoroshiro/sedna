@@ -128,6 +128,16 @@ a.circle.small:focus		{background:#515e64;}
 
 .button.full	{width:100%;}
 
+@media (max-width: 665px) {
+    .button.medium {
+        white-space: pre-wrap;
+        height: auto;
+        min-height: 50px;
+        padding: 10px 15px;
+        line-height: 1.5;
+    }
+}    
+.button.medium
 .more 			{display:inline-block;text-transform:uppercase;font-weight:600;font-size:14px;color:#444 !important;margin:10px 0 20px;}
 .more:hover,
 .more:focus 		{color:#BB9C6F !important;}
@@ -313,6 +323,12 @@ section.white 		{background:#fff;color:#515E64;padding:50px 0;}
 section.white h2		{padding-bottom:38px;}
 
 .hero						{overflow:hidden;min-height:500px;height:100vh;width:100%;color:#fff;display:table;background-position:50% 50%;background-repeat:no-repeat;background-size:cover;}
+@media (max-width: 1200px) {
+    .hero {
+        min-height: 0;
+        height: auto;
+    }
+}
 .hero article 					{position:relative;z-index:2;text-shadow:0 2px 2px rgba(0, 0, 0,.15);}
 .hero article .main-content		{position: absolute; left: 0; top: 0; z-index: -1;}
 .hero h1						{font-size:40px;margin-top: 100px;font-weight:300;padding:0 0 115px;}
@@ -1083,9 +1099,20 @@ div.radio input 						{opacity: 0;filter: alpha(opacity=0);-moz-opacity: 0;borde
     clear: both;
 }
 
+
+
 .one-half.one-half-center {
     float: none;
     margin: 0 auto;
+}
+
+@media (max-width: 980px) {
+    .one-third.one-third-center,
+    .one-half.one-half-center
+    {
+        float: left;
+        clear: none;
+    }
 }
 
 .slick-nav {
@@ -1158,8 +1185,20 @@ div.radio input 						{opacity: 0;filter: alpha(opacity=0);-moz-opacity: 0;borde
     display: block;
 }
 
+@media (max-width: 840px) {
+    .zoom-image {
+        text-align: center;
+    }
+}
 .zoom-image img {
     transition: all 0.3s;
+}
+
+
+@media (max-width: 840px) {
+    .zoom-image img {
+        display: inline-block;
+    }
 }
 
 .zoom-image:hover img {
