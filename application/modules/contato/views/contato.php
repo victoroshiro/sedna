@@ -25,7 +25,7 @@
 						contato@cimitarra.com.br
 					</p>
 					<p>
-						Av. dos Bandeirantes
+						Av. dos Bandeirantes, 4063
 						<br>
 						Planalto Paulista - São Paulo/SP
 					</p>

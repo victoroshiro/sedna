@@ -60,13 +60,14 @@
                 <a href="https://www.youtube.com/channel/UCLojQsbDSNKVfNELwI0nP3w" target="_blank" class="circle"><i class="fa fa-youtube-play"></i></a>
                 <a href="https://www.instagram.com/cimitarrayachts/" target="_blank" class="circle"><i class="fa fa-instagram"></i></a>
               </div>
-              <!--<div class="language">
+              <div class="language">
                 <ul>
-                  <li><a href="en">English</a></li>
-                  <li><a href="es">Spanish</a></li>
-                  <li><a href="<?php// echo base_url() ?>">Português</a></li>
+                  <li>Acesse nossas redes sociais</li>
+                  <!--<li><a href="en">English</a></li>-->
+                  <!--<li><a href="es">Spanish</a></li>-->
+                  <!--<li><a href="<?php// echo base_url() ?>">Português</a></li>-->
                 </ul>
-              </div>-->
+              </div>
             </div>
           </div>
       </div>
