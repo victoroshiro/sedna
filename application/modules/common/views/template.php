@@ -303,7 +303,7 @@
 
           <div class="one-fourth">
             <h5>Showroom</h5>
-            <p><span class="circle small"><i class="fa fa-phone fa-fw"></i></span> +55 (11) 2628.3065 - +55 (11) 99617.6035</p>
+            <p><span class="circle small"><i class="fa fa-phone fa-fw"></i></span> +55 (11) 2628.3065 <br> +55 (11) 99617.6035</p>
             <p><span class="circle small"><i class="fa fa-envelope fa-fw"></i></span> <a href="mailto:contato@cimitarra.com.br">contato@cimitarra.com.br</a></p>
             <p>
               <span class="circle small"><i class="fa fa-map-marker fa-fw"></i></span>
