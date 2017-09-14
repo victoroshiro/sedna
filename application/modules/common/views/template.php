@@ -441,7 +441,7 @@
             $(document).ready(function () {
                     $('.accordion dt:first-of-type').addClass('expanded');
                     $('.accordion dd:first-of-type').show();
-                    $("#gallery").lightGallery({
+                    $(".gallery").lightGallery({
                             download:false
                     });
             });
