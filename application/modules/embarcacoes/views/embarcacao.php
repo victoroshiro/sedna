@@ -42,21 +42,21 @@
 			<nav class="tabs alternative tabs__no-margin-bottom six" role="navigation" id="tab-navigation-2">
 				<ul class="wrap">
 					<?php  
-						if($imagens_interior){
+						if($imagens_exterior){
 					?>
 							<li>
-								<a href="#tab-interior" title="Interior">
-									Interior
+								<a href="#tab-exterior" title="Exterior">
+									Exterior
 								</a>
 							</li>
 					<?php  
 						}
-						if($imagens_exterior){
+						if($imagens_interior){
 
 					?>
 							<li>
-								<a href="#tab-exterior" title="Exterior">
-								 Exterior
+								<a href="#tab-interior" title="Interior">
+								 Interior
 								</a>
 							</li>
 					<?php  
@@ -66,33 +66,6 @@
 			</nav>
 			<!-- //Tab navigation -->
 
-			<article class="tab-content" id="tab-interior">
-				<div class="gallery" id="gallery">
-					<?php  
-						if($imagens_interior){
-							foreach ($imagens_interior as $imagem) {
-								$file_parts = explode('.', $imagem->imagem);
-                                $thumb_name = $file_parts[0].'_thumb.'.$file_parts[1];
-					?>
-								<!-- Item -->
-								<figure class="one-fourth" data-src="<?php echo site_url('userfiles/embarcacoes/'.$imagem->imagem); ?>">
-									<!-- <img src="http://www.placehold.it/600x400" alt="" /> -->
-									<img src="<?php echo site_url('userfiles/embarcacoes/'.$thumb_name); ?>" alt="" />
-									<figcaption>
-										<span class="icojam_zoom_in"></span>
-										<!-- <div>
-											<h5>DECK</h5>
-											<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
-										</div> -->
-									</figcaption>	
-								</figure>
-								<!-- //Item -->
-					<?php  
-							}
-						}
-					?>
-				</div>				
-			</article>
 
 			<article class="tab-content" id="tab-exterior">
 				<div class="gallery" id="gallery-2">
@@ -121,6 +94,33 @@
 					?>
 				</div>				
 			</article>
+ 			<article class="tab-content" id="tab-interior">
+ 				<div class="gallery" id="gallery">
+ 					<?php  
+ 						if($imagens_interior){
+ 							foreach ($imagens_interior as $imagem) {
+ 								$file_parts = explode('.', $imagem->imagem);
+                                 $thumb_name = $file_parts[0].'_thumb.'.$file_parts[1];
+ 					?>
+ 								<!-- Item -->
+ 								<figure class="one-fourth" data-src="<?php echo site_url('userfiles/embarcacoes/'.$imagem->imagem); ?>">
+ 									<!-- <img src="http://www.placehold.it/600x400" alt="" /> -->
+ 									<img src="<?php echo site_url('userfiles/embarcacoes/'.$thumb_name); ?>" alt="" />
+ 									<figcaption>
+ 										<span class="icojam_zoom_in"></span>
+ 										<!-- <div>
+ 											<h5>DECK</h5>
+ 											<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
+ 										</div> -->
+ 									</figcaption>	
+ 								</figure>
+ 								<!-- //Item -->
+ 					<?php  
+ 							}
+ 						}
+ 					?>
+ 				</div>				
+ 			</article>
 		</div>
 
 		<!-- Content -->
