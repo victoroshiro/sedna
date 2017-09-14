@@ -437,6 +437,16 @@
     <script src="assets/js/scripts.js"></script>
     <?php if ($active== 'embarcacao'): ?>
         <script src="assets/js/lightGallery.min.js"></script>
+        <script> 
+            $(document).ready(function () {
+                    $('.accordion dt:first-of-type').addClass('expanded');
+                    $('.accordion dd:first-of-type').show();
+                    $("#gallery").lightGallery({
+                            download:false
+                    });
+            });
+        </script>
+	
     <?php endif ?>
     <script async src="https://www.youtube.com/iframe_api"></script>
 
