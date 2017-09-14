@@ -380,7 +380,7 @@ section.icons		{padding-bottom:10px;}
 .cta .center .button 	{margin-bottom:37px;}
 .cta.gold 			{background:url(../images/gold-bg.png) 0 0 repeat;}
 .cta.grey 			{background:#515E64;}
-.cta.grey h2 		{color:#fff;}
+.cta.grey h2 		{color:#fff; padding-bottom: 15px;}
 .cta.light-grey 	{color:#515E64; background: #f1f1f1;}
 .cta h2				{color:#515E64;}
 
