@@ -86,12 +86,12 @@
                               if($menu_embarcacoes_cim){
                             ?>
                                 <li>
-                                    <a href="">
+                                    <a>
                                         Cimitarra
                                     </a>
                                     <ul class="dropdown">
                                       <li>
-                                          <a href="">360</a>
+                                          <a>360</a>
                                           <ul class="dropdown">
                                             <?php  
                                               foreach ($menu_embarcacoes_cim as $item) {
@@ -107,7 +107,7 @@
                                           </ul>
                                       </li>
                                       <li>
-                                          <a href="">400</a>
+                                          <a>400</a>
                                           <ul class="dropdown">
                                             <?php  
                                               foreach ($menu_embarcacoes_cim as $item) {
@@ -123,7 +123,7 @@
                                           </ul>
                                       </li>
                                       <li>
-                                          <a href="">460</a>
+                                          <a>460</a>
                                           <ul class="dropdown">
                                             <?php  
                                               foreach ($menu_embarcacoes_cim as $item) {
@@ -145,12 +145,12 @@
                               if($menu_embarcacoes_ciy){
                             ?>
                                 <li>
-                                    <a href="">
+                                    <a>
                                         Cimitarra Yachts
                                     </a>
                                     <ul class="dropdown">
                                         <li>
-                                            <a href="">540</a>
+                                            <a>540</a>
                                             <ul class="dropdown">
                                               <?php  
                                                 foreach ($menu_embarcacoes_ciy as $item) {
@@ -166,7 +166,7 @@
                                             </ul>
                                         </li>
                                         <li>
-                                            <a href="">600</a>
+                                            <a>600</a>
                                             <ul class="dropdown">
                                               <?php  
                                                 foreach ($menu_embarcacoes_ciy as $item) {
@@ -182,7 +182,7 @@
                                             </ul>
                                         </li>
                                         <li>
-                                            <a href="">640</a>
+                                            <a>640</a>
                                             <ul class="dropdown">
                                               <?php  
                                                 foreach ($menu_embarcacoes_ciy as $item) {
@@ -198,7 +198,7 @@
                                             </ul>
                                         </li>
                                         <li>
-                                            <a href="">780</a>
+                                            <a>780</a>
                                             <ul class="dropdown">
                                               <?php  
                                                 foreach ($menu_embarcacoes_ciy as $item) {
