@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="assets/css/fonts.css" />
     <link rel="stylesheet" href="assets/css/lightSlider.min.css" />
     <link rel="stylesheet" href="assets/css/animate.css" />
-    <?php if ($active == 'embarcacao'): ?>
+    <?php if(isset($active) && $active == 'embarcacao'): ?>
         <link rel="stylesheet" href="assets/css/lightGallery.min.css" />
     <?php endif ?>
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700|Raleway:400,500,600,700&amp;subset=latin,greek,cyrillic,vietnamese' rel='stylesheet' type='text/css'>
@@ -436,7 +436,7 @@
     <script src="assets/js/jquery.lightSlider.min.js"></script>
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/scripts.js"></script>
-    <?php if ($active== 'embarcacao'): ?>
+    <?php if(isset($active) && $active == 'embarcacao'): ?>
         <script src="assets/js/lightGallery.min.js"></script>
         <script> 
             $(document).ready(function () {
