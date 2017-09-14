@@ -1,43 +1,45 @@
 <!-- Main -->
 	<main class="main" role="main">
 
-		<?php if (!empty($banners)): ?>
-			<div id="lightSliderMainBanner" class="hero">
-				<?php foreach ($banners as $key => $item): ?>
-                                            <?php if ($item->video_banner == 1): ?>
-                                                    <article>
-                                                            <div class="video-wrapper">
-                                                                    <div id="fullscreen-video-<?php echo $item->video_id ?>"></div>
-                                                                    <div class="text-wrapper">
-                                                                            <h1 class="wow fadeInDown"><?php echo $item->titulo; ?></h1>
-                                        <?php if (!empty($item->link)): ?> 
-                                            <a class="anchor button white medium wow fadeInUp" href="<?php echo (strstr($item->link,'http')) ? $item->link : site_url($item->link); ?>" <?php echo 'target="'.$item->target_blank.'"'; ?>>
-                                                <?php echo $item->resumo; ?>
-                                            </a>
-                                        <?php endif ?>
-                                                                    </div>
-                                                            </div>
-                                                    </article>
-                                            <?php else: ?>
-                                                    <article>
-                                                            <img src="<?php echo site_url('userfiles/banners/'.$item->imagem); ?>" alt="">
-                                                            <div class="text-wrapper">
-                                                                    <h1 class="wow fadeInDown"><?php echo $item->titulo; ?></h1>
-                                    <?php if (!empty($item->link)): ?> 
-                                        <a class="anchor button white medium wow fadeInUp" href="<?php echo (strstr($item->link,'http')) ? $item->link : site_url($item->link); ?>" <?php echo 'target="'.$item->target_blank.'"'; ?>>
-                                            <?php echo $item->resumo; ?>
-                                        </a>
-                                    <?php endif ?>
-                                                            </div>
-                                                    </article>
-                                            <?php endif ?>
-                                    <?php endforeach ?>	
-                            </div>
-                    <?php endif ?>
+        <div class="banner-container">
+            <?php if (!empty($banners)): ?>
+            <div id="lightSliderMainBanner" class="hero">
+                <?php foreach ($banners as $key => $item): ?>
+                <?php if ($item->video_banner == 1): ?>
+                <article>
+                    <div class="video-wrapper">
+                        <div id="fullscreen-video-<?php echo $item->video_id ?>"></div>
+                        <div class="text-wrapper">
+                            <h1 class="wow fadeInDown"><?php echo $item->titulo; ?></h1>
+                            <?php if (!empty($item->link)): ?> 
+                            <a class="anchor button white medium wow fadeInUp" href="<?php echo (strstr($item->link,'http')) ? $item->link : site_url($item->link); ?>" <?php echo 'target="'.$item->target_blank.'"'; ?>>
+                                <?php echo $item->resumo; ?>
+                            </a>
+                            <?php endif ?>
+                        </div>
+                    </div>
+                </article>
+                <?php else: ?>
+                <article>
+                    <img src="<?php echo site_url('userfiles/banners/'.$item->imagem); ?>" alt="">
+                    <div class="text-wrapper">
+                        <h1 class="wow fadeInDown"><?php echo $item->titulo; ?></h1>
+                        <?php if (!empty($item->link)): ?> 
+                        <a class="anchor button white medium wow fadeInUp" href="<?php echo (strstr($item->link,'http')) ? $item->link : site_url($item->link); ?>" <?php echo 'target="'.$item->target_blank.'"'; ?>>
+                            <?php echo $item->resumo; ?>
+                        </a>
+                        <?php endif ?>
+                    </div>
+                </article>
+                <?php endif ?>
+                <?php endforeach ?>    
+            </div>
+            <?php endif ?>
                 <div class="slick-nav">
                     <div class="slick-arrow prev"><i class="fa fa-angle-left"></i></div>
                     <div class="slick-arrow next"><i class="fa fa-angle-right"></i></div>
                 </div>
+        </div>
                     <script>
                             function onYouTubeIframeAPIReady() {
 
