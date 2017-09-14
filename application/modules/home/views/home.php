@@ -84,7 +84,7 @@
                     <section class="cta grey">
                             <div class="wrap center">
                                     <div class="full-width text-center">
-                                            <h2>Cimitarra</h2>
+                                            <h2>Linha Cimitarra</h2>
                                     </div>
                             </div>
                             <div class="wrap">
@@ -100,7 +100,7 @@
                             </div>
                             <div class="wrap center">
                                     <div class="full-width text-center">
-                                            <h2>Cimitarra Yachts</h2>
+                                            <h2>Linha Cimitarra Yachts</h2>
                                     </div>
                             </div>
                             <div class="wrap">
