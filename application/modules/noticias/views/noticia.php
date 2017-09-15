@@ -33,7 +33,7 @@
 					<aside class="one-fourth sidebar sidebar-right">						
 						<div class="widget">
 							<?php if (!empty($all_news)): ?>
-								<h3>Latest posts</h3>
+								<h3>Mais Notícias</h3>
 
 								<?php foreach ($all_news as $key => $item): ?>
 									<ul class="latest-posts">
@@ -41,10 +41,9 @@
 											<a href="<?php echo site_url('noticias/detalhe/'.$item->slug); ?>">
 												<img src="<?php echo site_url('userfiles/noticias/'.$item->imagem); ?>" alt="<?php echo $item->titulo; ?>" width="90" />
 												<h4><?php echo $item->titulo; ?></h4>
-												<span class="date"><?php echo $item->data_noticia_f; ?></span>
 											</a>
 										</li>
-									</ul>		
+									</ul>                                                                        
 								<?php endforeach ?>
 							<?php endif ?>
 						</div>
