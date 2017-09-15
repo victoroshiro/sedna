@@ -69,8 +69,6 @@ $route['seminovos/detalhe/(:any)'] = "seminovos/detalhe/$1";
 $route['seminovos/(:num)'] = "seminovos/index/$1";
 $route['seminovos'] = "seminovos/index";
 
-// $route['embarcacoes/detalhe/(:any)'] = "embarcacoes/detalhe";
-// $route['embarcacoes/detalhe/(.+)'] = "embarcacoes/detalhe/$1";
 $route['embarcacoes/detalhe/(:any)/(:any)/(:any)'] = "embarcacoes/detalhe/$1/$2/$3";
 $route['embarcacoes/(:num)'] = "embarcacoes/index/$1";
 $route['embarcacoes'] = "embarcacoes/index";
