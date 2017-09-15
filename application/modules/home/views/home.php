@@ -52,7 +52,7 @@
                               
                             <?php foreach ($banners as $key => $banner): ?>
                                     <?php if ($banner->video_banner == 1): ?>
-                                            player<?php echo $banner->video_id ?> = new YT.Player('fullscreen-video-<?php echo $banner->video_id ?>', {
+                                        player<?php echo $banner->video_id ?> = new YT.Player('fullscreen-video-<?php echo $banner->video_id ?>', {
                                         videoId: '<?php echo $banner->video_id ?>', // YouTube Video ID
                                         width: '100%',          // Player width (in px)
                                         height: 650,            // Player height (in px)

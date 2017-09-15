@@ -332,6 +332,10 @@ section.white h2		{padding-bottom:38px;}
 .hero article 					{position:relative;z-index:2;text-shadow:0 2px 2px rgba(0, 0, 0,.15);}
 .hero article .main-content		{position: absolute; left: 0; top: 0; z-index: -1;}
 .hero h1						{font-size:40px;margin-top: 100px;font-weight:300;padding:0 0 115px;}
+
+@media (max-width: 480px) {
+    .hero h1 { font-size: 22px; }
+}
 .hero .button.medium 		{height:60px;line-height:58px;padding:0 25px;}
 .hero .button.medium:hover 	{text-shadow:none;}
 
@@ -343,8 +347,23 @@ section.white h2		{padding-bottom:38px;}
 	left: 0;
 }
 
+@media (max-width: 840px) {
+    .hero article .text-wrapper {
+        pointer-events: none;
+    }
+}
+
+@media (max-width: 400px) {
+    .hero article .text-wrapper {
+        pointer-events: none;
+    }
+}
 .video-wrapper {position: relative; padding-bottom: 56.25%; /* 16:9 */  padding-top: 0;}
-.video-wrapper iframe {position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none}
+.video-wrapper iframe {position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+
+@media (max-width: 840px) {
+    
+}
 
 .home nav.tabs 		{height:260px;margin:0;}
 .home nav.tabs li		{font-size:19px;line-height:1.32;}
@@ -997,6 +1016,13 @@ div.radio input 						{opacity: 0;filter: alpha(opacity=0);-moz-opacity: 0;borde
 	height: auto;
 }
 
+@media (max-width: 980px) {
+    .header > .wrap {
+        text-align: center;
+    }
+}
+
+
 .top-header .full-width {
         max-width: 1170px;
         padding-bottom: 0;
@@ -1004,10 +1030,28 @@ div.radio input 						{opacity: 0;filter: alpha(opacity=0);-moz-opacity: 0;borde
 	vertical-align: middle;
 }
 
+@media (max-width: 980px) {
+    .top-header .full-width {
+        max-width: 320px;
+        margin: 0 auto;
+        float: none;
+        text-align: center;
+    }
+}
+
+
 .language,
 .social
 {
 	float: right;
+}
+
+@media (max-width: 980px) {
+    .language,
+    .social
+    {
+        float: none;
+    }
 }
 
 .social {
@@ -1362,7 +1406,7 @@ article.one-fourth,
 .wrap {width:92%;}
 nav.tabs .wrap {width:100%;}
 .header							{position:relative;height:auto;}
-.header .logo 					{display:inline-block;padding:0;margin:15px 0 0;}
+.header .logo 					{display:inline-block;padding:0;margin:15px 0 0;float: none;}
 .main-nav						{float:left;width:100%;}
 .jetmenu .indicator				{display:block;}
 .jetmenu > li						{display: block;width: 100%;border-bottom:1px solid #ddd;}
