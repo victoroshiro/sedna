@@ -23,7 +23,8 @@ if (!function_exists('slug')){
         $b = 'aaaaaaaceeeeiiiidnoooooouuuuybsaaaaaaaceeeeiiiidnoooooouuuyybyRr';
 
         $string = utf8_decode($params['string']);
-        $string = trim($params['string']);
+        $string = strtr($string, utf8_decode($a), $b);
+        $string = trim($string);
         $string = str_replace('?', '', $string);
         $string = str_replace('&', '', $string);
         $string = str_replace('(', '', $string);
@@ -31,7 +32,6 @@ if (!function_exists('slug')){
         $string = str_replace('.', '', $string);
         $string = str_replace(' – ', '-', $string);
         $string = str_replace('%', 'porcento', $string);
-        $string = strtr($string, utf8_decode($a), $b);
         $string = preg_replace('/[^a-zA-Z0-9_ %\[\]\.\(\)%&-]/s', '', $string);
         $string = str_replace(' - ', '-', $string);
         $string = str_replace(' ', '-', $string);
