@@ -1323,11 +1323,19 @@ div.radio input 						{opacity: 0;filter: alpha(opacity=0);-moz-opacity: 0;borde
 	padding-left: 50px;
 }
 
+@media (max-width: 400px) {
+    .timeline--step .timeline--text {
+        padding-left: 10px;
+    }
+}
+
 .timeline--step.timeline--step__inverse .timeline--photo {
 	float: right;
-	padding-right: : 0;
+	padding-right: 0;
 	padding-left: 50px;
 }
+
+
 .timeline--step.timeline--step__inverse .timeline--photo:after {
 	left: 0;
 	right: auto;
@@ -1342,6 +1350,12 @@ div.radio input 						{opacity: 0;filter: alpha(opacity=0);-moz-opacity: 0;borde
 	text-align: right;
 	padding-left: 0;
 	padding-right: 50px;
+}
+
+@media (max-width: 400px) {
+    .timeline--step .timeline--text {
+        padding-right: 10px;
+    }
 }
 
 .timeline--step .timeline--text h2 {
