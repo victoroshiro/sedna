@@ -1003,6 +1003,12 @@ div.radio input 						{opacity: 0;filter: alpha(opacity=0);-moz-opacity: 0;borde
 	padding: 0 25px;
 }
 
+@media (max-width: 840px) {
+    .padding-h-md {
+        padding: 0;
+    }
+}
+
 .margin-v-lg {
 	margin: 0 60px;
 }
@@ -1221,6 +1227,13 @@ div.radio input 						{opacity: 0;filter: alpha(opacity=0);-moz-opacity: 0;borde
     margin: 0 10px;
     font-weight: 600;
     text-transform: uppercase;
+}
+
+@media (max-width: 980px) {
+    .mini-nav a {
+        display: block;
+        margin-bottom: 5px;
+    }
 }
 
 .zoom-image {
@@ -1508,9 +1521,12 @@ nav.tabs.six li {font-size:14px;}
 @media screen and (max-width: 670px) {
 nav.tabs			{height:auto !important;padding:0;}
 nav.tabs .wrap 	{float:left;}
-nav.tabs li 		{width:100% !important;border-right:none;border-bottom:1px solid rgba(255,255,255,.18);text-align:left;}
+nav.tabs li 		{width: 100% !important;border-right:none;border-bottom:1px solid rgba(255,255,255,.18);text-align:center;}
 nav.tabs li a 		{line-height:60px;}
-nav.tabs li span	{margin:10px 15px 0;float:left;width:auto;}
+nav.tabs li span	{margin:0 15px 0;width:auto;vertical-align: middle;}
+
+nav.tabs.alternative li 		{border-right:none;border-bottom:1px solid rgba(255,255,255,.18);text-align:center;}
+
 
 .home nav.tabs li img 	{height:100px;}
 .home nav.tabs li a 	{text-align:center;line-height:1.32;padding:10px 30px 30px;font-size:17px;}
