@@ -987,6 +987,11 @@ div.radio input 						{opacity: 0;filter: alpha(opacity=0);-moz-opacity: 0;borde
 /* 30.5 template adaptations */
 
 /*helpers*/
+
+.bg-white {
+    background-color: #fff;
+}
+
 .margin-top-md {
 	margin-top: 30px;
 }
@@ -1270,6 +1275,22 @@ div.radio input 						{opacity: 0;filter: alpha(opacity=0);-moz-opacity: 0;borde
 .lightSliderMainBanner img {
     display: inline-block;
 }
+
+.fidelidades {
+    padding: 0 15px;
+}
+
+.fidelidades .wysiwyg-content {
+    padding: 30px 15px;
+}
+
+.fidelidades figure {
+    display: block;
+    border-radius: 5px;
+    border: 5px solid #ccc;
+}
+
+/* Adaptations end */
 
 
 /* Timeline */
