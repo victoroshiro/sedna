@@ -13,7 +13,7 @@
                                     <!-- Item -->
                                     <?php foreach ($fidelidades as $key => $item): ?>
                                     <article class="one-third hentry">
-                                        <figure><a href="<?php echo site_url('fidelidades/detalhe/'.$item->slug); ?>"><img src="<?php echo site_url('userfiles/fidelidades/'.$item->imagem); ?>" alt="<?php echo $item->titulo; ?>" /></a></figure>
+                                        <figure><a href="<?php echo site_url('fidelidade/detalhe/'.$item->slug); ?>"><img src="<?php echo site_url('userfiles/fidelidades/'.$item->imagem); ?>" alt="<?php echo $item->titulo; ?>" /></a></figure>
                                     </article>
                                     <?php endforeach ?>
                                     <!-- //Item -->
