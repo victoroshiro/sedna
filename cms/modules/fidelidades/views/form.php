@@ -31,44 +31,8 @@
 </div>
 
 <div class="form-group">
-    <label for="link_only_label_1">Destaque: </label><br>
-    <div class="btn-group" data-toggle="buttons">
-        <label id="link_only_label_1" class="btn btn-primary <?= @$fidelidade->destaque == '1' ? 'active' : ''; if (empty($fidelidade)) { echo "active"; }?>">
-            <input
-                type="radio"
-                name="destaque"
-                id="link_only_1"
-                autocomplete="off"
-                value="1"
-                <?php if (empty($fidelidade)) { echo "checked='checked'"; } ?>
-                >
-                Sim
-        </label>
-        <label id="link_only_label_0" class="btn btn-primary  <?= @$fidelidade->destaque == '0' ? 'active' : ''?>">
-            <input
-                type="radio"
-                name="destaque"
-                id="link_only_0"
-                autocomplete="off"
-                value="0">
-                Não
-        </label>
-    </div>
-</div>
-
-<div class="form-group">
-	<label for="data_fidelidade">Data da Notícia: </label>
-	<input name="data_fidelidade" id="data_fidelidade" type="text" class="form-control data_fidelidade" value="<?= @$fidelidade->data_fidelidade_f ?>">
-</div>
-
-<div class="form-group">
 	<label for="titulo">Titulo: </label>
 	<input name="titulo" id="titulo" type="text" class="form-control" value="<?= @$fidelidade->titulo ?>">
-</div>
-
-<div class="form-group">
-    <label for="lf">Resumo: </label>
-    <textarea name="resumo" id="resumo" class="form-control" rows="3"><?= @$fidelidade->resumo ?></textarea>
 </div>
 
 <div class="form-group">
@@ -95,7 +59,3 @@
         </div>
     </div>
 </div>
-
-<script type="text/javascript">
-	$(".data_fidelidade").datepicker({dateFormat: "dd/mm/yy"});
-</script>
