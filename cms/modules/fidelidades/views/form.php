@@ -31,6 +31,11 @@
 </div>
 
 <div class="form-group">
+	<label for="data_fidelidade">Data de Cadastro: </label>
+	<input name="data_fidelidade" id="data_fidelidade" type="text" class="form-control data_fidelidade" value="<?= @$fidelidade->data_fidelidade_f ?>">
+</div>
+
+<div class="form-group">
 	<label for="titulo">Titulo: </label>
 	<input name="titulo" id="titulo" type="text" class="form-control" value="<?= @$fidelidade->titulo ?>">
 </div>
@@ -59,3 +64,7 @@
         </div>
     </div>
 </div>
+
+<script type="text/javascript">
+	$(".data_fidelidade").datepicker({dateFormat: "dd/mm/yy"});
+</script>
