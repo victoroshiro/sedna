@@ -30,7 +30,7 @@ $tipo = $this->session->userdata('tipo');
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Fidelidade <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="<?php echo site_url('texto_fidelidades'); ?>">Texto de Fidelidade</a></li>
-                <li><a href="<?php echo site_url('fidelidade'); ?>">Fidelidade</a></li>
+                <li><a href="<?php echo site_url('fidelidades'); ?>">Fidelidade</a></li>
               </ul>
             </li>
             <li><a href="<?php echo site_url('noticias'); ?>">Notícias</a></li>
