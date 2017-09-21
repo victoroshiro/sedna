@@ -65,9 +65,9 @@ $route['noticias/detalhe/(:any)'] = "noticias/detalhe/$1";
 $route['noticias/(:num)'] = "noticias/index/$1";
 $route['noticias'] = "noticias/index";
 
-$route['fidelidades/detalhe/(:any)'] = "fidelidades/detalhe/$1";
-$route['fidelidades/(:num)'] = "fidelidades/index/$1";
-$route['fidelidades'] = "fidelidades/index";
+$route['fidelidade/detalhe/(:any)'] = "fidelidades/detalhe/$1";
+$route['fidelidade/(:num)'] = "fidelidades/index/$1";
+$route['fidelidade'] = "fidelidades/index";
 
 $route['seminovos/detalhe/(:any)'] = "seminovos/detalhe/$1";
 $route['seminovos/(:num)'] = "seminovos/index/$1";
