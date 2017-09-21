@@ -208,6 +208,7 @@ class Noticias extends CI_Controller {
         $config['max_size'] = '500000';
         $config['max_width'] = '10024';
         $config['max_height'] = '7068';
+        $config['quality'] = '90%';
 
         $this->load->library('upload', $config);
         $this->upload->initialize($config);
