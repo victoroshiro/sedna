@@ -284,13 +284,13 @@
 
         <?= $partial ?>
 
-    <!-- Bottom Sidebar -->
+    <!-- Bottom Sidebar 
     <aside class="sidebar bottom navy" role="complementary">
-      <!-- Wrapper -->
+      <!-- Wrapper 
       <div class="wrap">
         <div class="row">
           <h2>Entre em contato conosco</h2>
-          <!-- OneFourth -->
+          <!-- OneFourth 
           <div class="one-fourth">
             <h5>Loja</h5>
             <p><span class="circle small"><i class="fa fa-phone fa-fw"></i></span> +55 (11) 2628.3065</p>
@@ -302,7 +302,7 @@
               Planalto Paulista - São Paulo/SP
             </p>
           </div>
-          <!-- //OneFourth -->
+          <!-- //OneFourth 
 
           <div class="one-fourth">
             <h5>Showroom</h5>
@@ -315,10 +315,10 @@
               Planalto Paulista - São Paulo/SP
             </p>
           </div>
-          <!-- //OneFourth -->
+          <!-- //OneFourth 
           
           
-          <!-- OneFourth -->
+          <!-- OneFourth 
           <div class="one-fourth">
             <h5>Assistência Técnica</h5>
             <p><span class="circle small"><i class="fa fa-phone fa-fw"></i></span> +55 (11) 2628.3065</p>
@@ -330,9 +330,9 @@
               Planalto Paulista - São Paulo/SP
             </p>
           </div>
-          <!-- //OneFourth -->
+          <!-- //OneFourth 
 
-          <!-- OneFourth -->
+          <!-- OneFourth 
           <div class="one-fourth">
             <h5>Marina Astúrias</h5>
             <p><span class="circle small"><i class="fa fa-phone fa-fw"></i></span> +55 (11) 2628.3065</p>
@@ -344,7 +344,7 @@
               Planalto Paulista - São Paulo/SP
             </p>
           </div>
-          <!-- //OneFourth -->        
+          <!-- //OneFourth         
         </div>
       </div>
       <!-- //Wrapper -->
