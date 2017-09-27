@@ -1546,7 +1546,8 @@ nav.tabs li 		{width: 100% !important;border-right:none;border-bottom:1px solid 
 nav.tabs li a 		{line-height:60px;}
 nav.tabs li span	{margin:0 15px 0;width:auto;vertical-align: middle;}
 
-nav.tabs.alternative li 		{border-right:none;border-bottom:1px solid rgba(255,255,255,.18);text-align:center;}
+nav.tabs.alternative li a 		{border: 1px solid;text-align:center;}
+
 
 
 .home nav.tabs li img 	{height:100px;}

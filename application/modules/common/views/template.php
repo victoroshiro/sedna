@@ -286,11 +286,9 @@
 
     <!-- Bottom Sidebar 
     <aside class="sidebar bottom navy" role="complementary">
-      <!-- Wrapper 
       <div class="wrap">
         <div class="row">
           <h2>Entre em contato conosco</h2>
-          <!-- OneFourth 
           <div class="one-fourth">
             <h5>Loja</h5>
             <p><span class="circle small"><i class="fa fa-phone fa-fw"></i></span> +55 (11) 2628.3065</p>
@@ -302,7 +300,6 @@
               Planalto Paulista - São Paulo/SP
             </p>
           </div>
-          <!-- //OneFourth 
 
           <div class="one-fourth">
             <h5>Showroom</h5>
@@ -315,10 +312,8 @@
               Planalto Paulista - São Paulo/SP
             </p>
           </div>
-          <!-- //OneFourth 
           
           
-          <!-- OneFourth 
           <div class="one-fourth">
             <h5>Assistência Técnica</h5>
             <p><span class="circle small"><i class="fa fa-phone fa-fw"></i></span> +55 (11) 2628.3065</p>
@@ -330,9 +325,7 @@
               Planalto Paulista - São Paulo/SP
             </p>
           </div>
-          <!-- //OneFourth 
 
-          <!-- OneFourth 
           <div class="one-fourth">
             <h5>Marina Astúrias</h5>
             <p><span class="circle small"><i class="fa fa-phone fa-fw"></i></span> +55 (11) 2628.3065</p>
@@ -344,26 +337,23 @@
               Planalto Paulista - São Paulo/SP
             </p>
           </div>
-          <!-- //OneFourth         
         </div>
       </div>
-      <!-- //Wrapper -->
     </aside>
-    <!-- //Bottom Sidebar -->
+    -->
     
     <!-- Photo -->
     <section class="photo">
-      <div class="wrap center">
-          <p>
-           Fabricamos embarcações de alta  qualidade desde 2000, com seriedade e compromisso com nossos clientes.
-          </p>
-          <h2>
-            Cimitarra Yachts.
-            <br>
-            A compra inteligente.
-          </h2>
-        </p>
-      </div>
+        <div class="wrap center">
+            <p>
+            Fabricamos embarcações de alta  qualidade desde 2000, com seriedade e compromisso com nossos clientes.
+            </p>
+            <h2>
+                Cimitarra Yachts.
+                <br>
+                A compra inteligente.
+            </h2>
+        </div>
     </section>
     <!-- //Photo -->
     
