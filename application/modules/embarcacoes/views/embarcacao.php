@@ -20,6 +20,7 @@
                     <a href="#content-vista">Vista Superior</a>
                     <a href="#content-mensagem">Mensagem</a>
                 </nav>
+
 				<?php echo $embarcacao->resumo; ?>
 				<?php  
 					if(!is_null($embarcacao->link) && $embarcacao->link != ''){
@@ -121,8 +122,34 @@
  					?>
  				</div>				
  			</article>
+
 		</div>
 
+
+                <div class="intro">
+                    <div class="wrap">
+                        <div class="content">
+                            <div id="panorama-1"></div>
+                            <div id="panorama-2"></div>
+
+                                                <script>
+                                                pannellum.viewer('panorama-1', {
+                                                "type": "equirectangular",
+                                                    "panorama": "userfiles/embarcacoes/teste.jpg",
+                                                    autoLoad: true,
+                                                    mouseZoom: false
+                                                });
+                                                pannellum.viewer('panorama-2', {
+                                                "type": "equirectangular",
+                                                    "panorama": "userfiles/embarcacoes/teste.jpg",
+                                                    autoLoad: true,
+                                                    mouseZoom: false
+                                                });
+                                                </script>
+                        </div>
+                    </div>
+                </div>
+                
 		<!-- Content -->
 		<div class="content">
 			<!-- Tab navigation -->

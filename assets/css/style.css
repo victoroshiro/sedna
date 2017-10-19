@@ -1292,6 +1292,13 @@ div.radio input 						{opacity: 0;filter: alpha(opacity=0);-moz-opacity: 0;borde
     border: 5px solid #ccc;
 }
 
+/* panorama view - embarcacoes */
+div[id^="panorama-"] {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 30px;
+}
+
 /* Adaptations end */
 
 

@@ -24,6 +24,8 @@
     <link rel="stylesheet" href="assets/css/animate.css" />
     <?php if(isset($active) && $active == 'embarcacao'): ?>
         <link rel="stylesheet" href="assets/css/lightGallery.min.css" />
+        <link rel="stylesheet" href="assets/css/pannellum.css"/>
+        <script type="text/javascript" src="assets/js/pannellum.js"></script>
     <?php endif ?>
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700|Raleway:400,500,600,700&amp;subset=latin,greek,cyrillic,vietnamese' rel='stylesheet' type='text/css'>
     <link rel="icon" type="image/png" href="assets/images/favicon.png">        
