@@ -99,10 +99,16 @@ class Embarcacoes extends CI_Controller {
         $this->data['embarcacao_especificacoes'] = $this->Embarcacoes_m->get_embarcacao_especificacoes($id);
         $this->data['embarcacao_serie'] = $this->Embarcacoes_m->get_embarcacao_serie($id);
         $this->data['imagens'] = $this->Embarcacoes_m->get_imagens($id);
+        $this->data['panoramas'] = $this->Embarcacoes_m->get_panoramas($id);
 
         if($this->data['imagens']){
             $this->data['imagens_group'] = array_chunk($this->data['imagens'], 3);
         }
+
+        if($this->data['panoramas']){
+            $this->data['panoramas_group'] = array_chunk($this->data['panoramas'], 3);
+        }
+
 
         $this->load->view('edita', $this->data);
     }
@@ -247,6 +253,35 @@ class Embarcacoes extends CI_Controller {
 
     }
 
+    function panorama(){
+
+        $data['id_embarcacao'] = $this->input->post('id_embarcacao');
+
+        $imagens = $this->Embarcacoes_m->upload_foto_panorama('imagem');
+        
+        if (isset($imagens) && $imagens != false) {
+            foreach ($imagens as $nome) {
+                
+                $data['imagem'] = $nome;
+                
+                $this->Embarcacoes_m->salva_panoramas($data);
+            }
+
+            if(($data['id_embarcacao'] && $data['id_embarcacao'] != 0) && isset($data['imagem'])){
+                $this->session->set_flashdata('messages', 'Imagens cadastradas com sucesso.');
+                $this->session->set_flashdata('tab_pan', true);
+            }else{
+                $this->session->set_flashdata('errors', 'Ocorreu um erro. Verifique os campos e tente novamente mais tarde.');
+                $this->session->set_flashdata('tab_pan', true);
+            }
+        }
+
+        $panoramas = $this->Embarcacoes_m->get_panoramas($data['id_embarcacao']);
+        
+        redirect('embarcacoes/editar/'.$data['id_embarcacao'], 'location');
+
+    }
+    
     public function limpar() {
         $this->session->set_flashdata('texto', '');
         $this->session->set_flashdata('data_de', '');
@@ -295,6 +330,21 @@ class Embarcacoes extends CI_Controller {
         
         $this->session->set_flashdata('messages', 'Imagem excluída com sucesso.');
         $this->session->set_flashdata('tab_gal', true);
+        
+        redirect('embarcacoes/editar/' . $imagem->id_embarcacao, 'location');
+    }
+    
+    public function exclui_imagem_panorama($id = false){
+        $id || show_404();
+
+        $imagem = $this->Embarcacoes_m->get_panoramas(false, $id);
+
+        if($this->Embarcacoes_m->exclui_imagem_panorama($id)){
+            @unlink('assets/uploads/embarcacoes/'.$imagem->imagem);
+        }
+        
+        $this->session->set_flashdata('messages', 'Imagem excluída com sucesso.');
+        $this->session->set_flashdata('tab_pan', true);
         
         redirect('embarcacoes/editar/' . $imagem->id_embarcacao, 'location');
     }

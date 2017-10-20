@@ -76,28 +76,41 @@ class Embarcacoes_m extends CI_Model
 		return $toReturn;
 	}
 
-	public function get_imagens($id_embarcacao = false, $id_imagem = false, $tipo = false){
-        
-        $this->db->select('*')
-        		 ->from('embarcacoes_imagens');
+        public function get_imagens($id_embarcacao = false, $id_imagem = false, $tipo = false){ 
+            $this->db->select('*')
+                ->from('embarcacoes_imagens');
 
-        if($id_embarcacao && $tipo){
+            if($id_embarcacao && $tipo){
+                $this->db->where('id_embarcacao', $id_embarcacao);
+                $this->db->where('titulo', $tipo);
+                $imagens = $this->db->get()->result();
+            }else{
+                $this->db->where('id_embarcacao', $id_embarcacao);
+                $imagens = $this->db->get()->result();
+            }
+
+            if($id_imagem){
+                $this->db->where('id', $id_imagem);
+                $imagens = $this->db->get()->row();   
+            }
+
+            return $imagens;
+        }
+
+        public function get_panoramas($id_embarcacao = false, $id_imagem = false, $tipo = false){ 
+            $this->db->select('*')
+                ->from('embarcacoes_panoramas');
+
             $this->db->where('id_embarcacao', $id_embarcacao);
-            $this->db->where('titulo', $tipo);
             $imagens = $this->db->get()->result();
-        }else{
-        	$this->db->where('id_embarcacao', $id_embarcacao);
-            $imagens = $this->db->get()->result();
+
+            if($id_imagem){
+                $this->db->where('id', $id_imagem);
+                $imagens = $this->db->get()->row();   
+            }
+
+            return $imagens;
         }
-
-        if($id_imagem){
-            $this->db->where('id', $id_imagem);
-            $imagens = $this->db->get()->row();   
-        }
-
-        return $imagens;
-    }
-
     public function get_embarcacao_descricao($id = false) {
         
         $this->db->select("*")

@@ -346,6 +346,57 @@ class Embarcacoes_m extends CI_Model {
         }
     }
 
+
+    function upload_foto_panorama($field) {
+       
+        $dir = dirname(getcwd()).'/userfiles/embarcacoes/';
+        $config['upload_path'] = $dir;
+        $config['allowed_types'] = 'gif|jpg|jpeg|png';
+        $config['encrypt_name'] = TRUE;
+        $config['maintain_ratio'] = TRUE;
+        $config['max_size'] = '500000';
+        $config['max_width'] = '10024';
+        $config['max_height'] = '7068';
+
+        $this->load->library('upload', $config);
+        $this->upload->initialize($config);
+
+        if ($this->upload->do_multi_upload($field)) {
+            $dados = $this->upload->get_multi_upload_data();            
+
+            $files = array();
+            foreach ($dados as $file) {
+                $size = getimagesize($file['full_path']);
+
+                $img_width = $size[0];
+                $img_height = $size[1];
+
+                $img_ideal_width = 800;
+                $img_ideal_heigh = 600;
+
+                $config_img['image_library'] = 'GD2';
+                $config_img['source_image'] = $file['full_path'];
+                $config_img['create_thumb'] = FALSE;
+                $config_img['maintain_ratio'] = TRUE;
+                $config_img['encrypt_name'] = TRUE;   
+
+                $this->image_lib->initialize($config_img);
+                $config['source_image'] = $dir.'/'.$file['file_name'];
+
+
+                $files[] = $file['file_name'];
+            }
+
+            return $files;
+
+        } else {
+            $error = array('error' => $this->upload->display_errors());
+            return $error;
+        }
+    }
+
+
+
     function upload_foto_pequena($field) {
         $dir = dirname(getcwd()).'/userfiles/embarcacoes/';
         $config['upload_path'] = $dir;
@@ -595,6 +646,10 @@ class Embarcacoes_m extends CI_Model {
         $this->db->insert('embarcacoes_imagens', $data);
     }
 
+    function salva_panoramas($data){
+        $this->db->insert('embarcacoes_panoramas', $data);
+    }
+
     function get_imagens($id_embarcacao = false, $id_imagem = false, $tipo = false){
         
         $this->db->select('*');
@@ -617,6 +672,30 @@ class Embarcacoes_m extends CI_Model {
 
         return $imagens;
     }
+
+    function get_panoramas($id_embarcacao = false, $id_imagem = false, $tipo = false){
+        
+        $this->db->select('*');
+        $this->db->from("embarcacoes_panoramas");
+
+        if($id_embarcacao){
+            $this->db->where('id_embarcacao', $id_embarcacao);
+            $panoramas = $this->db->get()->result();
+        }
+
+        if($tipo){
+            $this->db->where('titulo', $tipo);
+            $panoramas = $this->db->get()->result();
+        }
+
+        if($id_imagem){
+            $this->db->where('id', $id_imagem);
+            $panoramas = $this->db->get()->row();   
+        }
+
+        return $panoramas;
+    }
+
 
     public function atualiza_link($data) 
     {
@@ -645,6 +724,24 @@ class Embarcacoes_m extends CI_Model {
             return false;
         }
     }
+
+
+    public function exclui_imagem_panorama($id)
+    {
+        $data['id'] = $id;
+
+        $imagem = $this->get_panoramas(false, $id);
+
+        $dir = dirname(getcwd()).'/userfiles/embarcacoes/';
+
+        if ($this->db->delete('embarcacoes_panoramas', array('id' => $data['id']))){
+            @unlink($dir.$imagem->imagem);
+            return true;
+        }else{
+            return false;
+        }
+    }
+
 
     function get_related($categoria, $limit, $id){
         $this->db->select('*');

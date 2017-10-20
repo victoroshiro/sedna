@@ -129,22 +129,19 @@
                 <div class="intro">
                     <div class="wrap">
                         <div class="content">
-                            <div id="panorama-1"></div>
-                            <div id="panorama-2"></div>
+                            <?php foreach ($imagens_panorama as $key => $imagem_panorama): ?>
+                                <div id="panorama-<?php echo $key ?>"></div>
+                            <?php endforeach ?>
 
                                                 <script>
-                                                pannellum.viewer('panorama-1', {
-                                                "type": "equirectangular",
-                                                    "panorama": "userfiles/embarcacoes/teste.jpg",
-                                                    autoLoad: true,
-                                                    mouseZoom: false
+                                                <?php foreach ($imagens_panorama as $key => $imagem_panorama): ?>
+                                                    pannellum.viewer('panorama-<?php echo $key ?>', {
+                                                    "type": "equirectangular",
+                                                        "panorama": "userfiles/embarcacoes/<?php echo $imagem_panorama->imagem ?>",
+                                                        autoLoad: true,
+                                                        mouseZoom: false
                                                 });
-                                                pannellum.viewer('panorama-2', {
-                                                "type": "equirectangular",
-                                                    "panorama": "userfiles/embarcacoes/teste.jpg",
-                                                    autoLoad: true,
-                                                    mouseZoom: false
-                                                });
+                                                <?php endforeach ?>
                                                 </script>
                         </div>
                     </div>
