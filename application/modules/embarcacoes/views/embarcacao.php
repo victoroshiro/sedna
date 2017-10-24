@@ -126,27 +126,31 @@
 		</div>
 
 
+                <?php if (!empty($imagens_panorama)): ?>
+                        
                 <div class="intro">
                     <div class="wrap">
                         <div class="content">
+                            <h1>Tour 360</h1>
                             <?php foreach ($imagens_panorama as $key => $imagem_panorama): ?>
                                 <div id="panorama-<?php echo $key ?>"></div>
                             <?php endforeach ?>
 
-                                                <script>
-                                                <?php foreach ($imagens_panorama as $key => $imagem_panorama): ?>
-                                                    pannellum.viewer('panorama-<?php echo $key ?>', {
-                                                    "type": "equirectangular",
-                                                        "panorama": "userfiles/embarcacoes/<?php echo $imagem_panorama->imagem ?>",
-                                                        autoLoad: true,
-                                                        mouseZoom: false
-                                                });
-                                                <?php endforeach ?>
-                                                </script>
+                            <script>
+                            <?php foreach ($imagens_panorama as $key => $imagem_panorama): ?>
+                                pannellum.viewer('panorama-<?php echo $key ?>', {
+                                "type": "equirectangular",
+                                    "panorama": "userfiles/embarcacoes/<?php echo $imagem_panorama->imagem ?>",
+                                    autoLoad: true,
+                                    mouseZoom: false
+                            });
+                            <?php endforeach ?>
+                            </script>
                         </div>
                     </div>
                 </div>
                 
+                <?php endif ?>
 		<!-- Content -->
 		<div class="content">
 			<!-- Tab navigation -->
