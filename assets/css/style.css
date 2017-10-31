@@ -848,12 +848,12 @@ fieldset > div {padding-bottom:15px;}
 .jetmenu					{width: 100%;padding: 0;margin: 0;position: relative;float: left;list-style: none;background:none;}
 .jetmenu li					{display: inline-block;float: left;position:initial;color:#787878;}
 .jetmenu a					{z-index: 10;}
-.jetmenu > li > a				{padding:31px 12px 29px;font-size:13px;text-transform:uppercase;font-weight:600;color:#787878;text-decoration: none;display: inline-block;}
+.jetmenu > li > a				{padding:31px 9px 29px;font-size:13px;text-transform:uppercase;font-weight:600;color:#787878;text-decoration: none;display: inline-block;}
 
 @media (max-width: 1200px) {
     .jetmenu > li > a{
         padding: 31px 9px 29px;
-        font-size: 12px;
+        font-size: 11px;
     }
 }
 .jetmenu > li:hover > a,
