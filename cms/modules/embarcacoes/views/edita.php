@@ -389,6 +389,9 @@
                                         <p>
                                             <label for="lf" class="label-img-galeria">Imagem: </label>
                                             <input type="file" multiple name="imagem[]" />
+                                            <label for="lf" class="label-img-galeria">Descrição: </label>
+                                            <textarea name="descricao_panorama" id="descricao_panorama"></textarea>
+                                            
                                         </p>
                                     </fieldset>
                                 </form>
@@ -440,6 +443,7 @@
 			    CKEDITOR.replace('descricao-especificacao');
 			    CKEDITOR.replace('descricao-serie');
 			    CKEDITOR.replace('descricao-serie-dois');
+			    CKEDITOR.replace('descricao_panorama');
 			    CKEDITOR.replace('resumo');
 
 			    $('.normal').show();
