@@ -33,7 +33,7 @@
 					<aside class="one-fourth sidebar sidebar-right">						
 						<div class="widget">
 							<?php if (!empty($all_news)): ?>
-								<h3>Latest posts</h3>
+								<h3>VER MAIS BARCOS</h3>
 
 								<?php foreach ($all_news as $key => $item): ?>
 									<ul class="latest-posts">
