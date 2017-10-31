@@ -85,7 +85,7 @@
                   <li><a href="noticias" title="Noticias">noticias</a></li>
                   <li><a href="assistencia-tecnica" title="Assistencia técnica">assistencia técnica</a></li>
                   <li class="fix-sub">
-                    <li><a href="#">Embarcações</a>
+                    <li><a>Embarcações</a>
                         <ul class="dropdown">
                             <?php
                               if($menu_embarcacoes_cim){
