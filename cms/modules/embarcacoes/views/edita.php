@@ -376,7 +376,7 @@
 
 
                             <div role="tabpanel" class="tabs-imoveis tab-pane fade in" id="panorama">
-                                <form method="post" action="embarcacoes/panorama" id="form_galeria" enctype="multipart/form-data">
+                                <form method="post" action="embarcacoes/panorama" enctype="multipart/form-data">
                                     <input type="hidden" name="id_embarcacao" value="<?= $embarcacao->id; ?>" />
 
                                     <div id="acoes" class="text-right margin-top-s">
