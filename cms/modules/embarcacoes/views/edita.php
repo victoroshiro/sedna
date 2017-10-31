@@ -410,9 +410,6 @@
 	    		    	                            	<div class="atualiza-titulo">
 		    		    	                            	<input type="hidden" name="id_imagem" value="<?= $imagem->id; ?>" />
 		    		    	                                <img src="<?php echo site_url('../userfiles/embarcacoes/'.$imagem->imagem); ?>" class="galeria-imoveis img-responsive margin-bottom-xs" />
-		    		    	                                <a href="#" class="btn btn-success save-edit-link"/>
-		    		    	                                    Editar tipo <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
-		    		    	                                </a>
 		    		    	                                <a href="<?php echo site_url('embarcacoes/exclui_imagem_panorama/'.$imagem->id); ?>" class="btn btn-danger" />
 		    		    	                                    Deletar imagem<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
 		    		    	                                </a>
