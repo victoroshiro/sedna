@@ -10,17 +10,19 @@
                                     <div class="wysiwyg-content">
                                         <?php echo $fidelidade_texto->descricao ?>
                                     </div>
-                                    <!-- Item -->
-                                    <?php foreach ($fidelidades as $key => $item): ?>
-                                    <article class="one-third hentry">
-                                        <figure><a href="<?php echo site_url('fidelidade/detalhe/'.$item->slug); ?>"><img src="<?php echo site_url('userfiles/fidelidades/'.$item->imagem); ?>" alt="<?php echo $item->titulo; ?>" /></a></figure>
-                                    </article>
-                                    <?php endforeach ?>
-                                    <!-- //Item -->
+                                </div>
+                            </div>
+                            <div class="row bg-white">
+                                <!-- Item -->
+                                <?php foreach ($fidelidades as $key => $item): ?>
+                                <article class="one-third hentry">
+                                    <figure><a href="<?php echo site_url('fidelidade/detalhe/'.$item->slug); ?>"><img src="<?php echo site_url('userfiles/fidelidades/'.$item->imagem); ?>" alt="<?php echo $item->titulo; ?>" /></a></figure>
+                                </article>
+                                <?php endforeach ?>
+                                <!-- //Item -->
 
-                                    <div class="pager2 full-width">
-                                        <?php echo $links ?>
-                                    </div>
+                                <div class="pager2 full-width">
+                                    <?php echo $links ?>
                                 </div>
                             </div>
                         </div>
