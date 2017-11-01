@@ -34,6 +34,7 @@ $tipo = $this->session->userdata('tipo');
               </ul>
             </li>
             <li><a href="<?php echo site_url('noticias'); ?>">Notícias</a></li>
+            <li><a href="<?php echo site_url('imprensas'); ?>">Imprensa</a></li>
             <li><a href="<?php echo site_url('seminovos'); ?>">Seminovos</a></li>
             <li><a href="<?php echo site_url('embarcacoes'); ?>">Embarcações</a></li>
             <li><a href="<?php echo site_url('landing_pages'); ?>">Landing Pages</a></li>
