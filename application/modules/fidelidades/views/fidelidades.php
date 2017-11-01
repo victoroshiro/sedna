@@ -12,7 +12,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row bg-white">
+                            <div class="row bg-white margin-top-lg">
                                 <div class="fidelidades">
                                     <!-- Item -->
                                     <?php foreach ($fidelidades as $key => $item): ?>
