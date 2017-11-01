@@ -1411,7 +1411,7 @@ div[id^="panorama-"] {
 }
 
 .wysiwyg-content img {
-    width: 100% !important;
+    max-width: 100% !important;
 }
 /* 30 PRINT CSS*/
 @media print {
