@@ -159,11 +159,13 @@
 					<?php  
 						if($embarcacao_descricao){
 					?>
+                                                        <!--
 							<li>
 								<a href="#tab1" title="Description">
 									<span class="icojam_info_3"></span> Descrição
 								</a>
 							</li>
+                                                        -->
 					<?php  
 						}
 						if($embarcacao_especificacoes){
