@@ -228,7 +228,13 @@
                     </li>
                     <!-- <li><a href="fidelidade" title="Fidelidade Cimitarra">Fidelidade Cimitarra</a></li> -->
                   <li><a href="seminovos" title="Seminovos">seminovos</a></li>
-                  <li><a href="contato" title="Contato">contato</a></li>
+                  <li>
+                      <a href="contato" title="Contato">contato</a>
+                      <ul class="dropdown">
+                          <li><a href="contato" title="Contato">Fale Conosco</a></li>
+                          <li><a href="trabalhe-conosco" title="Trabalhe Conosco">Trabalhe Conosco</a></li>
+                      </ul>
+                  </li>
               </ul>
               
               <!-- Search -->
