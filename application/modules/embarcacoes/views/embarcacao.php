@@ -17,7 +17,6 @@
                     ?>
                     <a href="#content-gallery">Galeria de fotos</a>    
                     <a href="#tab-navigation">Especificações</a>
-                    <a href="#content-vista">Vista Superior</a>
                     <a href="#content-mensagem">Mensagem</a>
                 </nav>
 
