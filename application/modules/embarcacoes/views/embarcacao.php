@@ -131,7 +131,12 @@
                 <div class="intro">
                     <div class="wrap">
                         <div class="content">
-                            <h1>Tour 360</h1>
+                            <h1>
+                                Tour 360
+                                <br>
+                                <small>Clique e arraste para fazer um tour panorâmico.</small>
+                            </h1>
+
                             <?php foreach ($imagens_panorama as $key => $imagem_panorama): ?>
                                 <div id="panorama-<?php echo $key ?>"></div>
                             <?php endforeach ?>
