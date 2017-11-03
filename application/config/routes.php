@@ -61,6 +61,9 @@ $route['contato'] = "contato/index";
 $route['contato/newsletter'] = "contato/newsletter";
 $route['contato/send'] = "contato/send";
 
+$route['trabalhe-conosco'] = "trabalhe_conosco/index";
+$route['trabalhe-conosco/send'] = "trabalhe_conosco/send";
+
 $route['noticias/detalhe/(:any)'] = "noticias/detalhe/$1";
 $route['noticias/(:num)'] = "noticias/index/$1";
 $route['noticias'] = "noticias/index";

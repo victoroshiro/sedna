@@ -131,7 +131,7 @@
                     <div class="wrap">
                         <div class="content">
                             <h1>
-                                Tour 360
+                                Tour 360°
                                 <br>
                                 <small>Clique e arraste para fazer um tour panorâmico.</small>
                             </h1>
