@@ -1,5 +1,12 @@
 <!-- Main -->
 <main class="main blog" role="main">
+        <!-- Intro -->
+        <header class="intro">
+            <div class="wrap">
+                <h1>Seminovos</h1>
+            </div>
+        </header>
+        <!-- Content -->
 	<div class="content static">
 		<!-- ThreeFourth -->
 		<div class="three-fourth">
