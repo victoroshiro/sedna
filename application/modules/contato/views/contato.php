@@ -4,7 +4,7 @@
 	<header class="intro">
 		<div class="wrap">
 			<h1>Contato</h1>
-			<p>Entre em contato conosco pelo formulário abaixo, responderemos o mais rápido possível</p>
+			<p>Dúvidas, informações, solicitações de orçamento e reclamações, preencha o formulário abaixo. Em breve nossa equipe comercial entrará em contato.</p>
 		</div>
 	</header>
 	<!-- //Intro -->
