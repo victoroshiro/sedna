@@ -4,7 +4,6 @@
 	<header class="intro">
 		<div class="wrap">
 			<h1>Trabalhe conosco</h1>
-			<p>Dúvidas, informações, solicitações de orçamento e reclamações, preencha o formulário abaixo. Em breve nossa equipe comercial entrará em trabalhe_conosco.</p>
 		</div>
 	</header>
 	<!-- //Intro -->
