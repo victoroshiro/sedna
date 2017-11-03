@@ -1,5 +1,11 @@
 <!-- Main -->
 <main class="main blog" role="main">
+        <!-- Intro -->
+        <header class="intro">
+            <div class="wrap">
+                <h1>Imprensa</h1>
+            </div>
+        </header>
 	<div class="content static">
 		<!-- ThreeFourth -->
 		<div class="three-fourth">
