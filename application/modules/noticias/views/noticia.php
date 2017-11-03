@@ -3,6 +3,12 @@
 
 <!-- Main -->
 	<main class="main" role="main">
+                <!-- Intro -->
+                <header class="intro">
+                        <div class="wrap">
+                                <h1>Notícias</h1>
+                        </div>
+                </header>
 		<!-- Content -->
 		<div class="content static">
 			<!-- Wrapper -->

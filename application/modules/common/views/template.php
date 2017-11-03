@@ -82,7 +82,7 @@
           <nav class="main-nav" role="navigation">
               <ul class="jetmenu" id="jetmenu">
                   <li><a href="empresa" title="Empresa">empresa</a></li>
-                  <li><a href="noticias" title="Noticias">noticias</a></li>
+                  <li><a href="noticias" title="Noticias">notícias</a></li>
                   <li><a href="imprensas" title="Imprensa">Imprensa</a></li>
                   <li><a href="assistencia-tecnica" title="Assistencia técnica">assistencia técnica</a></li>
                   <li class="fix-sub">
