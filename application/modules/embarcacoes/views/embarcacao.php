@@ -288,7 +288,10 @@
 			<div class="full-width">
 				<div class="clearfix">
 					<div class="text">
-						<h4>Fale com a Cimitarra Yachts:</h4>
+                                            <h4>Mais informações sobre essa embarcação, preencha o formulário abaixo.
+                                                <br>
+                                                Em breve nossa equipe comercial entrará em contato.
+                                            </h4>
 						<!-- <p>
 							Please complete the information below and we will respond to your inquiry as soon as possible. Your information will not be used for any other purposes. All fields are required.
 						</p> -->
