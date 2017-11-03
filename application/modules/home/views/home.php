@@ -92,7 +92,7 @@
                                             <a href="embarcacoes/detalhe/cimitarra/360/360-hard-top" class="zoom-image"><img src="assets/images/embarcacoes/home/360.jpg"></a>
                                     </div>
                                     <div class="one-third">
-                                            <a href="embarcacoes/detalhe/cimitarra/400/400-fly" class="zoom-image"><img src="assets/images/embarcacoes/home/400.jpg"></a>
+                                            <a  class="zoom-image"><img src="assets/images/embarcacoes/home/400.jpg"></a>
                                     </div>
                                     <div class="one-third">
                                             <a href="embarcacoes/detalhe/cimitarra/460/460-fly" class="zoom-image"><img src="assets/images/embarcacoes/home/460.jpg"></a>
