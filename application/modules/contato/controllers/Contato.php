@@ -119,17 +119,17 @@ class Contato extends CI_Controller {
 
         $this->email->clear(TRUE);
 
-        $this->email->from('contato@cimitarra.com.br', 'FemCare');
+        $this->email->from('contato@cimitarra.com.br', 'Cimitarra');
         $this->email->to($dados['email']);
         $this->email->subject('Recebemos sua mensagem');
 
         $mensagem_cliente  = '<h3>' . $dados['name'] . ',</h3>';
         $mensagem_cliente .= '<p>';
-        $mensagem_cliente .= 'Obrigado por entrar em contato com a FemCare.';
+        $mensagem_cliente .= 'Obrigado por entrar em contato com a Cimitarra';
         $mensagem_cliente .= '<br>';
         $mensagem_cliente .= 'Em breve entraremos em contato.';
         $mensagem_cliente .= '<br>';
-        $mensagem_cliente .= 'Tel.: 55 11 3885-3937 | 55 11 3885-4194';    
+        $mensagem_cliente .= 'Tel.: +55 (11) 26283065 | +55 (11) 2628.3065 | +55 (11) 99617.6035';
         $mensagem_cliente .= '<br>';
         $mensagem_cliente .= '<a href="http://cimitarra.com.br/">cimitarra.com.br/</a>';
         $mensagem_cliente .= '</p>';
