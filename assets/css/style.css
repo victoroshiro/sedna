@@ -1027,6 +1027,18 @@ h1 > small {
 }
 
 
+.icojam_document {
+    height: 40px;
+    background: url("../images/icon-red-stuff.png");
+    background-repeat: no-repeat;
+    background-position: center 6px;
+    background-size: 50px;
+}
+
+.icojam_document:before {
+    content: "" !important;
+}
+
 .header {
 	height: auto;
 }
