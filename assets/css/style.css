@@ -756,6 +756,9 @@ aside.above-footer	{float:left;width:100%;}
 .footer .circle 			{float:left;background:#515E64;font-size:18px;width:40px;height:40px;-webkit-border-radius:20px;-moz-border-radius:20px;border-radius:20px;line-height:40px;margin:0 5px 5px 0;}
 .footer .circle:hover 	{background:#C5A97F;color:#fff;}
 
+
+.footer ul > li:before { left: 120px; }
+
 .copy 				{background:#2B3A42;color:#fff;}
 .copy p 				{float:left;padding:19px 0 15px;}
 .copy p:last-child 	{float:right;}

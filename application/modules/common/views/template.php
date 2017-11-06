@@ -381,7 +381,7 @@
             <!-- //OneFourth -->
             
             <!-- OneFourth -->
-            <div class="one-fourth">
+            <div class="one-fourth text-center">
               <h6>Cimitarra</h6>
               <ul>
                 <li><a href="embarcacoes/detalhe/cimitarra/360/360-hard-top">360</a></li>
@@ -392,7 +392,7 @@
             <!-- //OneFourth -->
             
             <!-- OneFourth -->
-            <div class="one-fourth">
+            <div class="one-fourth text-center">
               <h6>Cimitarra Yachts</h6>
               <ul>
                 <li><a href="embarcacoes/detalhe/cimitarra-yachts/540/540-fly">540</a></li>
