@@ -419,7 +419,7 @@
         <div class="copy">
           <!-- Wrapper -->
           <div class="wrap">
-            <p>Cimitarra Yachts <?php echo gmdate("Y"); ?>. Todos os Direitos Rervados.</p>
+            <p>Cimitarra Yachts <?php echo gmdate("Y"); ?>. Todos os Direitos Reservados</p>
             <p>By <a href="http://vioti.com.br" title="vioti.com.br">Vioti</a></p>
           </div>
           <!-- //Wrapper -->
