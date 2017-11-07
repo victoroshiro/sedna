@@ -843,6 +843,7 @@ fieldset > div {padding-bottom:15px;}
 
 .error_message 	{font-weight:500;}
 #contactform img	{float:right;}
+#contactform #message_result	{display:none;background-color: #cff3cf;line-height: 20px;padding: 15px;margin-bottom: 30px;}
 
 /* 29 PLUGINS */
 

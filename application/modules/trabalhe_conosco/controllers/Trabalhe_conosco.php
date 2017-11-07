@@ -6,6 +6,7 @@ class Trabalhe_conosco extends CI_Controller {
     {
         parent::__construct();
         $this->load->model('Trabalhe_conosco_m');
+        $this->load->model('File_upload_model');
         $this->load->model('noticias/Noticias_m');
         $this->load->model('common/Common_m');
         $this->load->model('embarcacoes/Embarcacoes_m');
@@ -88,13 +89,24 @@ class Trabalhe_conosco extends CI_Controller {
 
     private function _send_notifications($dados, $origem)
     {
+        $curriculo = $this->File_upload_model->file_upload(
+            'curriculo',
+            'curriculos',
+            'pdf|doc|docx',
+            NULL,
+            NULL
+        );
+
         $mensagem  = "Nome: " . $dados['name']  . "<br>";
         $mensagem .= "E-mail: " . $dados['email'] . "<br>";
-        if(isset($dados['city']) && $dados['city'] != ''){
-            $mensagem .= "Cidade: " . $dados['city'] . "<br>";
+        if(isset($dados['area_interesse']) && $dados['area_interesse'] != ''){
+            $mensagem .= "Área de Interesse: " . $dados['area_interesse'] . "<br>";
         }
         if(isset($dados['telephone']) && $dados['telephone'] != ''){
             $mensagem.= "Telefone: " . $dados['telephone']."</a><br>";
+        }
+        if ( !is_array($curriculo) ) {
+            $mensagem .= "<a href='" . dirname(getcwd()).'/userfiles/curriculos/' . $curriculo . "'>" . "Veja o currículo" . "</a>" . "<br />";
         }
         $mensagem .= "Mensagem: " . $dados['message'] . "<br>";
 
@@ -106,10 +118,10 @@ class Trabalhe_conosco extends CI_Controller {
 
         $this->email->initialize($config);
 
-        $this->email->from('contato@cimitarra.com.br', 'Trabalhe_conosco');
+        $this->email->from('contato@cimitarra.com.br', 'Trabalhe Conosco');
         $this->email->to('contato@cimitarra.com.br');
         
-        $this->email->subject('Trabalhe_conosco - '.$dados['name']);
+        $this->email->subject('Trabalhe Conosco - '.$dados['name']);
         $this->email->message($mensagem);
         
         if ($this->email->send(FALSE))
@@ -119,21 +131,21 @@ class Trabalhe_conosco extends CI_Controller {
 
         $this->email->clear(TRUE);
 
-        $this->email->from('contato@cimitarra.com.br', 'Cimitarra');
+        $this->email->from('contato@cimitarra.com.br', 'Cimitarra Yachts');
         $this->email->to($dados['email']);
         $this->email->subject('Recebemos sua mensagem');
 
         $mensagem_cliente  = '<h3>' . $dados['name'] . ',</h3>';
         $mensagem_cliente .= '<p>';
-        $mensagem_cliente .= 'Obrigado por entrar em contato com a FemCare.';
+        $mensagem_cliente .= 'Obrigado por entrar em contato com a Cimitarra Yachts.';
         $mensagem_cliente .= '<br>';
-        $mensagem_cliente .= 'Em breve entraremos em trabalhe_conosco.';
+        $mensagem_cliente .= 'Em breve entraremos em contato.';
         $mensagem_cliente .= '<br>';
-        $mensagem_cliente .= 'Tel.: 55 11 3885-3937 | 55 11 3885-4194';    
+        $mensagem_cliente .= 'Tel.: +55 (11) 26283065 | +55 (11) 2628.3065 | +55 (11) 99617.6035';    
         $mensagem_cliente .= '<br>';
         $mensagem_cliente .= '<a href="http://cimitarra.com.br/">cimitarra.com.br/</a>';
         $mensagem_cliente .= '</p>';
-        $mensagem_cliente .= '<img src="' . site_url('assets/images/menu/logo.png') . '" alt="FemCare">';
+        $mensagem_cliente .= '<img src="' . site_url('assets/images/menu/logo.png') . '" alt="Cimitarra Yachts">';
 
         $this->email->message($mensagem_cliente);
         $this->email->send();

@@ -116,10 +116,10 @@
 			
 			
 			// CONTACT FORM
-			$('#contactform').submit(function(){
+			$('.contactform').submit(function(){
 				var action = $(this).attr('action');
-				$("#message").show(500,function() {
-				$('#message').hide();
+				$("#message_result").show(500,function() {
+				$('#message_result').hide();
 				$('#submit')
 					.after('<img src="images/contact-ajax-loader.gif" class="loader" />')
 					.attr('disabled','disabled');
@@ -128,15 +128,50 @@
 					name: $('#name').val(),
 					email: $('#email').val(),
 					phone: $('#phone').val(),
-					comments: $('#comments').val()
+					message: $('#message').val(),
+					opt_in: $('#opt_in').val()
 				},
 				function(data){
-					document.getElementById('message').innerHTML = data;
-					$('#message').slideDown('slow');
+					var returned = JSON && JSON.parse(data) || $.parseJSON(data);
+					document.getElementById('message_result').innerHTML = returned.message;
+					document.getElementById('message_result').style.display = "block";
+					$('#message_result').slideDown('slow');
 					$('#contactform img.loader').fadeOut('slow',function(){$(this).remove()});
 					$('#submit').removeAttr('disabled'); 
 				});
 				
+				});
+				return false; 
+			});
+
+			// WORK HERE FORM
+			$('.workhere').submit(function(){
+				var action = $(this).attr('action');
+				$("#message_result").show(500,function() {
+					$('#message_result').hide();
+					$('#submit')
+						.after('<img src="images/contact-ajax-loader.gif" class="loader" />')
+						.attr('disabled','disabled');
+
+					var form = $('.workhere').get(0);
+					
+				    $.ajax({
+				        url: window.location.pathname + '/send',
+				        type: 'POST',
+				        data: new FormData(form),
+				        async: false,
+				        success: function (response) {
+							var returned = JSON && JSON.parse(response) || $.parseJSON(response);
+							document.getElementById('message_result').innerHTML = returned.message;
+							document.getElementById('message_result').style.display = "block";
+							$('#message_result').slideDown('slow');
+							$('#contactform img.loader').fadeOut('slow',function(){$(this).remove()});
+							$('#submit').removeAttr('disabled'); 
+				        },
+				        cache: false,
+				        contentType: false,
+				        processData: false
+				    });
 				});
 				return false; 
 			});

@@ -119,13 +119,13 @@ class Contato extends CI_Controller {
 
         $this->email->clear(TRUE);
 
-        $this->email->from('contato@cimitarra.com.br', 'Cimitarra');
+        $this->email->from('contato@cimitarra.com.br', 'Cimitarra Yachts');
         $this->email->to($dados['email']);
         $this->email->subject('Recebemos sua mensagem');
 
         $mensagem_cliente  = '<h3>' . $dados['name'] . ',</h3>';
         $mensagem_cliente .= '<p>';
-        $mensagem_cliente .= 'Obrigado por entrar em contato com a Cimitarra';
+        $mensagem_cliente .= 'Obrigado por entrar em contato com a Cimitarra Yachts';
         $mensagem_cliente .= '<br>';
         $mensagem_cliente .= 'Em breve entraremos em contato.';
         $mensagem_cliente .= '<br>';
@@ -133,7 +133,7 @@ class Contato extends CI_Controller {
         $mensagem_cliente .= '<br>';
         $mensagem_cliente .= '<a href="http://cimitarra.com.br/">cimitarra.com.br/</a>';
         $mensagem_cliente .= '</p>';
-        $mensagem_cliente .= '<img src="' . site_url('assets/images/menu/logo.png') . '" alt="FemCare">';
+        $mensagem_cliente .= '<img src="' . site_url('assets/images/menu/logo.png') . '" alt="Cimitarra Yachts">';
 
         $this->email->message($mensagem_cliente);
         $this->email->send();

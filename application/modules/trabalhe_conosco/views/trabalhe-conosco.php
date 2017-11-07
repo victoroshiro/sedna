@@ -12,37 +12,37 @@
 		<article class="full-width hentry">
 			<div class="one-half">
 				<div class="text">
-					<form method="post" action="contact_form_message.php" name="contactform" id="contactform">
+					<form method="post" action="<?php echo site_url('trabalhe-conosco/send') ?>" name="contactform" id="contactform" class="workhere">
 						<fieldset>
-							<div id="message"></div>
+							<div id="message_result"></div>
 							<div class="full-width">
 								<label for="name">Nome e Sobrenome</label>
-								<input type="text" id="name"/>
+								<input type="text" name="name" id="name"/>
 							</div>
 							
 							<div class="full-width">
 								<label for="email">E-mail</label>
-								<input type="email" id="email"/>
+								<input type="email" name="email" id="email"/>
 							</div>
 							
 							<div class="full-width">
 								<label for="phone">Telefone</label>
-								<input type="number" id="phone"/>
+								<input type="text" name="phone" id="phone"/>
 							</div>
                                                         
-                                                        <div class="full-width">
-								<label for="phone">Área de Interesse</label>
-								<input type="text" id="area_interesse"/>
+                            <div class="full-width">
+								<label for="area_interesse">Área de Interesse</label>
+								<input type="text" name="area_interesse" id="area_interesse"/>
 							</div>
                                                         
-                                                        <div class="full-width">
-								<label for="comments">Sua Mensagem</label>
-								<textarea id="comments"></textarea>
+                            <div class="full-width">
+								<label for="message">Sua Mensagem</label>
+								<textarea id="message" name="message"></textarea>
 							</div>
 							
-                                                        <div class="full-width">
+                            <div class="full-width">
 								<label for="comments">Anexe seu Currículo</label>
-                                                                <input  type="file" name="curriculo">
+                                <input type="file" name="curriculo">
 							</div>
 
 							<div class="full-width">

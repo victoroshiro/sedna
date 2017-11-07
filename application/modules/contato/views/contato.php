@@ -30,28 +30,34 @@
 						Planalto Paulista - São Paulo/SP
 					</p>
 					
-					<form method="post" action="contact_form_message.php" name="contactform" id="contactform">
+					<form method="post" action="<?php echo site_url('contato/send'); ?>" name="contactform" id="contactform" class="contactform">
 						<fieldset>
-							<div id="message"></div>
+							<div id="message_result"></div>
 							<div class="full-width">
 								<label for="name">Nome e Sobrenome</label>
-								<input type="text" id="name"/>
+								<input type="text" name="name" id="name"/>
 							</div>
 							
 							<div class="full-width">
 								<label for="email">E-mail</label>
-								<input type="email" id="email"/>
+								<input type="email" name="email" id="email"/>
 							</div>
 							
 							<div class="full-width">
 								<label for="phone">Telefone</label>
-								<input type="number" id="phone"/>
+								<input type="text" name="phone" id="phone"/>
 							</div>
 							
 							<div class="full-width">
-								<label for="comments">Sua Mensagem</label>
-								<textarea id="comments"></textarea>
+								<label for="message">Sua Mensagem</label>
+								<textarea id="message" name="message"></textarea>
 							</div>
+
+							<div class="checkbox">
+					            <label for="opt_in">
+					                <input type="checkbox" name="opt_in" id="opt_in"> Desejo receber os informativos da Cimitarra
+					            </label>
+					        </div>
 							
 							<div class="full-width">
 								<input type="submit" value="Enviar Mensagem" class="button gold large" id="submit" />
