@@ -1040,6 +1040,11 @@ h1 > small {
     background-size: 50px;
 }
 
+
+.blog figure {
+    max-height: 250px;
+}
+
 .icojam_document:before {
     content: "" !important;
 }
