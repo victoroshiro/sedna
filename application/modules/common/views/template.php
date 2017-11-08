@@ -81,6 +81,7 @@
           <!-- Primary menu -->
           <nav class="main-nav" role="navigation">
               <ul class="jetmenu" id="jetmenu">
+                  <li><a href="<?php echo base_url();?>" title="Home">Home</a></li>
                   <li><a href="empresa" title="Empresa">empresa</a></li>
                   <li><a href="noticias" title="Noticias">notícias</a></li>
                   <li><a href="imprensas" title="Imprensa">Imprensa</a></li>
