@@ -353,9 +353,11 @@
     
     <!-- Photo -->
     <section class="photo">
-        <div class="wrap center">
+        <div class="wrap text-right">
             <p>
-            Fabricamos embarcações de alta  qualidade desde 2000, com seriedade e compromisso com nossos clientes.
+            Fabricamos embarcações de alta  qualidade desde 2000,
+            <br>
+            com seriedade e compromisso com nossos clientes.
             </p>
             <h2>
                 Cimitarra Yachts.
