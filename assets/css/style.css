@@ -1321,6 +1321,13 @@ div[id^="panorama-"] {
     margin-bottom: 30px;
 }
 
+@media (max-width: 499px) {
+    div[id^="panorama-"] {
+        height: 250px;
+        margin-bottom: 70px;
+    }
+}
+
 /* Adaptations end */
 
 
