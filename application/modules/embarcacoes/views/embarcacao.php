@@ -185,7 +185,7 @@
 					?>
 							<li>
 								<a href="#tab3" title="Equipment">
-									<span class="icojam_anchor"></span> ITENS DE SERIE
+									<span class="icojam_document"></span> ITENS DE SERIE
 								</a>
 							</li>
 					<?php  
