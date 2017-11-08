@@ -71,6 +71,11 @@ class Contato extends CI_Controller {
 
                 $origem = (isset($post['origem'])) ? $post['origem'] : 'Contato';
 
+                if(isset($post['surname'])){
+                    $post['name'] = $post['name'].' '.$post['surname'];
+                    unset($post['surname']);
+                }
+
                 if($this->Contato_m->save_contact($post, $origem)){
 
                     $this->_send_notifications($post, 'Contato');
@@ -90,11 +95,11 @@ class Contato extends CI_Controller {
     {
         $mensagem  = "Nome: " . $dados['name']  . "<br>";
         $mensagem .= "E-mail: " . $dados['email'] . "<br>";
-        if(isset($dados['city']) && $dados['city'] != ''){
-            $mensagem .= "Cidade: " . $dados['city'] . "<br>";
+        if(isset($dados['phone']) && $dados['phone'] != ''){
+            $mensagem.= "Telefone: " . $dados['phone']."</a><br>";
         }
-        if(isset($dados['telephone']) && $dados['telephone'] != ''){
-            $mensagem.= "Telefone: " . $dados['telephone']."</a><br>";
+        if(isset($dados['embarcacao']) && $dados['embarcacao'] != ''){
+            $mensagem .= "Embarcação: " . $dados['embarcacao'] . "<br>";
         }
         $mensagem .= "Mensagem: " . $dados['message'] . "<br>";
 

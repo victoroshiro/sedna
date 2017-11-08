@@ -6,6 +6,7 @@ class Contato_m extends CI_Model
 	{
 	    return $this->db->insert('contato', array('nome' => $dados['name'], 
 	                                              'email' => $dados['email'],
+	                                              'embarcacao' => (isset($dados['embarcacao'])) ? $dados['embarcacao'] : null,
 	                                              'telefone' => (isset($dados['phone'])) ? $dados['phone'] : null,
 	                                              'mensagem' => (isset($dados['message'])) ? $dados['message'] : null,
 	                                              'opt_in' => (isset($dados['opt_in'])) ? 1 : 0,

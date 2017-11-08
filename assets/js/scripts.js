@@ -126,6 +126,8 @@
 				
 				$.post(action, { 
 					name: $('#name').val(),
+					surname: $('#surname').val(),
+					embarcacao: $('#embarcacao').val(),
 					email: $('#email').val(),
 					phone: $('#phone').val(),
 					message: $('#message').val(),

@@ -288,52 +288,59 @@
 			<div class="full-width">
 				<div class="clearfix">
 					<div class="text">
-                                            <h4>Mais informações sobre essa embarcação, preencha o formulário abaixo.
-                                                <br>
-                                                Em breve nossa equipe comercial entrará em contato.
-                                            </h4>
-						<!-- <p>
-							Please complete the information below and we will respond to your inquiry as soon as possible. Your information will not be used for any other purposes. All fields are required.
-						</p> -->
+                        <h4>Mais informações sobre essa embarcação, preencha o formulário abaixo.
+                            <br>
+                            Em breve nossa equipe comercial entrará em contato.
+                        </h4>
 						
-						<form method="post" action="contact_form_message.php" name="contactform" id="contactform">
+						<form method="post" action="<?php echo site_url('contato/send') ?>" name="contactform" id="contactform" class="contactform">
 							<fieldset>
-								<div id="message"></div>
+								
+								<div id="message_result"></div>
 								
 								<div class="one-half">
 									<div class="padding-h-md">
 										<label for="name">Nome</label>
-										<input type="text" id="name"/>
+										<input type="text" id="name" name="name"/>
+										<input type="hidden" id="embarcacao" name="embarcacao" value="<?php echo $embarcacao->titulo; ?>"/>
 									</div>
 								</div>
 
 								<div class="one-half">
 									<div class="padding-h-md">
 										<label for="surname">Sobrenome</label>
-										<input type="text" id="surname"/>
+										<input type="text" id="surname" name="surname"/>
 									</div>
 								</div>
 
 								<div class="one-half">
 									<div class="padding-h-md">
 										<label for="phone">Telefone</label>
-										<input type="text" id="phone"/>
+										<input type="text" id="phone" name="phone"/>
 									</div>
 								</div>
 
 								<div class="one-half">
 									<div class="padding-h-md">
 										<label for="email">Email</label>
-										<input type="email" id="email"/>
+										<input type="email" id="email" name="email"/>
 									</div>
 								</div>
 								
 								<div class="full-width">
 									<div class="padding-h-md">
-										<label for="comments">Mensagem</label>
-										<textarea id="comments"></textarea>
+										<label for="message">Mensagem</label>
+										<textarea id="message"></textarea>
 									</div>
 								</div>
+
+								<div class="full-width">
+									<div class="padding-h-md">
+							            <label for="opt_in">
+							                <input type="checkbox" name="opt_in" id="opt_in"> Desejo receber os informativos da Cimitarra
+							            </label>
+							        </div>
+							    </div>
 								
 								<div class="full-width">
 									<div class="padding-h-md">

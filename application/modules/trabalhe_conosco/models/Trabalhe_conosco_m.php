@@ -7,6 +7,7 @@ class Trabalhe_conosco_m extends CI_Model
 	    return $this->db->insert('trabalhe_conosco', array('nome' => $dados['name'], 
 	                                              		   'email' => $dados['email'],
 	                                              		   'area_interesse' => (isset($dados['area_interesse'])) ? $dados['area_interesse'] : null,
+	                                              		   'curriculo' => (isset($dados['curriculo'])) ? $dados['curriculo'] : null,
 	                                              		   'telefone' => (isset($dados['phone'])) ? $dados['phone'] : null,
 	                                              		   'mensagem' => (isset($dados['message'])) ? $dados['message'] : null,
 	                                              		   'opt_in' => (isset($dados['opt_in'])) ? 1 : 0,

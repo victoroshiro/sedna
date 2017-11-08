@@ -38,7 +38,7 @@ class Exportar extends CI_Controller {
 
 			$resultado = false;
 
-			$post['origem'] = (isset($post['origem'])) ? $post['origem'] : 'Todos';
+			// $post['origem'] = (isset($post['origem'])) ? $post['origem'] : 'Todos';
 
 			$resultado = $this->exportar_m->gerar_excel(array('origem' => $post['origem']));
 
@@ -67,8 +67,7 @@ class Exportar extends CI_Controller {
 		//name the worksheet
 		$this->excel->getActiveSheet()->setTitle(ucfirst($nome_planilha));
 
-		if($nome_planilha == 'Contato'){
-			//set cell A1 content with some text
+		//set cell A1 content with some text
 			$this->excel->getActiveSheet()->setCellValue('A1', 'Nome');
 			$this->excel->getActiveSheet()->getStyle('A1')->getFont()->setSize(12);
 			$this->excel->getActiveSheet()->getStyle('A1')->getFont()->setBold(true);
@@ -81,15 +80,16 @@ class Exportar extends CI_Controller {
 			$this->excel->getActiveSheet()->getStyle('C1')->getFont()->setSize(12);
 			$this->excel->getActiveSheet()->getStyle('C1')->getFont()->setBold(true);
 
-			$this->excel->getActiveSheet()->setCellValue('D1', 'Assunto');
+			$this->excel->getActiveSheet()->setCellValue('D1', 'Mensagem');
 			$this->excel->getActiveSheet()->getStyle('D1')->getFont()->setSize(12);
 			$this->excel->getActiveSheet()->getStyle('D1')->getFont()->setBold(true);
-			
-			$this->excel->getActiveSheet()->setCellValue('E1', 'Mensagem');
+
+		if($nome_planilha == 'Contato'){
+			$this->excel->getActiveSheet()->setCellValue('E1', 'Embarcação');
 			$this->excel->getActiveSheet()->getStyle('E1')->getFont()->setSize(12);
 			$this->excel->getActiveSheet()->getStyle('E1')->getFont()->setBold(true);
 
-			$this->excel->getActiveSheet()->setCellValue('F1', 'Data:');
+			$this->excel->getActiveSheet()->setCellValue('F1', 'Data');
 			$this->excel->getActiveSheet()->getStyle('F1')->getFont()->setSize(12);
 			$this->excel->getActiveSheet()->getStyle('F1')->getFont()->setBold(true);
 
@@ -97,9 +97,17 @@ class Exportar extends CI_Controller {
 			$this->excel->getActiveSheet()->getStyle('G1')->getFont()->setSize(12);
 			$this->excel->getActiveSheet()->getStyle('G1')->getFont()->setBold(true);
 		}else{
-			$this->excel->getActiveSheet()->setCellValue('A1', 'E-mail');
-			$this->excel->getActiveSheet()->getStyle('A1')->getFont()->setSize(12);
-			$this->excel->getActiveSheet()->getStyle('A1')->getFont()->setBold(true);
+			$this->excel->getActiveSheet()->setCellValue('E1', 'Área de Interesse:');
+			$this->excel->getActiveSheet()->getStyle('E1')->getFont()->setSize(12);
+			$this->excel->getActiveSheet()->getStyle('E1')->getFont()->setBold(true);
+
+			$this->excel->getActiveSheet()->setCellValue('F1', 'Currículo');
+			$this->excel->getActiveSheet()->getStyle('F1')->getFont()->setSize(12);
+			$this->excel->getActiveSheet()->getStyle('F1')->getFont()->setBold(true);
+
+			$this->excel->getActiveSheet()->setCellValue('G1', 'Data');
+			$this->excel->getActiveSheet()->getStyle('G1')->getFont()->setSize(12);
+			$this->excel->getActiveSheet()->getStyle('G1')->getFont()->setBold(true);
 		}	
 
 
@@ -113,16 +121,19 @@ class Exportar extends CI_Controller {
 
 		foreach ($data as $item) {
 
+			$this->excel->getActiveSheet()->setCellValue('A'.$row_count, $item->nome);
+			$this->excel->getActiveSheet()->setCellValue('B'.$row_count, $item->email);
+			$this->excel->getActiveSheet()->setCellValue('C'.$row_count, $item->telefone);
+			$this->excel->getActiveSheet()->setCellValue('D'.$row_count, (isset($item->mensagem)) ? $item->mensagem : '');
+
 			if($nome_planilha == 'Contato'){
-				$this->excel->getActiveSheet()->setCellValue('A'.$row_count, $item->nome);
-				$this->excel->getActiveSheet()->setCellValue('B'.$row_count, $item->email);
-				$this->excel->getActiveSheet()->setCellValue('C'.$row_count, $item->telefone);
-				$this->excel->getActiveSheet()->setCellValue('D'.$row_count, $item->assunto);
-				$this->excel->getActiveSheet()->setCellValue('E'.$row_count, (isset($item->mensagem)) ? $item->mensagem : '');
+				$this->excel->getActiveSheet()->setCellValue('E'.$row_count, (isset($item->embarcacao)) ? $item->embarcacao : '');
 				$this->excel->getActiveSheet()->setCellValue('F'.$row_count, $item->dateFormated);
 				$this->excel->getActiveSheet()->setCellValue('G'.$row_count, ($item->opt_in == 0) ? 'Não' : 'Sim');
 			}else{
-				$this->excel->getActiveSheet()->setCellValue('A'.$row_count, $item->email);
+				$this->excel->getActiveSheet()->setCellValue('E'.$row_count, (isset($item->area_interesse)) ? $item->area_interesse : '');
+				$this->excel->getActiveSheet()->setCellValue('F'.$row_count, (isset($item->curriculo)) ? str_replace('/cms','',base_url('userfiles/curriculos/'.$item->curriculo)) : '');
+				$this->excel->getActiveSheet()->setCellValue('G'.$row_count, $item->dateFormated);
 			}
 
 			$row_count++;

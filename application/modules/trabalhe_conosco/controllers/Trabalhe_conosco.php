@@ -72,6 +72,18 @@ class Trabalhe_conosco extends CI_Controller {
 
                 $origem = (isset($post['origem'])) ? $post['origem'] : 'Trabalhe_conosco';
 
+                $curriculo = $this->File_upload_model->file_upload(
+                    'curriculo',
+                    'curriculos',
+                    'pdf|doc|docx',
+                    NULL,
+                    NULL
+                );
+
+                if(!is_array($curriculo)){
+                    $post['curriculo'] = $curriculo;
+                }
+
                 if($this->Trabalhe_conosco_m->save_contact($post, $origem)){
 
                     $this->_send_notifications($post, 'Trabalhe_conosco');
@@ -89,14 +101,6 @@ class Trabalhe_conosco extends CI_Controller {
 
     private function _send_notifications($dados, $origem)
     {
-        $curriculo = $this->File_upload_model->file_upload(
-            'curriculo',
-            'curriculos',
-            'pdf|doc|docx',
-            NULL,
-            NULL
-        );
-
         $mensagem  = "Nome: " . $dados['name']  . "<br>";
         $mensagem .= "E-mail: " . $dados['email'] . "<br>";
         if(isset($dados['area_interesse']) && $dados['area_interesse'] != ''){
@@ -105,8 +109,8 @@ class Trabalhe_conosco extends CI_Controller {
         if(isset($dados['telephone']) && $dados['telephone'] != ''){
             $mensagem.= "Telefone: " . $dados['telephone']."</a><br>";
         }
-        if ( !is_array($curriculo) ) {
-            $mensagem .= "<a href='" . dirname(getcwd()).'/userfiles/curriculos/' . $curriculo . "'>" . "Veja o currículo" . "</a>" . "<br />";
+        if (isset($dados['curriculo'])) {
+            $mensagem .= "<a href='" . dirname(getcwd()).'/userfiles/curriculos/' . $dados['curriculo'] . "'>" . "Veja o currículo" . "</a>" . "<br />";
         }
         $mensagem .= "Mensagem: " . $dados['message'] . "<br>";
 

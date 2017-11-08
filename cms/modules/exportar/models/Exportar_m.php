@@ -10,19 +10,21 @@ class Exportar_m extends CI_Model {
 
 		$params = array_merge($options, $params);
 
-		$this->db->select('*');
+		$this->db->select('*')
+				 ->select('DATE_FORMAT(data_criacao,"%d/%m/%Y") AS dateFormated', false);
 
-		if($params['origem'] == 'Newsletter'){
-			$this->db->from('newsletter');
+		if($params['origem'] == 'Trabalhe Conosco'){
+			$this->db->from('trabalhe_conosco');
 		}else{
-			$this->db->select('DATE_FORMAT(data_criacao,"%d/%m/%Y") AS dateFormated', false)
-					 ->from('contato');
+			$this->db->from('contato');
 		}
 
 		if($params['origem']){
-			if($params['origem'] != 'Todos' && $params['origem'] != 'Newsletter'){
-				$this->db->where('origem', $params['origem']);			
+			if($params['origem'] == 'Trabalhe Conosco'){
+				$this->db->order_by('area_interesse','ASC')
+						 ->order_by('data_criacao','DESC');
 			}else if ($params['origem'] == 'Contato'){
+				$this->db->where('origem', $params['origem']);			
 				$this->db->order_by('nome');
 			}
 		}

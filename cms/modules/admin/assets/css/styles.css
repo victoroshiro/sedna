@@ -1,3 +1,6 @@
+.nav > li > a{
+  padding: 10px 13px;
+}
 .nav.navbar-nav .img-link{
   padding-left: 0px !important;
 }
