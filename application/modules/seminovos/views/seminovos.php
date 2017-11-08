@@ -27,9 +27,7 @@
 				<?php endforeach ?>
 				<!-- //Item -->
 							
-				<div class="pager2 full-width">
-					<?php echo $links ?>
-				</div>
+                                <?php echo $links ?>
 			</div>
 		</div>
 		<!-- //ThreeFourth -->

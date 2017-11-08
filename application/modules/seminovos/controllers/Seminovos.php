@@ -36,24 +36,24 @@ class Seminovos extends CI_Controller {
         $config["per_page"] = $limit_results;
         $config["uri_segment"] = 2;
         //styling pagination
-        $config['full_tag_open'] = '<ul class="pagination custom-pagination">';
-        $config['full_tag_close'] = '</ul>';
-        $config['num_tag_open'] = '<li>';
-        $config['num_tag_close'] = '</li>';
-        $config['cur_tag_open'] = '<li class="active"><a>';
-        $config['cur_tag_close'] = '</li></a>';
-        $config['next_link'] = 'Mais';
-        $config['prev_link'] = 'Menos';
+        $config['full_tag_open'] = ' <div class="pager2 full-width"> ';
+        $config['full_tag_close'] = '</div>';
+        $config['num_tag_open'] = '';
+        $config['num_tag_close'] = '';
+        $config['cur_tag_open'] = '<span>';
+        $config['cur_tag_close'] = '</span>';
+        $config['next_link'] = 'Próximo';
+        $config['prev_link'] = 'Anterior';
         $config['last_link'] = FALSE;
         $config['first_link'] = FALSE;
-        $config['last_tag_open'] = '<li>';
-        $config['first_tag_open'] = '<li>';
-        $config['next_tag_open'] = '<li class="pagination-next">';
-        $config['prev_tag_open'] = '<li class="pagination-prev">';
-        $config['next_tag_close'] = '</li>';
-        $config['last_tag_close'] = '</li>';
-        $config['first_tag_close'] = '</li>';
-        $config['prev_tag_close'] = '</li>';
+        $config['last_tag_open'] = '';
+        $config['first_tag_open'] = '';
+        $config['next_tag_open'] = '';
+        $config['prev_tag_open'] = '';
+        $config['next_tag_close'] = '';
+        $config['last_tag_close'] = '';
+        $config['first_tag_close'] = '';
+        $config['prev_tag_close'] = '';
         
         $this->pagination->initialize($config);
 
