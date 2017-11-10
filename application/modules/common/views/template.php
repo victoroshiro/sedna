@@ -360,7 +360,7 @@
             <br>
             com seriedade e compromisso com nossos clientes.
             </p>
-            <h2 class="font-open-sans">
+            <h2 class="font-source-sans">
                 Cimitarra Yachts.
                 <br>
                 A compra inteligente.

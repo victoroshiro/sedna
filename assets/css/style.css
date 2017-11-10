@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 /***************************
 	TABLE OF CONTENT
 	01 - Reset
@@ -1053,6 +1054,13 @@ h2 > small {
     background-position: center 6px;
     background-size: 38px;
 }
+
+
+
+.font-source-sans {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
 
 
 .blog figure {
