@@ -1032,6 +1032,14 @@ h1 > small {
 }
 
 
+.about-parallax {
+    height: 385px;
+}
+
+.about-parallax a {
+    margin-top: 160px;
+}
+
 .icojam_document {
     height: 40px;
     background: url("../images/icon-red-stuff.png");
