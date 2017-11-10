@@ -1039,6 +1039,11 @@ h2 > small {
     font-family: Open;
 }
 
+.footer-collumn-pull-left-adjust {
+    margin-left: -50px;
+    margin-right: 50px;
+}
+
 .about-parallax {
     height: 385px;
 }

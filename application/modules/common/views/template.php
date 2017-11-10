@@ -395,7 +395,7 @@
             <!-- //OneFourth -->
             
             <!-- OneFourth -->
-            <div class="one-fourth text-center">
+            <div class="one-fourth text-center footer-collumn-pull-left-adjust">
               <h6>Cimitarra Yachts</h6>
               <ul>
                 <li><a href="embarcacoes/detalhe/cimitarra-yachts/540/540-fly">540</a></li>
