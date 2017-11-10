@@ -85,7 +85,7 @@
                   <li><a href="empresa" title="Empresa">empresa</a></li>
                   <li><a href="noticias" title="Noticias">notícias</a></li>
                   <li><a href="imprensas" title="Imprensa">Imprensa</a></li>
-                  <li><a href="assistencia-tecnica" title="Assistencia técnica">assistencia técnica</a></li>
+                  <li><a href="assistencia-tecnica" title="Assistência técnica">assistência técnica</a></li>
                   <li class="fix-sub">
                     <li><a>Embarcações</a>
                         <ul class="dropdown">
@@ -356,11 +356,11 @@
     <section class="photo">
         <div class="wrap text-right">
             <p>
-            Fabricamos embarcações de alta  qualidade desde 2000,
+            Fabricamos embarcações de alta  qualidade desde 1999,
             <br>
             com seriedade e compromisso com nossos clientes.
             </p>
-            <h2>
+            <h2 class="font-open-sans">
                 Cimitarra Yachts.
                 <br>
                 A compra inteligente.
