@@ -320,7 +320,7 @@ section				{float:left;width:100%;}
 .home section h2 		{font-weight:normal;font-size:31px;padding:0;}
 .home .hentry h3 		{font-size:30px;font-weight:400;}
 section.white 		{background:#fff;color:#515E64;padding:50px 0;}
-section.white h2		{padding-bottom:38px;}
+section.white h2		{padding-bottom:19px;}
 
 .hero						{overflow:hidden;min-height:500px;height:100vh;width:100%;color:#fff;display:table;background-position:50% 50%;background-repeat:no-repeat;background-size:cover;}
 @media (max-width: 1200px) {
