@@ -33,7 +33,7 @@
                                 <p>
                                     O Estaleiro Cimitarra investe em lanchas maiores e mais luxuosas, alcançando um novo patamar no universo náutico.
                                     <br>
-                                    Todas as nossas embarcaçoes são desenvolvidas foco no aproveitamento dos espaços externos e design personalizado.                                   O Estaleiro Cimitarra exporta suas lanchas desde 2000, com seriedade e compromisso com as normas de exportação, seguindo rigorosamente todos os requisitos necessários das normas internacionais de navegação.
+                                    Todas as nossas embarcaçoes são desenvolvidas foco no aproveitamento dos espaços externos e design personalizado.                                   O Estaleiro Cimitarra exporta suas lanchas desde 1999, com seriedade e compromisso com as normas de exportação, seguindo rigorosamente todos os requisitos necessários das normas internacionais de navegação.
                                 </p>
 							</div>
 						</div>
