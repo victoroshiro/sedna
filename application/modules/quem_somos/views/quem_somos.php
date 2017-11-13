@@ -84,7 +84,7 @@
 		<section class="cta grey">
 			<div class="wrap center">
 				<h2>Cimitarra pelo Mundo</h2>
-				<p>O Estaleiro Cimitarra exporta suas lanchas desde 2000, com seriedade e compromisso com as normas de exportação , seguindo rigorosamente todos os requisitos necessários das normas internacionais de navegação. A empresa já exportou para: Angola, Canadá, Noruega e Suécia.</p>
+				<p>O Estaleiro Cimitarra exporta suas lanchas desde 1999, com seriedade e compromisso com as normas de exportação , seguindo rigorosamente todos os requisitos necessários das normas internacionais de navegação. A empresa já exportou para: Angola, Canadá, Noruega e Suécia.</p>
 			</div>
 		</section>
 
