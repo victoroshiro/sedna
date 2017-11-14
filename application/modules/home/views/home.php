@@ -130,11 +130,11 @@
 		<!-- Yachts -->
 		<div class="wrap center margin-top-lg">
 			<div class="full-width text-center">
-                            <h2>
-                                Seminovos Cimitarra
-                                <br>
-                                <small>As melhores oportunidades você encontra aqui.</small>
-                            </h2>
+                <h2>
+                    Seminovos Cimitarra
+                    <br>
+                    <small>As melhores oportunidades você encontra aqui.</small>
+                </h2>
 			</div>
 		</div>
 		<div class="results">

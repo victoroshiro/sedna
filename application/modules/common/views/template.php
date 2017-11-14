@@ -360,7 +360,7 @@
             <br>
             com seriedade e compromisso com nossos clientes.
             </p>
-            <h2 class="font-source-sans">
+            <h2>
                 Cimitarra Yachts.
                 <br>
                 A compra inteligente.
@@ -375,7 +375,7 @@
         <div class="wrap">
           <div class="row">
             <!-- OneFourth -->
-            <div class="one-fourth">
+            <div class="one-third">
               <img src="assets/images/logo-white.png" class="margin-bottom-md" alt="Cimitarra Yachts">
               <p>
                 Trabalhamos com as melhores embarcações. Garantindo luxo, sofisticação conforto e segurança.
@@ -384,7 +384,7 @@
             <!-- //OneFourth -->
             
             <!-- OneFourth -->
-            <div class="one-fourth text-center">
+            <div class="one-fifth text-center">
               <h6>Cimitarra</h6>
               <ul>
                 <li><a href="embarcacoes/detalhe/cimitarra/360/360-hard-top">360</a></li>
@@ -395,7 +395,7 @@
             <!-- //OneFourth -->
             
             <!-- OneFourth -->
-            <div class="one-fourth text-center footer-collumn-pull-left-adjust">
+            <div class="one-fifth text-center footer-collumn-pull-left-adjust">
               <h6>Cimitarra Yachts</h6>
               <ul>
                 <li><a href="embarcacoes/detalhe/cimitarra-yachts/540/540-fly">540</a></li>

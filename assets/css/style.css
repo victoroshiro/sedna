@@ -758,7 +758,10 @@ aside.above-footer	{float:left;width:100%;}
 .footer .circle:hover 	{background:#C5A97F;color:#fff;}
 
 
-.footer ul > li:before { left: 120px; }
+.footer ul > li:before { left: 86px; }
+@media (max-width: 480px) {
+	.footer ul > li:before { left: 120px; }
+}
 
 .copy 				{background:#2B3A42;color:#fff;font-size: 13px;}
 .copy p 				{float:left;padding:19px 0 15px;}
