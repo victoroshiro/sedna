@@ -191,7 +191,7 @@
 				<div class="timeline--text timeline--text">
 					<h2>2016</h2>
 					<span>
-						É inaugurada a nova fábrica Cimitarra, que proporciona maior capacidade de produção, localização estratégica e melhor qualidade de trabalho aos colaboradores.
+                                            É lançada a Cimitarra 640 com foco no aproveitamento dos espaços externos e design inspirado na Cimitarra 760, projetada na Itália.
 					</span>
 				</div>
 			</div>
