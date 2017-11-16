@@ -15,7 +15,7 @@
 		</section>
 		<!-- //Tab navigation -->
 
-		<section class="photo" style="background-image: url(assets/images/parallax/quem-somos.jpg);">
+		<section class="photo hidden-md-to-smaller" style="background-image: url(assets/images/parallax/quem-somos.jpg);">
 		</section>
 
 		<!-- Blog posts -->
