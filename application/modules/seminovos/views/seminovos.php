@@ -11,9 +11,9 @@
 		<!-- ThreeFourth -->
 		<div class="three-fourth">
 			<div class="row">
+                            <?php if(!empty($seminovos)): ?>
 				<!-- Item -->
 				<?php foreach ($seminovos as $key => $item): ?>
-					
 					<article class="one-half hentry">
 						<figure><a href="<?php echo site_url('seminovos/detalhe/'.$item->slug); ?>"><img src="<?php echo site_url('userfiles/seminovos/'.$item->imagem); ?>" alt="<?php echo $item->titulo; ?>" /></a></figure>
 						<div>
@@ -28,6 +28,15 @@
 				<!-- //Item -->
 							
                                 <?php echo $links ?>
+                            <?php else: ?>
+                            <article class="hentry">
+                                <div>
+                                    <div class="text">
+                                        <h3>Nenhum seminovo cadastrado</h3>
+                                    </div>
+                                </div>
+                            </article>
+                            <?php endif ?>
 			</div>
 		</div>
 		<!-- //ThreeFourth -->
