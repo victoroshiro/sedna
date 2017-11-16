@@ -128,39 +128,41 @@
 		<!-- //Photo -->
 		
 		<!-- Yachts -->
-		<div class="wrap center margin-top-lg">
-			<div class="full-width text-center">
-                <h2>
-                    Seminovos Cimitarra
-                    <br>
-                    <small>As melhores oportunidades você encontra aqui.</small>
-                </h2>
-			</div>
-		</div>
-		<div class="results">
-			<?php foreach ($seminovos as $key => $item): ?>
-				<!-- Item -->
-				<figure class="one-fourth item">
-                    <img src="<?php echo site_url('userfiles/seminovos/'.$item->imagem); ?>" alt="<?php echo $item->titulo; ?>" />
-					<figcaption>
-						<dl>
-							<dt><?php echo $item->titulo; ?></dt>
-						</dl>
-						<a href="<?php echo site_url('seminovos/detalhe/'.$item->slug); ?>" title="Saiba Mais" class="button small gold">Saiba Mais</a>
-					</figcaption>
-				</figure>
-				<!-- //Item -->
-			<?php endforeach ?>
-		</div>
-		<!-- //Yachts -->
+                <?php if (!empty($seminovos)): ?>
+                    <div class="wrap center margin-top-lg">
+                            <div class="full-width text-center">
+                    <h2>
+                        Seminovos Cimitarra
+                        <br>
+                        <small>As melhores oportunidades você encontra aqui.</small>
+                    </h2>
+                            </div>
+                    </div>
+                    <div class="results">
+                            <?php foreach ($seminovos as $key => $item): ?>
+                                    <!-- Item -->
+                                    <figure class="one-fourth item">
+                        <img src="<?php echo site_url('userfiles/seminovos/'.$item->imagem); ?>" alt="<?php echo $item->titulo; ?>" />
+                                            <figcaption>
+                                                    <dl>
+                                                            <dt><?php echo $item->titulo; ?></dt>
+                                                    </dl>
+                                                    <a href="<?php echo site_url('seminovos/detalhe/'.$item->slug); ?>" title="Saiba Mais" class="button small gold">Saiba Mais</a>
+                                            </figcaption>
+                                    </figure>
+                                    <!-- //Item -->
+                            <?php endforeach ?>
+                    </div>
+                    <!-- //Yachts -->
 
-		<div class="wrap center">
-			<div class="full-width text-center margin-top-md">
-				<a href="seminovos" class="button grey medium">Ver mais seminovos</a>
-			</div>
-		</div>
+                    <div class="wrap center">
+                            <div class="full-width text-center margin-top-md">
+                                    <a href="seminovos" class="button grey medium">Ver mais seminovos</a>
+                            </div>
+                    </div>
+                <?php endif ?>
 
-		<section class="news">
+		<section class="news margin-top-lg">
 			<div class="wrap center">
 				<div class="full-width text-center">
 					<h2>Notícias</h2>
