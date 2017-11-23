@@ -293,64 +293,6 @@
     <!-- //Header -->
 
         <?= $partial ?>
-
-    <!-- Bottom Sidebar 
-    <aside class="sidebar bottom navy" role="complementary">
-      <div class="wrap">
-        <div class="row">
-          <h2>Entre em contato conosco</h2>
-          <div class="one-fourth">
-            <h5>Loja</h5>
-            <p><span class="circle small"><i class="fa fa-phone fa-fw"></i></span> +55 (11) 2628.3065</p>
-            <p><span class="circle small"><i class="fa fa-envelope fa-fw"></i></span> <a href="mailto:contato@cimitarra.com.br">contato@cimitarra.com.br</a></p>
-            <p>
-              <span class="circle small"><i class="fa fa-map-marker fa-fw"></i></span>
-              Av. dos Bandeirantes, 4063
-              <br>
-              Planalto Paulista - São Paulo/SP
-            </p>
-          </div>
-
-          <div class="one-fourth">
-            <h5>Showroom</h5>
-            <p><span class="circle small"><i class="fa fa-phone fa-fw"></i></span> +55 (11) 2628.3065 <br> +55 (11) 99617.6035</p>
-            <p><span class="circle small"><i class="fa fa-envelope fa-fw"></i></span> <a href="mailto:contato@cimitarra.com.br">contato@cimitarra.com.br</a></p>
-            <p>
-              <span class="circle small"><i class="fa fa-map-marker fa-fw"></i></span>
-              Av. dos Bandeirantes, 4063
-              <br>
-              Planalto Paulista - São Paulo/SP
-            </p>
-          </div>
-          
-          
-          <div class="one-fourth">
-            <h5>Assistência Técnica</h5>
-            <p><span class="circle small"><i class="fa fa-phone fa-fw"></i></span> +55 (11) 2628.3065</p>
-            <p><span class="circle small"><i class="fa fa-envelope fa-fw"></i></span> <a href="mailto:contato@cimitarra.com.br">contato@cimitarra.com.br</a></p>
-            <p>
-              <span class="circle small"><i class="fa fa-map-marker fa-fw"></i></span>
-              Av. dos Bandeirantes, 4063
-              <br>
-              Planalto Paulista - São Paulo/SP
-            </p>
-          </div>
-
-          <div class="one-fourth">
-            <h5>Marina Astúrias</h5>
-            <p><span class="circle small"><i class="fa fa-phone fa-fw"></i></span> +55 (11) 2628.3065</p>
-            <p><span class="circle small"><i class="fa fa-envelope fa-fw"></i></span> <a href="mailto:contato@cimitarra.com.br">contato@cimitarra.com.br</a></p>
-            <p>
-              <span class="circle small"><i class="fa fa-map-marker fa-fw"></i></span>
-              Av. dos Bandeirantes, 4063
-              <br>
-              Planalto Paulista - São Paulo/SP
-            </p>
-          </div>
-        </div>
-      </div>
-    </aside>
-    -->
     
     <!-- Photo -->
     <section class="photo">
@@ -453,11 +395,10 @@
     <?php endif ?>
     <script async src="https://www.youtube.com/iframe_api"></script>
 
-    <?php if(isset($active) && $active == 'home'): ?>
+    <?php if(isset($active)): ?>
+      <?php if($active == 'home'): ?>
         <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
         <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
-          
-
         <script>
         $(document).ready(function() {
           $("#lightSliderMainBanner").slick({
@@ -469,6 +410,32 @@
           });
         });
         </script>
+      <?php endif ?>
+      <?php if($active == 'seminovos'): ?>
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+          <script type="text/javascript">
+            $('.slider-big').slick({
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              arrows: true,
+              adaptiveHeight: true,
+              prevArrow: '<button class="prev-arrow"><i class="fa fa-arrow-left"></i></button>',
+              nextArrow: '<button class="next-arrow"><i class="fa fa-arrow-right"></i></button>',
+              lazyLoad: 'ondemand',
+              asNavFor: '.slider-nav'
+            });
+            $('.slider-nav').slick({
+              slidesToShow: 9,
+              slidesToScroll: 1,
+              asNavFor: '.slider-big',
+              arrows: false,
+              dots: false,
+              centerMode: false,
+              focusOnSelect: true
+            });
+          </script>
+      <?php endif ?>
     <?php endif ?>
 
     <script>

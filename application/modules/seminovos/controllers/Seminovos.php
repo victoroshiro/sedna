@@ -72,6 +72,8 @@ class Seminovos extends CI_Controller {
     {
         $slug || show_404();
 
+        $this->data['active'] = 'seminovos';
+
         $this->data['seminovo'] = $this->Seminovos_m->get_seminovos(array('slug' => $slug));
 
         $this->data['seminovo'] || show_404();
@@ -79,6 +81,8 @@ class Seminovos extends CI_Controller {
         $this->data['description'] = $this->data["seminovo"]->description;
 
         $this->data['all_news'] = $this->Seminovos_m->get_seminovos(array('id' => $this->data['seminovo']->id));
+
+        $this->data['imagens'] = $this->Seminovos_m->get_imagens($this->data['seminovo']->id);
 
         // Menu
         $this->data['menu_embarcacoes_cim'] = $this->Embarcacoes_m->get_embarcacoes(array('categoria' => 'cimitarra'));

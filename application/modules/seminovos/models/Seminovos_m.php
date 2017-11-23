@@ -80,4 +80,25 @@ class Seminovos_m extends CI_Model
 
 		return $toReturn;
 	}
+
+	public function get_imagens($id_seminovo = false, $id_imagem = false, $tipo = false){ 
+	    $this->db->select('*')
+	        ->from('seminovos_imagens');
+
+	    if($id_seminovo && $tipo){
+	        $this->db->where('id_seminovo', $id_seminovo);
+	        $this->db->where('titulo', $tipo);
+	        $imagens = $this->db->get()->result();
+	    }else{
+	        $this->db->where('id_seminovo', $id_seminovo);
+	        $imagens = $this->db->get()->result();
+	    }
+
+	    if($id_imagem){
+	        $this->db->where('id', $id_imagem);
+	        $imagens = $this->db->get()->row();   
+	    }
+
+	    return $imagens;
+	}
 }

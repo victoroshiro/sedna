@@ -54,7 +54,6 @@
                             <td>
                                 <input type="checkbox" name="selecionar_todos" onclick="selecionar_todos(this)" id="selecionar_todos" value="" />
                             </td>
-                            <td>Data</td>
                             <td>Título</td>
                             <td>Data de Publicação</td>
                         </tr>
@@ -65,9 +64,6 @@
                                 <tr id="<?php echo $seminovo->id ?>">
                                     <td class="selecao text-center">
                                         <input type="checkbox" name="" id="" value="<?php echo $seminovo->id ?>" />
-                                    </td>
-                                    <td align="center" >
-                                        <?php echo $seminovo->data_seminovo_f; ?>
                                     </td>
                                     <td align="center" >
                                         <?php echo $seminovo->titulo; ?>

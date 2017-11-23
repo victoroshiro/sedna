@@ -14,8 +14,44 @@
 					<!-- ThreeFourth -->
 					<div class="three-fourth hentry">
 						<!-- Post Image -->
-						<div class="entry-featured">
-							<img src="<?php echo site_url('userfiles/seminovos/'.$seminovo->imagem); ?>" alt="<?php echo $seminovo->titulo; ?>" />
+						<div class="entry-featured seminovo">
+							<?php
+							    if($imagens){
+							?>
+							    <div class="slider-area">
+							        <div class="top-content">
+						                    <div class="slider-big">
+							            <?php
+						                        foreach ($imagens as $item) {
+							            ?>
+						                            <div class="photo-carousel">
+						                                <img src="<?php echo site_url('userfiles/seminovos/'.$item->imagem); ?>">
+						                            </div>
+							            <?php
+						                        }
+							            ?>
+						                    </div>
+							        </div>
+							        <div class="slider-nav">
+							            <?php
+							                foreach ($imagens as $item) {
+							                    $file_parts = explode('.', $item->imagem);
+							                    $thumb_name = $file_parts[0].'_thumb.'.$file_parts[1];
+							            ?>
+							                    <div class="thumb"><img src="<?php echo site_url('userfiles/seminovos/'.$thumb_name); ?>"></div>
+							            <?php
+							                }
+							            ?>
+							        </div>
+							    </div>
+							<?php
+							    }else{
+							?>
+									<img src="<?php echo site_url('userfiles/seminovos/'.$seminovo->imagem); ?>" alt="<?php echo $seminovo->titulo; ?>" />
+							<?php
+								}
+							?>
+
 						</div>
 						<!-- //Post Image -->
 						
