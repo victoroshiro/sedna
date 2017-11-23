@@ -289,6 +289,21 @@ class Seminovos extends CI_Controller {
         redirect('seminovos/editar/'.$data['id_seminovo'], 'location');
 
     }
+
+    public function exclui_imagem_galeria($id = false){
+        $id || show_404();
+
+        $imagem = $this->Seminovos_m->get_imagens(false, $id);
+
+        if($this->Seminovos_m->exclui_imagem_galeria($id)){
+            @unlink(dirname('userfiles/seminovos/'.$imagem->imagem));
+        }
+        
+        $this->session->set_flashdata('messages', 'Imagem excluída com sucesso.');
+        $this->session->set_flashdata('tab_gal', true);
+        
+        redirect('seminovos/editar/' . $imagem->id_seminovo, 'location');
+    }
 }
 
 ?>
