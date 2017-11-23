@@ -1,14 +1,11 @@
-
-
-
 <!-- Main -->
 	<main class="main" role="main">
-                <!-- Intro -->
-                <header class="intro">
-                    <div class="wrap">
-                        <h1>Seminovos</h1>
-                    </div>
-                </header>
+        <!-- Intro -->
+        <header class="intro">
+            <div class="wrap">
+                <h1>Seminovos</h1>
+            </div>
+        </header>
 		<!-- Content -->
 		<div class="content static">
 			<!-- Wrapper -->
@@ -27,6 +24,7 @@
 							<div class="box-white">
 								<h2><?php echo $seminovo->titulo; ?></h2>
 								<div class="wysiwyg-content">
+									<div class="resumo-barco-aberto"><?php echo $seminovo->resumo; ?></div>
 									<?php echo $seminovo->descricao; ?>
 								</div>
 							</div>

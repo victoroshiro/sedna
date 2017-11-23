@@ -583,7 +583,8 @@ div.border img 	{margin:0 auto;}
 .hentry .meta a:focus 			{color:#BB9C6F;}
 
 .entry-featured img 				{width:100%;}
-.entry-content h2				{font:500 21px 'Raleway',Arial,Helvetica,sans-serif;color:#515E64;padding:0 0 30px;}
+.entry-content h2{font:500 21px 'Raleway',Arial,Helvetica,sans-serif;color:#515E64;padding:0 0 30px;}
+.entry-content .wysiwyg-content .resumo-barco-aberto{margin-bottom: 10px;font-size: 16px;}
 .entry-content .meta				{margin:0 0 20px;}
 .entry-content .box-white 		{margin:0;padding:30px;border-top:none;}
 .entry-content .box-white p:last-child {padding:0;}
