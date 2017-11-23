@@ -101,6 +101,12 @@ class Seminovos extends CI_Controller {
             )
         );
 
+        $this->data['imagens'] = $this->Seminovos_m->get_imagens($id);
+
+        if($this->data['imagens']){
+            $this->data['imagens_group'] = array_chunk($this->data['imagens'], 3);
+        }
+
         $this->data['seminovo'] = $this->Seminovos_m->get_seminovos(array('id' => $id));
         
         $this->load->view('edita', $this->data);
@@ -238,6 +244,50 @@ class Seminovos extends CI_Controller {
             $error = array('error' => $this->upload->display_errors());
             return $error;
         }
+    }
+
+    public function atualiza_link()
+    {
+        $data = $this->input->post();
+
+        $response = array('status' => false, 'message' => 'Ocorreu um erro no envio. Tente novamente mais tarde.');
+
+        if($data){
+            $this->Seminovos_m->atualiza_link($data);
+
+            $response = array('status' => true, 'message' => 'Tipo atualizado com sucesso!');
+        }
+
+        echo json_encode($response);
+    }
+
+    function galeria(){
+
+        $data['id_seminovo'] = $this->input->post('id_seminovo');
+
+        $imagens = $this->Seminovos_m->upload_foto_galeria('imagem');
+        
+        if (isset($imagens) && $imagens != false) {
+            foreach ($imagens as $nome) {
+                
+                $data['imagem'] = $nome;
+                
+                $this->Seminovos_m->salva_imagens($data);
+            }
+
+            if(($data['id_seminovo'] && $data['id_seminovo'] != 0) && isset($data['imagem'])){
+                $this->session->set_flashdata('messages', 'Imagens cadastradas com sucesso.');
+                $this->session->set_flashdata('tab_gal', true);
+            }else{
+                $this->session->set_flashdata('errors', 'Ocorreu um erro. Verifique os campos e tente novamente mais tarde.');
+                $this->session->set_flashdata('tab_gal', true);
+            }
+        }
+
+        $imagens = $this->Seminovos_m->get_imagens($data['id_seminovo']);
+        
+        redirect('seminovos/editar/'.$data['id_seminovo'], 'location');
+
     }
 }
 

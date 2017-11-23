@@ -311,24 +311,24 @@
 			    		</form>
 		    		</div>
 		            <div role="tabpanel" class="tabs-imoveis tab-pane fade in" id="galeria">
-                                <form method="post" action="embarcacoes/galeria" id="form_galeria" enctype="multipart/form-data">
-                                    <input type="hidden" name="id_embarcacao" value="<?= $embarcacao->id; ?>" />
+                        <form method="post" action="embarcacoes/galeria" id="form_galeria" enctype="multipart/form-data">
+                            <input type="hidden" name="id_embarcacao" value="<?= $embarcacao->id; ?>" />
 
-                                    <div id="acoes" class="text-right margin-top-s">
-                                        <input class="btn btn-default" type="button" onclick="location.href = 'embarcacoes'" value="Cancelar" />
-                                        <input class="btn btn-success" type="submit" value="Salvar" />
-                                    </div>
+                            <div id="acoes" class="text-right margin-top-s">
+                                <input class="btn btn-default" type="button" onclick="location.href = 'embarcacoes'" value="Cancelar" />
+                                <input class="btn btn-success" type="submit" value="Salvar" />
+                            </div>
 
-                                    <fieldset class="form-galeria">
-                                        <p class="disclaimer"><u>*Cadastre várias imagens por vez.</u></p>
-                                        <p>
-                                        <label for="lf" class="label-img-galeria">Imagem (800 x 600): </label>
-                                        <input type="file" multiple name="imagem[]" />
-                                        <span class="validate_error"></span>
-                                        <span class="validate_success"></span>
-                                        </p>
-                                    </fieldset>
-                                </form>
+                            <fieldset class="form-galeria">
+                                <p class="disclaimer"><u>*Cadastre várias imagens por vez.</u></p>
+                                <p>
+                                <label for="lf" class="label-img-galeria">Imagem (800 x 600): </label>
+                                <input type="file" multiple name="imagem[]" />
+                                <span class="validate_error"></span>
+                                <span class="validate_success"></span>
+                                </p>
+                            </fieldset>
+                        </form>
 		        	        
 	        	        <div class="container">
 	        	            <fieldset class="lista-galeria">
@@ -374,24 +374,23 @@
 	        	        </div>		            	
 		            </div>
 
+                    <div role="tabpanel" class="tabs-imoveis tab-pane fade in" id="panorama">
+                        <form method="post" action="embarcacoes/panorama" id="form_galeria" enctype="multipart/form-data">
+                            <input type="hidden" name="id_embarcacao" value="<?= $embarcacao->id; ?>" />
 
-                            <div role="tabpanel" class="tabs-imoveis tab-pane fade in" id="panorama">
-                                <form method="post" action="embarcacoes/panorama" id="form_galeria" enctype="multipart/form-data">
-                                    <input type="hidden" name="id_embarcacao" value="<?= $embarcacao->id; ?>" />
+                            <div id="acoes" class="text-right margin-top-s">
+                                <input class="btn btn-default" type="button" onclick="location.href = 'embarcacoes'" value="Cancelar" />
+                                <input class="btn btn-success" type="submit" value="Salvar" />
+                            </div>
 
-                                    <div id="acoes" class="text-right margin-top-s">
-                                        <input class="btn btn-default" type="button" onclick="location.href = 'embarcacoes'" value="Cancelar" />
-                                        <input class="btn btn-success" type="submit" value="Salvar" />
-                                    </div>
-
-                                    <fieldset class="form-galeria">
-                                        <p class="disclaimer"><u>*Cadastre várias imagens por vez.</u></p>
-                                        <p>
-                                            <label for="lf" class="label-img-galeria">Imagem: </label>
-                                            <input type="file" multiple name="imagem[]" />
-                                        </p>
-                                    </fieldset>
-                                </form>
+                            <fieldset class="form-galeria">
+                                <p class="disclaimer"><u>*Cadastre várias imagens por vez.</u></p>
+                                <p>
+                                    <label for="lf" class="label-img-galeria">Imagem: </label>
+                                    <input type="file" multiple name="imagem[]" />
+                                </p>
+                            </fieldset>
+                        </form>
 		        	        
 	        	        <div class="container">
 	        	            <fieldset class="lista-galeria">
