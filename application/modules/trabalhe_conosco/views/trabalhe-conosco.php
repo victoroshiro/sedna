@@ -53,7 +53,9 @@
 					</form>
 				</div>
 			</div>
-			<div class="one-half"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.6306871698516!2d-46.66299648502114!3d-23.617574384655025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a6d8838cae5%3A0x53fba56ab556aaf1!2sAv.+dos+Bandeirantes%2C+4063+-+Planalto+Paulista%2C+S%C3%A3o+Paulo+-+SP!5e0!3m2!1sen!2sbr!4v1504621483125" width="1000" height="800" frameborder="0" style="border:0"></iframe></div>
+			<div class="one-half">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.1637887839734!2d-51.199447385222065!3d-30.032158581886776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95197834f02e75ed%3A0x39ab3c65d4e274f7!2sR.+Quintino+Bocai%C3%BAva%2C+1587+-+Floresta%2C+Porto+Alegre+-+RS%2C+90440-051!5e0!3m2!1sen!2sbr!4v1513014499017" width="1000" height="800" frameborder="0" style="border:0"></iframe>
+			</div>
 		</article>
 		<!-- //Item -->
 	</div>
