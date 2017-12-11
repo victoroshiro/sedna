@@ -12,6 +12,7 @@
 		<article class="full-width hentry">
 			<div class="one-half">
 				<div class="text">
+					<p>Acesse o nosso Linkedln: <a href="https://www.linkedin.com/company/cimitarrayachts/" target="_blank"><i class="fa fa-linkedin-square trabalhe"></i></p>
 					<form method="post" action="<?php echo site_url('trabalhe-conosco/send') ?>" name="contactform" id="contactform" class="workhere">
 						<fieldset>
 							<div id="message_result"></div>
