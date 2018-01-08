@@ -64,8 +64,8 @@
               </div>
               <div class="language">
                 <ul>
-                  <li><a href="en" class="flag en"><img src="<?php echo site_url('assets/images/flag/btn_en.png'); ?>" alt="English"></a></li>
-                  <li><a href="es" class="flag es"><img src="<?php echo site_url('assets/images/flag/btn_es.png'); ?>" alt="Español"></a></li>
+                  <!-- <li><a href="en" class="flag en"><img src="<?php echo site_url('assets/images/flag/btn_en.png'); ?>" alt="English"></a></li> -->
+                  <!-- <li><a href="es" class="flag es"><img src="<?php echo site_url('assets/images/flag/btn_es.png'); ?>" alt="Español"></a></li> -->
                   <li><img src="assets/images/favicon.png"> Acesse nossas redes sociais:</li>
                 </ul>
               </div>
