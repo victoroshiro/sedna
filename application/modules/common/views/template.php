@@ -330,7 +330,7 @@
               <ul>
                 <li><a href="embarcacoes/detalhe/cimitarra/360/360-hard-top">360</a></li>
                 <li><a href="embarcacoes/detalhe/cimitarra/400/400-hard-top">400</a></li>
-                <li><a href="embarcacoes/detalhe/cimitarra/460/460-fly">460</a></li>                
+                <li><a href="embarcacoes/detalhe/cimitarra/460/460-fly-bridge">460</a></li>                
               </ul>
             </div>
             <!-- //OneFourth -->
@@ -339,10 +339,10 @@
             <div class="one-fifth text-center footer-collumn-pull-left-adjust">
               <h6>Cimitarra Yachts</h6>
               <ul>
-                <li><a href="embarcacoes/detalhe/cimitarra-yachts/540/540-fly">540</a></li>
-                <li><a href="embarcacoes/detalhe/cimitarra-yachts/600/600-fly">600</a></li>
+                <li><a href="embarcacoes/detalhe/cimitarra-yachts/540/540-fly-bridge">540</a></li>
+                <li><a href="embarcacoes/detalhe/cimitarra-yachts/600/600-fly-bridge">600</a></li>
                 <li><a href="embarcacoes/detalhe/cimitarra-yachts/640/640-fly-bridge">640</a></li>
-                <li><a href="embarcacoes/detalhe/cimitarra-yachts/780/780-fly">780</a></li>
+                <li><a href="embarcacoes/detalhe/cimitarra-yachts/780/780-fly-bridge">780</a></li>
               </ul>
             </div>
             <!-- //OneFourth -->
