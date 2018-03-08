@@ -118,10 +118,13 @@
 			// CONTACT FORM
 			$('.contactform').submit(function(){
 				var action = $(this).attr('action');
+                                // create the success url based on the actual url
+                                var successUrl = 'success-' + document.location.pathname.split('/').pop()
+
 				$("#message_result").show(500,function() {
 				$('#message_result').hide();
 				$('#submit')
-					.after('<img src="images/contact-ajax-loader.gif" class="loader" />')
+                                        .after('<img src="assets/images/contact-ajax-loader.gif" class="loader" />')
 					.attr('disabled','disabled');
 				
 				$.post(action, { 
@@ -137,6 +140,9 @@
 					var returned = JSON && JSON.parse(data) || $.parseJSON(data);
 					document.getElementById('message_result').innerHTML = returned.message;
 					document.getElementById('message_result').style.display = "block";
+                                        if (returned.status) {
+                                            gtag('config', 'UA-115391906-1', {'page_path': successUrl});
+                                        }
 					$('#message_result').slideDown('slow');
 					$('#contactform img.loader').fadeOut('slow',function(){$(this).remove()});
 					$('#submit').removeAttr('disabled'); 
@@ -150,12 +156,12 @@
 			$('.workhere').submit(function(){
 				var action = $(this).attr('action');
 				$("#message_result").show(500,function() {
-					$('#message_result').hide();
-					$('#submit')
-						.after('<img src="images/contact-ajax-loader.gif" class="loader" />')
-						.attr('disabled','disabled');
+                                    $('#message_result').hide();
+                                    $('#submit')
+                                        .after('<img src="assets/images/contact-ajax-loader.gif" class="loader" />')
+                                        .attr('disabled','disabled');
 
-					var form = $('.workhere').get(0);
+                                    var form = $('.workhere').get(0);
 					
 				    $.ajax({
 				        url: window.location.pathname + '/send',
@@ -163,12 +169,15 @@
 				        data: new FormData(form),
 				        async: false,
 				        success: function (response) {
-							var returned = JSON && JSON.parse(response) || $.parseJSON(response);
-							document.getElementById('message_result').innerHTML = returned.message;
-							document.getElementById('message_result').style.display = "block";
-							$('#message_result').slideDown('slow');
-							$('#contactform img.loader').fadeOut('slow',function(){$(this).remove()});
-							$('#submit').removeAttr('disabled'); 
+                                            var returned = JSON && JSON.parse(response) || $.parseJSON(response);
+                                            document.getElementById('message_result').innerHTML = returned.message;
+                                            document.getElementById('message_result').style.display = "block";
+                                            if (returned.status) {
+                                                gtag('config', 'UA-115391906-1', {'page_path': 'success-work-with-us'});
+                                            }
+                                            $('#message_result').slideDown('slow');
+                                            $('#contactform img.loader').fadeOut('slow',function(){$(this).remove()});
+                                            $('#submit').removeAttr('disabled'); 
 				        },
 				        cache: false,
 				        contentType: false,

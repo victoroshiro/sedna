@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <base href="<?php echo site_url(); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="Sailor - Yacht Charter Booking HTML Template" />
+    <meta name="keywords" content="Cimitarra Yachts" />
     
     <?php if (!empty($description)): ?>
         <meta name="description" content="<?= $description ?>">
@@ -15,7 +15,7 @@
     <?php if (!empty($title)): ?>
         <title><?php echo $title ?></title>
     <?php else: ?>
-        <title>Cimitarra Yachts - Home</title>
+        <title>Cimitarra Yachts</title>
     <?php endif ?>
     
     <link rel="stylesheet" href="assets/css/style.css" />
@@ -461,6 +461,16 @@
         
         new WOW().init();
       });
+    </script>
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115391906-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-115391906-1');
     </script>
   </body>
 </html>
