@@ -1585,13 +1585,53 @@ div[id^="panorama-"] {
 	font-size: 50px;
 }
 
-.wysiwyg-content img {
-    height: auto !important;
+.wysiwyg-content h1,
+.wysiwyg-content h2,
+.wysiwyg-content h3,
+.wysiwyg-content h4,
+.wysiwyg-content h5,
+.wysiwyg-content h6
+{ 
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 0;
+    font-size: 30px;
 }
 
 .wysiwyg-content img {
     max-width: 100% !important;
+    height: auto !important;
 }
+
+.wysiwyg-content h1 + p,
+.wysiwyg-content h2 + p,
+.wysiwyg-content h3 + p,
+.wysiwyg-content h4 + p,
+.wysiwyg-content h5 + p,
+.wysiwyg-content h6 + p
+{
+    margin-top: 0;
+}
+
+.wysiwyg-content ul{
+    padding-left: 15px;
+}
+
+.wysiwyg-content ul, li {
+    list-style: disc;
+    display: list-item;
+}
+
+.wysiwyg-content ul {
+    display: block;
+}
+
+
+
+
+
+
+
 /* 30 PRINT CSS*/
 @media print {
   * {color: #000 !important;text-shadow: none !important;background: transparent !important;-webkit-box-shadow: none !important;box-shadow: none !important;font-size:10pt !important;}
