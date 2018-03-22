@@ -16,7 +16,7 @@
                             <div class="text">
                                 <h4>Contato</h4>
                                 <p>
-                                +55 (11) 99617.6035
+                                +55 (11) 99617.6035 / (11) 2307-7007
                                 </p>
                                 <p>
                                 contato@cimitarra.com.br
