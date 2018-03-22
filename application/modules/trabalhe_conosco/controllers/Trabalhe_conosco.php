@@ -145,7 +145,7 @@ class Trabalhe_conosco extends CI_Controller {
         $mensagem_cliente .= '<br>';
         $mensagem_cliente .= 'Em breve entraremos em contato.';
         $mensagem_cliente .= '<br>';
-        $mensagem_cliente .= 'Tel.: +55 (11) 26283065 | +55 (11) 2628.3065 | +55 (11) 99617.6035';    
+        $mensagem_cliente .= 'Tel.: +55 (11) 99617.6035 / (11) 2307-7007';
         $mensagem_cliente .= '<br>';
         $mensagem_cliente .= '<a href="http://cimitarra.com.br/">cimitarra.com.br/</a>';
         $mensagem_cliente .= '</p>';
