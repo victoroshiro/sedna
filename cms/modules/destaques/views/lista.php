@@ -60,11 +60,6 @@
                                             <img src="<?php echo site_url('../userfiles/destaques/'.$destaque->imagem); ?>" width="200px" />
                                         </a>
                                         <?php endif ?>
-                                        <?php if ($destaque->video_destaque == 1): ?>
-                                            <a href="<?php echo base_url('destaques/editar/'.$destaque->id); ?>">
-                                                <img src="https://img.youtube.com/vi/<?php echo $destaque->video_id ?>/0.jpg" width="200px" />
-                                            </a>
-                                        <?php endif; ?>
                                     </td>
                                     <td align="center"><?php echo $destaque->titulo; ?></td>
                                     <td align="center">

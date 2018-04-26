@@ -32,8 +32,16 @@
 </div>
 
 <div class="form-group">
-    <label for="lf">Resumo: </label>
-    <textarea name="resumo" id="resumo" class="form-control" rows="3"><?= @$destaque->resumo ?></textarea>
+    <label for="lf">Categoria: </label>
+    <select name="categoria" id="categoria" class="form-control">
+        <?php if (@$destaque->categoria == 0): ?>
+            <option value="0" selected="selected">Cimitarra</option>
+            <option value="1">Cimitarra Yachts</option>
+        <?php else: ?>
+            <option value="0">Cimitarra</option>
+            <option value="1" selected="selected">Cimitarra Yachts</option>
+        <?php endif ?>
+    </select>
 </div>
 
 <div class="form-group">
