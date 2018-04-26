@@ -75,7 +75,7 @@
     </div>
 <?php endif ?>
 <div class="form-group">
-    <label for="imagem">Imagem (1900x909px): </label>
+    <label for="imagem">Imagem (480x280px): </label>
     <input name="imagem" id="imagem" type="file" />
     <span class="validate_error"></span>
     <span class="validate_success"></span>

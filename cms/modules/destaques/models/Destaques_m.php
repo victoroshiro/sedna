@@ -76,8 +76,8 @@ class Destaques_m extends CI_Model {
             //     $config_img['height'] = '2000';
             // }
 
-            $config_img['width'] = 1900;
-            $config_img['height'] = 909;
+            $config_img['width'] = 410;
+            $config_img['height'] = 280;
 
 
             $this->image_lib->initialize($config_img);
