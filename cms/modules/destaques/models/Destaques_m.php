@@ -68,14 +68,6 @@ class Destaques_m extends CI_Model {
             $config_img['maintain_ratio'] = FALSE;
             $config_img['encrypt_name'] = TRUE;
 
-            // if ($size[0] > $size[1]) {
-            //     $config_img['width'] = '2000';
-            //     $config_img['height'] = $size[1];
-            // } else {
-            //     $config_img['width'] = $size[0];
-            //     $config_img['height'] = '2000';
-            // }
-
             $config_img['width'] = 410;
             $config_img['height'] = 280;
 

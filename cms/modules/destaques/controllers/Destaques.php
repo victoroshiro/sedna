@@ -38,14 +38,12 @@ class Destaques extends CI_Controller {
         $data['habilitado'] = $this->input->post("habilitado");
 
         $imagem = $this->destaques_m->upload_foto('imagem');
-         
+
         if (!is_array($imagem) && isset($imagem)) {
             if (!is_array($imagem)) {
                 $data['imagem'] = $imagem;
             }
         }
-        
-        $data['video_id'] = get_youtube_id($data['video_id']);
 
         $this->db->insert('destaques', $data);
         $this->session->set_flashdata('messages', 'Destaque inserida com sucesso.');
