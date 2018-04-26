@@ -86,8 +86,6 @@ class Destaques extends CI_Controller {
             }
         }
 
-        $data['video_id'] = get_youtube_id($data['video_id']);
-
         if ($this->destaques_m->atualizar($data, $dataWhere)) {
             $this->session->set_flashdata('messages', 'Destaque atualizado com sucesso.');
             redirect('destaques', 'location');
