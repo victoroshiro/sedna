@@ -48,4 +48,16 @@ class Home_m extends CI_Model
         
         return $toReturn;
     }
+    
+    public function get_destaques()
+    {
+        $this->db->select('*')
+                 ->from('destaques')
+                 ->where('habilitado', 1)
+                 ->order_by('sort', 'asc');
+        
+        $destaques = $this->db->get();
+        
+        return ($destaques->num_rows()) ? $destaques->result() : false;
+    }
 }

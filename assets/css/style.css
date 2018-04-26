@@ -1626,8 +1626,16 @@ div[id^="panorama-"] {
     display: block;
 }
 
+.wrap.wrap-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
-
+.wrap-flex > * {
+    max-width: 100%;
+    flex-shrink: 0;
+}
 
 
 
