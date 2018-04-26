@@ -1,14 +1,14 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed');
 
-class Banners_m extends CI_Model {
+class Destaques_m extends CI_Model {
 
     public function __construct() {
         parent::__construct();
     }
     
-    public function get_banner_sort($sort){
+    public function get_destaque_sort($sort){
         $this->db->select('*');
-        $this->db->from('banners');
+        $this->db->from('destaques');
         $this->db->where('sort', $sort);
         
         return $this->db->get()->result();
@@ -16,19 +16,19 @@ class Banners_m extends CI_Model {
 
     public function get_sort() {
         $this->db->select('sort');
-        $this->db->from('banners');
+        $this->db->from('destaques');
 
         $result = $this->db->get()->num_rows();
         return $result + 1;
     }
 
-    public function count_banners(){
-        return $this->db->count_all('banners');
+    public function count_destaques(){
+        return $this->db->count_all('destaques');
     }
 
-    public function get_banners($status = "") {
+    public function get_destaques($status = "") {
         $this->db->select('*');
-        $this->db->from('banners');
+        $this->db->from('destaques');
 
         if ($status != '') {
             $this->db->where('habilitado', $status);
@@ -40,7 +40,7 @@ class Banners_m extends CI_Model {
     }
 
     public function upload_foto($field) {
-        $dir = dirname(getcwd()).'/userfiles/banners/';
+        $dir = dirname(getcwd()).'/userfiles/destaques/';
 
 
         $config['upload_path'] = $dir;
@@ -91,38 +91,38 @@ class Banners_m extends CI_Model {
         }
     }
 
-    public function get_banner($id) {
+    public function get_destaque($id) {
         $this->db->select("*");
-        $this->db->from("banners");
+        $this->db->from("destaques");
         $this->db->where("id", $id);
         return $this->db->get()->row();
     }
 
     public function salvar($data) {
-        $this->db->insert('banners', $data);
+        $this->db->insert('destaques', $data);
         return true;
     }
 
     public function atualizar($data, $dataWhere) {
-        $this->db->update('banners', $data, $dataWhere);
+        $this->db->update('destaques', $data, $dataWhere);
         return true;
     }
 
     public function excluir($id) {
-        $banner = $this->get_banner($id);
-        $dir = dirname(getcwd()).'/userfiles/banners/';
+        $destaque = $this->get_destaque($id);
+        $dir = dirname(getcwd()).'/userfiles/destaques/';
 
-        if ($this->db->delete('banners', array('id' => $id))){
-            @unlink($dir.$banner->imagem);
+        if ($this->db->delete('destaques', array('id' => $id))){
+            @unlink($dir.$destaque->imagem);
             return true;
         }else{
             return false;
         }
     }
 
-    public function get_imagem_banner($id) {
+    public function get_imagem_destaque($id) {
         $this->db->select('imagem');
-        $this->db->from('banners');
+        $this->db->from('destaques');
         $this->db->where('id', $id);       
 
         $query = $this->db->get();
@@ -130,9 +130,9 @@ class Banners_m extends CI_Model {
         return ($query->num_rows()) ? $query->row() : false;
     }
 
-    public function get_imagem_banner2($id) {
+    public function get_imagem_destaque2($id) {
         $this->db->select('imagem2');
-        $this->db->from('banners');
+        $this->db->from('destaques');
         $this->db->where('id', $id);       
 
         return $this->db->get()->row();
@@ -140,12 +140,12 @@ class Banners_m extends CI_Model {
 
     public function rearrange()
     {
-        $result = $this->db->get('banners')->result();
+        $result = $this->db->get('destaques')->result();
         $x = 1;
-        foreach ($result as $banner) {
-            $this->db->where('id', $banner->id);
+        foreach ($result as $destaque) {
+            $this->db->where('id', $destaque->id);
             $this->db->set('sort', $x);
-            $this->db->update('banners');
+            $this->db->update('destaques');
             $x++;
         }        
         echo 'valeu! >:)';
@@ -155,7 +155,7 @@ class Banners_m extends CI_Model {
     {
         $this->db->set('sort', $sort);
         $this->db->where('id', $id);
-        $this->db->update('banners');
+        $this->db->update('destaques');
         return true;
     }
 

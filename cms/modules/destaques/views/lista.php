@@ -15,21 +15,21 @@
         <!-- Main Content -->
         <div class="container">
             <div id="main">
-                <h1>Banners</h1>
+                <h1>Destaques</h1>
 
                 <?php $this->load->view('admin/inc/messages') ?>
                 <div id="acoes" class="text-right">
-                    <form action="<?php echo site_url('banners/salvar_ordem'); ?>" method="POST" class="pull-left">
+                    <form action="<?php echo site_url('destaques/salvar_ordem'); ?>" method="POST" class="pull-left">
                         <input type="hidden" value="" name="new_order_array" class="new_order_input">
                         <button class="btn btn-success reorder_button" disabled>
                             Salvar Ordem
                         </button>
                     </form>
 
-                    <div class="btn btn-danger" name="excluir-registros" data-module="banners">
+                    <div class="btn btn-danger" name="excluir-registros" data-module="destaques">
                         Excluir
                     </div>
-                    <a class="btn btn-default" href="<?php echo site_url('banners/cria'); ?>">                                    
+                    <a class="btn btn-default" href="<?php echo site_url('destaques/cria'); ?>">                                    
                         Incluir
                     </a>
                 </div>
@@ -47,34 +47,34 @@
                         </tr>
                     </thead>
                     <tbody class="text-center" id="sortable">
-                        <?php if ($banners): ?>
-                            <?php foreach ($banners as $key => $banner): ?>
-                                <tr id="<?php echo $banner->id ?>">
+                        <?php if ($destaques): ?>
+                            <?php foreach ($destaques as $key => $destaque): ?>
+                                <tr id="<?php echo $destaque->id ?>">
                                     <td>
                                         <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>  
                                     </td>
-                                    <td class="selecao"><input type="checkbox" name="" id="" value="<?php echo $banner->id ?>" /></td>
+                                    <td class="selecao"><input type="checkbox" name="" id="" value="<?php echo $destaque->id ?>" /></td>
                                     <td>
-                                        <?php if ($banner->imagem): ?>
-                                        <a href="<?php echo base_url('banners/editar/'.$banner->id); ?>">
-                                            <img src="<?php echo site_url('../userfiles/banners/'.$banner->imagem); ?>" width="200px" />
+                                        <?php if ($destaque->imagem): ?>
+                                        <a href="<?php echo base_url('destaques/editar/'.$destaque->id); ?>">
+                                            <img src="<?php echo site_url('../userfiles/destaques/'.$destaque->imagem); ?>" width="200px" />
                                         </a>
                                         <?php endif ?>
-                                        <?php if ($banner->video_banner == 1): ?>
-                                            <a href="<?php echo base_url('banners/editar/'.$banner->id); ?>">
-                                                <img src="https://img.youtube.com/vi/<?php echo $banner->video_id ?>/0.jpg" width="200px" />
+                                        <?php if ($destaque->video_destaque == 1): ?>
+                                            <a href="<?php echo base_url('destaques/editar/'.$destaque->id); ?>">
+                                                <img src="https://img.youtube.com/vi/<?php echo $destaque->video_id ?>/0.jpg" width="200px" />
                                             </a>
                                         <?php endif; ?>
                                     </td>
-                                    <td align="center"><?php echo $banner->titulo; ?></td>
+                                    <td align="center"><?php echo $destaque->titulo; ?></td>
                                     <td align="center">
-                                        <?php if ($banner->habilitado == 1): ?>
+                                        <?php if ($destaque->habilitado == 1): ?>
                                             Sim
                                         <?php else: ?>
                                             Não
                                         <?php endif ?>
                                     </td>
-                                    <td align="center"><a href="<?php echo site_url('banners/editar/'.$banner->id); ?>">Modificar</a></td>
+                                    <td align="center"><a href="<?php echo site_url('destaques/editar/'.$destaque->id); ?>">Modificar</a></td>
                                 </tr>
                             <?php endforeach ?>
                         <?php else: ?>
@@ -86,17 +86,17 @@
                 </table>
 
                 <div id="acoes" class="text-right">
-                    <form action="<?php echo site_url('banners/salvar_ordem'); ?>" method="POST" class="pull-left">
+                    <form action="<?php echo site_url('destaques/salvar_ordem'); ?>" method="POST" class="pull-left">
                         <input type="hidden" value="" name="new_order_array" class="new_order_input">
                         <button class="btn btn-success reorder_button" disabled>
                             Salvar Ordem
                         </button>
                     </form>
 
-                    <div class="btn btn-danger" name="excluir-registros" data-module="banners">
+                    <div class="btn btn-danger" name="excluir-registros" data-module="destaques">
                         Excluir
                     </div>
-                    <a class="btn btn-default" href="<?php echo site_url('banners/cria'); ?>">                                    
+                    <a class="btn btn-default" href="<?php echo site_url('destaques/cria'); ?>">                                    
                         Incluir
                     </a>
                 </div>

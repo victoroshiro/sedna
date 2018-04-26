@@ -14,20 +14,20 @@
         
         <!-- Main Content -->
         <div class="container">
-            <h1>Edição de Banners</h1>
+            <h1>Edição de Destaques</h1>
             <?php $this->load->view('admin/inc/messages') ?>
 
-            <form method="post" action="banners/atualizar" id="form_banners" enctype="multipart/form-data">
-                <input type="hidden" name="id" value="<?php echo $banner->id; ?>" />
+            <form method="post" action="destaques/atualizar" id="form_destaques" enctype="multipart/form-data">
+                <input type="hidden" name="id" value="<?php echo $destaque->id; ?>" />
                 <div id="acoes" class="text-right">
-                    <input class="btn btn-default" type="button" onclick="location.href = 'banners'" value="Cancelar" />
+                    <input class="btn btn-default" type="button" onclick="location.href = 'destaques'" value="Cancelar" />
                     <input class="btn btn-success" type="submit" value="Salvar" />
                 </div>
                 
-                <?php include 'banners_form.php' ?>
+                <?php include 'form.php' ?>
 
                 <div id="acoes" class="text-right">
-                    <input class="btn btn-default" type="button" onclick="location.href = 'banners'" value="Cancelar" />
+                    <input class="btn btn-default" type="button" onclick="location.href = 'destaques'" value="Cancelar" />
                     <input class="btn btn-success" type="submit" value="Salvar" />
                 </div>
             </form>
