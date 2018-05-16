@@ -263,10 +263,7 @@
 				$('html').animate({ 'scrollTop': scrollToPosition }, 0);
 			});
 		}
+		sailor.load();
 	});
 	
-	$(window).on('load', function() {
-		sailor.load();
-	});	
-
 })(jQuery);

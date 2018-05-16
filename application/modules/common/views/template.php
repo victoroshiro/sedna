@@ -392,20 +392,26 @@
         </script>
 	
     <?php endif ?>
-    <script async src="https://www.youtube.com/iframe_api"></script>
 
     <?php if(isset($active)): ?>
       <?php if($active == 'home'): ?>
         <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
         <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+        <script async src="https://www.youtube.com/iframe_api"></script>
         <script>
         $(document).ready(function() {
           $("#lightSliderMainBanner").slick({
             adaptiveHeight: true,
             prevArrow: $(".slick-nav .prev"),
-            nextArrow: $(".slick-nav .next")
+            nextArrow: $(".slick-nav .next"),
             // loop: true,
             // pager: false
+            responsive: [
+            {
+                breakpoint: 480,
+                settings: "unslick"
+            }
+            ]
           });
         });
         </script>
