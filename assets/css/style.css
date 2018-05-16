@@ -1361,6 +1361,16 @@ h2 > small {
 
 .banner-container {
     position: relative;
+    background: #404041 url('../images/loading.gif') center no-repeat;
+
+}
+
+.banner-container:before {
+  content: "\f110";
+  font-family: FontAwesome;
+  font-size:20px;
+  position: absolute;
+  top: 0; 
 }
 
 .slick-arrow {
