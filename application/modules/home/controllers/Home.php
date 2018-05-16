@@ -28,7 +28,8 @@ class Home extends CI_Controller {
 
         $this->data["seminovos"] = $this->Seminovos_m->get_seminovos(
             array(
-                'limit' => $limit_results
+                'limit' => $limit_results,
+                'highlights' => TRUE,
             )
         );
         
