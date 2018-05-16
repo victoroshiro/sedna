@@ -24,6 +24,7 @@ $tipo = $this->session->userdata('tipo');
               <ul class="dropdown-menu">
                 <li><a href="<?php echo site_url('banners'); ?>">Banners</a></li>
                 <li><a href="<?php echo site_url('quem_somos'); ?>">Quem Somos</a></li>
+                <li><a href="<?php echo site_url('destaques'); ?>">Destaques</a></li>
               </ul>
             </li>
             <li class="dropdown">

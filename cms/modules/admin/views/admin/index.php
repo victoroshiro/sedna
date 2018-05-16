@@ -28,6 +28,15 @@
                         </div>
                         <div class="col-md-2">
                             <div class="thumbnail text-center">
+                                <a href="<?php echo site_url('destaques'); ?>">
+                                    <span class="font-lg glyphicon glyphicon-picture"></span>
+                                    <div class="caption">Embarcações (Home)
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="thumbnail text-center">
                                 <a href="<?php echo site_url('noticias'); ?>">
                                     <span class="font-lg glyphicon glyphicon-list-alt"></span>
                                     <div class="caption">Notícias

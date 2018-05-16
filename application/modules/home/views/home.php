@@ -87,35 +87,32 @@
                                             <h2>Linha Cimitarra</h2>
                                     </div>
                             </div>
-                            <div class="wrap">
-                                    <div class="one-third">
-                                            <a href="embarcacoes/detalhe/cimitarra/360/360-hard-top" class="zoom-image"><img src="assets/images/embarcacoes/home/360.jpg"></a>
-                                    </div>
-                                    <div class="one-third">
-                                            <a href="embarcacoes/detalhe/cimitarra/400/400-hard-top" class="zoom-image"><img src="assets/images/embarcacoes/home/400.jpg"></a>
-                                    </div>
-                                    <div class="one-third">
-                                            <a href="embarcacoes/detalhe/cimitarra/460/460-fly-bridge" class="zoom-image"><img src="assets/images/embarcacoes/home/460.jpg"></a>
-                                    </div>
+                            <div class="wrap wrap-flex">
+                                <?php foreach ($destaques as $destaque_cim): ?>
+                                    <?php if ($destaque_cim->categoria == 0 ): ?> 
+                                        <div class="one-third">
+                                            <a href="<?php echo $destaque_cim->link ?>" class="zoom-image">
+                                                <img src="userfiles/destaques/<?php echo $destaque_cim->imagem ?>">
+                                            </a>
+                                        </div>
+                                    <?php endif; ?>
+                                <?php endforeach; ?>
                             </div>
                             <div class="wrap center">
                                     <div class="text-center">
                                             <h2>Linha Cimitarra Yachts</h2>
                                     </div>
                             </div>
-                            <div class="wrap">
-                                    <div class="one-third">
-                                            <a href="embarcacoes/detalhe/cimitarra-yachts/540/540-fly-bridge" class="zoom-image"><img src="assets/images/embarcacoes/home/540.jpg"></a>
-                                    </div>
-                                    <div class="one-third">
-                                            <a href="embarcacoes/detalhe/cimitarra-yachts/600/600-fly-bridge" class="zoom-image"><img src="assets/images/embarcacoes/home/600.jpg"></a>
-                                    </div>
-                                    <div class="one-third">
-                                            <a href="embarcacoes/detalhe/cimitarra-yachts/640/640-fly-bridge" class="zoom-image"><img src="assets/images/embarcacoes/home/640.jpg"></a>
-                                    </div>
-                                    <div class="one-third one-third-center">
-                                            <a href="embarcacoes/detalhe/cimitarra-yachts/780/780-fly-bridge" class="zoom-image"><img src="assets/images/embarcacoes/home/780.jpg"></a>
-                                    </div>
+                            <div class="wrap wrap-flex">
+                                <?php foreach ($destaques as $destaque_cim_yachts): ?>
+                                    <?php if ($destaque_cim_yachts->categoria == 1 ): ?> 
+                                        <div class="one-third">
+                                            <a href="<?php echo $destaque_cim_yachts->link ?>" class="zoom-image">
+                                                <img src="userfiles/destaques/<?php echo $destaque_cim_yachts->imagem ?>">
+                                            </a>
+                                        </div>
+                                    <?php endif; ?>
+                                <?php endforeach; ?>
                             </div>
                     </section>
                     

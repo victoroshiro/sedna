@@ -1,6 +1,6 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed');
 
-class Banners extends CI_Controller {
+class Destaques extends CI_Controller {
     
     public $data;
 
@@ -9,7 +9,7 @@ class Banners extends CI_Controller {
         $this->load->library('session');
         $this->load->helper('url');
         $this->load->model('usuarios/usuarios_m');
-        $this->load->model('banners_m');
+        $this->load->model('destaques_m');
     }
 
     public function index() {
@@ -17,7 +17,7 @@ class Banners extends CI_Controller {
             if($this->session->userdata('tipo') == 2){
                 show_404();
             }
-            $this->data["banners"] = $this->banners_m->get_banners();
+            $this->data["destaques"] = $this->destaques_m->get_destaques();
             $this->load->view('lista', $this->data);
         } else {
             $this->load->view('admin/login/index', $this->data);
@@ -28,28 +28,26 @@ class Banners extends CI_Controller {
         if($this->session->userdata('tipo') == 2){
             show_404();
         }
-        $this->data['banner'] = '';
+        $this->data['destaque'] = '';
         $this->load->view('cria', $this->data);
     }
 
     public function salvar() {
         $data = $_POST;
-        $data['sort'] = $this->banners_m->get_sort();
+        $data['sort'] = $this->destaques_m->get_sort();
         $data['habilitado'] = $this->input->post("habilitado");
 
-        $imagem = $this->banners_m->upload_foto('imagem');
-         
+        $imagem = $this->destaques_m->upload_foto('imagem');
+
         if (!is_array($imagem) && isset($imagem)) {
             if (!is_array($imagem)) {
                 $data['imagem'] = $imagem;
             }
         }
-        
-        $data['video_id'] = get_youtube_id($data['video_id']);
 
-        $this->db->insert('banners', $data);
-        $this->session->set_flashdata('messages', 'Banner inserida com sucesso.');
-        redirect('banners', 'location');
+        $this->db->insert('destaques', $data);
+        $this->session->set_flashdata('messages', 'Destaque inserida com sucesso.');
+        redirect('destaques', 'location');
     }
 
     public function editar($id = false) {
@@ -58,10 +56,10 @@ class Banners extends CI_Controller {
         }
 
         if (!$id) {
-            redirect('banners', 'location');
+            redirect('destaques', 'location');
         }
 
-        $this->data['banner'] = $this->banners_m->get_banner($id);
+        $this->data['destaque'] = $this->destaques_m->get_destaque($id);
         $this->load->view('edita', $this->data);
     }
 
@@ -73,14 +71,14 @@ class Banners extends CI_Controller {
         
         unset($data['id']);
 
-        $img_nome = $this->banners_m->upload_foto('imagem');
+        $img_nome = $this->destaques_m->upload_foto('imagem');
 
         if (!is_array($img_nome) && isset($img_nome)) {
             if (!is_array($img_nome)) {
-                $imagem = $this->banners_m->get_imagem_banner($id);
+                $imagem = $this->destaques_m->get_imagem_destaque($id);
                 // Remove a imagem antiga
                 if($imagem){
-                    $dir = dirname(getcwd()).'/userfiles/banners/';
+                    $dir = dirname(getcwd()).'/userfiles/destaques/';
                     @unlink($dir.$imagem->imagem);
                 }
                 
@@ -88,21 +86,19 @@ class Banners extends CI_Controller {
             }
         }
 
-        $data['video_id'] = get_youtube_id($data['video_id']);
-
-        if ($this->banners_m->atualizar($data, $dataWhere)) {
-            $this->session->set_flashdata('messages', 'Banner atualizado com sucesso.');
-            redirect('banners', 'location');
+        if ($this->destaques_m->atualizar($data, $dataWhere)) {
+            $this->session->set_flashdata('messages', 'Destaque atualizado com sucesso.');
+            redirect('destaques', 'location');
         } else {
-            $this->session->set_flashdata('errors', 'Não foi possível atualizar o banner. Tente novamente.');
-            redirect('banners', 'location');
+            $this->session->set_flashdata('errors', 'Não foi possível atualizar o destaque. Tente novamente.');
+            redirect('destaques', 'location');
         }
     }
 
     public function limpar() {
         $this->session->set_flashdata('status', '');
 
-        redirect('banners');
+        redirect('destaques');
     }
 
     public function excluir_selecionados() {
@@ -121,33 +117,33 @@ class Banners extends CI_Controller {
 
         if (!$ids) {
             $this->session->set_flashdata('errors', 'Você deve selecionar pelo menos um registro para excluir');
-            redirect('banners');
+            redirect('destaques');
         }
 
-        $banners = explode(';', $ids);
+        $destaques = explode(';', $ids);
         
-        for ($i = 0; $i <= count($banners) - 1; $i++) {
+        for ($i = 0; $i <= count($destaques) - 1; $i++) {
 
-            if (!$this->banners_m->excluir($banners[$i])) {
+            if (!$this->destaques_m->excluir($destaques[$i])) {
                 $ok = false;
-                $erros[] = $banners[$i];
+                $erros[] = $destaques[$i];
             }
         }
 
         if ($ok) {
-            $retorno = array('status' => true, 'message' => 'Banners excluídos com sucesso');
+            $retorno = array('status' => true, 'message' => 'Destaques excluídos com sucesso');
         } else {
             $msg = '';
 
             for ($i = 0; $i <= count($erros) - 2; $i++) {
-                $banner = $this->banners_m->get_banner($erros[$i]);
+                $destaque = $this->destaques_m->get_destaque($erros[$i]);
                 if ($i < count($erros) - 2)
-                    $msg .= $banner->titulo . ", ";
+                    $msg .= $destaque->titulo . ", ";
                 else
-                    $msg .= $banner->titulo . ".";
+                    $msg .= $destaque->titulo . ".";
             }
 
-            $retorno = array('status' => false, 'message' => 'Os seguintes banners não foram excluidas: ' . $msg);
+            $retorno = array('status' => false, 'message' => 'Os seguintes destaques não foram excluidas: ' . $msg);
         }
 
         echo json_encode($retorno);
@@ -166,10 +162,10 @@ class Banners extends CI_Controller {
             $id = $pos[0];
             $sort = $pos[1];
 
-            $this->banners_m->atualizar_ordem($id, $sort);
+            $this->destaques_m->atualizar_ordem($id, $sort);
         }
         
-        redirect('banners', 'location');
+        redirect('destaques', 'location');
         $this->session->set_flashdata('messages', 'Itens reordenados');
     }
 

@@ -14,19 +14,19 @@
         
         <!-- Main Content -->
         <div class="container">
-            <h1>Banners</h1>
+            <h1>Destaques</h1>
             <?php $this->load->view('admin/inc/messages') ?>
 
-            <form method="post" action="banners/salvar" id="form_banners" enctype="multipart/form-data">
+            <form method="post" action="destaques/salvar" id="form_destaques" enctype="multipart/form-data">
                 <div id="acoes" class="text-right">
-                    <input class="btn btn-default" type="button" onclick="location.href = 'banners'" value="Cancelar" />
+                    <input class="btn btn-default" type="button" onclick="location.href = 'destaques'" value="Cancelar" />
                     <input class="btn btn-success" type="submit" value="Salvar" />
                 </div>
                 
-                <?php include 'banners_form.php' ?>
+                <?php include 'form.php' ?>
 
                 <div id="acoes" class="text-right">
-                    <input class="btn btn-default" type="button" onclick="location.href = 'banners'" value="Cancelar" />
+                    <input class="btn btn-default" type="button" onclick="location.href = 'destaques'" value="Cancelar" />
                     <input class="btn btn-success" type="submit" value="Salvar" />
                 </div>
             </form>

@@ -34,6 +34,7 @@ class Home extends CI_Controller {
         
         $this->data['banners'] = $this->Home_m->get_banners();
         $this->data['all_news'] = $this->Noticias_m->get_noticias(array('limit' => 3));
+        $this->data['destaques'] = $this->Home_m->get_destaques();
         $this->data['partial'] = $this->load->view('home.php', $this->data, true);
         $this->load->view('common/template.php', $this->data);
     }
