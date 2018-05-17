@@ -288,7 +288,7 @@ class Seminovos_m extends CI_Model {
     {
         $this->db->set('sort', $sort);
         $this->db->where('id', $id);
-        $this->db->update('banners');
+        $this->db->update('seminovos');
         return true;
     }
 
