@@ -13,7 +13,7 @@ class Seminovos extends CI_Controller {
     public function index()
     {
         //pagination
-        $limit_results = 9;
+        $limit_results = 10;
         $offset_page = ($this->uri->segment(2)) ? $this->uri->segment(2) : 0;
 
         $this->data["seminovos"] = $this->Seminovos_m->get_seminovos(
