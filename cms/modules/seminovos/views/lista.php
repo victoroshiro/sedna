@@ -40,6 +40,13 @@
                 <hr>
 
                 <div id="acoes" class="text-right">
+                    <form action="<?php echo site_url('seminovos/salvar_ordem'); ?>" method="POST" class="pull-left">
+                        <input type="hidden" value="" name="new_order_array" class="new_order_input">
+                        <button class="btn btn-success reorder_button" disabled>
+                            Salvar Ordem
+                        </button>
+                    </form>
+
                     <div class="btn btn-danger" name="excluir-registros" data-module="seminovos">
                         Excluir
                     </div>
@@ -85,6 +92,12 @@
                 </table>
 
                 <div id="acoes" class="text-right">
+                    <form action="<?php echo site_url('seminovos/salvar_ordem'); ?>" method="POST" class="pull-left">
+                        <input type="hidden" value="" name="new_order_array" class="new_order_input">
+                        <button class="btn btn-success reorder_button" disabled>
+                            Salvar Ordem
+                        </button>
+                    </form>
                     <div class="btn btn-danger" name="excluir-registros" data-module="seminovos">
                         Excluir
                     </div>

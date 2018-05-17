@@ -270,6 +270,16 @@ class Seminovos_m extends CI_Model {
             return false;
         }
     }
+    
+    public function atualizar_ordem($id, $sort)
+    {
+        $this->db->set('sort', $sort);
+        $this->db->where('id', $id);
+        $this->db->update('banners');
+        return true;
+    }
+
+
 }
 
 ?>

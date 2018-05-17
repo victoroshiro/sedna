@@ -304,6 +304,27 @@ class Seminovos extends CI_Controller {
         
         redirect('seminovos/editar/' . $imagem->id_seminovo, 'location');
     }
+    
+    
+    public function salvar_ordem()
+    {
+        $data = $this->input->post();
+
+        $lis = explode( ';' , $data['new_order_array'] );
+
+        foreach ( $lis as $key => $val ) {
+            //explode each value found by "="...
+            $pos = explode( '=' , $val );
+            
+            $id = $pos[0];
+            $sort = $pos[1];
+
+            $this->seminovos_m->atualizar_ordem($id, $sort);
+        }
+        
+        redirect('seminovos', 'location');
+        $this->session->set_flashdata('messages', 'Itens reordenados');
+    }
 }
 
 ?>
