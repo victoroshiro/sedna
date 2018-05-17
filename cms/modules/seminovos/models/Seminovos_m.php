@@ -55,7 +55,7 @@ class Seminovos_m extends CI_Model {
             $this->db->where('id !=', $params['ignore']);
         }
 
-        $this->db->order_by('data_seminovo', 'DESC');
+        $this->db->order_by('sort', 'ASC');
 
         if($params['id']){
             $this->db->where("id", $params['id']);
