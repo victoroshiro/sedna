@@ -305,7 +305,11 @@ class Seminovos extends CI_Controller {
         redirect('seminovos/editar/' . $imagem->id_seminovo, 'location');
     }
     
-    
+    public function rearrange()
+    {
+        $this->Seminovos_m->rearrange();
+    }
+
     public function salvar_ordem()
     {
         $data = $this->input->post();
