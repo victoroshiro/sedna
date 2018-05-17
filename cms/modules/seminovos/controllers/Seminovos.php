@@ -319,7 +319,7 @@ class Seminovos extends CI_Controller {
             $id = $pos[0];
             $sort = $pos[1];
 
-            $this->seminovos_m->atualizar_ordem($id, $sort);
+            $this->Seminovos_m->atualizar_ordem($id, $sort);
         }
         
         redirect('seminovos', 'location');
