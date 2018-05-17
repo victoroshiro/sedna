@@ -52,7 +52,8 @@ class Seminovos_m extends CI_Model
 		if($params['order_by']){
 			$this->db->order_by('data_seminovo',$params['order_by']);
 		}else{
-			$this->db->order_by('data_seminovo','DESC');
+                    $this->db->order_by('sort', 'ASC');
+
 		}
 
 		if($params['highlights']){
