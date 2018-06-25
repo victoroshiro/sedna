@@ -339,7 +339,7 @@ section.white h2		{padding-bottom:19px;}
 @media (max-width: 480px) {
     .hero h1 { font-size: 22px; }
 }
-.hero .button.medium 		{height:60px;line-height:58px;padding:0 25px;}
+.hero .button.medium 		{height:60px;line-height:58px;margin-top: 25%}
 .hero .button.medium:hover 	{text-shadow:none;}
 
 .hero article .text-wrapper {
