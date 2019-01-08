@@ -63,8 +63,8 @@ class Fidelidades extends CI_Controller {
         $this->data["fidelidade_texto"] = $this->Fidelidades_m->get_fidelidades_texto();
         
         // Menu
-        $this->data['menu_embarcacoes_cim'] = $this->Embarcacoes_m->get_embarcacoes(array('categoria' => 'cimitarra'));
-        $this->data['menu_embarcacoes_ciy'] = $this->Embarcacoes_m->get_embarcacoes(array('categoria' => 'cimitarra-yachts'));
+        $this->data['menu_embarcacoes_cim'] = $this->Embarcacoes_m->get_embarcacoes(array('categoria' => 'Yachts'));         $this->data['menu_embarcacoes_ciy'] = $this->Embarcacoes_m->get_embarcacoes(array('categoria' => 'Sport-Fishing-Yachts'));         $this->data['menu_embarcacoes_sport'] = $this->Embarcacoes_m->get_embarcacoes(array('categoria' => 'Super-Sport-Yachts'));
+         
 
         $this->data['partial'] = $this->load->view('fidelidades.php', $this->data, true);
         $this->load->view('common/template.php', $this->data);
@@ -83,8 +83,8 @@ class Fidelidades extends CI_Controller {
         $this->data['all_news'] = $this->Fidelidades_m->get_fidelidades(array('id' => $this->data['fidelidade']->id));
 
         // Menu
-        $this->data['menu_embarcacoes_cim'] = $this->Embarcacoes_m->get_embarcacoes(array('categoria' => 'cimitarra'));
-        $this->data['menu_embarcacoes_ciy'] = $this->Embarcacoes_m->get_embarcacoes(array('categoria' => 'cimitarra-yachts'));
+        $this->data['menu_embarcacoes_cim'] = $this->Embarcacoes_m->get_embarcacoes(array('categoria' => 'Yachts'));         $this->data['menu_embarcacoes_ciy'] = $this->Embarcacoes_m->get_embarcacoes(array('categoria' => 'Sport-Fishing-Yachts'));         $this->data['menu_embarcacoes_sport'] = $this->Embarcacoes_m->get_embarcacoes(array('categoria' => 'Super-Sport-Yachts'));
+         
 
         $this->data['partial'] = $this->load->view('fidelidade.php', $this->data, true);
         $this->load->view('common/template.php', $this->data);

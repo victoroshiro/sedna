@@ -61,8 +61,8 @@ class Imprensas extends CI_Controller {
         $this->data["total_imprensas"] = $total_imprensas;
 
         // Menu
-        $this->data['menu_embarcacoes_cim'] = $this->Embarcacoes_m->get_embarcacoes(array('categoria' => 'cimitarra'));
-        $this->data['menu_embarcacoes_ciy'] = $this->Embarcacoes_m->get_embarcacoes(array('categoria' => 'cimitarra-yachts'));
+        $this->data['menu_embarcacoes_cim'] = $this->Embarcacoes_m->get_embarcacoes(array('categoria' => 'Yachts'));         $this->data['menu_embarcacoes_ciy'] = $this->Embarcacoes_m->get_embarcacoes(array('categoria' => 'Sport-Fishing-Yachts'));         $this->data['menu_embarcacoes_sport'] = $this->Embarcacoes_m->get_embarcacoes(array('categoria' => 'Super-Sport-Yachts'));
+         
 
         $this->data['partial'] = $this->load->view('imprensas.php', $this->data, true);
         $this->load->view('common/template.php', $this->data);
@@ -81,8 +81,8 @@ class Imprensas extends CI_Controller {
         $this->data['all_news'] = $this->Imprensas_m->get_imprensas(array('id' => $this->data['imprensa']->id));
 
         // Menu
-        $this->data['menu_embarcacoes_cim'] = $this->Embarcacoes_m->get_embarcacoes(array('categoria' => 'cimitarra'));
-        $this->data['menu_embarcacoes_ciy'] = $this->Embarcacoes_m->get_embarcacoes(array('categoria' => 'cimitarra-yachts'));
+        $this->data['menu_embarcacoes_cim'] = $this->Embarcacoes_m->get_embarcacoes(array('categoria' => 'Yachts'));         $this->data['menu_embarcacoes_ciy'] = $this->Embarcacoes_m->get_embarcacoes(array('categoria' => 'Sport-Fishing-Yachts'));         $this->data['menu_embarcacoes_sport'] = $this->Embarcacoes_m->get_embarcacoes(array('categoria' => 'Super-Sport-Yachts'));
+         
 
         $this->data['partial'] = $this->load->view('imprensa.php', $this->data, true);
         $this->load->view('common/template.php', $this->data);

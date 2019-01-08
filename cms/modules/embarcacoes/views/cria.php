@@ -89,9 +89,11 @@
 					    			<label for="categoria">Categoria: </label>
 					    			<select name="categoria" id="categoria" class="select form-control">
 					    			    <option value="false">Selecione a Categoria</option>
-					    			    <option value="cimitarra">Cimitarra</option>
-					    			    <option value="cimitarra-yachts">Cimitarra Yachts</option>
-					    			</select>
+					    			    <option value="Yachts">Yachts</option>
+                                        <option value="Sport-Fishing-Yachts">Sedna Sport Fishing Yachts</option>
+                                        <option value="Super-Sport-Yachts">Sedna Super Sport Yachts</option>
+
+                                    </select>
 					    		</div>
 					    	</div>
 					    	<div class="col-md-12">

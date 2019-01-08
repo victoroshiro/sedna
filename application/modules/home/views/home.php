@@ -84,7 +84,7 @@
                     <section class="cta grey">
                             <div class="wrap center">
                                     <div class="text-center">
-                                            <h2>Linha Cimitarra</h2>
+                                            <h2>Coleções Sedna Group</h2>
                                     </div>
                             </div>
                             <div class="wrap wrap-flex">
@@ -98,11 +98,7 @@
                                     <?php endif; ?>
                                 <?php endforeach; ?>
                             </div>
-                            <div class="wrap center">
-                                    <div class="text-center">
-                                            <h2>Linha Cimitarra Yachts</h2>
-                                    </div>
-                            </div>
+
                             <div class="wrap wrap-flex">
                                 <?php foreach ($destaques as $destaque_cim_yachts): ?>
                                     <?php if ($destaque_cim_yachts->categoria == 1 ): ?> 

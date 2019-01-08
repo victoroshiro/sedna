@@ -15,7 +15,7 @@
     <?php if (!empty($title)): ?>
         <title><?php echo $title ?></title>
     <?php else: ?>
-        <title>Cimitarra Yachts</title>
+        <title>Sedna Group</title>
     <?php endif ?>
     
     <link rel="stylesheet" href="assets/css/style.css" />
@@ -59,8 +59,8 @@
             <div class="full-width">
               <div class="social">
                 <a href="https://www.facebook.com/SednaYachts.br/" target="_blank" class="circle"><i class="fa fa-facebook"></i></a>
-<!--                <a href="https://www.youtube.com/channel/UCLojQsbDSNKVfNELwI0nP3w" target="_blank" class="circle"><i class="fa fa-youtube-play"></i></a>-->
-<!--                <a href="https://www.instagram.com/cimitarrayachts/" target="_blank" class="circle"><i class="fa fa-instagram"></i></a>-->
+                <a href="https://www.youtube.com/channel/UCLojQsbDSNKVfNELwI0nP3w" target="_blank" class="circle"><i class="fa fa-youtube-play"></i></a>
+                <a href="https://www.instagram.com/cimitarrayachts/" target="_blank" class="circle"><i class="fa fa-instagram"></i></a>
               </div>
               <div class="language">
                 <ul>
@@ -74,7 +74,7 @@
       </div>
       <div class="wrap">
           <!-- Logo -->
-          <a href="<?php echo base_url();?>" title="Cimitarra Yachts" class="logo"><img src="assets/images/logo.png" alt="Cimitarra Yacht"></a>
+          <a href="<?php echo base_url();?>" title="Cimitarra Yachts" class="logo" style="padding: 0px !important"><img src="assets/images/logo.png" alt="Cimitarra Yacht"></a>
           <!-- //Logo -->
           
           <!-- Primary menu -->
@@ -93,7 +93,7 @@
                             ?>
                                 <li>
                                     <a>
-                                        Cimitarra
+                                        Sedna Yachts
                                     </a>
                                     <ul class="dropdown">
                                       <li>
@@ -152,7 +152,7 @@
                             ?>
                                 <li>
                                     <a>
-                                        Cimitarra Yachts
+                                        Sedna Sport Fishing Yachts
                                     </a>
                                     <ul class="dropdown">
                                         <li>
@@ -223,6 +223,83 @@
                                 </li>
                             <?php
                               }
+                            ?>
+                            <?php
+                              if($menu_embarcacoes_sport){
+                            ?>
+                            <li>
+                                <a>
+                                    Sedna Super Sport Yachts
+                                </a>
+                                <ul class="dropdown">
+                                    <li>
+                                        <a>540</a>
+                                        <ul class="dropdown">
+                                            <?php
+                                            foreach ($menu_embarcacoes_ciy as $item) {
+                                                if($item->subcategoria == '540'){
+                                                    ?>
+                                                    <li>
+                                                        <a href="<?php echo site_url('embarcacoes/detalhe/'.$item->slug); ?>"><?php echo $item->titulo; ?></a>
+                                                    </li>
+                                                    <?php
+                                                }
+                                            }
+                                            ?>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a>600</a>
+                                        <ul class="dropdown">
+                                            <?php
+                                            foreach ($menu_embarcacoes_ciy as $item) {
+                                                if($item->subcategoria == '600'){
+                                                    ?>
+                                                    <li>
+                                                        <a href="<?php echo site_url('embarcacoes/detalhe/'.$item->slug); ?>"><?php echo $item->titulo; ?></a>
+                                                    </li>
+                                                    <?php
+                                                }
+                                            }
+                                            ?>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a>640</a>
+                                        <ul class="dropdown">
+                                            <?php
+                                            foreach ($menu_embarcacoes_ciy as $item) {
+                                                if($item->subcategoria == '640'){
+                                                    ?>
+                                                    <li>
+                                                        <a href="<?php echo site_url('embarcacoes/detalhe/'.$item->slug); ?>"><?php echo $item->titulo; ?></a>
+                                                    </li>
+                                                    <?php
+                                                }
+                                            }
+                                            ?>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a>780</a>
+                                        <ul class="dropdown">
+                                            <?php
+                                            foreach ($menu_embarcacoes_ciy as $item) {
+                                                if($item->subcategoria == '780'){
+                                                    ?>
+                                                    <li>
+                                                        <a href="<?php echo site_url('embarcacoes/detalhe/'.$item->slug); ?>"><?php echo $item->titulo; ?></a>
+                                                    </li>
+                                                    <?php
+                                                }
+                                            }
+                                            ?>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <?php
+                            }
                             ?>
                         </ul>                  
                     </li>
@@ -351,9 +428,10 @@
             <div class="one-fourth">
               <h6>Siga-nos</h6>
               <p>Siga nossas redes sociais e fique por dentro de tudo que acontece na Cimitarra.</p>
-              <a href="https://www.facebook.com/cimitarrayachts" target="blank" title="Facebook" class="circle"><i class="fa fa-facebook fa-fw"></i></a>
+              <a href="https://www.facebook.com/SednaYachts.br/" target="blank" title="Facebook" class="circle"><i class="fa fa-facebook fa-fw"></i></a>
               <a href="https://www.youtube.com/channel/UCLojQsbDSNKVfNELwI0nP3w" target="blank" title="Youtube" class="circle"><i class="fa fa-youtube-play fa-fw"></i></a>
               <a href="https://www.instagram.com/cimitarrayachts" target="blank" title="Instagram" class="circle"><i class="fa fa-instagram fa-fw"></i></a>
+
             </div>
             <!-- //OneFourth -->
           </div>

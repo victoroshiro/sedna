@@ -94,9 +94,10 @@
 									<label for="categoria">Categoria: </label>
 									<select name="categoria" id="categoria" class="select form-control">
 									    <option value="false">Selecione a Categoria</option>
-									    <option <?php echo ($embarcacao->categoria == 'cimitarra') ? 'selected="selected"' : ''; ?> value="cimitarra">Cimitarra</option>
-									    <option <?php echo ($embarcacao->categoria == 'cimitarra-yachts') ? 'selected="selected"' : ''; ?> value="cimitarra-yachts">Cimitarra Yachts</option>
-									</select>
+									    <option <?php echo ($embarcacao->categoria == 'Yachts') ? 'selected="selected"' : ''; ?> value="Yachts">Yachts</option>
+                                        <option <?php echo ($embarcacao->categoria == 'Sport-Fishing-Yachts') ? 'selected="selected"' : ''; ?> value="Sport-Fishing-Yachts">Sedna Sport Fishing Yachts</option>
+                                        <option <?php echo ($embarcacao->categoria == 'Super-Sport-Yachts') ? 'selected="selected"' : ''; ?> value="Super-Sport-Yachts">Sedna Super Sport Yachts</option>
+                                    </select>
 								</div>
 							</div>
 							<div class="col-md-12">
