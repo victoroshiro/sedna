@@ -92,7 +92,7 @@
                                     <?php if ($destaque_cim->categoria == 0 ): ?> 
                                         <div class="one-third">
                                             <a href="<?php echo $destaque_cim->link ?>" class="zoom-image">
-                                                <img width="361" height="354" src="userfiles/destaques/<?php echo $destaque_cim->imagem ?>">
+                                                <img style="    height: 354px;" width="361" height="354" src="userfiles/destaques/<?php echo $destaque_cim->imagem ?>">
                                             </a>
                                         </div>
                                     <?php endif; ?>
