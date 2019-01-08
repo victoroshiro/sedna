@@ -96,6 +96,7 @@
                                         Sedna Yachts
                                     </a>
 
+                                          <ul class="dropdown">
                                             <?php  
                                               foreach ($menu_embarcacoes_cim as $item) {
 
@@ -107,6 +108,7 @@
 
                                               }
                                             ?>
+                                          </ul>
 
                                 </li>
                             <?php
@@ -118,6 +120,7 @@
                                         Sedna Sport Fishing Yachts
                                     </a>
 
+                                            <ul class="dropdown">
                                               <?php  
                                                 foreach ($menu_embarcacoes_ciy as $item) {
 
@@ -129,6 +132,8 @@
 
                                                 }
                                               ?>
+                                            </ul>
+
                                 </li>
                             <?php
                               }
@@ -141,6 +146,7 @@
                                     Sedna Super Sport Yachts
                                 </a>
 
+                                        <ul class="dropdown">
                                             <?php
                                             foreach ($menu_embarcacoes_ciy as $item) {
                                                 if($item->subcategoria == '540'){
@@ -152,7 +158,7 @@
                                                 }
                                             }
                                             ?>
-                                        
+                                        </ul>
                             </li>
                             <?php
                             }
