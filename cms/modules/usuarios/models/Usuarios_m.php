@@ -73,12 +73,10 @@ class Usuarios_m extends CI_Model {
             
             if ($usuario->senha == sha1($senha)) {
                 // SET userID to check the session login
-                $this->load->library('session');
-                session_start();
-                $this->session->userdata('adm_usuarioID', $usuario->adm_usuarioID);
-                $this->session->userdata('nome', $usuario->nome);
-                $this->session->userdata('tipo', $usuario->tipo);
-                $this->session->userdata('asdf', TRUE);
+                $this->session->set_userdata('adm_usuarioID', $usuario->adm_usuarioID);
+                $this->session->set_userdata('nome', $usuario->nome);
+                $this->session->set_userdata('tipo', $usuario->tipo);
+                $this->session->set_userdata('asdf', TRUE);
 
 
                 if($usuario->tipo == 3){
