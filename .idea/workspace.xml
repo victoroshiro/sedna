@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d7389d4-69ea-46cd-8c18-29b41748976c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/cms/config/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/cms/config/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms/modules/usuarios/models/Usuarios_m.php" beforeDir="false" afterPath="$PROJECT_DIR$/cms/modules/usuarios/models/Usuarios_m.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,12 +38,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="php" value="71" />
+          <entry key="php" value="72" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PHP" value="71" />
+          <entry key="PHP" value="72" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -102,16 +101,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cms/modules/admin/controllers/Admin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+            <state relative-caret-position="204">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cms/modules/usuarios/models/Usuarios_m.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="289">
@@ -150,8 +149,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>admin/logar</find>
-      <find>logado</find>
       <find>cookie</find>
+      <find>logado</find>
     </findStrings>
     <dirStrings>
       <dir>D:\xampp\htdocs\sednagroup\cms</dir>
@@ -168,9 +167,9 @@
         <option value="$PROJECT_DIR$/cms/index.php" />
         <option value="$PROJECT_DIR$/cms/modules/admin/controllers/Login.php" />
         <option value="$PROJECT_DIR$/cms/third_party/MX/Router.php" />
-        <option value="$PROJECT_DIR$/cms/modules/admin/controllers/Admin.php" />
         <option value="$PROJECT_DIR$/cms/config/config.php" />
         <option value="$PROJECT_DIR$/cms/modules/usuarios/models/Usuarios_m.php" />
+        <option value="$PROJECT_DIR$/cms/modules/admin/controllers/Admin.php" />
       </list>
     </option>
   </component>
@@ -334,16 +333,15 @@
       <option name="presentableId" value="Default" />
       <updated>1546962251275</updated>
       <workItem from="1546962252608" duration="791000" />
-      <workItem from="1546963761722" duration="5277000" />
+      <workItem from="1546963761722" duration="5897000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6068000" />
+    <option name="totallyTimeSpent" value="6688000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1938" y="6" width="1936" height="1056" extended-state="0" />
-    <editor active="true" />
+    <frame x="1938" y="6" width="1936" height="1056" extended-state="1" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -508,17 +506,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cms/modules/admin/controllers/Admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cms/modules/usuarios/models/Usuarios_m.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms/modules/admin/controllers/Admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
