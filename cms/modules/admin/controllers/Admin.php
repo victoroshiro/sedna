@@ -10,7 +10,8 @@ class Admin extends CI_Controller {
     }
 
     public function index() {
-        if ($this->usuarios_m->logado()) {
+        var_dump($this->session->userdata('asdf'))
+;        if ($this->usuarios_m->logado()) {
             if ($this->session->userdata('tipo') == 2) {
                 $usuarioID = $this->session->userdata('usuarioID');
             }
