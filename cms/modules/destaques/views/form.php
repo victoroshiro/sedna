@@ -35,11 +35,18 @@
     <label for="lf">Categoria: </label>
     <select name="categoria" id="categoria" class="form-control">
         <?php if (@$destaque->categoria == 0): ?>
-            <option value="0" selected="selected">Cimitarra</option>
-            <option value="1">Cimitarra Yachts</option>
+            <option value="0" selected="selected">Yachts</option>
+            <option value="1">Sedna Sport Fishing Yachts</option>
+            <option value="2">Sedna Super Sport Yachts</option>
+
+        <?php elseif(@$destaque->categoria == 1): ?>
+            <option value="0" >Yachts</option>
+            <option value="1" selected="selected">Sedna Sport Fishing Yachts</option>
+            <option value="2">Sedna Super Sport Yachts</option>
         <?php else: ?>
-            <option value="0">Cimitarra</option>
-            <option value="1" selected="selected">Cimitarra Yachts</option>
+            <option value="0" >Yachts</option>
+            <option value="1">Sedna Sport Fishing Yachts</option>
+            <option value="2" selected="selected">Sedna Super Sport Yachts</option>
         <?php endif ?>
     </select>
 </div>
