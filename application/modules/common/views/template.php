@@ -148,7 +148,7 @@
 
                                         <ul class="dropdown">
                                             <?php
-                                            foreach ($menu_embarcacoes_ciy as $item) {
+                                            foreach ($menu_embarcacoes_sport as $item) {
                                                 if($item->subcategoria == '540'){
                                                     ?>
                                                     <li>
