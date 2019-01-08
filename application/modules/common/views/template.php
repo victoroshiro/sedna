@@ -149,13 +149,11 @@
                                         <ul class="dropdown">
                                             <?php
                                             foreach ($menu_embarcacoes_sport as $item) {
-                                                if($item->subcategoria == '540'){
                                                     ?>
                                                     <li>
                                                         <a href="<?php echo site_url('embarcacoes/detalhe/'.$item->slug); ?>"><?php echo $item->titulo; ?></a>
                                                     </li>
                                                     <?php
-                                                }
                                             }
                                             ?>
                                         </ul>
