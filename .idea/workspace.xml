@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d7389d4-69ea-46cd-8c18-29b41748976c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/cms/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/cms/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cms/third_party/MX/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/cms/third_party/MX/Router.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,22 +39,24 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="php" value="29" />
+          <entry key="php" value="33" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PHP" value="29" />
+          <entry key="PHP" value="33" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="php" value="3" />
+          <entry key="html" value="1" />
+          <entry key="php" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PHP" value="3" />
+          <entry key="HTML" value="1" />
+          <entry key="PHP" value="5" />
         </counts>
       </usages-collector>
     </session>
@@ -76,11 +79,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cms/third_party/MX/Router.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="670">
-              <caret line="238" column="18" selection-start-line="238" selection-start-column="12" selection-end-line="238" selection-end-column="18" />
+              <caret line="238" column="43" selection-start-line="238" selection-start-column="43" selection-end-line="238" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cms/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="291">
+              <caret line="227" column="46" selection-start-line="227" selection-start-column="46" selection-end-line="227" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -105,6 +117,7 @@
         <option value="$PROJECT_DIR$/application/config/database.php" />
         <option value="$PROJECT_DIR$/application/config/config.php" />
         <option value="$PROJECT_DIR$/cms/third_party/MX/Router.php" />
+        <option value="$PROJECT_DIR$/cms/index.php" />
       </list>
     </option>
   </component>
@@ -152,19 +165,6 @@
               <item name="sednagroup" type="462c0819:PsiDirectoryNode" />
               <item name="cms" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="sednagroup" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sednagroup" type="462c0819:PsiDirectoryNode" />
-              <item name="cms" type="462c0819:PsiDirectoryNode" />
-              <item name="third_party" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sednagroup" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sednagroup" type="462c0819:PsiDirectoryNode" />
-              <item name="cms" type="462c0819:PsiDirectoryNode" />
-              <item name="third_party" type="462c0819:PsiDirectoryNode" />
-              <item name="MX" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -200,12 +200,12 @@
       <option name="presentableId" value="Default" />
       <updated>1546962251275</updated>
       <workItem from="1546962252608" duration="791000" />
-      <workItem from="1546963761722" duration="2447000" />
+      <workItem from="1546963761722" duration="2715000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3238000" />
+    <option name="totallyTimeSpent" value="3506000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1938" y="6" width="1936" height="1056" extended-state="0" />
@@ -261,10 +261,27 @@
         <state relative-caret-position="-843" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/cms/third_party/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/Core/Core_d.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="298" column="9" selection-start-line="298" selection-start-column="9" selection-end-line="298" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/cms/third_party/MX/Router.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="670">
-          <caret line="238" column="18" selection-start-line="238" selection-start-column="12" selection-end-line="238" selection-end-column="18" />
+          <caret line="238" column="43" selection-start-line="238" selection-start-column="43" selection-end-line="238" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="227" column="46" selection-start-line="227" selection-start-column="46" selection-end-line="227" selection-end-column="46" />
         </state>
       </provider>
     </entry>
