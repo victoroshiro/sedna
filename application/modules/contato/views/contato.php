@@ -16,17 +16,15 @@
                             <div class="text">
                                 <h4>Contato</h4>
                                 <p>
-                                +55 (11) 99617.6035 / (11) 2307-7007
+                                +55 (11) 2307-7007
                                 </p>
                                 <p>
-                                contato@cimitarra.com.br
+                                    contato@sednagroup.com.br
                                 </p>
                                 <p>
-                                Estaremos em breve atuando em nosso novo
-                                <br>
-                                Show Room em São Paulo - Avenida Europa.
-                                <br>
-                                AGUARDEM! São Paulo, Brasil.
+                                    Avenida Europa, 421 - Jardim Europa
+                                    <br>
+                                    CEP: 01449001 - São Paulo, Brasil
                                 </p>
 
                                 <form method="post" action="<?php echo site_url('contato/send'); ?>" name="contactform" id="contactform" class="contactform">
