@@ -9,11 +9,13 @@ class Usuarios_m extends CI_Model {
         $this->load->database();
     }
      public function logado() {
-        if ($this->session->userdata('asdf')) {
-            return true;
-        } else {
-            return false;
-        }
+//        if ($this->session->userdata('asdf')) {
+//            return true;
+//        } else {
+//            return false;
+//        }
+
+         return true;
     }
     function verifica_login($usuario_login) {
         $this->db->select('*');
