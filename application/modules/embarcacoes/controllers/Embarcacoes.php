@@ -68,10 +68,9 @@ class Embarcacoes extends CI_Controller {
     }
 
     public function detalhe($categoria = false,
-                            $subcategoria = false,
                             $produto = false)
     {
-        if(!$categoria || !$subcategoria || !$produto){
+        if(!$categoria || !$produto){
             show_404();
         }
 
