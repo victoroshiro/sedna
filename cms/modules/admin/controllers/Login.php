@@ -47,10 +47,10 @@ class Login extends CI_Controller {
     {   	    
         if ($this->login_m->verifica_login($this->input->post('usuario_login'), $this->input->post('usuario_senha'))){
             $tipo = $this->session->userdata('tipo');
-            redirect('admin', 'location');           
+//            redirect('admin', 'location');
         }
         else{    
-            redirect('login/erro', 'location');
+//            redirect('login/erro', 'location');
         }
     }
     
