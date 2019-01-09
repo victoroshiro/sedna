@@ -72,9 +72,9 @@ a {text-decoration:none;-webkit-transition:all 0.2s ease-in;-moz-transition:all 
 
 /* 03 TYPOGRAPHY */
 h1 {font-weight:normal;font-size:31px;padding:0 0 25px;}
-h2 {font-weight:normal;font-size:26px;padding:0 0 37px;color:#2B3941;}
+h2 {font-weight:normal;font-size:26px;padding:0 0 37px;color:#908f8f;}
 h3 {font-weight:normal;font-size:21px;padding:0 0 15px;}
-h4 {font-weight:normal;font-size:18px;padding:0 0 15px;color:#2B3941;}
+h4 {font-weight:normal;font-size:18px;padding:0 0 15px;color:#908f8f;}
 h5 {font-weight:normal;font-size:16px;padding:0 0 15px;}
 h6 {font-weight:normal;font-size:14px;padding:0 0 15px;}
 
@@ -527,7 +527,7 @@ div.border img 	{margin:0 auto;}
 .pager2 a:focus 		{background:#C4A981;color:#fff;}
 
 /* 18 TESTIMONIALS */
-.testimonials 	{background:#e5e5e5 url(../images/map-bg.jpg) 50% 0 no-repeat;background-size:100% auto;display:inline-block;width:100%;padding:80px 0 60px;color:#2B3941;-webkit-box-shadow:inset 0 0 3px rgba(0,0,0,.2);-moz-box-shadow:inset 0 0 3px rgba(0,0,0,.2);box-shadow:inset 0 0 3px rgba(0,0,0,.2);}
+.testimonials 	{background:#e5e5e5 url(../images/map-bg.jpg) 50% 0 no-repeat;background-size:100% auto;display:inline-block;width:100%;padding:80px 0 60px;color:#908f8f;-webkit-box-shadow:inset 0 0 3px rgba(0,0,0,.2);-moz-box-shadow:inset 0 0 3px rgba(0,0,0,.2);box-shadow:inset 0 0 3px rgba(0,0,0,.2);}
 .testimonials h6	{font-size:30px;font-weight:500;padding:0 0 25px;}
 .testimonials p 	{font-size:18px;font-weight:500;}
 
@@ -662,8 +662,8 @@ aside.above-footer	{float:left;width:100%;}
 .searchsubmit:focus span		{color:#515E64;}
 
 .widget .box-white 	{padding:20px 25px;}
-.featured h4 		{font-weight:400;color:#2B3941;padding:0;font-size:17px;}
-.featured a 			{font-weight:400;color:#2B3941;}
+.featured h4 		{font-weight:400;color:#908f8f;padding:0;font-size:17px;}
+.featured a 			{font-weight:400;color:#908f8f;}
 .featured a:hover,
 .featured a:focus 	{color:#BB9C6F;}
 
@@ -884,7 +884,7 @@ div.radio input 						{opacity: 0;filter: alpha(opacity=0);-moz-opacity: 0;borde
 .ui-datepicker-prev:before		{content:"\2039";position:absolute;top:3px;left:0;font-size:30px;color:#fff;text-indent:0;}
 .ui-datepicker-next				{cursor:pointer;position:absolute;top:0;color:#fff;right:15px;text-indent:-999999px;}
 .ui-datepicker-next:before		{content:"\203A";position:absolute;top:3px;right:0;font-size:30px;color:#fff;text-indent:0;}
-.ui-datepicker th 				{text-align:center;background:#fff;text-transform:uppercase;color:#2B3941;border-color:#ddd;font-weight:400;}
+.ui-datepicker th 				{text-align:center;background:#fff;text-transform:uppercase;color:#908f8f;border-color:#ddd;font-weight:400;}
 .content .ui-datepicker th 		{font-size:14px;padding:15px 17px 14px;}
 .ui-datepicker td 				{width:14.2857% !important;text-align:center;padding:0;background:#fff;color:#515E64;}
 .content .ui-datepicker td		{font-size:18px;}

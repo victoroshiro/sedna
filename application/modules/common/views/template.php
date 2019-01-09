@@ -54,7 +54,7 @@
               <div class="social">
                 <a href="https://www.facebook.com/SednaYachts.br/" target="_blank" class="circle"><i class="fa fa-facebook"></i></a>
                 <a href="https://www.youtube.com/channel/UCwY5SMZCkW4eZeaacX3Pjbw" target="_blank" class="circle"><i class="fa fa-youtube-play"></i></a>
-                <a href="https://www.instagram.com/cimitarrayachts/" target="_blank" class="circle"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.instagram.com/sednagroup/" target="_blank" class="circle"><i class="fa fa-instagram"></i></a>
               </div>
               <div class="language">
                 <ul>
@@ -274,7 +274,7 @@
               <p>Acesse nossas redes sociais e fique por dentro de tudo o que acontece no Sedna Group.</p>
               <a href="https://www.facebook.com/SednaYachts.br/" target="blank" title="Facebook" class="circle"><i class="fa fa-facebook fa-fw"></i></a>
               <a href="https://www.youtube.com/channel/UCwY5SMZCkW4eZeaacX3Pjbw" target="blank" title="Youtube" class="circle"><i class="fa fa-youtube-play fa-fw"></i></a>
-              <a href="https://www.instagram.com/cimitarrayachts" target="blank" title="Instagram" class="circle"><i class="fa fa-instagram fa-fw"></i></a>
+              <a href="https://www.instagram.com/sednagroup" target="blank" title="Instagram" class="circle"><i class="fa fa-instagram fa-fw"></i></a>
 
             </div>
             <!-- //OneFourth -->

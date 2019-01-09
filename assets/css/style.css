@@ -77,9 +77,9 @@ a {text-decoration:none;-webkit-transition:all 0.2s ease-in;-moz-transition:all 
 
 /* 03 TYPOGRAPHY */
 h1 {font-weight:normal;font-size:31px;padding:0 0 25px;}
-h2 {font-weight:normal;font-size:29px;padding:0 0 37px;color:#2B3941;}
+h2 {font-weight:normal;font-size:29px;padding:0 0 37px;color:#908f8f;}
 h3 {font-weight:normal;font-size:21px;padding:0 0 15px;}
-h4 {font-weight:normal;font-size:18px;padding:0 0 15px;color:#2B3941;}
+h4 {font-weight:normal;font-size:18px;padding:0 0 15px;color:#908f8f;}
 h5 {font-weight:normal;font-size:16px;padding:0 0 15px;}
 h6 {font-weight:normal;font-size:14px;padding:0 0 15px;}
 
@@ -419,7 +419,7 @@ section.icons		{padding-bottom:10px;}
 /* 14 CONTENT */
 .content		{float:left;width:100%;}
 
-.intro 			{background:#fff;float:left;width:100%;color:#2b3941;padding:31px 0 5px;}
+.intro 			{background:#fff;float:left;width:100%;color:#908f8f;padding:31px 0 5px;}
 .intro.dark		{background-image:url(../images/dark-bg.png);}
 .intro .wrap 	{text-align:center;max-width:65%;}
 .intro p 		{font-size:17px;font-weight:500;padding:0 0 35px;}
@@ -436,7 +436,7 @@ section.icons		{padding-bottom:10px;}
 .cta.grey 			{background:#5a5a5a;}
 .cta.grey h2 		{color:#fff; padding-bottom: 15px;}
 .cta.light-grey 	{color:#5a5a5a; background: #f1f1f1;}
-.cta h2				{color:#7b7b7b;}
+.cta h2				{color:#908f8f;}
 
 nav.tabs 				{float:left;width:100%;background:#ffffff;padding:25px 0;margin-bottom:45px;}
 nav.tabs ul 				{display:inline-block;margin:0;max-width:100%;height:100%;}
@@ -672,7 +672,7 @@ div.border img 	{margin:0 auto;}
 .pager2 a:focus 		{background:#C4A981;color:#fff;}
 
 /* 18 TESTIMONIALS */
-.testimonials 	{background:#e5e5e5 url(../images/map-bg.jpg) 50% 0 no-repeat;background-size:100% auto;display:inline-block;width:100%;padding:80px 0 60px;color:#2B3941;-webkit-box-shadow:inset 0 0 3px rgba(0,0,0,.2);-moz-box-shadow:inset 0 0 3px rgba(0,0,0,.2);box-shadow:inset 0 0 3px rgba(0,0,0,.2);}
+.testimonials 	{background:#e5e5e5 url(../images/map-bg.jpg) 50% 0 no-repeat;background-size:100% auto;display:inline-block;width:100%;padding:80px 0 60px;color:#908f8f;-webkit-box-shadow:inset 0 0 3px rgba(0,0,0,.2);-moz-box-shadow:inset 0 0 3px rgba(0,0,0,.2);box-shadow:inset 0 0 3px rgba(0,0,0,.2);}
 .testimonials h6	{font-size:30px;font-weight:500;padding:0 0 25px;}
 .testimonials p 	{font-size:18px;font-weight:500;}
 
@@ -816,8 +816,8 @@ aside.above-footer	{float:left;width:100%;}
 .searchsubmit:focus span		{color:#5a5a5a;}
 
 .widget .box-white 	{padding:20px 25px;}
-.featured h4 		{font-weight:400;color:#2B3941;padding:0;font-size:17px;}
-.featured a 			{font-weight:400;color:#2B3941;}
+.featured h4 		{font-weight:400;color:#908f8f;padding:0;font-size:17px;}
+.featured a 			{font-weight:400;color:#908f8f;}
 .featured a:hover,
 .featured a:focus 	{color:#BB9C6F;}
 
@@ -1058,7 +1058,7 @@ div.radio input 						{opacity: 0;filter: alpha(opacity=0);-moz-opacity: 0;borde
 .ui-datepicker-prev:before		{content:"\2039";position:absolute;top:3px;left:0;font-size:30px;color:#fff;text-indent:0;}
 .ui-datepicker-next				{cursor:pointer;position:absolute;top:0;color:#fff;right:15px;text-indent:-999999px;}
 .ui-datepicker-next:before		{content:"\203A";position:absolute;top:3px;right:0;font-size:30px;color:#fff;text-indent:0;}
-.ui-datepicker th 				{text-align:center;background:#fff;text-transform:uppercase;color:#2B3941;border-color:#ddd;font-weight:400;}
+.ui-datepicker th 				{text-align:center;background:#fff;text-transform:uppercase;color:#908f8f;border-color:#ddd;font-weight:400;}
 .content .ui-datepicker th 		{font-size:14px;padding:15px 17px 14px;}
 .ui-datepicker td 				{width:14.2857% !important;text-align:center;padding:0;background:#fff;color:#5a5a5a;}
 .content .ui-datepicker td		{font-size:18px;}
@@ -1415,7 +1415,7 @@ h2 > small {
 }
 
 .mini-nav a{
-    color: #2b3941;
+    color: #908f8f;
     font-size: 19px;
     display: inline-block;
     margin: 0 10px;
