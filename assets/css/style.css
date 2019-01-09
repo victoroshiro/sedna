@@ -33,10 +33,14 @@
 	30 - Print
 	31 - Responsiveness
 ****************************/
-
+html{
+    font-family: "arial";
+    background: white;
+    color: #5a5a5a
+}
 /* 01 RESET */
 *,*:before,*:after {-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
-body {font:15px/1.42 'Roboto Slab',Arial,Helvetica,sans-serif;text-align:center;color:#444;background:#F1F1F1;word-wrap:break-word;text-rendering:optimizeLegibility;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;}
+body {font:15px/1.42 Arial;text-align:center;color:#444;background:#F1F1F1;word-wrap:break-word;text-rendering:optimizeLegibility;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;}
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,address,cite,code,del,dfn,em,img,ins,q,small,strong,sub,sup,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,input,table,caption,tbody,tfoot,thead,tr,th,td,figure{border:0;margin:0;padding:0}
 html {overflow-y: scroll;-webkit-text-size-adjust:auto;-webkit-overflow-scrolling: touch;}
 
@@ -79,7 +83,7 @@ h4 {font-weight:normal;font-size:18px;padding:0 0 15px;color:#2B3941;}
 h5 {font-weight:normal;font-size:16px;padding:0 0 15px;}
 h6 {font-weight:normal;font-size:14px;padding:0 0 15px;}
 
-.logo, h1, h2, h3, h4, h5, h6,nav.tabs,.tab-content .accordion dt,.results figcaption dt,ol.custom li:before,.home .hentry h3,.booking .box-white h5,.boxed header,.details .price	 {font-family: 'Roboto Slab', serif;}
+.logo, h1, h2, h3, h4, h5, h6,nav.tabs,.tab-content .accordion dt,.results figcaption dt,ol.custom li:before,.home .hentry h3,.booking .box-white h5,.boxed header,.details .price	 {font-family: Arial;}
 
 strong {font-weight:600;}
 p.lead {font-size:17px;font-weight:500;padding:5px 0 15px;}
@@ -825,12 +829,12 @@ aside.above-footer	{float:left;width:100%;}
 .widget h6 	{font-family:'Raleway',Arial,Helvetica,sans-serif;}
 
 /* 26 FOOTER */	
-.footer 					{float:left;width:100%;background:#253238;color:#fff;padding:35px 0 0;}
+.footer 					{float:left;width:100%;background:#efefef;color:#777;padding:35px 0 0;}
 .footer h6				{font-size:17px;padding:0 0 25px;}
 .footer ul li 				{padding-bottom:4px;}
 .footer a 				{color:#fff;}
 .footer a:hover 			{color:#CAB08A;}
-.footer .circle 			{float:left;background:#515E64;font-size:18px;width:40px;height:40px;-webkit-border-radius:20px;-moz-border-radius:20px;border-radius:20px;line-height:40px;margin:0 5px 5px 0;}
+.footer .circle 			{float:left;background:#bebebe;font-size:18px;width:40px;height:40px;-webkit-border-radius:20px;-moz-border-radius:20px;border-radius:20px;line-height:40px;margin:0 5px 5px 0;}
 .footer .circle:hover 	{background:#C5A97F;color:#fff;}
 
 
@@ -845,7 +849,7 @@ aside.above-footer	{float:left;width:100%;}
 /* 	.footer ul > li:before { left: 120px; } */
 /* } */
 
-.copy 				{background:#2B3A42;color:#fff;font-size: 13px;}
+.copy 				{background:#bebebe;color:#777;font-size: 13px;}
 .copy p 				{float:left;padding:19px 0 15px;}
 .copy p:last-child 	{float:right;}
 .copy a 				{font-weight:600;}

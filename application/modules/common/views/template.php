@@ -6,18 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="Cimitarra Yachts" />
     
-    <?php if (!empty($description)): ?>
-        <meta name="description" content="<?= $description ?>">
-    <?php else: ?>
-        <meta name="description" content="Cimitarra Yachts" /> 
-    <?php endif ?>
-    
-    <?php if (!empty($title)): ?>
-        <title><?php echo $title ?></title>
-    <?php else: ?>
+
+        <meta name="description" content="Sedna Group" />
+
+
         <title>Sedna Group</title>
-    <?php endif ?>
-    
+
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/fonts.css" />
     <link rel="stylesheet" href="assets/css/lightSlider.min.css" />
@@ -59,7 +53,7 @@
             <div class="full-width">
               <div class="social">
                 <a href="https://www.facebook.com/SednaYachts.br/" target="_blank" class="circle"><i class="fa fa-facebook"></i></a>
-                <a href="https://www.youtube.com/channel/UCLojQsbDSNKVfNELwI0nP3w" target="_blank" class="circle"><i class="fa fa-youtube-play"></i></a>
+                <a href="https://www.youtube.com/channel/UCwY5SMZCkW4eZeaacX3Pjbw" target="_blank" class="circle"><i class="fa fa-youtube-play"></i></a>
                 <a href="https://www.instagram.com/cimitarrayachts/" target="_blank" class="circle"><i class="fa fa-instagram"></i></a>
               </div>
               <div class="language">
@@ -81,10 +75,10 @@
           <nav class="main-nav" role="navigation">
               <ul class="jetmenu" id="jetmenu">
                   <li><a href="<?php echo base_url();?>" title="Home">Home</a></li>
-                  <li><a href="empresa" title="Empresa">empresa</a></li>
+<!--                  <li><a href="empresa" title="Empresa">empresa</a></li>-->
                   <li><a href="noticias" title="Noticias">notícias</a></li>
-                  <li><a href="imprensas" title="Imprensa">Imprensa</a></li>
-                  <li><a href="assistencia-tecnica" title="Assistência técnica">assistência técnica</a></li>
+<!--                  <li><a href="imprensas" title="Imprensa">Imprensa</a></li>-->
+<!--                  <li><a href="assistencia-tecnica" title="Assistência técnica">assistência técnica</a></li>-->
                   <li class="fix-sub">
                     <li><a>Embarcações</a>
                         <ul class="dropdown">
@@ -233,16 +227,7 @@
     <!-- Photo -->
     <section class="photo">
         <div class="wrap text-right">
-            <p class="font-source-sans">
-            Fabricamos embarcações de alta  qualidade desde 1999,
-            <br>
-            com seriedade e compromisso com nossos clientes.
-            </p>
-            <h2 class="font-source-sans">
-                Cimitarra Yachts.
-                <br>
-                A compra inteligente.
-            </h2>
+
         </div>
     </section>
     <!-- //Photo -->
@@ -254,42 +239,41 @@
           <div class="row">
             <!-- OneFourth -->
             <div class="one-third">
-              <img src="assets/images/logo-white.png" class="margin-bottom-md" alt="Cimitarra Yachts">
+              <img src="assets/images/logo.png" class="margin-bottom-md" alt="Cimitarra Yachts">
               <p>
-                Trabalhamos com as melhores embarcações. Garantindo luxo, sofisticação conforto e segurança.
+                  Fabricamos embarcações de alto nível aliando qualidade, conforto, alta performance, excelente navegabilidade, robustez e segurança.
               </p>
             </div>
             <!-- //OneFourth -->
             
             <!-- OneFourth -->
-            <div class="one-fifth text-center">
-              <h6>Cimitarra</h6>
-              <ul>
-                <li><a href="embarcacoes/detalhe/cimitarra/360/360-hard-top">360</a></li>
-                <li><a href="embarcacoes/detalhe/cimitarra/400/400-hard-top">400</a></li>
-                <li><a href="embarcacoes/detalhe/cimitarra/460/460-fly-bridge">460</a></li>                
-              </ul>
+            <div class="one-fifth ">
+              <h6>Contato</h6>
+                <p>
+                    +55 (11) 2307-7007
+                </p>
+                <p>
+                    contato@sednagroup.com.br
+                </p>
+                <p>
+                    Avenida Europa, 421 - Jardim Europa
+                    <br>
+                    CEP: 01449001 - São Paulo, Brasil
+                </p>
             </div>
-            <!-- //OneFourth -->
-            
-            <!-- OneFourth -->
-            <div class="one-fifth text-center footer-collumn-pull-left-adjust">
-              <h6>Cimitarra Yachts</h6>
-              <ul>
-                <li><a href="embarcacoes/detalhe/cimitarra-yachts/540/540-fly-bridge">540</a></li>
-                <li><a href="embarcacoes/detalhe/cimitarra-yachts/600/600-fly-bridge">600</a></li>
-                <li><a href="embarcacoes/detalhe/cimitarra-yachts/640/640-fly-bridge">640</a></li>
-                <li><a href="embarcacoes/detalhe/cimitarra-yachts/780/780-fly-bridge">780</a></li>
-              </ul>
-            </div>
+
+              <!-- OneFourth -->
+              <div class="one-fifth text-center footer-collumn-pull-left-adjust">
+
+              </div>
             <!-- //OneFourth -->
             
             <!-- OneFourth -->
             <div class="one-fourth">
               <h6>Siga-nos</h6>
-              <p>Siga nossas redes sociais e fique por dentro de tudo que acontece na Cimitarra.</p>
+              <p>Acesse nossas redes sociais e fique por dentro de tudo o que acontece no Sedna Group.</p>
               <a href="https://www.facebook.com/SednaYachts.br/" target="blank" title="Facebook" class="circle"><i class="fa fa-facebook fa-fw"></i></a>
-              <a href="https://www.youtube.com/channel/UCLojQsbDSNKVfNELwI0nP3w" target="blank" title="Youtube" class="circle"><i class="fa fa-youtube-play fa-fw"></i></a>
+              <a href="https://www.youtube.com/channel/UCwY5SMZCkW4eZeaacX3Pjbw" target="blank" title="Youtube" class="circle"><i class="fa fa-youtube-play fa-fw"></i></a>
               <a href="https://www.instagram.com/cimitarrayachts" target="blank" title="Instagram" class="circle"><i class="fa fa-instagram fa-fw"></i></a>
 
             </div>
@@ -302,7 +286,7 @@
           <!-- Wrapper -->
           <div class="wrap">
             <p>Cimitarra Yachts <?php echo gmdate("Y"); ?>. Todos os Direitos Reservados</p>
-            <p>By <a href="http://vioti.com.br" target="_blank" title="vioti.com.br">Vioti</a></p>
+            <p>By <a style="color: #777" href="http://vioti.com.br" target="_blank" title="vioti.com.br">Vioti</a></p>
           </div>
           <!-- //Wrapper -->
         </div>

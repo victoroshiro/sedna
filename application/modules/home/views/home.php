@@ -81,7 +81,7 @@
                     </script>
                     
 
-                    <section class="cta grey">
+                    <section class="cta ">
                             <div class="wrap center">
                                     <div class="text-center">
                                             <h2>Coleções Sedna Group</h2>
@@ -113,11 +113,11 @@
                     </section>
                     
                     <!-- Photo -->
-                    <section class="photo about-parallax" style="background-image: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2)), url('assets/images/parallax/home.jpg');">
-                        <div class="wrap center">
-                            <a href="empresa" title="Find out more" class="button white medium">Sobre a Cimitarra Yachts</a>
-                        </div>
-                    </section>
+<!--                    <section class="photo about-parallax" style="background-image: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2)), url('assets/images/parallax/home.jpg');">-->
+<!--                        <div class="wrap center">-->
+<!--                            <a href="empresa" title="Find out more" class="button white medium">Sobre a Cimitarra Yachts</a>-->
+<!--                        </div>-->
+<!--                    </section>-->
 		<!-- //Photo -->
 		
 		<!-- Yachts -->
@@ -125,7 +125,7 @@
                     <div class="wrap center margin-top-lg">
                         <div class="full-width text-center">
                             <h2>
-                                Seminovos Cimitarra
+                                Seminovos
                                 <br>
                                 <small>As melhores oportunidades você encontra aqui.</small>
                             </h2>

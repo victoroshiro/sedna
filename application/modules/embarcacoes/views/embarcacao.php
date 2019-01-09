@@ -176,7 +176,7 @@
 					?>
 							<li>
 								<a href="#tab2" title="Specifications">
-									<span class="icojam_document"></span> SOBRE a <?php echo $embarcacao->titulo; ?>
+									<span class=""></span> CRACTERÍSTICAS TÉCNICAS
 								</a>
 							</li>
 					<?php  
@@ -185,7 +185,7 @@
 					?>
 							<li>
 								<a href="#tab3" title="Equipment">
-									<span class="icojam_document"></span> ITENS DE SERIE
+									<span class=""></span> ITENS DE SERIE
 								</a>
 							</li>
 					<?php  
