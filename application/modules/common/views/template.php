@@ -61,7 +61,7 @@
                 <ul>
                   <!-- <li><a href="en" class="flag en"><img src="<?php echo site_url('assets/images/flag/btn_en.png'); ?>" alt="English"></a></li> -->
                   <!-- <li><a href="es" class="flag es"><img src="<?php echo site_url('assets/images/flag/btn_es.png'); ?>" alt="Español"></a></li> -->
-                  <li><img src="assets/images/favicon.png"> Acesse nossas redes sociais:</li>
+                  <li><img src="assets/images/favicon.png">Siga-nos:</li>
                 </ul>
               </div>
             </div>
@@ -273,7 +273,7 @@
             <!-- OneFourth -->
             <div class="one-fourth">
               <h6>Siga-nos</h6>
-              <p>Siga-nos:</p>
+              <p>Acesse nossas redes sociais e fique por dentro de novidades e eventos da Sedna Group.</p>
               <a href="https://www.facebook.com/SednaYachts.br/" target="blank" title="Facebook" class="circle"><i class="fa fa-facebook fa-fw"></i></a>
               <a href="https://www.youtube.com/channel/UCwY5SMZCkW4eZeaacX3Pjbw" target="blank" title="Youtube" class="circle"><i class="fa fa-youtube-play fa-fw"></i></a>
               <a href="https://www.instagram.com/sednagroup" target="blank" title="Instagram" class="circle"><i class="fa fa-instagram fa-fw"></i></a>

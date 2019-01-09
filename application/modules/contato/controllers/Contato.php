@@ -113,8 +113,8 @@ class Contato extends CI_Controller {
 
         $this->email->initialize($config);
 
-        $this->email->from('contato@Sedna Group.com.br', 'Contato');
-        $this->email->to('contato@Sedna Group.com.br');
+        $this->email->from('contato@sednagroup.com.br', 'Contato');
+        $this->email->to('contato@sednagroup.com.br');
         
         $this->email->subject('Contato - '.$dados['name']);
         $this->email->message($mensagem);
@@ -126,7 +126,7 @@ class Contato extends CI_Controller {
 
         $this->email->clear(TRUE);
 
-        $this->email->from('contato@Sedna Group.com.br', 'Sedna Group Yachts');
+        $this->email->from('contato@sednagroup.com.br', 'Sedna Group Yachts');
         $this->email->to($dados['email']);
         $this->email->subject('Recebemos sua mensagem');
 
