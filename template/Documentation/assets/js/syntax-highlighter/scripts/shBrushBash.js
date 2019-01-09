@@ -39,7 +39,7 @@
 						;
 
 		this.regexList = [
-			{ regex: /^#!.*$/gm,											css: 'preprocessor bold' },
+			{ regex: /^#!.*$/gm,											css: 'preprocessor normal' },
 			{ regex: /\/[\w-\/]+/gm,										css: 'plain' },
 			{ regex: SyntaxHighlighter.regexLib.singleLinePerlComments,		css: 'comments' },		// one line comments
 			{ regex: SyntaxHighlighter.regexLib.doubleQuotedString,			css: 'string' },		// double quoted strings

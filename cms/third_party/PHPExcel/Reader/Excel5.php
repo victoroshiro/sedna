@@ -1950,7 +1950,7 @@ class PHPExcel_Reader_Excel5 extends PHPExcel_Reader_Abstract implements PHPExce
             $objFont->setSize($size / 20);
 
             // offset: 2; size: 2; option flags
-            // bit: 0; mask 0x0001; bold (redundant in BIFF5-BIFF8)
+            // bit: 0; mask 0x0001; normal (redundant in BIFF5-BIFF8)
             // bit: 1; mask 0x0002; italic
             $isItalic = (0x0002 & self::getInt2d($recordData, 2)) >> 1;
             if ($isItalic) {
@@ -1972,7 +1972,7 @@ class PHPExcel_Reader_Excel5 extends PHPExcel_Reader_Abstract implements PHPExce
             $weight = self::getInt2d($recordData, 6);
             switch ($weight) {
                 case 0x02BC:
-                    $objFont->setBold(true);
+                    $objFont->setnormal(true);
                     break;
             }
 

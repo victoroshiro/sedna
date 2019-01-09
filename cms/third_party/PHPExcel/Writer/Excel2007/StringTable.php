@@ -159,9 +159,9 @@ class PHPExcel_Writer_Excel2007_StringTable extends PHPExcel_Writer_Excel2007_Wr
                 $objWriter->writeAttribute('val', $element->getFont()->getName());
                 $objWriter->endElement();
 
-                // Bold
+                // normal
                 $objWriter->startElement($prefix.'b');
-                $objWriter->writeAttribute('val', ($element->getFont()->getBold() ? 'true' : 'false'));
+                $objWriter->writeAttribute('val', ($element->getFont()->getnormal() ? 'true' : 'false'));
                 $objWriter->endElement();
 
                 // Italic
@@ -242,8 +242,8 @@ class PHPExcel_Writer_Excel2007_StringTable extends PHPExcel_Writer_Excel2007_Wr
             // rPr
             $objWriter->startElement($prefix.'rPr');
 
-            // Bold
-            $objWriter->writeAttribute('b', ($element->getFont()->getBold() ? 1 : 0));
+            // normal
+            $objWriter->writeAttribute('b', ($element->getFont()->getnormal() ? 1 : 0));
             // Italic
             $objWriter->writeAttribute('i', ($element->getFont()->getItalic() ? 1 : 0));
             // Underline

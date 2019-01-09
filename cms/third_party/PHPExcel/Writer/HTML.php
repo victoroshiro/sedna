@@ -981,8 +981,8 @@ class PHPExcel_Writer_HTML extends PHPExcel_Writer_Abstract implements PHPExcel_
         $css = array();
 
         // Create CSS
-        if ($pStyle->getBold()) {
-            $css['font-weight'] = 'bold';
+        if ($pStyle->getnormal()) {
+            $css['font-weight'] = 'normal';
         }
         if ($pStyle->getUnderline() != PHPExcel_Style_Font::UNDERLINE_NONE && $pStyle->getStrikethrough()) {
             $css['text-decoration'] = 'underline line-through';

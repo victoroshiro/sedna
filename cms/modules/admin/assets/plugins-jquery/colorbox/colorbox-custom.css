@@ -17,9 +17,9 @@
 	#modalContent{background:#fff; }
 		#modalLoadedContent{margin-bottom:20px;}
 			#contentTitle{display:none;}
-			#contentCurrent{position:absolute; bottom:0px; left:65px; font-weight:bold; color:#999;}
-			#contentPrevious{position:absolute; bottom:0px; left:0; font-weight:bold;}
-			#contentNext{position:absolute; bottom:0px; left:110px; font-weight:bold;}
+			#contentCurrent{position:absolute; bottom:0px; left:65px; font-weight:normal; color:#999;}
+			#contentPrevious{position:absolute; bottom:0px; left:0; font-weight:normal;}
+			#contentNext{position:absolute; bottom:0px; left:110px; font-weight:normal;}
 		#modalLoadingOverlay{background:url(images/loading.gif) 5px 5px no-repeat #fff;}
-		#modalClose{position:absolute; bottom:0; right:0; display:block;  font-weight:bold; color:#333; text-decoration:none;}
+		#modalClose{position:absolute; bottom:0; right:0; display:block;  font-weight:normal; color:#333; text-decoration:none;}
 		#modalClose:hover{background-position:bottom left; color:#666;}

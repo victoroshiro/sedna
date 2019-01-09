@@ -38,9 +38,9 @@ For licensing, see LICENSE.md or http://ckeditor.com/license
 CKEDITOR.replace( '<em>textarea_id</em>', {
 	contentsCss: 'assets/outputxhtml.css',
 
-	coreStyles_bold: {
+	coreStyles_normal: {
 		element: 'span',
-		attributes: { 'class': 'Bold' }
+		attributes: { 'class': 'normal' }
 	},
 	coreStyles_italic: {
 		element: 'span',
@@ -55,7 +55,7 @@ CKEDITOR.replace( '<em>textarea_id</em>', {
 			<label for="editor1">
 				Editor 1:
 			</label>
-			<textarea cols="80" id="editor1" name="editor1" rows="10">&lt;p&gt;This is some &lt;span class="Bold"&gt;sample text&lt;/span&gt;. You are using &lt;a href="http://ckeditor.com/"&gt;CKEditor&lt;/a&gt;.&lt;/p&gt;</textarea>
+			<textarea cols="80" id="editor1" name="editor1" rows="10">&lt;p&gt;This is some &lt;span class="normal"&gt;sample text&lt;/span&gt;. You are using &lt;a href="http://ckeditor.com/"&gt;CKEditor&lt;/a&gt;.&lt;/p&gt;</textarea>
 			<script>
 
 				CKEDITOR.replace( 'editor1', {
@@ -79,9 +79,9 @@ CKEDITOR.replace( '<em>textarea_id</em>', {
 					/*
 					 * Core styles.
 					 */
-					coreStyles_bold: {
+					coreStyles_normal: {
 						element: 'span',
-						attributes: { 'class': 'Bold' }
+						attributes: { 'class': 'normal' }
 					},
 					coreStyles_italic: {
 						element: 'span',

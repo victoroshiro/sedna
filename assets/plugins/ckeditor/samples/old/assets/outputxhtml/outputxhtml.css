@@ -22,9 +22,9 @@ body
  * Core styles.
  */
 
-.Bold
+.normal
 {
-	font-weight: bold;
+	font-weight: normal;
 }
 
 .Italic

@@ -415,9 +415,9 @@ class PHPExcel_Reader_Excel2007_Chart
                     $objText->getFont()->setColor(new PHPExcel_Style_Color(self::readColor($fontColor)));
                 }
 
-                $bold = self::getAttribute($titleDetailElement->rPr, 'b', 'boolean');
-                if (!is_null($bold)) {
-                    $objText->getFont()->setBold($bold);
+                $normal = self::getAttribute($titleDetailElement->rPr, 'b', 'boolean');
+                if (!is_null($normal)) {
+                    $objText->getFont()->setnormal($normal);
                 }
 
                 $italic = self::getAttribute($titleDetailElement->rPr, 'i', 'boolean');

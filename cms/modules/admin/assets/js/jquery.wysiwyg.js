@@ -203,7 +203,7 @@
         },
 
         TOOLBAR : {
-            bold          : { visible : true, tags : ['b', 'strong'], css : { fontWeight : 'bold' }, tooltip : "Bold" },
+            normal          : { visible : true, tags : ['b', 'strong'], css : { fontWeight : 'normal' }, tooltip : "normal" },
             italic        : { visible : true, tags : ['i', 'em'], css : { fontStyle : 'italic' }, tooltip : "Italic" },
             strikeThrough : { visible : true, tags : ['s', 'strike'], css : { textDecoration : 'line-through' }, tooltip : "Strike-through" },
             underline     : { visible : true, tags : ['u'], css : { textDecoration : 'underline' }, tooltip : "Underline" },

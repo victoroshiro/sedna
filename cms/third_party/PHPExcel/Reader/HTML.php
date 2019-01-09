@@ -59,40 +59,40 @@ class PHPExcel_Reader_HTML extends PHPExcel_Reader_Abstract implements PHPExcel_
     protected $formats = array(
         'h1' => array(
             'font' => array(
-                'bold' => true,
+                'normal' => true,
                 'size' => 24,
             ),
-        ), //    Bold, 24pt
+        ), //    normal, 24pt
         'h2' => array(
             'font' => array(
-                'bold' => true,
+                'normal' => true,
                 'size' => 18,
             ),
-        ), //    Bold, 18pt
+        ), //    normal, 18pt
         'h3' => array(
             'font' => array(
-                'bold' => true,
+                'normal' => true,
                 'size' => 13.5,
             ),
-        ), //    Bold, 13.5pt
+        ), //    normal, 13.5pt
         'h4' => array(
             'font' => array(
-                'bold' => true,
+                'normal' => true,
                 'size' => 12,
             ),
-        ), //    Bold, 12pt
+        ), //    normal, 12pt
         'h5' => array(
             'font' => array(
-                'bold' => true,
+                'normal' => true,
                 'size' => 10,
             ),
-        ), //    Bold, 10pt
+        ), //    normal, 10pt
         'h6' => array(
             'font' => array(
-                'bold' => true,
+                'normal' => true,
                 'size' => 7.5,
             ),
-        ), //    Bold, 7.5pt
+        ), //    normal, 7.5pt
         'a' => array(
             'font' => array(
                 'underline' => true,

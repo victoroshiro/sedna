@@ -70,44 +70,44 @@ class Exportar extends CI_Controller {
 		//set cell A1 content with some text
 			$this->excel->getActiveSheet()->setCellValue('A1', 'Nome');
 			$this->excel->getActiveSheet()->getStyle('A1')->getFont()->setSize(12);
-			$this->excel->getActiveSheet()->getStyle('A1')->getFont()->setBold(true);
+			$this->excel->getActiveSheet()->getStyle('A1')->getFont()->setnormal(true);
 
 			$this->excel->getActiveSheet()->setCellValue('B1', 'E-mail');
 			$this->excel->getActiveSheet()->getStyle('B1')->getFont()->setSize(12);
-			$this->excel->getActiveSheet()->getStyle('B1')->getFont()->setBold(true);
+			$this->excel->getActiveSheet()->getStyle('B1')->getFont()->setnormal(true);
 
 			$this->excel->getActiveSheet()->setCellValue('C1', 'Telefone');
 			$this->excel->getActiveSheet()->getStyle('C1')->getFont()->setSize(12);
-			$this->excel->getActiveSheet()->getStyle('C1')->getFont()->setBold(true);
+			$this->excel->getActiveSheet()->getStyle('C1')->getFont()->setnormal(true);
 
 			$this->excel->getActiveSheet()->setCellValue('D1', 'Mensagem');
 			$this->excel->getActiveSheet()->getStyle('D1')->getFont()->setSize(12);
-			$this->excel->getActiveSheet()->getStyle('D1')->getFont()->setBold(true);
+			$this->excel->getActiveSheet()->getStyle('D1')->getFont()->setnormal(true);
 
 		if($nome_planilha == 'Contato'){
 			$this->excel->getActiveSheet()->setCellValue('E1', 'Embarcação');
 			$this->excel->getActiveSheet()->getStyle('E1')->getFont()->setSize(12);
-			$this->excel->getActiveSheet()->getStyle('E1')->getFont()->setBold(true);
+			$this->excel->getActiveSheet()->getStyle('E1')->getFont()->setnormal(true);
 
 			$this->excel->getActiveSheet()->setCellValue('F1', 'Data');
 			$this->excel->getActiveSheet()->getStyle('F1')->getFont()->setSize(12);
-			$this->excel->getActiveSheet()->getStyle('F1')->getFont()->setBold(true);
+			$this->excel->getActiveSheet()->getStyle('F1')->getFont()->setnormal(true);
 
 			$this->excel->getActiveSheet()->setCellValue('G1', 'Quer receber newsletter?');
 			$this->excel->getActiveSheet()->getStyle('G1')->getFont()->setSize(12);
-			$this->excel->getActiveSheet()->getStyle('G1')->getFont()->setBold(true);
+			$this->excel->getActiveSheet()->getStyle('G1')->getFont()->setnormal(true);
 		}else{
 			$this->excel->getActiveSheet()->setCellValue('E1', 'Área de Interesse:');
 			$this->excel->getActiveSheet()->getStyle('E1')->getFont()->setSize(12);
-			$this->excel->getActiveSheet()->getStyle('E1')->getFont()->setBold(true);
+			$this->excel->getActiveSheet()->getStyle('E1')->getFont()->setnormal(true);
 
 			$this->excel->getActiveSheet()->setCellValue('F1', 'Currículo');
 			$this->excel->getActiveSheet()->getStyle('F1')->getFont()->setSize(12);
-			$this->excel->getActiveSheet()->getStyle('F1')->getFont()->setBold(true);
+			$this->excel->getActiveSheet()->getStyle('F1')->getFont()->setnormal(true);
 
 			$this->excel->getActiveSheet()->setCellValue('G1', 'Data');
 			$this->excel->getActiveSheet()->getStyle('G1')->getFont()->setSize(12);
-			$this->excel->getActiveSheet()->getStyle('G1')->getFont()->setBold(true);
+			$this->excel->getActiveSheet()->getStyle('G1')->getFont()->setnormal(true);
 		}	
 
 

@@ -274,12 +274,12 @@ class PHPExcel_Writer_Excel2007_Style extends PHPExcel_Writer_Excel2007_WriterPa
         //        files in Excel2003 with the compatibility pack. It's not documented behaviour,
         //        and makes for a real WTF!
 
-        // Bold. We explicitly write this element also when false (like MS Office Excel 2007 does
+        // normal. We explicitly write this element also when false (like MS Office Excel 2007 does
         // for conditional formatting). Otherwise it will apparently not be picked up in conditional
         // formatting style dialog
-        if ($pFont->getBold() !== null) {
+        if ($pFont->getnormal() !== null) {
             $objWriter->startElement('b');
-            $objWriter->writeAttribute('val', $pFont->getBold() ? '1' : '0');
+            $objWriter->writeAttribute('val', $pFont->getnormal() ? '1' : '0');
             $objWriter->endElement();
         }
 

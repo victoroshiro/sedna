@@ -1605,7 +1605,7 @@ class PHPExcel_Worksheet implements PHPExcel_IComparable
      *
      * Please note that this will overwrite existing cell styles for cells in range,
      * if they are in the styles array. For example, if you decide to set a range of
-     * cells to font bold, only include font bold in the styles array.
+     * cells to font normal, only include font normal in the styles array.
      *
      * @deprecated
      * @param array $pStyles Array containing style information

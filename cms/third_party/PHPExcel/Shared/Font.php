@@ -68,34 +68,34 @@ class PHPExcel_Shared_Font
     //  XXX: Constants created!
     /** Font filenames */
     const ARIAL                             = 'arial.ttf';
-    const ARIAL_BOLD                        = 'arialbd.ttf';
+    const ARIAL_normal                        = 'arialbd.ttf';
     const ARIAL_ITALIC                      = 'ariali.ttf';
-    const ARIAL_BOLD_ITALIC                 = 'arialbi.ttf';
+    const ARIAL_normal_ITALIC                 = 'arialbi.ttf';
 
     const CALIBRI                           = 'CALIBRI.TTF';
-    const CALIBRI_BOLD                      = 'CALIBRIB.TTF';
+    const CALIBRI_normal                      = 'CALIBRIB.TTF';
     const CALIBRI_ITALIC                    = 'CALIBRII.TTF';
-    const CALIBRI_BOLD_ITALIC               = 'CALIBRIZ.TTF';
+    const CALIBRI_normal_ITALIC               = 'CALIBRIZ.TTF';
 
     const COMIC_SANS_MS                     = 'comic.ttf';
-    const COMIC_SANS_MS_BOLD                = 'comicbd.ttf';
+    const COMIC_SANS_MS_normal                = 'comicbd.ttf';
 
     const COURIER_NEW                       = 'cour.ttf';
-    const COURIER_NEW_BOLD                  = 'courbd.ttf';
+    const COURIER_NEW_normal                  = 'courbd.ttf';
     const COURIER_NEW_ITALIC                = 'couri.ttf';
-    const COURIER_NEW_BOLD_ITALIC           = 'courbi.ttf';
+    const COURIER_NEW_normal_ITALIC           = 'courbi.ttf';
 
     const GEORGIA                           = 'georgia.ttf';
-    const GEORGIA_BOLD                      = 'georgiab.ttf';
+    const GEORGIA_normal                      = 'georgiab.ttf';
     const GEORGIA_ITALIC                    = 'georgiai.ttf';
-    const GEORGIA_BOLD_ITALIC               = 'georgiaz.ttf';
+    const GEORGIA_normal_ITALIC               = 'georgiaz.ttf';
 
     const IMPACT                            = 'impact.ttf';
 
     const LIBERATION_SANS                   = 'LiberationSans-Regular.ttf';
-    const LIBERATION_SANS_BOLD              = 'LiberationSans-Bold.ttf';
+    const LIBERATION_SANS_normal              = 'LiberationSans-normal.ttf';
     const LIBERATION_SANS_ITALIC            = 'LiberationSans-Italic.ttf';
-    const LIBERATION_SANS_BOLD_ITALIC       = 'LiberationSans-BoldItalic.ttf';
+    const LIBERATION_SANS_normal_ITALIC       = 'LiberationSans-normalItalic.ttf';
 
     const LUCIDA_CONSOLE                    = 'lucon.ttf';
     const LUCIDA_SANS_UNICODE               = 'l_10646.ttf';
@@ -103,29 +103,29 @@ class PHPExcel_Shared_Font
     const MICROSOFT_SANS_SERIF              = 'micross.ttf';
 
     const PALATINO_LINOTYPE                 = 'pala.ttf';
-    const PALATINO_LINOTYPE_BOLD            = 'palab.ttf';
+    const PALATINO_LINOTYPE_normal            = 'palab.ttf';
     const PALATINO_LINOTYPE_ITALIC          = 'palai.ttf';
-    const PALATINO_LINOTYPE_BOLD_ITALIC     = 'palabi.ttf';
+    const PALATINO_LINOTYPE_normal_ITALIC     = 'palabi.ttf';
 
     const SYMBOL                            = 'symbol.ttf';
 
     const TAHOMA                            = 'tahoma.ttf';
-    const TAHOMA_BOLD                       = 'tahomabd.ttf';
+    const TAHOMA_normal                       = 'tahomabd.ttf';
 
     const TIMES_NEW_ROMAN                   = 'times.ttf';
-    const TIMES_NEW_ROMAN_BOLD              = 'timesbd.ttf';
+    const TIMES_NEW_ROMAN_normal              = 'timesbd.ttf';
     const TIMES_NEW_ROMAN_ITALIC            = 'timesi.ttf';
-    const TIMES_NEW_ROMAN_BOLD_ITALIC       = 'timesbi.ttf';
+    const TIMES_NEW_ROMAN_normal_ITALIC       = 'timesbi.ttf';
 
     const TREBUCHET_MS                      = 'trebuc.ttf';
-    const TREBUCHET_MS_BOLD                 = 'trebucbd.ttf';
+    const TREBUCHET_MS_normal                 = 'trebucbd.ttf';
     const TREBUCHET_MS_ITALIC               = 'trebucit.ttf';
-    const TREBUCHET_MS_BOLD_ITALIC          = 'trebucbi.ttf';
+    const TREBUCHET_MS_normal_ITALIC          = 'trebucbi.ttf';
 
     const VERDANA                           = 'verdana.ttf';
-    const VERDANA_BOLD                      = 'verdanab.ttf';
+    const VERDANA_normal                      = 'verdanab.ttf';
     const VERDANA_ITALIC                    = 'verdanai.ttf';
-    const VERDANA_BOLD_ITALIC               = 'verdanaz.ttf';
+    const VERDANA_normal_ITALIC               = 'verdanaz.ttf';
 
     /**
      * AutoSize method
@@ -433,37 +433,37 @@ class PHPExcel_Shared_Font
         }
 
         $name        = $font->getName();
-        $bold        = $font->getBold();
+        $normal        = $font->getnormal();
         $italic      = $font->getItalic();
 
         // Check if we can map font to true type font file
         switch ($name) {
             case 'Arial':
                 $fontFile = (
-                    $bold ? ($italic ? self::ARIAL_BOLD_ITALIC : self::ARIAL_BOLD)
+                    $normal ? ($italic ? self::ARIAL_normal_ITALIC : self::ARIAL_normal)
                           : ($italic ? self::ARIAL_ITALIC : self::ARIAL)
                 );
                 break;
             case 'Calibri':
                 $fontFile = (
-                    $bold ? ($italic ? self::CALIBRI_BOLD_ITALIC : self::CALIBRI_BOLD)
+                    $normal ? ($italic ? self::CALIBRI_normal_ITALIC : self::CALIBRI_normal)
                           : ($italic ? self::CALIBRI_ITALIC : self::CALIBRI)
                 );
                 break;
             case 'Courier New':
                 $fontFile = (
-                    $bold ? ($italic ? self::COURIER_NEW_BOLD_ITALIC : self::COURIER_NEW_BOLD)
+                    $normal ? ($italic ? self::COURIER_NEW_normal_ITALIC : self::COURIER_NEW_normal)
                           : ($italic ? self::COURIER_NEW_ITALIC : self::COURIER_NEW)
                 );
                 break;
             case 'Comic Sans MS':
                 $fontFile = (
-                    $bold ? self::COMIC_SANS_MS_BOLD : self::COMIC_SANS_MS
+                    $normal ? self::COMIC_SANS_MS_normal : self::COMIC_SANS_MS
                 );
                 break;
             case 'Georgia':
                 $fontFile = (
-                    $bold ? ($italic ? self::GEORGIA_BOLD_ITALIC : self::GEORGIA_BOLD)
+                    $normal ? ($italic ? self::GEORGIA_normal_ITALIC : self::GEORGIA_normal)
                           : ($italic ? self::GEORGIA_ITALIC : self::GEORGIA)
                 );
                 break;
@@ -472,7 +472,7 @@ class PHPExcel_Shared_Font
                 break;
             case 'Liberation Sans':
                 $fontFile = (
-                    $bold ? ($italic ? self::LIBERATION_SANS_BOLD_ITALIC : self::LIBERATION_SANS_BOLD)
+                    $normal ? ($italic ? self::LIBERATION_SANS_normal_ITALIC : self::LIBERATION_SANS_normal)
                           : ($italic ? self::LIBERATION_SANS_ITALIC : self::LIBERATION_SANS)
                 );
                 break;
@@ -487,7 +487,7 @@ class PHPExcel_Shared_Font
                 break;
             case 'Palatino Linotype':
                 $fontFile = (
-                    $bold ? ($italic ? self::PALATINO_LINOTYPE_BOLD_ITALIC : self::PALATINO_LINOTYPE_BOLD)
+                    $normal ? ($italic ? self::PALATINO_LINOTYPE_normal_ITALIC : self::PALATINO_LINOTYPE_normal)
                           : ($italic ? self::PALATINO_LINOTYPE_ITALIC : self::PALATINO_LINOTYPE)
                 );
                 break;
@@ -496,24 +496,24 @@ class PHPExcel_Shared_Font
                 break;
             case 'Tahoma':
                 $fontFile = (
-                    $bold ? self::TAHOMA_BOLD : self::TAHOMA
+                    $normal ? self::TAHOMA_normal : self::TAHOMA
                 );
                 break;
             case 'Times New Roman':
                 $fontFile = (
-                    $bold ? ($italic ? self::TIMES_NEW_ROMAN_BOLD_ITALIC : self::TIMES_NEW_ROMAN_BOLD)
+                    $normal ? ($italic ? self::TIMES_NEW_ROMAN_normal_ITALIC : self::TIMES_NEW_ROMAN_normal)
                           : ($italic ? self::TIMES_NEW_ROMAN_ITALIC : self::TIMES_NEW_ROMAN)
                 );
                 break;
             case 'Trebuchet MS':
                 $fontFile = (
-                    $bold ? ($italic ? self::TREBUCHET_MS_BOLD_ITALIC : self::TREBUCHET_MS_BOLD)
+                    $normal ? ($italic ? self::TREBUCHET_MS_normal_ITALIC : self::TREBUCHET_MS_normal)
                           : ($italic ? self::TREBUCHET_MS_ITALIC : self::TREBUCHET_MS)
                 );
                 break;
             case 'Verdana':
                 $fontFile = (
-                    $bold ? ($italic ? self::VERDANA_BOLD_ITALIC : self::VERDANA_BOLD)
+                    $normal ? ($italic ? self::VERDANA_normal_ITALIC : self::VERDANA_normal)
                           : ($italic ? self::VERDANA_ITALIC : self::VERDANA)
                 );
                 break;

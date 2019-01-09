@@ -74,7 +74,7 @@ body, td, input, select, textarea
 
 .PopupTabSelected
 {
-	font-weight: bold;
+	font-weight: normal;
 	cursor: default;
 	padding-top: 4px;
 	border-bottom: #f1f1e3 1px solid;

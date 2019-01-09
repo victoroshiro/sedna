@@ -619,7 +619,7 @@ class PHPExcel_Reader_Gnumeric extends PHPExcel_Reader_Abstract implements PHPEx
 //                            echo '<br />';
                             $styleArray['font']['name'] = (string) $styleRegion->Style->Font;
                             $styleArray['font']['size'] = intval($fontAttributes['Unit']);
-                            $styleArray['font']['bold'] = ($fontAttributes['Bold'] == '1') ? true : false;
+                            $styleArray['font']['normal'] = ($fontAttributes['normal'] == '1') ? true : false;
                             $styleArray['font']['italic'] = ($fontAttributes['Italic'] == '1') ? true : false;
                             $styleArray['font']['strike'] = ($fontAttributes['StrikeThrough'] == '1') ? true : false;
                             switch ($fontAttributes['Underline']) {

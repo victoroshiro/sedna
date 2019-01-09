@@ -1584,7 +1584,7 @@ a:hover .icon.ico6{background:url(../images/ico6-hover.png) no-repeat;}
 	overflow:hidden;
 	height:1%;
 }
-.msg-box strong {font-weight:bold;}
+.msg-box strong {font-weight:normal;}
 .msg-box .btn-close {
 	float:right;
 	background:url(../images/warinig-btn-close.png) no-repeat;
@@ -2022,7 +2022,7 @@ a:hover .icon.ico6{background:url(../images/ico6-hover.png) no-repeat;}
 }
 .price-table .price-box .sup {
 	font:600 36px/38px "Open Sans", Arial, Helvetica, sans-serif;
-	font-weight:bold;	
+	font-weight:normal;
 	color:#222;
 	display:inline;
 	position:relative;
@@ -2031,7 +2031,7 @@ a:hover .icon.ico6{background:url(../images/ico6-hover.png) no-repeat;}
 }
 .price-table .price-box .price {
 	font:600 60px/70px "Open Sans", Arial, Helvetica, sans-serif;
-	font-weight:bold;
+	font-weight:normal;
 	color:#222;
 	display:inline;
 	margin:0;

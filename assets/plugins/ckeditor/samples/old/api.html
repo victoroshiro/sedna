@@ -161,8 +161,8 @@ function onBlur() {
 					// Check for availability of corresponding plugins.
 					pluginsLoaded: function( evt ) {
 						var doc = CKEDITOR.document, ed = evt.editor;
-						if ( !ed.getCommand( 'bold' ) )
-							doc.getById( 'exec-bold' ).hide();
+						if ( !ed.getCommand( 'normal' ) )
+							doc.getById( 'exec-normal' ).hide();
 						if ( !ed.getCommand( 'link' ) )
 							doc.getById( 'exec-link' ).hide();
 					}
@@ -174,7 +174,7 @@ function onBlur() {
 		</p>
 
 		<div id="eButtons" style="display: none">
-			<input id="exec-bold" onclick="ExecuteCommand('bold');" type="button" value="Execute &quot;bold&quot; Command">
+			<input id="exec-normal" onclick="ExecuteCommand('normal');" type="button" value="Execute &quot;normal&quot; Command">
 			<input id="exec-link" onclick="ExecuteCommand('link');" type="button" value="Execute &quot;link&quot; Command">
 			<input onclick="Focus();" type="button" value="Focus">
 			<br><br>

@@ -185,7 +185,7 @@ class CI_Profiler {
 		foreach ($profile as $key => $val)
 		{
 			$key = ucwords(str_replace(array('_', '-'), ' ', $key));
-			$output .= '<tr><td style="padding:5px;width:50%;color:#000;font-weight:bold;background-color:#ddd;">'
+			$output .= '<tr><td style="padding:5px;width:50%;color:#000;font-weight:normal;background-color:#ddd;">'
 					.$key.'&nbsp;&nbsp;</td><td style="padding:5px;width:50%;color:#900;font-weight:normal;background-color:#ddd;">'
 					.$val."</td></tr>\n";
 		}
@@ -241,7 +241,7 @@ class CI_Profiler {
 		// Load the text helper so we can highlight the SQL
 		$this->CI->load->helper('text');
 
-		// Key words we want bolded
+		// Key words we want normaled
 		$highlight = array('SELECT', 'DISTINCT', 'FROM', 'WHERE', 'AND', 'LEFT&nbsp;JOIN', 'ORDER&nbsp;BY', 'GROUP&nbsp;BY', 'LIMIT', 'INSERT', 'INTO', 'VALUES', 'UPDATE', 'OR&nbsp;', 'HAVING', 'OFFSET', 'NOT&nbsp;IN', 'IN', 'LIKE', 'NOT&nbsp;LIKE', 'COUNT', 'MAX', 'MIN', 'ON', 'AS', 'AVG', 'SUM', '(', ')');
 
 		$output  = "\n\n";
@@ -278,9 +278,9 @@ class CI_Profiler {
 					$time = number_format($db->query_times[$key], 4);
 					$val = highlight_code($val);
 
-					foreach ($highlight as $bold)
+					foreach ($highlight as $normal)
 					{
-						$val = str_replace($bold, '<strong>'.$bold.'</strong>', $val);
+						$val = str_replace($normal, '<strong>'.$normal.'</strong>', $val);
 					}
 
 					$output .= '<tr><td style="padding:5px;vertical-align:top;width:1%;color:#900;font-weight:normal;background-color:#ddd;">'

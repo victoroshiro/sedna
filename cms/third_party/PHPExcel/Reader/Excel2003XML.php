@@ -471,8 +471,8 @@ class PHPExcel_Reader_Excel2003XML extends PHPExcel_Reader_Abstract implements P
                                 case 'Color':
                                     $this->styles[$styleID]['font']['color']['rgb'] = substr($styleAttributeValue, 1);
                                     break;
-                                case 'Bold':
-                                    $this->styles[$styleID]['font']['bold'] = true;
+                                case 'normal':
+                                    $this->styles[$styleID]['font']['normal'] = true;
                                     break;
                                 case 'Italic':
                                     $this->styles[$styleID]['font']['italic'] = true;

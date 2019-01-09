@@ -3124,7 +3124,7 @@ class PHPExcel_Writer_Excel5_Worksheet extends PHPExcel_Writer_Excel5_BIFFwriter
         // Font
         if ($conditional->getStyle()->getFont()->getName() != null
             || $conditional->getStyle()->getFont()->getSize() != null
-            || $conditional->getStyle()->getFont()->getBold() != null
+            || $conditional->getStyle()->getFont()->getnormal() != null
             || $conditional->getStyle()->getFont()->getItalic() != null
             || $conditional->getStyle()->getFont()->getSuperScript() != null
             || $conditional->getStyle()->getFont()->getSubScript() != null
@@ -3193,7 +3193,7 @@ class PHPExcel_Writer_Excel5_Worksheet extends PHPExcel_Writer_Excel5_BIFFwriter
             // Font Options
             $dataBlockFont .= pack('V', 0);
             // Font weight
-            if ($conditional->getStyle()->getFont()->getBold() == true) {
+            if ($conditional->getStyle()->getFont()->getnormal() == true) {
                 $dataBlockFont .= pack('v', 0x02BC);
             } else {
                 $dataBlockFont .= pack('v', 0x0190);
@@ -3416,8 +3416,8 @@ class PHPExcel_Writer_Excel5_Worksheet extends PHPExcel_Writer_Excel5_BIFFwriter
             $dataBlockFont .= pack('V', 0x00000000);
             // Options flags for modified font attributes
             $optionsFlags = 0;
-            $optionsFlagsBold = ($conditional->getStyle()->getFont()->getBold() == null ? 1 : 0);
-            $optionsFlags |= (1 == $optionsFlagsBold  ? 0x00000002 : 0);
+            $optionsFlagsnormal = ($conditional->getStyle()->getFont()->getnormal() == null ? 1 : 0);
+            $optionsFlags |= (1 == $optionsFlagsnormal  ? 0x00000002 : 0);
             $optionsFlags |= (1 == 1                  ? 0x00000008 : 0);
             $optionsFlags |= (1 == 1                  ? 0x00000010 : 0);
             $optionsFlags |= (1 == 0                  ? 0x00000020 : 0);

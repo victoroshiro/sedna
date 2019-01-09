@@ -100,7 +100,7 @@ a.circle.small:focus		{background:#515e64;}
 .circle.large:hover span {color:#fff;}
 
 /* 05 BUTTONS */
-.button 					{display:inline-block;border-style:solid; border-width:2px;text-align:center;text-transform:uppercase;font-weight:bold;padding:0 20px;max-width:100%;white-space:nowrap;}
+.button 					{display:inline-block;border-style:solid; border-width:2px;text-align:center;text-transform:uppercase;font-weight:normal;padding:0 20px;max-width:100%;white-space:nowrap;}
 
 .button.white 			{border-color:#fff;color:#fff;}
 .button.white:hover,

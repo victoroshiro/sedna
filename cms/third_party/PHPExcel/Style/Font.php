@@ -49,11 +49,11 @@ class PHPExcel_Style_Font extends PHPExcel_Style_Supervisor implements PHPExcel_
     protected $size = 11;
 
     /**
-     * Bold
+     * normal
      *
      * @var boolean
      */
-    protected $bold = false;
+    protected $normal = false;
 
     /**
      * Italic
@@ -116,7 +116,7 @@ class PHPExcel_Style_Font extends PHPExcel_Style_Supervisor implements PHPExcel_
         if ($isConditional) {
             $this->name = null;
             $this->size = null;
-            $this->bold = null;
+            $this->normal = null;
             $this->italic = null;
             $this->superScript = null;
             $this->subScript = null;
@@ -161,7 +161,7 @@ class PHPExcel_Style_Font extends PHPExcel_Style_Supervisor implements PHPExcel_
      * $objPHPExcel->getActiveSheet()->getStyle('B2')->getFont()->applyFromArray(
      *        array(
      *            'name'        => 'Arial',
-     *            'bold'        => TRUE,
+     *            'normal'        => TRUE,
      *            'italic'    => FALSE,
      *            'underline' => PHPExcel_Style_Font::UNDERLINE_DOUBLE,
      *            'strike'    => FALSE,
@@ -185,8 +185,8 @@ class PHPExcel_Style_Font extends PHPExcel_Style_Supervisor implements PHPExcel_
                 if (array_key_exists('name', $pStyles)) {
                     $this->setName($pStyles['name']);
                 }
-                if (array_key_exists('bold', $pStyles)) {
-                    $this->setBold($pStyles['bold']);
+                if (array_key_exists('normal', $pStyles)) {
+                    $this->setnormal($pStyles['normal']);
                 }
                 if (array_key_exists('italic', $pStyles)) {
                     $this->setItalic($pStyles['italic']);
@@ -283,34 +283,34 @@ class PHPExcel_Style_Font extends PHPExcel_Style_Supervisor implements PHPExcel_
     }
 
     /**
-     * Get Bold
+     * Get normal
      *
      * @return boolean
      */
-    public function getBold()
+    public function getnormal()
     {
         if ($this->isSupervisor) {
-            return $this->getSharedComponent()->getBold();
+            return $this->getSharedComponent()->getnormal();
         }
-        return $this->bold;
+        return $this->normal;
     }
 
     /**
-     * Set Bold
+     * Set normal
      *
      * @param boolean $pValue
      * @return PHPExcel_Style_Font
      */
-    public function setBold($pValue = false)
+    public function setnormal($pValue = false)
     {
         if ($pValue == '') {
             $pValue = false;
         }
         if ($this->isSupervisor) {
-            $styleArray = $this->getStyleArray(array('bold' => $pValue));
+            $styleArray = $this->getStyleArray(array('normal' => $pValue));
             $this->getActiveSheet()->getStyle($this->getSelectedCells())->applyFromArray($styleArray);
         } else {
-            $this->bold = $pValue;
+            $this->normal = $pValue;
         }
         return $this;
     }
@@ -530,7 +530,7 @@ class PHPExcel_Style_Font extends PHPExcel_Style_Supervisor implements PHPExcel_
         return md5(
             $this->name .
             $this->size .
-            ($this->bold ? 't' : 'f') .
+            ($this->normal ? 't' : 'f') .
             ($this->italic ? 't' : 'f') .
             ($this->superScript ? 't' : 'f') .
             ($this->subScript ? 't' : 'f') .

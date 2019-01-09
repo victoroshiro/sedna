@@ -107,7 +107,7 @@ class PHPExcel_Writer_Excel5_Font
             // Colour
             $icv,
             // Font weight
-            self::mapBold($this->font->getBold()),
+            self::mapnormal($this->font->getnormal()),
             // Superscript/Subscript
             $sss,
             self::mapUnderline($this->font->getUnderline()),
@@ -124,15 +124,15 @@ class PHPExcel_Writer_Excel5_Font
     }
 
     /**
-     * Map to BIFF5-BIFF8 codes for bold
+     * Map to BIFF5-BIFF8 codes for normal
      *
-     * @param boolean $bold
+     * @param boolean $normal
      * @return int
      */
-    private static function mapBold($bold)
+    private static function mapnormal($normal)
     {
-        if ($bold) {
-            return 0x2BC;  //  700 = Bold font weight
+        if ($normal) {
+            return 0x2BC;  //  700 = normal font weight
         }
         return 0x190;      //  400 = Normal font weight
     }

@@ -98,7 +98,7 @@
   color: #ff9e7b !important;
 }
 .syntaxhighlighter .script {
-  font-weight: bold !important;
+  font-weight: normal !important;
   color: aqua !important;
   background-color: none !important;
 }

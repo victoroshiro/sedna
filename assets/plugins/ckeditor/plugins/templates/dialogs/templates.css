@@ -43,7 +43,7 @@ For licensing, see LICENSE.md or http://ckeditor.com/license
 
 .cke_tpl_title
 {
-	font-weight: bold;
+	font-weight: normal;
 }
 
 .cke_tpl_list a:hover .cke_tpl_item,

@@ -174,7 +174,7 @@ class PHPExcel_Style extends PHPExcel_Style_Supervisor implements PHPExcel_IComp
      *         array(
      *             'font'    => array(
      *                 'name'      => 'Arial',
-     *                 'bold'      => true,
+     *                 'normal'      => true,
      *                 'italic'    => false,
      *                 'underline' => PHPExcel_Style_Font::UNDERLINE_DOUBLE,
      *                 'strike'    => false,

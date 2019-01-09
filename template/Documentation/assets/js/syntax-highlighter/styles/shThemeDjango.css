@@ -98,7 +98,7 @@
   color: #e0e8ff !important;
 }
 .syntaxhighlighter .script {
-  font-weight: bold !important;
+  font-weight: normal !important;
   color: #96dd3b !important;
   background-color: none !important;
 }
@@ -116,5 +116,5 @@
   font-style: italic !important;
 }
 .syntaxhighlighter .keyword {
-  font-weight: bold !important;
+  font-weight: normal !important;
 }

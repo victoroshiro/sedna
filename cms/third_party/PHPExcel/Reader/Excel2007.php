@@ -1775,7 +1775,7 @@ class PHPExcel_Reader_Excel2007 extends PHPExcel_Reader_Abstract implements PHPE
             $docStyle->getFont()->setName((string) $style->font->name["val"]);
             $docStyle->getFont()->setSize((string) $style->font->sz["val"]);
             if (isset($style->font->b)) {
-                $docStyle->getFont()->setBold(!isset($style->font->b["val"]) || self::boolean((string) $style->font->b["val"]));
+                $docStyle->getFont()->setnormal(!isset($style->font->b["val"]) || self::boolean((string) $style->font->b["val"]));
             }
             if (isset($style->font->i)) {
                 $docStyle->getFont()->setItalic(!isset($style->font->i["val"]) || self::boolean((string) $style->font->i["val"]));
@@ -1927,7 +1927,7 @@ class PHPExcel_Reader_Excel2007 extends PHPExcel_Reader_Abstract implements PHPE
                         }
                         if ((isset($run->rPr->b["val"]) && self::boolean((string) $run->rPr->b["val"])) ||
                             (isset($run->rPr->b) && !isset($run->rPr->b["val"]))) {
-                            $objText->getFont()->setBold(true);
+                            $objText->getFont()->setnormal(true);
                         }
                         if ((isset($run->rPr->i["val"]) && self::boolean((string) $run->rPr->i["val"])) ||
                             (isset($run->rPr->i) && !isset($run->rPr->i["val"]))) {

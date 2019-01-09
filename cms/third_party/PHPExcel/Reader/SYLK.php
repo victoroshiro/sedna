@@ -268,7 +268,7 @@ class PHPExcel_Reader_SYLK extends PHPExcel_Reader_Abstract implements PHPExcel_
                                         $formatArray['font']['italic'] = true;
                                         break;
                                     case 'D':
-                                        $formatArray['font']['bold'] = true;
+                                        $formatArray['font']['normal'] = true;
                                         break;
                                     case 'T':
                                         $formatArray['borders']['top']['style'] = PHPExcel_Style_Border::BORDER_THIN;
@@ -389,7 +389,7 @@ class PHPExcel_Reader_SYLK extends PHPExcel_Reader_Abstract implements PHPExcel_
                                         $styleData['font']['italic'] = true;
                                         break;
                                     case 'D':
-                                        $styleData['font']['bold'] = true;
+                                        $styleData['font']['normal'] = true;
                                         break;
                                     case 'T':
                                         $styleData['borders']['top']['style'] = PHPExcel_Style_Border::BORDER_THIN;

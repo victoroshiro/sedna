@@ -177,7 +177,7 @@
         },
 
         TOOLBAR : {
-            bold          : { visible : true, tags : ['b', 'strong'], css : { fontWeight : 'bold' } },
+            normal          : { visible : true, tags : ['b', 'strong'], css : { fontWeight : 'normal' } },
             italic        : { visible : true, tags : ['i', 'em'], css : { fontStyle : 'italic' } },
             strikeThrough : { visible : false, tags : ['s', 'strike'], css : { textDecoration : 'line-through' } },
             underline     : { visible : false, tags : ['u'], css : { textDecoration : 'underline' } },

@@ -2335,7 +2335,7 @@ _.setTitle = function(title) {
     else if (_.opener.name == "tinymce4") {
         var ifr = $('iframe[src*="browse.php?opener=tinymce4&"]', window.parent.document),
             path = ifr.attr('src').split('browse.php?')[0];
-        ifr.parent().parent().find('div.mce-title').html('<span style="padding:0 0 0 28px;margin:-2px 0 -3px -6px;display:block;font-size:1em;font-weight:bold;background:url(' + path + 'themes/default/img/kcf_logo.png) left center no-repeat">' + title + '</span>');
+        ifr.parent().parent().find('div.mce-title').html('<span style="padding:0 0 0 28px;margin:-2px 0 -3px -6px;display:block;font-size:1em;font-weight:normal;background:url(' + path + 'themes/default/img/kcf_logo.png) left center no-repeat">' + title + '</span>');
     }
 };
 

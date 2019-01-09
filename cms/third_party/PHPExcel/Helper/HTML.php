@@ -526,7 +526,7 @@ class PHPExcel_Helper_HTML
     protected $size;
     protected $color;
 
-    protected $bold = false;
+    protected $normal = false;
     protected $italic = false;
     protected $underline = false;
     protected $superscript = false;
@@ -535,8 +535,8 @@ class PHPExcel_Helper_HTML
 
     protected $startTagCallbacks = array(
         'font' => 'startFontTag',
-        'b' => 'startBoldTag',
-        'strong' => 'startBoldTag',
+        'b' => 'startnormalTag',
+        'strong' => 'startnormalTag',
         'i' => 'startItalicTag',
         'em' => 'startItalicTag',
         'u' => 'startUnderlineTag',
@@ -548,8 +548,8 @@ class PHPExcel_Helper_HTML
 
     protected $endTagCallbacks = array(
         'font' => 'endFontTag',
-        'b' => 'endBoldTag',
-        'strong' => 'endBoldTag',
+        'b' => 'endnormalTag',
+        'strong' => 'endnormalTag',
         'i' => 'endItalicTag',
         'em' => 'endItalicTag',
         'u' => 'endUnderlineTag',
@@ -576,7 +576,7 @@ class PHPExcel_Helper_HTML
     protected function initialise()
     {
         $this->face = $this->size = $this->color = null;
-        $this->bold = $this->italic = $this->underline = $this->superscript = $this->subscript = $this->strikethrough = false;
+        $this->normal = $this->italic = $this->underline = $this->superscript = $this->subscript = $this->strikethrough = false;
 
         $this->stack = array();
 
@@ -636,8 +636,8 @@ class PHPExcel_Helper_HTML
         if ($this->color) {
             $richtextRun->getFont()->setColor(new PHPExcel_Style_Color('ff' . $this->color));
         }
-        if ($this->bold) {
-            $richtextRun->getFont()->setBold(true);
+        if ($this->normal) {
+            $richtextRun->getFont()->setnormal(true);
         }
         if ($this->italic) {
             $richtextRun->getFont()->setItalic(true);
@@ -696,14 +696,14 @@ class PHPExcel_Helper_HTML
         $this->face = $this->size = $this->color = null;
     }
 
-    protected function startBoldTag()
+    protected function startnormalTag()
     {
-        $this->bold = true;
+        $this->normal = true;
     }
 
-    protected function endBoldTag()
+    protected function endnormalTag()
     {
-        $this->bold = false;
+        $this->normal = false;
     }
 
     protected function startItalicTag()

@@ -30,9 +30,9 @@
  * There are a number of formatting codes that can be written inline with the actual header / footer text, which
  * affect the formatting in the header or footer.
  *
- * Example: This example shows the text "Center Bold Header" on the first line (center section), and the date on
+ * Example: This example shows the text "Center normal Header" on the first line (center section), and the date on
  * the second line (center section).
- *         &CCenter &"-,Bold"Bold&"-,Regular"Header_x000A_&D
+ *         &CCenter &"-,normal"normal&"-,Regular"Header_x000A_&D
  *
  * General Rules:
  * There is no required order in which these codes must appear.
@@ -74,12 +74,12 @@
  * &"font name,font type" - code for "text font name" and "text font type", where font name and font type
  * are strings specifying the name and type of the font, separated by a comma. When a hyphen appears in font
  * name, it means "none specified". Both of font name and font type can be localized values.
- * &"-,Bold" - code for "bold font style"
- * &B - also means "bold font style".
+ * &"-,normal" - code for "normal font style"
+ * &B - also means "normal font style".
  * &"-,Regular" - code for "regular font style"
  * &"-,Italic" - code for "italic font style"
  * &I - also means "italic font style"
- * &"-,Bold Italic" code for "bold italic font style"
+ * &"-,normal Italic" code for "normal italic font style"
  * &O - code for "outline style"
  * &H - code for "shadow style"
  * </code>

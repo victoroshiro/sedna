@@ -203,7 +203,7 @@ div.file:hover {
 }
 div.file .name {
     margin-top: 4px;
-    font-weight: bold;
+    font-weight: normal;
     height: 16px;
     overflow: hidden;
     padding-bottom:2px;
@@ -350,7 +350,7 @@ a.denied:hover {
     text-align: center;
 }
 .about div.head {
-    font-weight: bold;
+    font-weight: normal;
     font-size: 12px;
     padding: 3px 0 8px 0;
 }

@@ -198,7 +198,7 @@ html {
   line-height: 30px;
   float: left;
   color: #dddddd;
-  font-weight: bold;
+  font-weight: normal;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -579,7 +579,7 @@ html {
 }
 .content div.todo:before {
   content: "TODO";
-  font-weight: bold;
+  font-weight: normal;
 }
 body a.button-a,
 body button.button-a,
@@ -836,7 +836,7 @@ body input.navigation-b ul li a:hover:hover {
   font-size: 0.875rem;
   line-height: 25.2px;
   line-height: 1.57rem;
-  font-weight: bold;
+  font-weight: normal;
   background-color: #27c0d8;
   overflow: hidden;
   display: inline-block;
@@ -1341,7 +1341,7 @@ div.toolbarModifier > ul > li {
   display: table-row;
 }
 div.toolbarModifier > ul > li[data-type="header"] {
-  font-weight: bold;
+  font-weight: normal;
   user-select: none;
   cursor: default;
 }
@@ -1511,7 +1511,7 @@ div.toolbarModifier-hints dl {
   overflow: hidden;
 }
 div.toolbarModifier-hints dl .list-header {
-  font-weight: bold;
+  font-weight: normal;
   border: 0;
   padding-bottom: 0.6em;
 }
