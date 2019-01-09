@@ -97,11 +97,11 @@
       <find>$this-&gt;data['menu_embarcacoes_ciy'] = $this-&gt;Embarcacoes_m-&gt;get_embarcacoes(array('categoria' =&gt; 'Super-Sport-Yachts'));</find>
       <find>linha</find>
       <find>face</find>
+      <find>youtube</find>
     </findStrings>
     <replaceStrings>
       <replace />
       <replace>$this-&gt;data['menu_embarcacoes_cim'] = $this-&gt;Embarcacoes_m-&gt;get_embarcacoes(array('categoria' =&gt; 'Yachts'));         $this-&gt;data['menu_embarcacoes_ciy'] = $this-&gt;Embarcacoes_m-&gt;get_embarcacoes(array('categoria' =&gt; ' Sport-Fishing-Yachts'));         $this-&gt;data['menu_embarcacoes_ciy'] = $this-&gt;Embarcacoes_m-&gt;get_embarcacoes(array('categoria' =&gt; ' Super-Sport-Yachts'));</replace>
-      <replace />
       <replace>$this-&gt;data['menu_embarcacoes_ciy'] = $this-&gt;Embarcacoes_m-&gt;get_embarcacoes(array('categoria' =&gt; ' Sport-Fishing-Yachts'));</replace>
       <replace>$this-&gt;data['menu_embarcacoes_ciy'] = $this-&gt;Embarcacoes_m-&gt;get_embarcacoes(array('categoria' =&gt; 'Sport-Fishing-Yachts'));</replace>
       <replace>$this-&gt;data['menu_embarcacoes_ciy'] = $this-&gt;Embarcacoes_m-&gt;get_embarcacoes(array('categoria' =&gt; 'Super-Sport-Yachts'));</replace>

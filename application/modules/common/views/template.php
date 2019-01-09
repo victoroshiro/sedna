@@ -296,7 +296,7 @@
           <!-- Wrapper -->
           <div class="wrap">
             <p>Cimitarra Yachts <?php echo gmdate("Y"); ?>. Todos os Direitos Reservados</p>
-            <p>By <a href="http://vioti.com.br" target="_blank" title="vioti.com.br">Vioti</a></p>
+            <p>By <a style="color: #777" href="http://vioti.com.br" target="_blank" title="vioti.com.br">Vioti</a></p>
           </div>
           <!-- //Wrapper -->
         </div>
