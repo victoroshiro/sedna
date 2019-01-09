@@ -1253,8 +1253,8 @@ h2 > small {
 
 .social a {
 	display: inline-block;
-	height: 33px;
-	width: 33px;
+	height: 25px;
+	width: 25px;
 	line-height: 33px;
 	border-radius: 50%;
 	color: #808080;
