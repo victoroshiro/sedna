@@ -825,7 +825,7 @@ aside.above-footer	{float:left;width:100%;}
 .widget h6 	{font-family:'Raleway',Arial,Helvetica,sans-serif;}
 
 /* 26 FOOTER */	
-.footer 					{float:left;width:100%;background:#253238;color:#fff;padding:35px 0 0;}
+.footer 					{float:left;width:100%;background:#efefef;color:#777;padding:35px 0 0;}
 .footer h6				{font-size:17px;padding:0 0 25px;}
 .footer ul li 				{padding-bottom:4px;}
 .footer a 				{color:#fff;}

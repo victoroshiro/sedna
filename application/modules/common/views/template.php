@@ -59,7 +59,7 @@
             <div class="full-width">
               <div class="social">
                 <a href="https://www.facebook.com/SednaYachts.br/" target="_blank" class="circle"><i class="fa fa-facebook"></i></a>
-                <a href="https://www.youtube.com/channel/UCLojQsbDSNKVfNELwI0nP3w" target="_blank" class="circle"><i class="fa fa-youtube-play"></i></a>
+                <a href="https://www.youtube.com/channel/UCwY5SMZCkW4eZeaacX3Pjbw" target="_blank" class="circle"><i class="fa fa-youtube-play"></i></a>
                 <a href="https://www.instagram.com/cimitarrayachts/" target="_blank" class="circle"><i class="fa fa-instagram"></i></a>
               </div>
               <div class="language">
@@ -254,42 +254,36 @@
           <div class="row">
             <!-- OneFourth -->
             <div class="one-third">
-              <img src="assets/images/logo-white.png" class="margin-bottom-md" alt="Cimitarra Yachts">
+              <img src="assets/images/logo.png" class="margin-bottom-md" alt="Cimitarra Yachts">
               <p>
-                Trabalhamos com as melhores embarcações. Garantindo luxo, sofisticação conforto e segurança.
+                  Fabricamos embarcações de alto nível aliando qualidade, conforto, alta performance, excelente navegabilidade, robustez e segurança.
               </p>
             </div>
             <!-- //OneFourth -->
             
             <!-- OneFourth -->
             <div class="one-fifth text-center">
-              <h6>Cimitarra</h6>
-              <ul>
-                <li><a href="embarcacoes/detalhe/cimitarra/360/360-hard-top">360</a></li>
-                <li><a href="embarcacoes/detalhe/cimitarra/400/400-hard-top">400</a></li>
-                <li><a href="embarcacoes/detalhe/cimitarra/460/460-fly-bridge">460</a></li>                
-              </ul>
-            </div>
-            <!-- //OneFourth -->
-            
-            <!-- OneFourth -->
-            <div class="one-fifth text-center footer-collumn-pull-left-adjust">
-              <h6>Cimitarra Yachts</h6>
-              <ul>
-                <li><a href="embarcacoes/detalhe/cimitarra-yachts/540/540-fly-bridge">540</a></li>
-                <li><a href="embarcacoes/detalhe/cimitarra-yachts/600/600-fly-bridge">600</a></li>
-                <li><a href="embarcacoes/detalhe/cimitarra-yachts/640/640-fly-bridge">640</a></li>
-                <li><a href="embarcacoes/detalhe/cimitarra-yachts/780/780-fly-bridge">780</a></li>
-              </ul>
+              <h6>Contato</h6>
+                <p>
+                    +55 (11) 2307-7007
+                </p>
+                <p>
+                    contato@sednagroup.com.br
+                </p>
+                <p>
+                    Avenida Europa, 421 - Jardim Europa
+                    <br>
+                    CEP: 01449001 - São Paulo, Brasil
+                </p>
             </div>
             <!-- //OneFourth -->
             
             <!-- OneFourth -->
             <div class="one-fourth">
               <h6>Siga-nos</h6>
-              <p>Siga nossas redes sociais e fique por dentro de tudo que acontece na Cimitarra.</p>
+              <p>Acesse nossas redes sociais e fique por dentro de tudo o que acontece no Sedna Group.</p>
               <a href="https://www.facebook.com/SednaYachts.br/" target="blank" title="Facebook" class="circle"><i class="fa fa-facebook fa-fw"></i></a>
-              <a href="https://www.youtube.com/channel/UCLojQsbDSNKVfNELwI0nP3w" target="blank" title="Youtube" class="circle"><i class="fa fa-youtube-play fa-fw"></i></a>
+              <a href="https://www.youtube.com/channel/UCwY5SMZCkW4eZeaacX3Pjbw" target="blank" title="Youtube" class="circle"><i class="fa fa-youtube-play fa-fw"></i></a>
               <a href="https://www.instagram.com/cimitarrayachts" target="blank" title="Instagram" class="circle"><i class="fa fa-instagram fa-fw"></i></a>
 
             </div>
