@@ -14,9 +14,9 @@ class Quem_somos extends CI_Controller {
     {
         $this->data["quem_somos"] = $this->Quem_somos_m->get_quem_somos();
 
-        $this->data['title'] = 'Cimitarra Yachts';
+        $this->data['title'] = 'Sedna Group Yachts';
 
-        $this->data['description'] = 'Cimitarra Yachts';
+        $this->data['description'] = 'Sedna Group Yachts';
 
         // Menu
         $this->data['menu_embarcacoes_cim'] = $this->Embarcacoes_m->get_embarcacoes(array('categoria' => 'Yachts'));         $this->data['menu_embarcacoes_ciy'] = $this->Embarcacoes_m->get_embarcacoes(array('categoria' => 'Sport-Fishing-Yachts'));         $this->data['menu_embarcacoes_sport'] = $this->Embarcacoes_m->get_embarcacoes(array('categoria' => 'Super-Sport-Yachts'));

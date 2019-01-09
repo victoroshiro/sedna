@@ -2,14 +2,14 @@
 	<main class="main" role="main">
 		<div id="lightSliderMainBanner">
 			<article>
-				<img src="assets/images/empresa/main-empresa.jpg" alt="Cimitarra Yachts">
+				<img src="assets/images/empresa/main-empresa.jpg" alt="Sedna Group Yachts">
 			</article>
 		</div>
 		
 		<!-- Tab navigation -->
 		<section class="white">
 			<div class="wrap center">
-				<h2>Bem-Vindo à Cimitarra Yachts</h2>
+				<h2>Bem-Vindo à Sedna Group Yachts</h2>
 				<p>Embarcações de alta qualidade e desempenho. Referência nacional e internacional em barcos.</p>
 			</div>
 		</section>
@@ -25,15 +25,15 @@
 					<!-- Item -->
 					<article class="full-width hentry">
 						<figure class="one-half heightfix">
-							<img src="assets/images/empresa/estaleiro.jpg" alt="Estaleiro Cimitarra Yachts" />
+							<img src="assets/images/empresa/estaleiro.jpg" alt="Estaleiro Sedna Group Yachts" />
 						</figure>
 						<div class="one-half heightfix">
 							<div class="text">
 								<h3>Estaleiro</h3>
                                 <p>
-                                    O Estaleiro Cimitarra investe em lanchas maiores e mais luxuosas, alcançando um novo patamar no universo náutico.
+                                    O Estaleiro Sedna Group investe em lanchas maiores e mais luxuosas, alcançando um novo patamar no universo náutico.
                                     <br>
-                                    Todas as nossas embarcaçoes são desenvolvidas foco no aproveitamento dos espaços externos e design personalizado.                                   O Estaleiro Cimitarra exporta suas lanchas desde 1999, com seriedade e compromisso com as normas de exportação, seguindo rigorosamente todos os requisitos necessários das normas internacionais de navegação.
+                                    Todas as nossas embarcaçoes são desenvolvidas foco no aproveitamento dos espaços externos e design personalizado.                                   O Estaleiro Sedna Group exporta suas lanchas desde 1999, com seriedade e compromisso com as normas de exportação, seguindo rigorosamente todos os requisitos necessários das normas internacionais de navegação.
                                 </p>
 							</div>
 						</div>
@@ -83,8 +83,8 @@
 
 		<section class="cta grey">
 			<div class="wrap center">
-				<h2>Cimitarra pelo Mundo</h2>
-				<p>O Estaleiro Cimitarra exporta suas lanchas desde 1999, com seriedade e compromisso com as normas de exportação , seguindo rigorosamente todos os requisitos necessários das normas internacionais de navegação. A empresa já exportou para: Angola, Canadá, Noruega e Suécia.</p>
+				<h2>Sedna Group pelo Mundo</h2>
+				<p>O Estaleiro Sedna Group exporta suas lanchas desde 1999, com seriedade e compromisso com as normas de exportação , seguindo rigorosamente todos os requisitos necessários das normas internacionais de navegação. A empresa já exportou para: Angola, Canadá, Noruega e Suécia.</p>
 			</div>
 		</section>
 
@@ -92,7 +92,7 @@
 			<div class="wrap center">
 				<h2>História</h2>
 				<p>
-					O estaleiro Cimitarra começou sua produção em 1999, com poucos funcionários e muita determinação para crescer.  Em 2014, ao comemorar 15 anos, ja havia produzido mais de 2000 lanchas.
+					O estaleiro Sedna Group começou sua produção em 1999, com poucos funcionários e muita determinação para crescer.  Em 2014, ao comemorar 15 anos, ja havia produzido mais de 2000 lanchas.
 					<br>
 					Conheça um pouco desta trajetória.
 				</p>
@@ -107,7 +107,7 @@
 				<div class="timeline--text timeline--text">
 					<h2>1999</h2>
 					<span>
-						Foto da fábrica Cimitarra, início de uma produção de sucesso! A Cimitarra 260 foi o modelo que consagrou a marca.
+						Foto da fábrica Sedna Group, início de uma produção de sucesso! A Sedna Group 260 foi o modelo que consagrou a marca.
 					</span>
 				</div>
 			</div>
@@ -119,7 +119,7 @@
 				<div class="timeline--text timeline--text">
 					<h2>2004</h2>
 					<span>
-						A lancha Cimitarra 270 por muitos anos foi o "carro-chefe"da marca, barco de entrada para vários clientes que depois compraram lanchas ainda maiores.
+						A lancha Sedna Group 270 por muitos anos foi o "carro-chefe"da marca, barco de entrada para vários clientes que depois compraram lanchas ainda maiores.
 					</span>
 				</div>
 			</div>
@@ -131,7 +131,7 @@
 				<div class="timeline--text timeline--text">
 					<h2>2006</h2>
 					<span>
-						A Cimitarra 340 é a lancha de maior sucesso da marca e continua em produção até hoje. Na sua categoria é considerada a melhor relação custo-benefício.
+						A Sedna Group 340 é a lancha de maior sucesso da marca e continua em produção até hoje. Na sua categoria é considerada a melhor relação custo-benefício.
 					</span>
 				</div>
 			</div>
@@ -143,7 +143,7 @@
 				<div class="timeline--text timeline--text">
 					<h2>2008</h2>
 					<span>
-						A empresa começou a investir em lanchas maiores e mais luxuosas com a Cimitarra 500. Entrando em um novo patamar.
+						A empresa começou a investir em lanchas maiores e mais luxuosas com a Sedna Group 500. Entrando em um novo patamar.
 					</span>
 				</div>
 			</div>
@@ -167,7 +167,7 @@
 				<div class="timeline--text timeline--text">
 					<h2>2014</h2>
 					<span>
-						Cimitarra 760 e seus idealizadores, o sonho que estava apenas no projeto começa a tornar-se realidade.
+						Sedna Group 760 e seus idealizadores, o sonho que estava apenas no projeto começa a tornar-se realidade.
 					</span>
 				</div>
 			</div>
@@ -179,7 +179,7 @@
 				<div class="timeline--text timeline--text">
 					<h2>2015</h2>
 					<span>
-						É inaugurada a nova fábrica Cimitarra, que proporciona maior capacidade de produção, localização estratégica e melhor qualidade de trabalho aos colaboradores.
+						É inaugurada a nova fábrica Sedna Group, que proporciona maior capacidade de produção, localização estratégica e melhor qualidade de trabalho aos colaboradores.
 					</span>
 				</div>
 			</div>
@@ -191,7 +191,7 @@
 				<div class="timeline--text timeline--text">
 					<h2>2016</h2>
 					<span>
-                                            É lançada a Cimitarra 640 com foco no aproveitamento dos espaços externos e design inspirado na Cimitarra 760, projetada na Itália.
+                                            É lançada a Sedna Group 640 com foco no aproveitamento dos espaços externos e design inspirado na Sedna Group 760, projetada na Itália.
 					</span>
 				</div>
 			</div>
@@ -213,7 +213,7 @@
 			<div class="one-third">
 				<div class="news--block">
 					<h3>Valores</h3>
-					<p>Garantir a segurança dos clientes e dos nossos colaboradores, agindo sempre com responsabilidade e ética. Estes são valores primordiais de toda equipe Cimitarra.</p>
+					<p>Garantir a segurança dos clientes e dos nossos colaboradores, agindo sempre com responsabilidade e ética. Estes são valores primordiais de toda equipe Sedna Group.</p>
 				</div>
 			</div>
 		</div>

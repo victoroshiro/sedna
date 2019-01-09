@@ -14,7 +14,7 @@
             <div class="text">
                 <p>
                     Acesse o nosso Linkedln:
-                    <a href="https://www.linkedin.com/company/cimitarrayachts/" target="_blank">
+                    <a href="https://www.linkedin.com/company/Sedna Groupyachts/" target="_blank">
                         <i class="fa fa-linkedin-square trabalhe"></i>
                     </a>
                 </p>

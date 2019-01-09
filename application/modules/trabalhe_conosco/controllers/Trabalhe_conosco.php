@@ -15,8 +15,8 @@ class Trabalhe_conosco extends CI_Controller {
     public function index($slug = false)
     {
         $this->data['active'] = 'Trabalhe_conosco';
-        $this->data['title'] = 'Cimitarra Yachts.';
-        $this->data['description'] = 'Cimitarra Yachts';
+        $this->data['title'] = 'Sedna Group Yachts.';
+        $this->data['description'] = 'Sedna Group Yachts';
 
         // Menu
         $this->data['menu_embarcacoes_cim'] = $this->Embarcacoes_m->get_embarcacoes(array('categoria' => 'Yachts'));         $this->data['menu_embarcacoes_ciy'] = $this->Embarcacoes_m->get_embarcacoes(array('categoria' => 'Sport-Fishing-Yachts'));         $this->data['menu_embarcacoes_sport'] = $this->Embarcacoes_m->get_embarcacoes(array('categoria' => 'Super-Sport-Yachts'));
@@ -122,8 +122,8 @@ class Trabalhe_conosco extends CI_Controller {
 
         $this->email->initialize($config);
 
-        $this->email->from('contato@cimitarra.com.br', 'Trabalhe Conosco');
-        $this->email->to('contato@cimitarra.com.br');
+        $this->email->from('contato@Sedna Group.com.br', 'Trabalhe Conosco');
+        $this->email->to('contato@Sedna Group.com.br');
         
         $this->email->subject('Trabalhe Conosco - '.$dados['name']);
         $this->email->message($mensagem);
@@ -135,21 +135,21 @@ class Trabalhe_conosco extends CI_Controller {
 
         $this->email->clear(TRUE);
 
-        $this->email->from('contato@cimitarra.com.br', 'Cimitarra Yachts');
+        $this->email->from('contato@Sedna Group.com.br', 'Sedna Group Yachts');
         $this->email->to($dados['email']);
         $this->email->subject('Recebemos sua mensagem');
 
         $mensagem_cliente  = '<h3>' . $dados['name'] . ',</h3>';
         $mensagem_cliente .= '<p>';
-        $mensagem_cliente .= 'Obrigado por entrar em contato com a Cimitarra Yachts.';
+        $mensagem_cliente .= 'Obrigado por entrar em contato com a Sedna Group Yachts.';
         $mensagem_cliente .= '<br>';
         $mensagem_cliente .= 'Em breve entraremos em contato.';
         $mensagem_cliente .= '<br>';
         $mensagem_cliente .= 'Tel.: +55 (11) 99617.6035 / (11) 2307-7007';
         $mensagem_cliente .= '<br>';
-        $mensagem_cliente .= '<a href="http://cimitarra.com.br/">cimitarra.com.br/</a>';
+        $mensagem_cliente .= '<a href="http://Sedna Group.com.br/">Sedna Group.com.br/</a>';
         $mensagem_cliente .= '</p>';
-        $mensagem_cliente .= '<img src="' . site_url('assets/images/menu/logo.png') . '" alt="Cimitarra Yachts">';
+        $mensagem_cliente .= '<img src="' . site_url('assets/images/menu/logo.png') . '" alt="Sedna Group Yachts">';
 
         $this->email->message($mensagem_cliente);
         $this->email->send();

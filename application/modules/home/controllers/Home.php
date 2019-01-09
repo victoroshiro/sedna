@@ -17,8 +17,8 @@ class Home extends CI_Controller {
         $this->load->helper('text');
 
         $this->data['active'] = 'home';
-        $this->data['title'] = 'Cimitarra';
-        $this->data['description'] = 'Cimitarra';
+        $this->data['title'] = 'Sedna Group';
+        $this->data['description'] = 'Sedna Group';
 
         // Menu
         $this->data['menu_embarcacoes_cim'] = $this->Embarcacoes_m->get_embarcacoes(array('categoria' => 'Yachts'));         $this->data['menu_embarcacoes_ciy'] = $this->Embarcacoes_m->get_embarcacoes(array('categoria' => 'Sport-Fishing-Yachts'));         $this->data['menu_embarcacoes_sport'] = $this->Embarcacoes_m->get_embarcacoes(array('categoria' => 'Super-Sport-Yachts'));

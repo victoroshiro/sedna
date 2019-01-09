@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <base href="<?php echo site_url(); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="Cimitarra Yachts" />
+    <meta name="keywords" content="Sedna Group Yachts" />
     
 
         <meta name="description" content="Sedna Group" />
@@ -70,7 +70,7 @@
         </div>
       <div class="wrap">
           <!-- Logo -->
-          <a href="<?php echo base_url();?>" title="Cimitarra Yachts" class="logo" style="padding: 0px !important"><img style="    width: 164px;" src="assets/images/logo.png" alt="Cimitarra Yacht"></a>
+          <a href="<?php echo base_url();?>" title="Sedna Group Yachts" class="logo" style="padding: 0px !important"><img style="    width: 164px;" src="assets/images/logo.png" alt="Sedna Group Yacht"></a>
           <!-- //Logo -->
           
           <!-- Primary menu -->
@@ -159,7 +159,7 @@
                             ?>
                         </ul>                  
                     </li>
-                    <!-- <li><a href="fidelidade" title="Fidelidade Cimitarra">Fidelidade Cimitarra</a></li> -->
+                    <!-- <li><a href="fidelidade" title="Fidelidade Sedna Group">Fidelidade Sedna Group</a></li> -->
                   <li><a href="seminovos" title="Seminovos">seminovos</a></li>
                   <li>
                       <a href="contato" title="Contato">contato</a>
@@ -241,7 +241,7 @@
           <div class="row">
             <!-- OneFourth -->
             <div class="one-third">
-              <img src="assets/images/logo.png" class="margin-bottom-md" alt="Cimitarra Yachts">
+              <img src="assets/images/logo.png" class="margin-bottom-md" alt="Sedna Group Yachts">
               <p>
                   Fabricamos embarcações de alto nível aliando qualidade, conforto, alta performance, excelente navegabilidade, robustez e segurança.
               </p>
@@ -287,7 +287,7 @@
         <div class="copy">
           <!-- Wrapper -->
           <div class="wrap">
-            <p>Cimitarra Yachts <?php echo gmdate("Y"); ?>. Todos os Direitos Reservados</p>
+            <p>Sedna Group Yachts <?php echo gmdate("Y"); ?>. Todos os Direitos Reservados</p>
             <p>By <a style="color: #777" href="http://vioti.com.br" target="_blank" title="vioti.com.br">Vioti</a></p>
           </div>
           <!-- //Wrapper -->

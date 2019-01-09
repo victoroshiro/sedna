@@ -2,7 +2,7 @@
 	<main class="main" role="main">
 		<div class="lightSliderMainBanner">
 			<article>
-				<img src="<?php echo site_url('userfiles/embarcacoes/'.$embarcacao->imagem3) ?>" alt="Cimitarra Yachts">
+				<img src="<?php echo site_url('userfiles/embarcacoes/'.$embarcacao->imagem3) ?>" alt="Sedna Group Yachts">
 			</article>
 		</div>
 		<header class="intro">
@@ -176,7 +176,7 @@
 					?>
 							<li>
 								<a href="#tab2" title="Specifications">
-									<span class=""></span> CRACTERÍSTICAS TÉCNICAS
+									<span class=""></span> CARACTERÍSTICAS TÉCNICAS
 								</a>
 							</li>
 					<?php  
@@ -337,7 +337,7 @@
 								<div class="full-width">
 									<div class="padding-h-md">
 							            <label for="opt_in">
-							                <input type="checkbox" name="opt_in" id="opt_in"> Desejo receber os informativos da Cimitarra
+							                <input type="checkbox" name="opt_in" id="opt_in"> Desejo receber os informativos da Sedna Group
 							            </label>
 							        </div>
 							    </div>

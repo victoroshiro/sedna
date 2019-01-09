@@ -52,7 +52,7 @@
 
                                         <div class="checkbox">
                                             <label for="opt_in">
-                                                <input type="checkbox" name="opt_in" id="opt_in"> Desejo receber os informativos da Cimitarra
+                                                <input type="checkbox" name="opt_in" id="opt_in"> Desejo receber os informativos da Sedna Group
                                             </label>
                                         </div>
 
