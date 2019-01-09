@@ -901,7 +901,7 @@ aside.above-footer	{float:left;width:100%;}
 
 /* 28 FORM ELEMENTS*/
 fieldset 							{display:inline-block;width:100%;}
-label 							{display:inline-block;cursor: pointer;color:#444;position:relative;font-size:13px;text-transform:uppercase;padding:0 0 5px 1px;width:100%;}
+label 							{display:inline-block;cursor: pointer;color:#908f8f;position:relative;font-size:11px;text-transform:uppercase;padding:0 0 5px 1px;width:100%;}
 .checkbox label,
 .radio label 						{text-transform:none;font-size:15px;width:auto;padding:2px 0 0;max-width:80%;}
 
