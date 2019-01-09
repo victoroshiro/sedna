@@ -285,7 +285,7 @@
         <div class="copy">
           <!-- Wrapper -->
           <div class="wrap">
-            <p>Sedna Group Yachts <?php echo gmdate("Y"); ?>. Todos os Direitos Reservados</p>
+            <p>Sedna Group <?php echo gmdate("Y"); ?>. Todos os Direitos Reservados</p>
             <p>By <a style="color: #777" href="http://vioti.com.br" target="_blank" title="vioti.com.br">Vioti</a></p>
           </div>
           <!-- //Wrapper -->
