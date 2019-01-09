@@ -84,7 +84,7 @@
                     <section class="cta ">
                             <div class="wrap center">
                                     <div class="text-center">
-                                            <h2>COLEÇÃO SEDNA GROUP</h2>
+                                            <h2>C O L E Ç Ã O  S E D N A  G R O U P</h2>
                                     </div>
                             </div>
                             <div class="wrap wrap-flex">
@@ -125,7 +125,7 @@
                     <div class="wrap center margin-top-lg">
                         <div class="full-width text-center">
                             <h2>
-                                SEMINOVOS
+                                S E M I N O V O S
                                 <br>
                                 <small>As melhores oportunidades você encontra aqui.</small>
                             </h2>
@@ -159,7 +159,7 @@
 		<section class="news margin-top-lg">
 			<div class="wrap center">
 				<div class="full-width text-center">
-					<h2>NOTÍCIAS</h2>
+					<h2>N O T Í C I A S</h2>
 				</div>
 			</div>
 			<div class="wrap">
