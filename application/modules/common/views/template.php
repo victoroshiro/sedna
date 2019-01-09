@@ -233,16 +233,7 @@
     <!-- Photo -->
     <section class="photo">
         <div class="wrap text-right">
-            <p class="font-source-sans">
-            Fabricamos embarcações de alta  qualidade desde 1999,
-            <br>
-            com seriedade e compromisso com nossos clientes.
-            </p>
-            <h2 class="font-source-sans">
-                Cimitarra Yachts.
-                <br>
-                A compra inteligente.
-            </h2>
+            
         </div>
     </section>
     <!-- //Photo -->
