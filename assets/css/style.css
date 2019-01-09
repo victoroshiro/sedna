@@ -80,12 +80,12 @@ a {text-decoration:none;-webkit-transition:all 0.2s ease-in;-moz-transition:all 
 .right-pic 	{float:right;margin:0 0 0 30px;}
 
 /* 03 TYPOGRAPHY */
-h1 {font-weight:normal;font-size:25px;padding:0 0 25px;}
-h2 {font-weight:normal;font-size:23px;padding:0 0 37px;color:#908f8f;}
-h3 {font-weight:normal;font-size:17px;padding:0 0 15px;}
-h4 {font-weight:normal;font-size:14px;padding:0 0 15px;color:#908f8f;}
-h5 {font-weight:normal;font-size:9px;padding:0 0 15px;}
-h6 {font-weight:normal;font-size:7px;padding:0 0 15px;}
+h1 {font-weight:normal;font-size:22px;padding:0 0 25px;}
+h2 {font-weight:normal;font-size:21px;padding:0 0 37px;color:#908f8f;}
+h3 {font-weight:normal;font-size:15px;padding:0 0 15px;}
+h4 {font-weight:normal;font-size:12px;padding:0 0 15px;color:#908f8f;}
+h5 {font-weight:normal;font-size:7px;padding:0 0 15px;}
+h6 {font-weight:normal;font-size:5px;padding:0 0 15px;}
 
 .logo, h1, h2, h3, h4, h5, h6,nav.tabs,.tab-content .accordion dt,.results figcaption dt,ol.custom li:before,.home .hentry h3,.booking .box-white h5,.boxed header,.details .price	 {font-family: Arial;}
 
@@ -423,7 +423,7 @@ section.icons		{padding-bottom:10px;}
 /* 14 CONTENT */
 .content		{float:left;width:100%;}
 
-.intro 			{background:#fff;float:left;width:100%;color:#908f8f;padding:31px 0 5px;}
+.intro 			{background:#fff;float:left;width:100%;color:#908f8f;padding:65px 0 5px;}
 .intro.dark		{background-image:url(../images/dark-bg.png);}
 .intro .wrap 	{text-align:center;max-width:65%;}
 .intro p 		{font-size:17px;font-weight:500;padding:0 0 35px;}
