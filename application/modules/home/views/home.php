@@ -169,7 +169,7 @@
                         <a href="<?php echo site_url('noticias/detalhe/'.$item->slug); ?>"><img style="width: 365px;height: 266px;" src="<?php echo site_url('userfiles/noticias/'.$item->imagem); ?>"></a>
 							<h3><?php echo $item->titulo; ?></h3>
 							<p><?php echo $item->resumo; ?></p>
-							
+
 						</div>
 					</div>
 				<?php endforeach ?>
