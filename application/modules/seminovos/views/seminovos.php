@@ -19,10 +19,8 @@
 						<div>
 							<div class="text">
 								<h3><a href="<?php echo site_url('seminovos/detalhe/'.$item->slug); ?>"><?php echo ellipsize($item->titulo, 58); ?></a></h3>
-								<p><?php echo ellipsize($item->resumo, 90); ?>
-                                    <br><br>
+								<p><?php echo ellipsize($item->resumo, 90); ?></p>
 								<a href="<?php echo site_url('seminovos/detalhe/'.$item->slug); ?>" class="more" title="Read more">Saiba Mais</a>
-                                </p>
 							</div>
 						</div>
 					</article>
