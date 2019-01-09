@@ -1424,10 +1424,10 @@ h2 > small {
 
 .mini-nav a{
     color: #908f8f;
-    font-size: 19px;
+    font-size: 15px;
     display: inline-block;
     margin: 0 10px;
-    font-weight: 600;
+    font-weight: normal;
     text-transform: uppercase;
 }
 
