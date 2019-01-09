@@ -48,7 +48,8 @@
     
     <!-- Header -->
     <header class="header" role="banner">
-      <div class="wrap top-header" style="    background: #f3f3f3;">
+        <div style="background: #f3f3f3;">
+      <div class="wrap top-header" style="">
         <div class="row top-header">
             <div class="full-width">
               <div class="social">
@@ -66,6 +67,7 @@
             </div>
           </div>
       </div>
+        </div>
       <div class="wrap">
           <!-- Logo -->
           <a href="<?php echo base_url();?>" title="Cimitarra Yachts" class="logo" style="padding: 0px !important"><img style="    width: 164px;" src="assets/images/logo.png" alt="Cimitarra Yacht"></a>
