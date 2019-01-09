@@ -68,7 +68,7 @@
       </div>
       <div class="wrap">
           <!-- Logo -->
-          <a href="<?php echo base_url();?>" title="Cimitarra Yachts" class="logo" style="padding: 0px !important"><img src="assets/images/logo.png" alt="Cimitarra Yacht"></a>
+          <a href="<?php echo base_url();?>" title="Cimitarra Yachts" class="logo" style="padding: 0px !important"><img style="    width: 164px;" src="assets/images/logo.png" alt="Cimitarra Yacht"></a>
           <!-- //Logo -->
           
           <!-- Primary menu -->
