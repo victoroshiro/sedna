@@ -84,7 +84,7 @@
                     <section class="cta ">
                             <div class="wrap center">
                                     <div class="text-center">
-                                            <h2>C O L E Ç Ã O  S E D N A  G R O U P</h2>
+                                            <h2>C O L E Ç Ã O    S E D N A    G R O U P</h2>
                                     </div>
                             </div>
                             <div class="wrap wrap-flex">
