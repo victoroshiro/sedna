@@ -262,7 +262,7 @@
             <!-- //OneFourth -->
             
             <!-- OneFourth -->
-            <div class="one-sixth ">
+            <div class="one-fifth ">
               <h6>Contato</h6>
                 <p>
                     +55 (11) 2307-7007
@@ -276,6 +276,11 @@
                     CEP: 01449001 - São Paulo, Brasil
                 </p>
             </div>
+
+              <!-- OneFourth -->
+              <div class="one-fifth text-center footer-collumn-pull-left-adjust">
+                  
+              </div>
             <!-- //OneFourth -->
             
             <!-- OneFourth -->
