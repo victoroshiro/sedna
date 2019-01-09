@@ -99,7 +99,7 @@
 							  fjs.parentNode.insertBefore(js, fjs);
 							}(document, 'script', 'facebook-jssdk'));</script>
 
-							<div class="fb-page" data-href="https://www.facebook.com/cimitarrayachts/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/cimitarrayachts/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/cimitarrayachts/">Facebook</a></blockquote></div>
+							<div class="fb-page" data-href="https://www.facebook.com/pg/SednaYachts.br/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/pg/SednaYachts.br/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/pg/SednaYachts.br/">Facebook</a></blockquote></div>
 						</div>
 					</aside>
 					<!-- //OneFourth -->
