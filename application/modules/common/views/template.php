@@ -242,7 +242,7 @@
             <!-- OneFourth -->
             <div class="one-third">
               <img src="assets/images/logo.png" class="margin-bottom-md" alt="Sedna Group Yachts">
-              <p>
+              <p style="margin-right: 20px;">
                   Fabricamos embarcações de alto nível aliando qualidade, conforto, alta performance, excelente navegabilidade, robustez e segurança.
               </p>
             </div>
@@ -258,9 +258,7 @@
                     contato@sednagroup.com.br
                 </p>
                 <p>
-                    Avenida Europa, 421 - Jardim Europa
-                    <br>
-                    CEP: 01449001 - São Paulo, Brasil
+                    Avenida Europa, 421 - Jardim Europa - São Paulo, Brasil
                 </p>
             </div>
 
