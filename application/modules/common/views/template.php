@@ -48,7 +48,7 @@
     
     <!-- Header -->
     <header class="header" role="banner">
-      <div class="wrap top-header">
+      <div class="wrap top-header" style="    background: #f3f3f3;">
         <div class="row top-header">
             <div class="full-width">
               <div class="social">
@@ -271,7 +271,7 @@
             <!-- OneFourth -->
             <div class="one-fourth">
               <h6>Siga-nos</h6>
-              <p>Acesse nossas redes sociais e fique por dentro de tudo o que acontece no Sedna Group.</p>
+              <p>Siga-nos:</p>
               <a href="https://www.facebook.com/SednaYachts.br/" target="blank" title="Facebook" class="circle"><i class="fa fa-facebook fa-fw"></i></a>
               <a href="https://www.youtube.com/channel/UCwY5SMZCkW4eZeaacX3Pjbw" target="blank" title="Youtube" class="circle"><i class="fa fa-youtube-play fa-fw"></i></a>
               <a href="https://www.instagram.com/sednagroup" target="blank" title="Instagram" class="circle"><i class="fa fa-instagram fa-fw"></i></a>
