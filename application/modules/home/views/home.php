@@ -113,11 +113,11 @@
                     </section>
                     
                     <!-- Photo -->
-                    <section class="photo about-parallax" style="background-image: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2)), url('assets/images/parallax/home.jpg');">
-                        <div class="wrap center">
-                            <a href="empresa" title="Find out more" class="button white medium">Sobre a Cimitarra Yachts</a>
-                        </div>
-                    </section>
+<!--                    <section class="photo about-parallax" style="background-image: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2)), url('assets/images/parallax/home.jpg');">-->
+<!--                        <div class="wrap center">-->
+<!--                            <a href="empresa" title="Find out more" class="button white medium">Sobre a Cimitarra Yachts</a>-->
+<!--                        </div>-->
+<!--                    </section>-->
 		<!-- //Photo -->
 		
 		<!-- Yachts -->

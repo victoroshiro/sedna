@@ -233,7 +233,7 @@
     <!-- Photo -->
     <section class="photo">
         <div class="wrap text-right">
-            
+
         </div>
     </section>
     <!-- //Photo -->
