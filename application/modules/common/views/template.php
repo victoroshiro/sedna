@@ -262,7 +262,7 @@
             <!-- //OneFourth -->
             
             <!-- OneFourth -->
-            <div class="one-fifth text-center">
+            <div class="one-sixth ">
               <h6>Contato</h6>
                 <p>
                     +55 (11) 2307-7007
