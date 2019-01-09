@@ -40,7 +40,7 @@ html{
 }
 p{
     color: #908f8f !important;
-    font-size: 10;
+    font-size: 13px;
 }
 /* 01 RESET */
 *,*:before,*:after {-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
@@ -63,7 +63,7 @@ input,button,select,textarea {font-family: inherit;font-size: inherit;line-heigh
 
 /* 02 GLOBAL STYLES */
 
-p {line-height:1.5;padding:0 0 20px;}
+p {line-height:1.5;padding:0 0 20px;    font-size: 13px;}
 
 a {text-decoration:none;-webkit-transition:all 0.2s ease-in;-moz-transition:all 0.2s ease-in;-o-transition:all 0.2s ease-in;-ms-transition:all 0.2s ease-in;transition:all 0.2s ease-in;}
 .content a {color:#BB9C6F;font-weight:600;}
