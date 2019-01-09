@@ -81,7 +81,7 @@
                     </script>
                     
 
-                    <section class="cta grey">
+                    <section class="cta ">
                             <div class="wrap center">
                                     <div class="text-center">
                                             <h2>Coleções Sedna Group</h2>
