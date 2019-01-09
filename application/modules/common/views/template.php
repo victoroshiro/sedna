@@ -70,7 +70,7 @@
         </div>
       <div class="wrap">
           <!-- Logo -->
-          <a href="<?php echo base_url();?>" title="Sedna Group Yachts" class="logo" style="padding: 0px !important"><img style="    width: 164px;" src="assets/images/logo.png" alt="Sedna Group Yacht"></a>
+          <a href="<?php echo base_url();?>" title="Sedna Group Yachts" class="logo" style="padding: 0px !important"><img style="    width: 124px;" src="assets/images/logo.png" alt="Sedna Group Yacht"></a>
           <!-- //Logo -->
           
           <!-- Primary menu -->
