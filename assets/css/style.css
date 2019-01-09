@@ -33,7 +33,9 @@
 	30 - Print
 	31 - Responsiveness
 ****************************/
-
+html{
+    font-family: "sans-serif";
+}
 /* 01 RESET */
 *,*:before,*:after {-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
 body {font:15px/1.42 'Roboto Slab',Arial,Helvetica,sans-serif;text-align:center;color:#444;background:#F1F1F1;word-wrap:break-word;text-rendering:optimizeLegibility;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;}
