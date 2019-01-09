@@ -845,7 +845,7 @@ aside.above-footer	{float:left;width:100%;}
 /* 	.footer ul > li:before { left: 120px; } */
 /* } */
 
-.copy 				{background:#2B3A42;color:#fff;font-size: 13px;}
+.copy 				{background:#bebebe;color:#777;font-size: 13px;}
 .copy p 				{float:left;padding:19px 0 15px;}
 .copy p:last-child 	{float:right;}
 .copy a 				{font-weight:600;}
