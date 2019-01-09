@@ -125,7 +125,7 @@
                     <div class="wrap center margin-top-lg">
                         <div class="full-width text-center">
                             <h2>
-                                Seminovos 
+                                Seminovos
                                 <br>
                                 <small>As melhores oportunidades você encontra aqui.</small>
                             </h2>

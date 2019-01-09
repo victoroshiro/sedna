@@ -6,18 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="Cimitarra Yachts" />
     
-    <?php if (!empty($description)): ?>
-        <meta name="description" content="<?= $description ?>">
-    <?php else: ?>
-        <meta name="description" content="Cimitarra Yachts" /> 
-    <?php endif ?>
-    
-    <?php if (!empty($title)): ?>
-        <title><?php echo $title ?></title>
-    <?php else: ?>
+
+        <meta name="description" content="Sedna Group" />
+
+
         <title>Sedna Group</title>
-    <?php endif ?>
-    
+
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/fonts.css" />
     <link rel="stylesheet" href="assets/css/lightSlider.min.css" />
