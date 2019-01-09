@@ -84,7 +84,7 @@
                     <section class="cta ">
                             <div class="wrap center">
                                     <div class="text-center">
-                                            <h2>COLEÇÃO SEDNA GOUP</h2>
+                                            <h2>COLEÇÃO SEDNA GROUP</h2>
                                     </div>
                             </div>
                             <div class="wrap wrap-flex">
