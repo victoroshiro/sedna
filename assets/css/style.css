@@ -1209,7 +1209,7 @@ h2 > small {
 .top-header .full-width {
         max-width: 1170px;
         padding-bottom: 0;
-	padding: 10px 0;
+	padding: 5px 0;
 	vertical-align: middle;
 }
 
@@ -1253,8 +1253,8 @@ h2 > small {
 
 .social a {
 	display: inline-block;
-	height: 25px;
-	width: 25px;
+	height: 33px;
+	width: 33px;
 	line-height: 33px;
 	border-radius: 50%;
 	color: #808080;
