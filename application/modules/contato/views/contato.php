@@ -17,8 +17,10 @@
                                 <p>
                                 +55 (11) 2307-7007
                                 <br>
+                                    <br><br>
                                     contato@sednagroup.com.br
                                <br>
+                                    <br><br>
                                     Avenida Europa, 421 - Jardim Europa
                                     <br>
                                     CEP: 01449001 - São Paulo, Brasil
